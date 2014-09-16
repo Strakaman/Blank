@@ -23,8 +23,8 @@ public class PlayerControllerScript : MonoBehaviour {
 		if (Input.GetButtonDown("Fire Spell"))
 		{
 			Debug.Log("Mystical Fire Spell, I summon thee!");
-			GameObject clonedesu = (GameObject)Instantiate(refBullet, transform.position+ new Vector3(0,.5,0),transform.rotation);
-
+			GameObject clonedesu = (GameObject)Instantiate(refBullet, transform.position,transform.rotation);
+			//clonedesu.rigidbody2D.velocity = new Vector3(0,2,0);
 			BroadcastMessage("ApplyVelocity",clonedesu);
 		}
 
