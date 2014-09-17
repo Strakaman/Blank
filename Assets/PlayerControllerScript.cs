@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerControllerScript : MonoBehaviour {
 	public GameObject refBullet;
 	public GameObject refBullet2;
-
+	public int direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
 	public Animator animator;
 	public const float speed = 10;
 	// Use this for initialization
@@ -21,10 +21,26 @@ public class PlayerControllerScript : MonoBehaviour {
 	void SpriteAnimation() {
 		if (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) {
 			animator.SetBool ("doWalk", true);
+			CheckDirection();
 		} else {
 		animator.SetBool ("doWalk", false);
 		}
 	}
+	void CheckDirection() {
+		if (rigidbody2D.velocity.x < 0) {
+			direction = 2;
+		}
+		if (rigidbody2D.velocity.x > 0) {
+			direction = 3;
+		}
+		if (rigidbody2D.velocity.y < 0) {
+			direction = 0;
+		}
+		if (rigidbody2D.velocity.y > 0) {
+			direction = 1;
+		}
+	}
+
 	/**
 	 * Used for all player button inputs...I guess...
 	 */
@@ -43,19 +59,35 @@ public class PlayerControllerScript : MonoBehaviour {
 		}
 	}
 
+		void createProjectile(GameObject refBullet) {
+		GameObject clonedesu = (GameObject)Instantiate(refBullet, transform.position, transform.rotation);
+		//Physics.IgnoreCollision(refBullet2.collider, collider); //can't find Player01 collider. 
+		if (direction == 0) {
+			clonedesu.rigidbody2D.velocity = new Vector3(0,-speed,0);
+		}
+		if (direction == 1) {
+			clonedesu.rigidbody2D.velocity = new Vector3(0,speed,0);
+		}
+		if (direction == 2) {
+			clonedesu.rigidbody2D.velocity = new Vector3(-speed,0,0);
+		}
+		if (direction == 3) {
+			clonedesu.rigidbody2D.velocity = new Vector3(speed,0,0);
+		}
+		Destroy(clonedesu, 3);
+	}
+
 	/**
 	 * Offensive spell for player 
 	 */
 	void FireSpell()
 	{
-		GameObject clonedesu = (GameObject)Instantiate(refBullet, transform.position,transform.rotation);
-		clonedesu.rigidbody2D.velocity = new Vector3(speed,0,0);
-		Destroy(clonedesu, 3);
+		createProjectile (refBullet);
 	}
 
+
+
 	void BounceSpell() {
-		GameObject clonedesu = (GameObject)Instantiate(refBullet2, transform.position,transform.rotation);
-		clonedesu.rigidbody2D.velocity = new Vector3(speed,0,0);
-		Destroy(clonedesu, 3);
+		createProjectile (refBullet2);
 	}
 }

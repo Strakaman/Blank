@@ -246,6 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refBullet: {fileID: 1140907753}
   refBullet2: {fileID: 1732076546}
+  direction: 0
   animator: {fileID: 0}
 --- !u!212 &262220062
 SpriteRenderer:
