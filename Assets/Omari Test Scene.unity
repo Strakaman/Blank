@@ -537,7 +537,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732076546}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -601,6 +601,7 @@ GameObject:
   - 4: {fileID: 2067848769}
   - 61: {fileID: 2067848768}
   - 50: {fileID: 2067848770}
+  - 114: {fileID: 2067848771}
   m_Layer: 0
   m_Name: Left Wall
   m_TagString: Untagged
@@ -646,6 +647,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!114 &2067848771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067848767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fefee40f9921744a8c150649239afd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106763300
 GameObject:
   m_ObjectHideFlags: 0
