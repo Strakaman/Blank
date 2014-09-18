@@ -65,7 +65,7 @@ public class PlayerControllerScript : MonoBehaviour
 	void createProjectile (GameObject bulletToClone)
 	{
 			GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
-			//Physics.IgnoreCollision(refBullet2.collider, collider); //can't find Player01 collider. 
+			Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
 			if (direction == 0) {
 					clonedesu.rigidbody2D.velocity = new Vector3 (0, -speed, 0);
 			}
