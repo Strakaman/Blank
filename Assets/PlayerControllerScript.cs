@@ -44,7 +44,6 @@ public class PlayerControllerScript : MonoBehaviour
 		else if (rigidbody2D.velocity.y > 0) {
 			direction = Direction.up;
 		}
-		Debug.Log ("Direction: " + direction);
 	}
 
 	void SpriteAnimation() {
