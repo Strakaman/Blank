@@ -5,22 +5,15 @@ public class PlayerControllerScript : MonoBehaviour
 {
 	public GameObject refBullet;
 	public GameObject refBullet2;
-	public Direction direction=0; //0 is down, 1 is up, 2 is left, 3 is right
+	public Direction direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
 	public Animator animator;
 	public const float speed = 10;
-
-	public enum Direction {
-		down = 0,
-		up = 1,
-		left = 2,
-		right = 3
-	};
+	public enum Direction { down = 0, up = 1, left = 2, right = 3 };
 
 	// Use this for initialization
 	void Start ()
 	{
 			animator = (Animator)GetComponent ("Animator");
-
 	}
 
 	// Update is called once per frame
@@ -30,7 +23,14 @@ public class PlayerControllerScript : MonoBehaviour
 			SpriteAnimation ();
 	}
 
-	void CheckDirection ()
+	//Checks and sets the animation state for the player
+	void SpriteAnimation() {
+		setWalk ();
+		setIdle ();
+	}
+
+	//Sets the direction for the player
+	void SetDirection ()
 	{
 		if (rigidbody2D.velocity.x < 0) {
 			direction = Direction.left;
@@ -46,12 +46,8 @@ public class PlayerControllerScript : MonoBehaviour
 		}
 	}
 
-	void SpriteAnimation() {
-		/*if (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) {
-			animator.SetBool ("doWalk", true);
-		} else {
-		animator.SetBool ("doWalk", false);
-		}*/
+	//Sets the walking animation for the player if they are moving
+	void setWalk() {
 		if (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) {
 			if (direction == Direction.down) {
 				SetBools(true,false,false,false);
@@ -63,18 +59,22 @@ public class PlayerControllerScript : MonoBehaviour
 				SetBools(false,false,false,true);
 			}
 		}
-		else {
+	}
+
+	//Sets the idle animation for the player if velocities are 0
+	void setIdle() {
+		if (rigidbody2D.velocity.x == 0 && rigidbody2D.velocity.y == 0) {
 			if (direction == Direction.down) {
-				animator.SetBool ("Down", false);
-			} else if (direction == Direction.up) {
-				animator.SetBool ("Top", false);
-			} else if (direction == Direction.left) {
-				animator.SetBool ("Left", false);
-			} else if (direction == Direction.right) {
-				animator.SetBool ("Right", false);
+					animator.SetBool ("Down", false);
+				} else if (direction == Direction.up) {
+					animator.SetBool ("Top", false);
+				} else if (direction == Direction.left) {
+					animator.SetBool ("Left", false);
+				} else if (direction == Direction.right) {
+					animator.SetBool ("Right", false);
+				}
 			}
 		}
-	}
 
 	public void SetBools(bool down, bool up, bool left, bool right)
 	{
@@ -91,7 +91,7 @@ public class PlayerControllerScript : MonoBehaviour
 	{
 			//Consider modifying the same vector everytime instead of creating a new one, performance win?
 			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed, Input.GetAxis ("Vertical") * speed);
-		CheckDirection ();
+			SetDirection ();
 			if (Input.GetButtonDown ("Fire Spell")) {
 					FireSpell ();
 			}
@@ -102,9 +102,8 @@ public class PlayerControllerScript : MonoBehaviour
 
 	void createProjectile (GameObject bulletToClone)
 	{
-			GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
-			Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
-		Physics2D.IgnoreCollision (clonedesu.collider2D, clonedesu.collider2D);
+		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
+		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
 		if (direction == Direction.down) {
 					clonedesu.rigidbody2D.velocity = new Vector3 (0, -speed, 0);
 			}
