@@ -9,7 +9,6 @@ public class PlayerControllerScript : MonoBehaviour
 	public Animator animator;
 	public float speed;
 	public float bulSpeed;
-	public enum Direction { down = 0, up = 1, left = 2, right = 3 };
 
 	// Use this for initialization
 	void Start ()

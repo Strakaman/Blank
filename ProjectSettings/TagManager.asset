@@ -4,6 +4,10 @@
 TagManager:
   tags:
   - Background
+  - RedSpellObject
+  - YellowSpellObject
+  - BlueSpellObject
+  - OrangeSpellObject
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
