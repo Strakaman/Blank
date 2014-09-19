@@ -4,9 +4,10 @@ using System.Collections;
 public class CompanionMovement : MonoBehaviour {
 	public Transform target;
 	public int degrees = 1;
+	public float radius = 1;
 
 	void Start() {
-		Vector3 orbit = new Vector3(target.position.x + 1, target.position.y + 1, target.position.z);
+		Vector3 orbit = new Vector3(target.position.x + radius, target.position.y + radius, target.position.z);
 		this.transform.position = orbit;
 	}
 
