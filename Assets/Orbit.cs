@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CompanionMovement : MonoBehaviour {
+public class Orbit : MonoBehaviour {
 	public Transform target;
 	public int degrees = 1;
 	public float radius = 1;
