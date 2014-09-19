@@ -99,7 +99,6 @@ public class PlayerControllerScript : MonoBehaviour
 	{
 			//Consider modifying the same vector everytime instead of creating a new one, performance win?
 			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed, Input.GetAxis ("Vertical") * speed);
-			
 			if (isStrafing () == false) {
 				SetDirection ();
 			}
