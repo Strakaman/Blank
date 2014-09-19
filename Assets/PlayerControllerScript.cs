@@ -7,7 +7,8 @@ public class PlayerControllerScript : MonoBehaviour
 	public GameObject refBullet2;
 	public Direction direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
 	public Animator animator;
-	public const float speed = 10;
+	public float speed;
+	public float bulSpeed;
 	public enum Direction { down = 0, up = 1, left = 2, right = 3 };
 
 	// Use this for initialization
@@ -105,16 +106,16 @@ public class PlayerControllerScript : MonoBehaviour
 		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
 		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
 		if (direction == Direction.down) {
-					clonedesu.rigidbody2D.velocity = new Vector3 (0, -speed, 0);
+					clonedesu.rigidbody2D.velocity = new Vector3 (0, -bulSpeed, 0);
 			}
 		else if (direction == Direction.up) {
-					clonedesu.rigidbody2D.velocity = new Vector3 (0, speed, 0);
+					clonedesu.rigidbody2D.velocity = new Vector3 (0, bulSpeed, 0);
 			}
 		else if (direction == Direction.left) {
-					clonedesu.rigidbody2D.velocity = new Vector3 (-speed, 0, 0);
+					clonedesu.rigidbody2D.velocity = new Vector3 (-bulSpeed, 0, 0);
 			}
 		else if (direction == Direction.right) {
-					clonedesu.rigidbody2D.velocity = new Vector3 (speed, 0, 0);
+					clonedesu.rigidbody2D.velocity = new Vector3 (bulSpeed, 0, 0);
 			}
 			Destroy (clonedesu, 2);
 	}

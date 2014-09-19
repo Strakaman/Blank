@@ -248,6 +248,8 @@ MonoBehaviour:
   refBullet2: {fileID: 1732076546}
   direction: 0
   animator: {fileID: 0}
+  speed: 5
+  bulSpeed: 10
 --- !u!212 &262220062
 SpriteRenderer:
   m_ObjectHideFlags: 0
