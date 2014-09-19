@@ -30,6 +30,14 @@ public class PlayerControllerScript : MonoBehaviour
 		setIdle ();
 	}
 
+	bool isStrafing() {
+		if (Input.GetButton ("Strafe")) {
+				return true;
+		} else {
+				return false;
+		}
+	}
+
 	//Sets the direction for the player
 	void SetDirection ()
 	{
@@ -92,7 +100,11 @@ public class PlayerControllerScript : MonoBehaviour
 	{
 			//Consider modifying the same vector everytime instead of creating a new one, performance win?
 			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed, Input.GetAxis ("Vertical") * speed);
-			SetDirection ();
+			
+			if (isStrafing () == false) {
+				SetDirection ();
+			}
+
 			if (Input.GetButtonDown ("Fire Spell")) {
 					FireSpell ();
 			}
