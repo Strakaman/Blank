@@ -5,9 +5,12 @@ public class PlayerControllerScript : MonoBehaviour
 {
 	public GameObject refBullet;
 	public GameObject refBullet2;
-	public int direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
+	public Direction direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
 	public Animator animator;
-	public const float speed = 10;
+	public float speed;
+	public float bulSpeed;
+	public enum Direction { down = 0, up = 1, left = 2, right = 3 };
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -21,30 +24,65 @@ public class PlayerControllerScript : MonoBehaviour
 			SpriteAnimation ();
 	}
 
-	void SpriteAnimation ()
-	{
-			if (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) {
-					animator.SetBool ("doWalk", true);
-					CheckDirection ();
-			} else {
-					animator.SetBool ("doWalk", false);
-			}
+	//Checks and sets the animation state for the player
+	void SpriteAnimation() {
+		setWalk ();
+		setIdle ();
 	}
 
-	void CheckDirection ()
+	//Sets the direction for the player
+	void SetDirection ()
 	{
-			if (rigidbody2D.velocity.x < 0) {
-					direction = 2;
+		if (rigidbody2D.velocity.x < 0) {
+			direction = Direction.left;
+		}
+		else if (rigidbody2D.velocity.x > 0) {
+			direction = Direction.right;
+		}
+		else if (rigidbody2D.velocity.y < 0) {
+			direction = Direction.down;
+		}
+		else if (rigidbody2D.velocity.y > 0) {
+			direction = Direction.up;
+		}
+	}
+
+	//Sets the walking animation for the player if they are moving
+	void setWalk() {
+		if (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) {
+			if (direction == Direction.down) {
+				SetBools(true,false,false,false);
+			} else if (direction == Direction.up) {
+				SetBools(false,true,false,false);
+			} else if (direction == Direction.left) {
+				SetBools(false,false,true,false);
+			} else if (direction == Direction.right) {
+				SetBools(false,false,false,true);
 			}
-			else if (rigidbody2D.velocity.x > 0) {
-					direction = 3;
+		}
+	}
+
+	//Sets the idle animation for the player if velocities are 0
+	void setIdle() {
+		if (rigidbody2D.velocity.x == 0 && rigidbody2D.velocity.y == 0) {
+			if (direction == Direction.down) {
+					animator.SetBool ("Down", false);
+				} else if (direction == Direction.up) {
+					animator.SetBool ("Top", false);
+				} else if (direction == Direction.left) {
+					animator.SetBool ("Left", false);
+				} else if (direction == Direction.right) {
+					animator.SetBool ("Right", false);
+				}
 			}
-			else if (rigidbody2D.velocity.y < 0) {
-					direction = 0;
-			}
-			else{
-					direction = 1;
-			}
+		}
+
+	public void SetBools(bool down, bool up, bool left, bool right)
+	{
+		animator.SetBool ("Down", down);
+		animator.SetBool ("Top", up);
+		animator.SetBool ("Left", left);
+		animator.SetBool ("Right", right);
 	}
 
 	/**
@@ -54,6 +92,7 @@ public class PlayerControllerScript : MonoBehaviour
 	{
 			//Consider modifying the same vector everytime instead of creating a new one, performance win?
 			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed, Input.GetAxis ("Vertical") * speed);
+			SetDirection ();
 			if (Input.GetButtonDown ("Fire Spell")) {
 					FireSpell ();
 			}
@@ -64,21 +103,21 @@ public class PlayerControllerScript : MonoBehaviour
 
 	void createProjectile (GameObject bulletToClone)
 	{
-			GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
-			//Physics.IgnoreCollision(refBullet2.collider, collider); //can't find Player01 collider. 
-			if (direction == 0) {
-					clonedesu.rigidbody2D.velocity = new Vector3 (0, -speed, 0);
+		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
+		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
+		if (direction == Direction.down) {
+					clonedesu.rigidbody2D.velocity = new Vector3 (0, -bulSpeed, 0);
 			}
-			else if (direction == 1) {
-					clonedesu.rigidbody2D.velocity = new Vector3 (0, speed, 0);
+		else if (direction == Direction.up) {
+					clonedesu.rigidbody2D.velocity = new Vector3 (0, bulSpeed, 0);
 			}
-			else if (direction == 2) {
-					clonedesu.rigidbody2D.velocity = new Vector3 (-speed, 0, 0);
+		else if (direction == Direction.left) {
+					clonedesu.rigidbody2D.velocity = new Vector3 (-bulSpeed, 0, 0);
 			}
-			else if (direction == 3) {
-					clonedesu.rigidbody2D.velocity = new Vector3 (speed, 0, 0);
+		else if (direction == Direction.right) {
+					clonedesu.rigidbody2D.velocity = new Vector3 (bulSpeed, 0, 0);
 			}
-			Destroy (clonedesu, 3);
+			Destroy (clonedesu, 2);
 	}
 
 	/**
