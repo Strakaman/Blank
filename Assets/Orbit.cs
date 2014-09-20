@@ -5,6 +5,8 @@ public class Orbit : MonoBehaviour {
 	public Transform target;
 	public int degrees = 1;
 	public float radius = 1;
+	public int numOrbits = 1;
+	public bool orbitDir = true;
 
 	void Start() {
 		Vector3 orbit = new Vector3(target.position.x + radius, target.position.y + radius, target.position.z);
