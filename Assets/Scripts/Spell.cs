@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class Spell: MonoBehaviour
+public abstract class Spell: ScriptableObject
 {
 	protected string spellName;
 	protected string description;
@@ -10,7 +10,7 @@ public abstract class Spell: MonoBehaviour
 	protected bool isUnlocked = false;
 	protected int projectileSpeed;
 
-	public Spell(string n, string d, int m)
+	public virtual void initializeSpell(string n, string d, int m)
 	{
 		spellName = n;
 		description = d;

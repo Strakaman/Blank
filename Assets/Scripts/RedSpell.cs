@@ -5,9 +5,10 @@ public class RedSpell : Spell
 {
 	GameObject redRefObject;
 	//stupid constructor synthax required to make subclass derive from base class properly
-	public RedSpell(string nameDesu, string descriptionDesu, int manaCostDesu, int projSpeedDesu): 
-		base(nameDesu, descriptionDesu, manaCostDesu) 
+
+	public void initializeSpell(string nameDesu, string descriptionDesu, int manaCostDesu, int projSpeedDesu) 
 	{
+		base.initializeSpell(nameDesu, descriptionDesu, manaCostDesu);
 		redRefObject = GameObject.FindGameObjectWithTag("RedSpellObject");
 		projectileSpeed = projSpeedDesu;
 	}
@@ -21,6 +22,7 @@ public class RedSpell : Spell
 		 * else
 		 *  display on GUI (not enough mana)
 		 */
+		Debug.Log ("Name: " + spellName + "Desc: " + description);
 		createProjectile (dir, redRefObject);
 	}
 

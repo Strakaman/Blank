@@ -1,8 +1,19 @@
 using UnityEngine;
 using System.Collections;
-		public static class SpellBook
+using System.Collections.Generic;
+
+public static class SpellBook
+{
+		public static List<Spell> playerSpells = new List<Spell> ();
+		
+		public static void add (Spell sp)
 		{
-			public static Spell[] playerSpells = new Spell[10];
+				playerSpells.Add (sp);
+
 		}
+
+
+
+}
 
 
