@@ -1,0 +1,6208 @@
+fileFormatVersion: 2
+guid: c8c7369d9eac9654f956a4d684b7c45f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zeldatile
+    21300002: zeldatile_0
+    21300004: zeldatile_1
+    21300006: zeldatile_2
+    21300008: zeldatile_3
+    21300010: zeldatile_4
+    21300012: zeldatile_5
+    21300014: zeldatile_6
+    21300016: zeldatile_7
+    21300018: zeldatile_8
+    21300020: zeldatile_9
+    21300022: zeldatile_10
+    21300024: zeldatile_11
+    21300026: zeldatile_12
+    21300028: zeldatile_13
+    21300030: zeldatile_14
+    21300032: zeldatile_15
+    21300034: zeldatile_16
+    21300036: zeldatile_17
+    21300038: zeldatile_18
+    21300040: zeldatile_19
+    21300042: zeldatile_20
+    21300044: zeldatile_21
+    21300046: zeldatile_22
+    21300048: zeldatile_23
+    21300050: zeldatile_24
+    21300052: zeldatile_25
+    21300054: zeldatile_26
+    21300056: zeldatile_27
+    21300058: zeldatile_28
+    21300060: zeldatile_29
+    21300062: zeldatile_30
+    21300064: zeldatile_31
+    21300066: zeldatile_32
+    21300068: zeldatile_33
+    21300070: zeldatile_34
+    21300072: zeldatile_35
+    21300074: zeldatile_36
+    21300076: zeldatile_37
+    21300078: zeldatile_38
+    21300080: zeldatile_39
+    21300082: zeldatile_40
+    21300084: zeldatile_41
+    21300086: zeldatile_42
+    21300088: zeldatile_43
+    21300090: zeldatile_44
+    21300092: zeldatile_45
+    21300094: zeldatile_46
+    21300096: zeldatile_47
+    21300098: zeldatile_48
+    21300100: zeldatile_49
+    21300102: zeldatile_50
+    21300104: zeldatile_51
+    21300106: zeldatile_52
+    21300108: zeldatile_53
+    21300110: zeldatile_54
+    21300112: zeldatile_55
+    21300114: zeldatile_56
+    21300116: zeldatile_57
+    21300118: zeldatile_58
+    21300120: zeldatile_59
+    21300122: zeldatile_60
+    21300124: zeldatile_61
+    21300126: zeldatile_62
+    21300128: zeldatile_63
+    21300130: zeldatile_64
+    21300132: zeldatile_65
+    21300134: zeldatile_66
+    21300136: zeldatile_67
+    21300138: zeldatile_68
+    21300140: zeldatile_69
+    21300142: zeldatile_70
+    21300144: zeldatile_71
+    21300146: zeldatile_72
+    21300148: zeldatile_73
+    21300150: zeldatile_74
+    21300152: zeldatile_75
+    21300154: zeldatile_76
+    21300156: zeldatile_77
+    21300158: zeldatile_78
+    21300160: zeldatile_79
+    21300162: zeldatile_80
+    21300164: zeldatile_81
+    21300166: zeldatile_82
+    21300168: zeldatile_83
+    21300170: zeldatile_84
+    21300172: zeldatile_85
+    21300174: zeldatile_86
+    21300176: zeldatile_87
+    21300178: zeldatile_88
+    21300180: zeldatile_89
+    21300182: zeldatile_90
+    21300184: zeldatile_91
+    21300186: zeldatile_92
+    21300188: zeldatile_93
+    21300190: zeldatile_94
+    21300192: zeldatile_95
+    21300194: zeldatile_96
+    21300196: zeldatile_97
+    21300198: zeldatile_98
+    21300200: zeldatile_99
+    21300202: zeldatile_100
+    21300204: zeldatile_101
+    21300206: zeldatile_102
+    21300208: zeldatile_103
+    21300210: zeldatile_104
+    21300212: zeldatile_105
+    21300214: zeldatile_106
+    21300216: zeldatile_107
+    21300218: zeldatile_108
+    21300220: zeldatile_109
+    21300222: zeldatile_110
+    21300224: zeldatile_111
+    21300226: zeldatile_112
+    21300228: zeldatile_113
+    21300230: zeldatile_114
+    21300232: zeldatile_115
+    21300234: zeldatile_116
+    21300236: zeldatile_117
+    21300238: zeldatile_118
+    21300240: zeldatile_119
+    21300242: zeldatile_120
+    21300244: zeldatile_121
+    21300246: zeldatile_122
+    21300248: zeldatile_123
+    21300250: zeldatile_124
+    21300252: zeldatile_125
+    21300254: zeldatile_126
+    21300256: zeldatile_127
+    21300258: zeldatile_128
+    21300260: zeldatile_129
+    21300262: zeldatile_130
+    21300264: zeldatile_131
+    21300266: zeldatile_132
+    21300268: zeldatile_133
+    21300270: zeldatile_134
+    21300272: zeldatile_135
+    21300274: zeldatile_136
+    21300276: zeldatile_137
+    21300278: zeldatile_138
+    21300280: zeldatile_139
+    21300282: zeldatile_140
+    21300284: zeldatile_141
+    21300286: zeldatile_142
+    21300288: zeldatile_143
+    21300290: zeldatile_144
+    21300292: zeldatile_145
+    21300294: zeldatile_146
+    21300296: zeldatile_147
+    21300298: zeldatile_148
+    21300300: zeldatile_149
+    21300302: zeldatile_150
+    21300304: zeldatile_151
+    21300306: zeldatile_152
+    21300308: zeldatile_153
+    21300310: zeldatile_154
+    21300312: zeldatile_155
+    21300314: zeldatile_156
+    21300316: zeldatile_157
+    21300318: zeldatile_158
+    21300320: zeldatile_159
+    21300322: zeldatile_160
+    21300324: zeldatile_161
+    21300326: zeldatile_162
+    21300328: zeldatile_163
+    21300330: zeldatile_164
+    21300332: zeldatile_165
+    21300334: zeldatile_166
+    21300336: zeldatile_167
+    21300338: zeldatile_168
+    21300340: zeldatile_169
+    21300342: zeldatile_170
+    21300344: zeldatile_171
+    21300346: zeldatile_172
+    21300348: zeldatile_173
+    21300350: zeldatile_174
+    21300352: zeldatile_175
+    21300354: zeldatile_176
+    21300356: zeldatile_177
+    21300358: zeldatile_178
+    21300360: zeldatile_179
+    21300362: zeldatile_180
+    21300364: zeldatile_181
+    21300366: zeldatile_182
+    21300368: zeldatile_183
+    21300370: zeldatile_184
+    21300372: zeldatile_185
+    21300374: zeldatile_186
+    21300376: zeldatile_187
+    21300378: zeldatile_188
+    21300380: zeldatile_189
+    21300382: zeldatile_190
+    21300384: zeldatile_191
+    21300386: zeldatile_192
+    21300388: zeldatile_193
+    21300390: zeldatile_194
+    21300392: zeldatile_195
+    21300394: zeldatile_196
+    21300396: zeldatile_197
+    21300398: zeldatile_198
+    21300400: zeldatile_199
+    21300402: zeldatile_200
+    21300404: zeldatile_201
+    21300406: zeldatile_202
+    21300408: zeldatile_203
+    21300410: zeldatile_204
+    21300412: zeldatile_205
+    21300414: zeldatile_206
+    21300416: zeldatile_207
+    21300418: zeldatile_208
+    21300420: zeldatile_209
+    21300422: zeldatile_210
+    21300424: zeldatile_211
+    21300426: zeldatile_212
+    21300428: zeldatile_213
+    21300430: zeldatile_214
+    21300432: zeldatile_215
+    21300434: zeldatile_216
+    21300436: zeldatile_217
+    21300438: zeldatile_218
+    21300440: zeldatile_219
+    21300442: zeldatile_220
+    21300444: zeldatile_221
+    21300446: zeldatile_222
+    21300448: zeldatile_223
+    21300450: zeldatile_224
+    21300452: zeldatile_225
+    21300454: zeldatile_226
+    21300456: zeldatile_227
+    21300458: zeldatile_228
+    21300460: zeldatile_229
+    21300462: zeldatile_230
+    21300464: zeldatile_231
+    21300466: zeldatile_232
+    21300468: zeldatile_233
+    21300470: zeldatile_234
+    21300472: zeldatile_235
+    21300474: zeldatile_236
+    21300476: zeldatile_237
+    21300478: zeldatile_238
+    21300480: zeldatile_239
+    21300482: zeldatile_240
+    21300484: zeldatile_241
+    21300486: zeldatile_242
+    21300488: zeldatile_243
+    21300490: zeldatile_244
+    21300492: zeldatile_245
+    21300494: zeldatile_246
+    21300496: zeldatile_247
+    21300498: zeldatile_248
+    21300500: zeldatile_249
+    21300502: zeldatile_250
+    21300504: zeldatile_251
+    21300506: zeldatile_252
+    21300508: zeldatile_253
+    21300510: zeldatile_254
+    21300512: zeldatile_255
+    21300514: zeldatile_256
+    21300516: zeldatile_257
+    21300518: zeldatile_258
+    21300520: zeldatile_259
+    21300522: zeldatile_260
+    21300524: zeldatile_261
+    21300526: zeldatile_262
+    21300528: zeldatile_263
+    21300530: zeldatile_264
+    21300532: zeldatile_265
+    21300534: zeldatile_266
+    21300536: zeldatile_267
+    21300538: zeldatile_268
+    21300540: zeldatile_269
+    21300542: zeldatile_270
+    21300544: zeldatile_271
+    21300546: zeldatile_272
+    21300548: zeldatile_273
+    21300550: zeldatile_274
+    21300552: zeldatile_275
+    21300554: zeldatile_276
+    21300556: zeldatile_277
+    21300558: zeldatile_278
+    21300560: zeldatile_279
+    21300562: zeldatile_280
+    21300564: zeldatile_281
+    21300566: zeldatile_282
+    21300568: zeldatile_283
+    21300570: zeldatile_284
+    21300572: zeldatile_285
+    21300574: zeldatile_286
+    21300576: zeldatile_287
+    21300578: zeldatile_288
+    21300580: zeldatile_289
+    21300582: zeldatile_290
+    21300584: zeldatile_291
+    21300586: zeldatile_292
+    21300588: zeldatile_293
+    21300590: zeldatile_294
+    21300592: zeldatile_295
+    21300594: zeldatile_296
+    21300596: zeldatile_297
+    21300598: zeldatile_298
+    21300600: zeldatile_299
+    21300602: zeldatile_300
+    21300604: zeldatile_301
+    21300606: zeldatile_302
+    21300608: zeldatile_303
+    21300610: zeldatile_304
+    21300612: zeldatile_305
+    21300614: zeldatile_306
+    21300616: zeldatile_307
+    21300618: zeldatile_308
+    21300620: zeldatile_309
+    21300622: zeldatile_310
+    21300624: zeldatile_311
+    21300626: zeldatile_312
+    21300628: zeldatile_313
+    21300630: zeldatile_314
+    21300632: zeldatile_315
+    21300634: zeldatile_316
+    21300636: zeldatile_317
+    21300638: zeldatile_318
+    21300640: zeldatile_319
+    21300642: zeldatile_320
+    21300644: zeldatile_321
+    21300646: zeldatile_322
+    21300648: zeldatile_323
+    21300650: zeldatile_324
+    21300652: zeldatile_325
+    21300654: zeldatile_326
+    21300656: zeldatile_327
+    21300658: zeldatile_328
+    21300660: zeldatile_329
+    21300662: zeldatile_330
+    21300664: zeldatile_331
+    21300666: zeldatile_332
+    21300668: zeldatile_333
+    21300670: zeldatile_334
+    21300672: zeldatile_335
+    21300674: zeldatile_336
+    21300676: zeldatile_337
+    21300678: zeldatile_338
+    21300680: zeldatile_339
+    21300682: zeldatile_340
+    21300684: zeldatile_341
+    21300686: zeldatile_342
+    21300688: zeldatile_343
+    21300690: zeldatile_344
+    21300692: zeldatile_345
+    21300694: zeldatile_346
+    21300696: zeldatile_347
+    21300698: zeldatile_348
+    21300700: zeldatile_349
+    21300702: zeldatile_350
+    21300704: zeldatile_351
+    21300706: zeldatile_352
+    21300708: zeldatile_353
+    21300710: zeldatile_354
+    21300712: zeldatile_355
+    21300714: zeldatile_356
+    21300716: zeldatile_357
+    21300718: zeldatile_358
+    21300720: zeldatile_359
+    21300722: zeldatile_360
+    21300724: zeldatile_361
+    21300726: zeldatile_362
+    21300728: zeldatile_363
+    21300730: zeldatile_364
+    21300732: zeldatile_365
+    21300734: zeldatile_366
+    21300736: zeldatile_367
+    21300738: zeldatile_368
+    21300740: zeldatile_369
+    21300742: zeldatile_370
+    21300744: zeldatile_371
+    21300746: zeldatile_372
+    21300748: zeldatile_373
+    21300750: zeldatile_374
+    21300752: zeldatile_375
+    21300754: zeldatile_376
+    21300756: zeldatile_377
+    21300758: zeldatile_378
+    21300760: zeldatile_379
+    21300762: zeldatile_380
+    21300764: zeldatile_381
+    21300766: zeldatile_382
+    21300768: zeldatile_383
+    21300770: zeldatile_384
+    21300772: zeldatile_385
+    21300774: zeldatile_386
+    21300776: zeldatile_387
+    21300778: zeldatile_388
+    21300780: zeldatile_389
+    21300782: zeldatile_390
+    21300784: zeldatile_391
+    21300786: zeldatile_392
+    21300788: zeldatile_393
+    21300790: zeldatile_394
+    21300792: zeldatile_395
+    21300794: zeldatile_396
+    21300796: zeldatile_397
+    21300798: zeldatile_398
+    21300800: zeldatile_399
+    21300802: zeldatile_400
+    21300804: zeldatile_401
+    21300806: zeldatile_402
+    21300808: zeldatile_403
+    21300810: zeldatile_404
+    21300812: zeldatile_405
+    21300814: zeldatile_406
+    21300816: zeldatile_407
+    21300818: zeldatile_408
+    21300820: zeldatile_409
+    21300822: zeldatile_410
+    21300824: zeldatile_411
+    21300826: zeldatile_412
+    21300828: zeldatile_413
+    21300830: zeldatile_414
+    21300832: zeldatile_415
+    21300834: zeldatile_416
+    21300836: zeldatile_417
+    21300838: zeldatile_418
+    21300840: zeldatile_419
+    21300842: zeldatile_420
+    21300844: zeldatile_421
+    21300846: zeldatile_422
+    21300848: zeldatile_423
+    21300850: zeldatile_424
+    21300852: zeldatile_425
+    21300854: zeldatile_426
+    21300856: zeldatile_427
+    21300858: zeldatile_428
+    21300860: zeldatile_429
+    21300862: zeldatile_430
+    21300864: zeldatile_431
+    21300866: zeldatile_432
+    21300868: zeldatile_433
+    21300870: zeldatile_434
+    21300872: zeldatile_435
+    21300874: zeldatile_436
+    21300876: zeldatile_437
+    21300878: zeldatile_438
+    21300880: zeldatile_439
+    21300882: zeldatile_440
+    21300884: zeldatile_441
+    21300886: zeldatile_442
+    21300888: zeldatile_443
+    21300890: zeldatile_444
+    21300892: zeldatile_445
+    21300894: zeldatile_446
+    21300896: zeldatile_447
+    21300898: zeldatile_448
+    21300900: zeldatile_449
+    21300902: zeldatile_450
+    21300904: zeldatile_451
+    21300906: zeldatile_452
+    21300908: zeldatile_453
+    21300910: zeldatile_454
+    21300912: zeldatile_455
+    21300914: zeldatile_456
+    21300916: zeldatile_457
+    21300918: zeldatile_458
+    21300920: zeldatile_459
+    21300922: zeldatile_460
+    21300924: zeldatile_461
+    21300926: zeldatile_462
+    21300928: zeldatile_463
+    21300930: zeldatile_464
+    21300932: zeldatile_465
+    21300934: zeldatile_466
+    21300936: zeldatile_467
+    21300938: zeldatile_468
+    21300940: zeldatile_469
+    21300942: zeldatile_470
+    21300944: zeldatile_471
+    21300946: zeldatile_472
+    21300948: zeldatile_473
+    21300950: zeldatile_474
+    21300952: zeldatile_475
+    21300954: zeldatile_476
+    21300956: zeldatile_477
+    21300958: zeldatile_478
+    21300960: zeldatile_479
+    21300962: zeldatile_480
+    21300964: zeldatile_481
+    21300966: zeldatile_482
+    21300968: zeldatile_483
+    21300970: zeldatile_484
+    21300972: zeldatile_485
+    21300974: zeldatile_486
+    21300976: zeldatile_487
+    21300978: zeldatile_488
+    21300980: zeldatile_489
+    21300982: zeldatile_490
+    21300984: zeldatile_491
+    21300986: zeldatile_492
+    21300988: zeldatile_493
+    21300990: zeldatile_494
+    21300992: zeldatile_495
+    21300994: zeldatile_496
+    21300996: zeldatile_497
+    21300998: zeldatile_498
+    21301000: zeldatile_499
+    21301002: zeldatile_500
+    21301004: zeldatile_501
+    21301006: zeldatile_502
+    21301008: zeldatile_503
+    21301010: zeldatile_504
+    21301012: zeldatile_505
+    21301014: zeldatile_506
+    21301016: zeldatile_507
+    21301018: zeldatile_508
+    21301020: zeldatile_509
+    21301022: zeldatile_510
+    21301024: zeldatile_511
+    21301026: zeldatile_512
+    21301028: zeldatile_513
+    21301030: zeldatile_514
+    21301032: zeldatile_515
+    21301034: zeldatile_516
+    21301036: zeldatile_517
+    21301038: zeldatile_518
+    21301040: zeldatile_519
+    21301042: zeldatile_520
+    21301044: zeldatile_521
+    21301046: zeldatile_522
+    21301048: zeldatile_523
+    21301050: zeldatile_524
+    21301052: zeldatile_525
+    21301054: zeldatile_526
+    21301056: zeldatile_527
+    21301058: zeldatile_528
+    21301060: zeldatile_529
+    21301062: zeldatile_530
+    21301064: zeldatile_531
+    21301066: zeldatile_532
+    21301068: zeldatile_533
+    21301070: zeldatile_534
+    21301072: zeldatile_535
+    21301074: zeldatile_536
+    21301076: zeldatile_537
+    21301078: zeldatile_538
+    21301080: zeldatile_539
+    21301082: zeldatile_540
+    21301084: zeldatile_541
+    21301086: zeldatile_542
+    21301088: zeldatile_543
+    21301090: zeldatile_544
+    21301092: zeldatile_545
+    21301094: zeldatile_546
+    21301096: zeldatile_547
+    21301098: zeldatile_548
+    21301100: zeldatile_549
+    21301102: zeldatile_550
+    21301104: zeldatile_551
+    21301106: zeldatile_552
+    21301108: zeldatile_553
+    21301110: zeldatile_554
+    21301112: zeldatile_555
+    21301114: zeldatile_556
+    21301116: zeldatile_557
+    21301118: zeldatile_558
+    21301120: zeldatile_559
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: zeldatile_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_7
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_8
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_11
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_12
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_13
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_14
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_15
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_16
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_17
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_18
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_19
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_20
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_21
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_22
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_23
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_25
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_26
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_27
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_29
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_30
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_31
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_32
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_33
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_34
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_35
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_36
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_37
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_38
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_39
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_40
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_41
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_42
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_43
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_44
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_45
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_46
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_47
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_48
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_49
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_50
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_51
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_52
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_53
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_54
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_55
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 296
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_56
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_57
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_58
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_59
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_60
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_61
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_62
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_63
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_64
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_65
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_66
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_67
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_68
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_69
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_70
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_71
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_72
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_73
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_74
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_75
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_76
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_77
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_78
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_79
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_80
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_81
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_82
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_83
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 280
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_84
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_85
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_86
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_87
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_88
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_89
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_90
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_91
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_92
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_93
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_94
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_95
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_96
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_97
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_98
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_99
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_100
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_101
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_102
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_103
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_104
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_105
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_106
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_107
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_108
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_109
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_110
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_111
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_112
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_113
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_114
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_115
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_116
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_117
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_118
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_119
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_120
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_121
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_122
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_123
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_124
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_125
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_126
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_127
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_128
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_129
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_130
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_131
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_132
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_133
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_134
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_135
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_136
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_137
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_138
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_139
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 248
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_140
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_141
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_142
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_143
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_144
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_145
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_146
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_147
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_148
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_149
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_150
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_151
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_152
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_153
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_154
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_155
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_156
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_157
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_158
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_159
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_160
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_161
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_162
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_163
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_164
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_165
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_166
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_167
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_168
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_169
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_170
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_171
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_172
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_173
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_174
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_175
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_176
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_177
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_178
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_179
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_180
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_181
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_182
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_183
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_184
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_185
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_186
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_187
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_188
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_189
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_190
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_191
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_192
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_193
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_194
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_195
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 216
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_196
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_197
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_198
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_199
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_200
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_201
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_202
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_203
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_204
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_205
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_206
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_207
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_208
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_209
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_210
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_211
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_212
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_213
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_214
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_215
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_216
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_217
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_218
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_219
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_220
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_221
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_222
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_223
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_224
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_225
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_226
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_227
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_228
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_229
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_230
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_231
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_232
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_233
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_234
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_235
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_236
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_237
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_238
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_239
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_240
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_241
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_242
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_243
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_244
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_245
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_246
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_247
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_248
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_249
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_250
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_251
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 184
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_252
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_253
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_254
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_255
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_256
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_257
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_258
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_259
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_260
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_261
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_262
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_263
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_264
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_265
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_266
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_267
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_268
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_269
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_270
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_271
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_272
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_273
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_274
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_275
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_276
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_277
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_278
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_279
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 168
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_280
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_281
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_282
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_283
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_284
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_285
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_286
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_287
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_288
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_289
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_290
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_291
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_292
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_293
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_294
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_295
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_296
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_297
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_298
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_299
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_300
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_301
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_302
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_303
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_304
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_305
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_306
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_307
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 152
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_308
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_309
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_310
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_311
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_312
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_313
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_314
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_315
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_316
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_317
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_318
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_319
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_320
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_321
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_322
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_323
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_324
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_325
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_326
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_327
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_328
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_329
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_330
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_331
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_332
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_333
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_334
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_335
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_336
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_337
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_338
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_339
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_340
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_341
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_342
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_343
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_344
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_345
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_346
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_347
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_348
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_349
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_350
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_351
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_352
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_353
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_354
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_355
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_356
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_357
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_358
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_359
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_360
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_361
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_362
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_363
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_364
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_365
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_366
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_367
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_368
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_369
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_370
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_371
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_372
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_373
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_374
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_375
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_376
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_377
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_378
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_379
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_380
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_381
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_382
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_383
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_384
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_385
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_386
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_387
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_388
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_389
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_390
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_391
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 104
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_392
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_393
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_394
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_395
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_396
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_397
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_398
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_399
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_400
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_401
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_402
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_403
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_404
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_405
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_406
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_407
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_408
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_409
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_410
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_411
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_412
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_413
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_414
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_415
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_416
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_417
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_418
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_419
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 88
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_420
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_421
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_422
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_423
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_424
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_425
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_426
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_427
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_428
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_429
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_430
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_431
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_432
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_433
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_434
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_435
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_436
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_437
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_438
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_439
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_440
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_441
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_442
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_443
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_444
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_445
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_446
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_447
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_448
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_449
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_450
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_451
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_452
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_453
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_454
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_455
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_456
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_457
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_458
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_459
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_460
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_461
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_462
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_463
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_464
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_465
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_466
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_467
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_468
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_469
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_470
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_471
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_472
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_473
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_474
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_475
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_476
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_477
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_478
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_479
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_480
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_481
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_482
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_483
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_484
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_485
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_486
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_487
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_488
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_489
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_490
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_491
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_492
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_493
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_494
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_495
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_496
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_497
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_498
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_499
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_500
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_501
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_502
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_503
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_504
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_505
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_506
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_507
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_508
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_509
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_510
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_511
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_512
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_513
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_514
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_515
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_516
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_517
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_518
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_519
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_520
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_521
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_522
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_523
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_524
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_525
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_526
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_527
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_528
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_529
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_530
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_531
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 24
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_532
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_533
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_534
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_535
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_536
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_537
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_538
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_539
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_540
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_541
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_542
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_543
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_544
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_545
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_546
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_547
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_548
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_549
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_550
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_551
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_552
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_553
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_554
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_555
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_556
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_557
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_558
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zeldatile_559
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

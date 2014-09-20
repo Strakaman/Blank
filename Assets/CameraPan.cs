@@ -8,15 +8,11 @@ public class CameraPan : MonoBehaviour {
 	public int j;
 
 	// Update is called once per frame
-
-
 	void FixedUpdate () {
 		Vector3 trim = new Vector3 (player.transform.position.x, player.transform.position.y, player.transform.position.z);
 		Vector3 pos = Camera.main.WorldToViewportPoint(trim);
 		
 		if (pos.x < 0.0) {
-			//transform.position = Vector3.Lerp(transform.position, pan, Time.smoothDeltaTimes);
-			//transform.position = Vector3.MoveTowards(transform.position, pan, 1);
 			i = -10;
 			j = 0;
 			InvokeRepeating("pan", 0.25f, 0.25F);
@@ -28,13 +24,13 @@ public class CameraPan : MonoBehaviour {
 			InvokeRepeating("pan", 0.25f, 0.25F);
 			numInvoke = 0;
 		}
-		if (pos.y < 0.0) {
+		if (pos.y < -0.2) {
 			i = 0;
 			j = -10;
 			InvokeRepeating("pan", 0.25f, 0.25F);
 			numInvoke = 0;
 		}
-		if (1.0 < pos.y) {
+		if (1.2 < pos.y) {
 			i = 0;
 			j = +10;
 			InvokeRepeating("pan", 0.25f, 0.25F);
