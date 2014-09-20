@@ -101,14 +101,16 @@ public class PlayerControllerScript : MonoBehaviour
 		{
 				//Consider modifying the same vector everytime instead of creating a new one, performance win?
 				rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed, Input.GetAxis ("Vertical") * speed);
-		if (Input.GetButtonDown("Spell Cycle Up")) {
-			changeSpell(true);
+				if (Input.GetButtonDown("Spell Cycle Up")) {
+					changeSpell(true);
 				} else if (Input.GetButtonDown("Spell Cycle Down")) {
-			changeSpell(false);
+					changeSpell(false);
 				}
+
 				if (isStrafing () == false) {
 						SetDirection ();
 				}
+
 				if (Input.GetButtonDown ("Use Spell")) {
 						if (SpellBook.playerSpells [currSpell] == null) {
 						
@@ -119,7 +121,13 @@ public class PlayerControllerScript : MonoBehaviour
 		
 				if (Input.GetButtonDown ("Bounce Spell")) {
 						BounceSpell ();
+						animator.SetBool ("Attack", true);
+						Invoke("stopAttackAnim", 0.5f);
 				}
+		}
+
+		void stopAttackAnim () {
+			animator.SetBool ("Attack", false);
 		}
 
 		void changeSpell (bool prevFalsenextTrue)
