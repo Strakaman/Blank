@@ -135,7 +135,8 @@ public class PlayerControllerScript : MonoBehaviour
  */
 	void FireSpell ()
 	{
-			createProjectile (refBullet);
+		SpellBook.playerSpells [0].cast (direction);
+			//createProjectile (refBullet);
 	}
 
 	void BounceSpell ()

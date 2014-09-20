@@ -12,7 +12,7 @@ public abstract class Spell: MonoBehaviour
 
 	public Spell(string n, string d, int m)
 	{
-		name = n;
+		spellName = n;
 		description = d;
 		manaCost = m;
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -30,8 +30,8 @@ public abstract class Spell: MonoBehaviour
 
 	public void createProjectile(Direction direction ,GameObject bulletToClone)
 	{
-		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
-		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
+		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, player.transform.position, player.transform.rotation);
+		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
 		if (direction == Direction.down) {
 			clonedesu.rigidbody2D.velocity = new Vector3 (0, -projectileSpeed, 0);
 		}
