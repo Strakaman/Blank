@@ -22,7 +22,6 @@ public class RedSpell : Spell
 		 * else
 		 *  display on GUI (not enough mana)
 		 */
-		Debug.Log ("Name: " + spellName + "Desc: " + description);
 		createProjectile (dir, redRefObject);
 	}
 

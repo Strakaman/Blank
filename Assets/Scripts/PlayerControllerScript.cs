@@ -125,7 +125,6 @@ public class PlayerControllerScript : MonoBehaviour
 		void changeSpell (bool prevFalsenextTrue)
 		{
 				int numOfSpells = SpellBook.playerSpells.Count;
-		Debug.Log ("Current Spell Index: " + currSpell);
 				if (prevFalsenextTrue) {
 						currSpell++;
 						if (currSpell >= numOfSpells) {
