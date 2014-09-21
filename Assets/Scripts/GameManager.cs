@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
-
+	public GameObject healthPickup;
+	public GameObject manaPickup;
 
 	// Use this for initialization
 	void Start () {
@@ -12,9 +13,20 @@ public class GameManager : MonoBehaviour {
 		spellObj.unlockSpell ();
 		SpellBook.add (spellObj);
 	}
-	
+
+	void DropHealthPickup(Vector3 locationToDrop)
+	{
+		Instantiate (healthPickup, locationToDrop, new Quaternion());
+	}
+
+	void DropManaPickup(Vector3 locationToDrop)
+	{
+		Instantiate (manaPickup, locationToDrop, new Quaternion());
+	}
+
 	// Update is called once per frame
 	void Update () {
+
 	
 	}
 }
