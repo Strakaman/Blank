@@ -118,13 +118,15 @@ public class PlayerControllerScript : MonoBehaviour
 							changeSpell (true);
 						}
 						SpellBook.playerSpells [currSpell].cast (direction);
-				}
-		
-				if (Input.GetButtonDown ("Bounce Spell")) {
-						BounceSpell ();
 						animator.SetBool ("Attack", true);
 						Invoke("stopAttackAnim", 0.5f);
 				}
+		
+			/*	if (Input.GetButtonDown ("Bounce Spell")) {
+						BounceSpell ();
+						animator.SetBool ("Attack", true);
+						Invoke("stopAttackAnim", 0.5f);
+				}*/
 		}
 
 		void stopAttackAnim () {
@@ -154,7 +156,7 @@ public class PlayerControllerScript : MonoBehaviour
 				}
 		}
 
-		void createProjectile (GameObject bulletToClone)
+	/*void createProjectile (GameObject bulletToClone)
 		{
 				GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
 				Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
@@ -171,12 +173,11 @@ public class PlayerControllerScript : MonoBehaviour
 						clonedesu.rigidbody2D.velocity = new Vector3 (bulSpeed, 0, 0);
 				}
 				Destroy (clonedesu, 2);
-		}
-
+		}*/
 		/**
  * Offensive spell for player 
  */
-		void FireSpell ()
+		/*void FireSpell ()
 		{
 				//SpellBook.playerSpells [0].cast (direction);
 				createProjectile (refBullet);
@@ -185,5 +186,5 @@ public class PlayerControllerScript : MonoBehaviour
 		void BounceSpell ()
 		{
 				createProjectile (refBullet2);
-		}
+		}*/
 }
