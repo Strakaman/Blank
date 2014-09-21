@@ -1047,7 +1047,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: d0e1c4e9ff8d29e46a6b39c3454174bb, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &200645899
 GameObject:
@@ -1485,7 +1485,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300018, guid: d0e1c4e9ff8d29e46a6b39c3454174bb, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &262220060
 GameObject:
@@ -4279,7 +4279,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300010, guid: d0e1c4e9ff8d29e46a6b39c3454174bb, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1083709756
 GameObject:
@@ -4694,7 +4694,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: d0e1c4e9ff8d29e46a6b39c3454174bb, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1140907757
 Transform:
@@ -5613,7 +5613,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: d0e1c4e9ff8d29e46a6b39c3454174bb, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1358863249
 GameObject:
@@ -5914,7 +5914,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: d0e1c4e9ff8d29e46a6b39c3454174bb, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1422157501
 GameObject:
@@ -6076,7 +6076,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: d0e1c4e9ff8d29e46a6b39c3454174bb, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1455429723
 GameObject:
@@ -7386,7 +7386,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 89aed8a575ae84346a50e36c1b60d674, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1732076550
 Transform:
@@ -7432,6 +7432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc19ae372aa62b4fa957c45dd47f456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthPickup: {fileID: 0}
+  manaPickup: {fileID: 0}
 --- !u!4 &1748726313
 Transform:
   m_ObjectHideFlags: 0
