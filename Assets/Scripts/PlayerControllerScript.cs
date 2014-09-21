@@ -10,7 +10,7 @@ public class PlayerControllerScript : MonoBehaviour
 		public float speed;
 		public float bulSpeed;
 		public int currSpell=0;
-	 
+
 		// Use this for initialization
 		void Start ()
 		{
@@ -160,10 +160,13 @@ public class PlayerControllerScript : MonoBehaviour
 				if (direction == Direction.down) {
 						clonedesu.rigidbody2D.velocity = new Vector3 (0, -bulSpeed, 0);
 				} else if (direction == Direction.up) {
+						//clonedesu.transform.rotation = Quaternion.LookRotation(transform.position);
 						clonedesu.rigidbody2D.velocity = new Vector3 (0, bulSpeed, 0);
 				} else if (direction == Direction.left) {
+						//clonedesu.transform.rotation = Quaternion.LookRotation(transform.position);
 						clonedesu.rigidbody2D.velocity = new Vector3 (-bulSpeed, 0, 0);
 				} else if (direction == Direction.right) {
+						//clonedesu.transform.rotation = Quaternion.LookRotation(transform.position);
 						clonedesu.rigidbody2D.velocity = new Vector3 (bulSpeed, 0, 0);
 				}
 				Destroy (clonedesu, 2);

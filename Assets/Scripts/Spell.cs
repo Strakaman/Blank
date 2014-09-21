@@ -30,9 +30,12 @@ public abstract class Spell: ScriptableObject
 
 	public void createProjectile(Direction direction ,GameObject bulletToClone)
 	{
+
+
 		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, player.transform.position, player.transform.rotation);
 		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
 		if (direction == Direction.down) {
+
 			clonedesu.rigidbody2D.velocity = new Vector3 (0, -projectileSpeed, 0);
 		}
 		else if (direction == Direction.up) {
