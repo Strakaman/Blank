@@ -9,18 +9,29 @@ public class CameraPan : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		Vector3 trim = new Vector3 (player.transform.position.x, player.transform.position.y, player.transform.position.z);
-		Vector3 pos = Camera.main.WorldToViewportPoint(trim);
+		//cameraPan ();
+		followPlayer();
+	}
+
+	void followPlayer() {
+		Vector3 playerCam = new Vector3 (player.transform.position.x, player.transform.position.y, -10);
+		transform.position = playerCam;
+	}
+
+	void cameraPan() {
+		Vector3 pos = Camera.main.WorldToViewportPoint(player.transform.position);
 		
 		if (pos.x < 0.0) {
 			i = -10;
 			j = 0;
+			numInvoke = 3;
 			InvokeRepeating("pan", 0.25f, 0.25F);
 			numInvoke = 0;
 		}
 		if (1.0 < pos.x) {
 			i = 10;
 			j = 0;
+			numInvoke = 3;
 			InvokeRepeating("pan", 0.25f, 0.25F);
 			numInvoke = 0;
 		}
