@@ -3,6 +3,7 @@ guid: bc7cd484f6d8b52498b8f93696cccab0
 TextureImporter:
   fileIDToRecycleName:
     21300000: wall
+    21300002: block
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,9 +27,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
