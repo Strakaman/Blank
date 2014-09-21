@@ -11,6 +11,7 @@ public class PlayerControllerScript : MonoBehaviour
 		public float bulSpeed;
 		public int currSpell=0;
 
+
 		// Use this for initialization
 		void Start ()
 		{
