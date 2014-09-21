@@ -3796,6 +3796,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 945645572}
   - 212: {fileID: 945645571}
+  - 114: {fileID: 945645574}
+  - 61: {fileID: 945645573}
   m_Layer: 0
   m_Name: stairs
   m_TagString: Untagged
@@ -3832,11 +3834,37 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 945645570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.5141277, y: 10.4909077, z: 0}
+  m_LocalPosition: {x: -18.5141277, y: 10.4909077, z: 1}
   m_LocalScale: {x: 2.51661706, y: 2.51661706, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 6
+=======
+  m_RootOrder: 7
+--- !u!61 &945645573
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 945645570}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .200000003, y: .200000003}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &945645574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 945645570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f138f78d2f685b43928b6c1f4690a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> origin/master
 --- !u!1 &961856260
 GameObject:
   m_ObjectHideFlags: 0
