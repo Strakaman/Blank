@@ -14,7 +14,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -84,8 +84,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c0d996a7f7b0d42b2d604bf3d4608d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refBullet: {fileID: 0}
-  refBullet2: {fileID: 0}
   direction: 0
   animator: {fileID: 0}
   speed: 5
