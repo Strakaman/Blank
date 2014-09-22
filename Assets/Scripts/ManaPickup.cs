@@ -12,7 +12,7 @@ public class ManaPickup : MonoBehaviour {
 	void Update () {
 
 	}
-
+	//when they player touches this object, destroy it and increase player's mana
 	void OnTriggerEnter2D(Collider2D whatICollidedWith)
 	{
 		if (whatICollidedWith.gameObject.tag == "Player")
