@@ -384,7 +384,7 @@ AudioSource:
   m_GameObject: {fileID: 227627703}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 5f530cb708edbbb44bd9b6d5854b01c6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ae069aa5230a76546b6b9a71a8ad6772, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -485,6 +485,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: DashTrail
+      value: 
+      objectReference: {fileID: 100000, guid: a717469a68cc0fc4e9bb1af44891608b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
   m_RootGameObject: {fileID: 2127306595}
@@ -2269,7 +2273,8 @@ GameObject:
   - 61: {fileID: 2127306598}
   - 50: {fileID: 2127306597}
   - 114: {fileID: 2127306596}
-  m_Layer: 0
+  - 96: {fileID: 2127306603}
+  m_Layer: 9
   m_Name: Player1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2332,6 +2337,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2127306600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2344,8 +2350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c0d996a7f7b0d42b2d604bf3d4608d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refBullet: {fileID: 0}
-  refBullet2: {fileID: 0}
   direction: 0
   animator: {fileID: 0}
   speed: 5
@@ -2387,6 +2391,48 @@ Transform:
   - {fileID: 784211720}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!96 &2127306603
+TrailRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9600000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def,
+    type: 2}
+  m_PrefabInternal: {fileID: 232762480}
+  m_GameObject: {fileID: 2127306595}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: .300000012
+  m_StartWidth: 1
+  m_EndWidth: 1
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
 --- !u!1 &2140586956
 GameObject:
   m_ObjectHideFlags: 0
