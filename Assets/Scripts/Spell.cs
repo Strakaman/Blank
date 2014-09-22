@@ -3,13 +3,14 @@ using System.Collections;
 
 public abstract class Spell: ScriptableObject
 {
-	protected string spellName;
-	protected string description;
+	protected string spellName; //for display purposes
+	protected string description; //for display purposes
 	protected GameObject player; //get transform for casting purposes
-	protected int manaCost;
-	protected bool isUnlocked = false;
-	protected int projectileSpeed;
+	protected int manaCost; //can't cast if you don't have enough mana
+	protected bool isUnlocked = false; //spell is locked by default
+	protected int projectileSpeed; //for spell that shoot something out
 
+	//use as fake constructor
 	public virtual void initializeSpell(string n, string d, int m)
 	{
 		spellName = n;
@@ -18,16 +19,19 @@ public abstract class Spell: ScriptableObject
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
 
+	//unlocks spell so it can be reached when cycling through spells
 	public void unlockSpell()
 	{
 		isUnlocked = true;
 	}
 
+	//tells if spell is unlocked, used to determine when cycling through spells whether or not to skip past this one.
 	public bool isSpellUnlocked()
 	{
 		return isUnlocked;
 	}
 
+	//for spells that shoot something. uses player direction to figure out which way to fire.
 	public void createProjectile(Direction direction ,GameObject bulletToClone)
 	{
 		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, player.transform.position, player.transform.rotation);
@@ -51,16 +55,32 @@ public abstract class Spell: ScriptableObject
 		Destroy (clonedesu, 2);
 
 	}
-	///subclass should call this before calling execute,
-	/// I think the player should be found in the constructor but
-	/// just in case it isn't find it here.
+	/* 	subclass should call this before calling execute,
+	   	I think the player should be found in the constructor but
+		just in case it isn't, find it using this method. */
 	public void getPlayer() {
 		if (player == null)
 		{
 			player = GameObject.FindGameObjectWithTag("Player");
 		}
 	}
+	//checks the player info to see if they have enough mana to cast
+	public bool hasEnoughMana()
+	{
+		if (PlayerInfo.getMana() >= manaCost)
+		{
+			return true;
+		}
+		return false;
+	}
 
-	//most spells are going to need to know what direction to fire 
+	//let all Spells use the same subtract mana method to improve code maintenance
+	public void subMana()
+	{
+		PlayerInfo.changeMana(manaCost*-1);	
+	}
+
+	//most spells are going to need to know what direction to fire
+	//each cast method should check to see if they player has enough mana to cast before they actually cast.
 	public abstract void cast(Direction dir);
 }

@@ -368,8 +368,8 @@ AudioSource:
   m_GameObject: {fileID: 227627703}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 5e0d8464843e5794d85344feef478673, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: ae069aa5230a76546b6b9a71a8ad6772, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -444,6 +444,7 @@ GameObject:
   - 61: {fileID: 262220065}
   - 50: {fileID: 262220066}
   - 114: {fileID: 262220067}
+  - 96: {fileID: 262220068}
   m_Layer: 9
   m_Name: Player1
   m_TagString: Player
@@ -561,6 +562,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostCooldown: 2
+--- !u!96 &262220068
+TrailRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9600000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def,
+    type: 2}
+  m_PrefabInternal: {fileID: 1696700346}
+  m_GameObject: {fileID: 262220060}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: .300000012
+  m_StartWidth: 1
+  m_EndWidth: 1
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
 --- !u!1001 &325813223
 Prefab:
   m_ObjectHideFlags: 0
