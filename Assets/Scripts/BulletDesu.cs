@@ -2,23 +2,19 @@
 using System.Collections;
 
 public class BulletDesu : MonoBehaviour {
-
+	public Animator animator;
 	// Use this for initialization
 	void Start () {
-	
+		animator = (Animator)GetComponent ("Animator");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
-	void ApplyVelocity()
-	{
-		rigidbody2D.velocity = new Vector3(0,2,0);
-		Debug.Log(rigidbody2D.velocity);
+	void OnCollisionEnter2D() {
+		if (GameObject.FindGameObjectWithTag("RedSpellObject")) {
+						animator.SetBool ("Does Collide", true);
+				}
 	}
-
-
-	
 }
