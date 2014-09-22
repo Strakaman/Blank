@@ -3838,10 +3838,7 @@ Transform:
   m_LocalScale: {x: 2.51661706, y: 2.51661706, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
   m_RootOrder: 6
-=======
-  m_RootOrder: 7
 --- !u!61 &945645573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3864,7 +3861,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f138f78d2f685b43928b6c1f4690a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> origin/master
 --- !u!1 &961856260
 GameObject:
   m_ObjectHideFlags: 0
