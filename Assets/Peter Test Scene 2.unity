@@ -364,7 +364,7 @@ Transform:
   m_PrefabInternal: {fileID: 1766028507}
   m_GameObject: {fileID: 8942407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.47504663, y: .0731305853, z: -100}
+  m_LocalPosition: {x: 4.47504663, y: -25, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 515700326}
@@ -571,7 +571,7 @@ GameObject:
   - 50: {fileID: 112075413}
   - 61: {fileID: 112075412}
   - 95: {fileID: 112075411}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fire
   m_TagString: RedSpellObject
   m_Icon: {fileID: 0}
@@ -585,7 +585,7 @@ Transform:
   m_PrefabInternal: {fileID: 1766028507}
   m_GameObject: {fileID: 112075409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100000, y: 0, z: -100}
+  m_LocalPosition: {x: 100000, y: 25, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1164684320}
@@ -607,6 +607,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &112075412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1921,7 +1922,7 @@ Transform:
   m_PrefabInternal: {fileID: 1766028507}
   m_GameObject: {fileID: 442930800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.253829, y: 1.40043449, z: -100}
+  m_LocalPosition: {x: 4.253829, y: -50, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 515700326}
@@ -6730,6 +6731,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2127306600
 MonoBehaviour:
   m_ObjectHideFlags: 0
