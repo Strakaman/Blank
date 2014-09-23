@@ -12,9 +12,12 @@ public class BulletDesu : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnCollisionEnter2D() {
-		if (GameObject.FindGameObjectWithTag("RedSpellObject")) {
-						animator.SetBool ("Does Collide", true);
+	void OnCollisionEnter2D(Collision2D collInfo) {
+	{
+			//Debug.Log(collInfo.gameObject.name);		
+			animator.SetBool ("Does Collide", true);
+			gameObject.collider2D.enabled = false;
+			Destroy(gameObject,.5f);
 				}
 	}
 }
