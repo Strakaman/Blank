@@ -20,6 +20,7 @@ public class PlayerControllerScript : MonoBehaviour
 			BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
 			s = zollider.size;
 			c = zollider.center;
+			
 	}
 
 // Update is called once per frame

@@ -84,6 +84,11 @@ public abstract class Spell: ScriptableObject
 	{
 		return spellName;
 	}
+
+	public string getDescription()
+	{
+		return description;
+	}
 	//most spells are going to need to know what direction to fire
 	//each cast method should check to see if they player has enough mana to cast before they actually cast.
 	public abstract void cast(Direction dir);

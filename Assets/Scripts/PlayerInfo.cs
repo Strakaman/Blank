@@ -11,7 +11,7 @@ public static class PlayerInfo
 	private const int MAXHEALTH = 100; //max HP that player can have
 	private static int mana = MAXMANA; //initialize player mana
 	private static int health = MAXHEALTH; //initialize player health
-
+	private static Spell currentSpell = null;
 	//umm....get the player's current health
 	public static int getHealth()
 	{
@@ -61,5 +61,15 @@ public static class PlayerInfo
 		{
 			mana = 0;
 		}
+	}
+
+	public static Spell getCurrSpell()
+	{
+		return currentSpell;
+	}
+
+	public static void setCurrSpell(Spell s)
+	{
+		currentSpell = s;
 	}
 }
