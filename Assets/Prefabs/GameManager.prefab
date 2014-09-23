@@ -136,7 +136,7 @@ GameObject:
   - 50: {fileID: 5000002}
   m_Layer: 0
   m_Name: Bounce
-  m_TagString: BlueSpellObject
+  m_TagString: YellowSpellObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

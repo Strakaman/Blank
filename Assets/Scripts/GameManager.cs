@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour {
 		spellObj.initializeSpell ("Red Rings of Death", "Has a tendency to burn things", 30, 10);
 		spellObj.unlockSpell ();
 		SpellBook.add (spellObj);
-		BlueSpell spellObj2 = (BlueSpell)ScriptableObject.CreateInstance ("BlueSpell");
-		spellObj2.initializeSpell ("Blue Balls", "Bounce like a basketball", 30, 10);
+		YellowSpell spellObj2 = (YellowSpell)ScriptableObject.CreateInstance ("YellowSpell");
+		spellObj2.initializeSpell ("Yellow Spark", "Charges things", 30, 10);
 		spellObj2.unlockSpell ();
 		SpellBook.add (spellObj2);
 	}
