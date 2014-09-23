@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 826872c770ae991408bd3f73c01225bd
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: placeholder-enemies_0
+    21300002: placeholder-enemies_1
+    21300004: placeholder-enemies_2
+    21300006: placeholder-enemies_3
+    21300008: placeholder-enemies_4
+    21300010: placeholder-enemies_5
+    21300012: placeholder-enemies_6
+    21300014: placeholder-enemies_7
+    21300016: placeholder-enemies_8
+    21300018: placeholder-enemies_9
+    21300020: placeholder-enemies_10
+    21300022: placeholder-enemies_11
+    21300024: placeholder-enemies_12
+    21300026: placeholder-enemies_13
+    21300028: placeholder-enemies_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: placeholder-enemies_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 335
+        width: 90
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 331
+        width: 68
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 335
+        width: 60
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 325
+        width: 80
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_4
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 324
+        width: 105
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_5
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 325
+        width: 58
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 182
+        width: 67
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_7
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 223
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_8
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 206
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_9
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 171
+        width: 74
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_10
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 167
+        width: 60
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_11
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 173
+        width: 84
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_12
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 5
+        width: 116
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_13
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 11
+        width: 112
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: placeholder-enemies_14
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 13
+        width: 106
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

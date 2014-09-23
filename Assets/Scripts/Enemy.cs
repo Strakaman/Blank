@@ -17,7 +17,9 @@ public class Enemy : MonoBehaviour{
 	void Update () {
 		Debug.Log("Health is: " + health);
 		if (health <= 0) {
+
 			Destroy(gameObject, 1);
+			//gameObject.collider.enabled = false;
 		}
 	}
 
