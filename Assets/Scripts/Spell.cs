@@ -80,6 +80,10 @@ public abstract class Spell: ScriptableObject
 		PlayerInfo.changeMana(manaCost*-1);	
 	}
 
+	public string getName()
+	{
+		return spellName;
+	}
 	//most spells are going to need to know what direction to fire
 	//each cast method should check to see if they player has enough mana to cast before they actually cast.
 	public abstract void cast(Direction dir);

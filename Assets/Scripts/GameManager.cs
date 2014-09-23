@@ -9,11 +9,11 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		//keep constructor but swap out current array for spells.add when implemented
 		RedSpell spellObj = (RedSpell)ScriptableObject.CreateInstance ("RedSpell");
-		spellObj.initializeSpell ("Red Rings of Death", "Has a tendency to burn things", 30, 10);
+		spellObj.initializeSpell (SpellBook.REDSPELLNAME, "Has a tendency to burn things", 30, 10);
 		spellObj.unlockSpell ();
 		SpellBook.add (spellObj);
 		YellowSpell spellObj2 = (YellowSpell)ScriptableObject.CreateInstance ("YellowSpell");
-		spellObj2.initializeSpell ("Yellow Spark", "Charges things", 30, 10);
+		spellObj2.initializeSpell (SpellBook.YELLOWSPELLNAME, "Charges things", 30, 10);
 		spellObj2.unlockSpell ();
 		SpellBook.add (spellObj2);
 	}
