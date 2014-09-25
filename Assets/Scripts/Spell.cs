@@ -32,10 +32,9 @@ public abstract class Spell: ScriptableObject
 	}
 
 	//for spells that shoot something. uses player direction to figure out which way to fire.
-	public void createProjectile(Direction direction ,GameObject bulletToClone)
+	public void createProjectile(Direction direction, GameObject bulletToClone)
 	{
-		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, player.transform.position, player.transform.rotation);
-		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
+		GameObject clonedesu = createSpellObject(direction, bulletToClone);
 		if (direction == Direction.down) {
 			clonedesu.transform.rotation = Quaternion.Euler(0, 0, 270);
 			clonedesu.rigidbody2D.velocity = new Vector3 (0, -projectileSpeed, 0);
@@ -53,8 +52,15 @@ public abstract class Spell: ScriptableObject
 			clonedesu.rigidbody2D.velocity = new Vector3 (projectileSpeed, 0, 0);
 		}
 		Destroy (clonedesu, 2);
-
 	}
+
+	public GameObject createSpellObject(Direction direction, GameObject bulletToClone)
+	{
+		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, player.transform.position, player.transform.rotation);
+		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
+		return clonedesu;
+	}
+		
 	/* 	subclass should call this before calling execute,
 	   	I think the player should be found in the constructor but
 		just in case it isn't, find it using this method. */

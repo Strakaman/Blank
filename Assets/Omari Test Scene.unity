@@ -435,7 +435,7 @@ Transform:
   m_Children:
   - {fileID: 567763190}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 13
 --- !u!95 &262220064
 Animator:
   serializedVersion: 3
@@ -2111,7 +2111,7 @@ Transform:
   - {fileID: 1619763471}
   - {fileID: 2019554070}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
 --- !u!114 &1651765901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2163,7 +2163,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
@@ -2276,7 +2276,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
@@ -2345,7 +2345,7 @@ Transform:
   m_LocalScale: {x: .350065947, y: .350066066, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!114 &1896427093
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ public class PlayerControllerScript : MonoBehaviour
 // Use this for initialization
 	void Start ()
 	{
-			PlayerInfo.setCurrSpell(SpellBook.playerSpells[currSpell]);
+		PlayerInfo.setCurrSpell(SpellBook.playerSpells[currSpell]);
 			animator = (Animator)GetComponent ("Animator");
 			BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
 			s = zollider.size;
