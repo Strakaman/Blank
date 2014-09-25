@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour{
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log("Health is: " + health);
+		//Debug.Log("Health is: " + health);
 		if (health <= 0) {
 			Destroy(gameObject, 1);
 			gameObject.collider2D.enabled = false;
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
-		Debug.Log ("COLLIDING");
+		//Debug.Log ("COLLIDING");
 		if (coll.gameObject.tag == "RedSpellObject") {
 			takeDamage(50);
 

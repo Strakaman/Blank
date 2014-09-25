@@ -3345,7 +3345,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .569999993, y: .930000007}
+  m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!1 &977789438
 GameObject:
@@ -6028,13 +6028,13 @@ Prefab:
       value: 
       objectReference: {fileID: 21300016, guid: a468c6ffd1d085e40901057f90f956c7,
         type: 3}
-    - target: {fileID: 6100000, guid: ac57111d89a9b004da4aba6cdb47ac94, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Size.x
-      value: .569999993
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: ac57111d89a9b004da4aba6cdb47ac94, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Size.y
-      value: .930000007
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac57111d89a9b004da4aba6cdb47ac94, type: 2}
