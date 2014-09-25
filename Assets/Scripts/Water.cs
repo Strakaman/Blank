@@ -12,4 +12,12 @@ public class Water : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnTriggerEnter2D(Collider2D trigInfo)
+	{
+		if (trigInfo.gameObject.tag.Equals("BlueSpellObject"))
+		    {
+			Debug.Log ("Turn to ice. too tired to actually code now");
+		}
+	}
 }
