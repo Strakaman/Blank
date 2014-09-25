@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c826f1127b1104ab074b17d9eb5896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 262220060}
+  player: {fileID: 0}
   numInvoke: 0
   i: 0
   j: 0
@@ -974,7 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e12eabb46399634794279d67cba5c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 262220063}
+  target: {fileID: 0}
   degrees: 1
   radius: 1
   orbitDir: 1
@@ -1616,9 +1616,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e12eabb46399634794279d67cba5c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 567763190}
+  target: {fileID: 0}
   degrees: 1
-  radius: .25
+  radius: 1
   orbitDir: 1
   startPosition: 0
 --- !u!212 &1260685740

@@ -2140,6 +2140,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 515700326}
   - 114: {fileID: 515700327}
+  - 114: {fileID: 515700328}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -2177,6 +2178,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPickup: {fileID: 442930800}
   manaPickup: {fileID: 8942407}
+--- !u!114 &515700328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515700325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703c3485cd092db459a30784e047c89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theSkin: {fileID: 11400000, guid: 1752f16cd0c32e941874a61c77ea31e2, type: 2}
 --- !u!1 &539422530
 GameObject:
   m_ObjectHideFlags: 0
@@ -5933,7 +5946,7 @@ GameObject:
   m_Layer: 0
   m_Name: Test Interactable
   m_TagString: Interactable Object
-  m_Icon: {fileID: 2800000, guid: 970896f7a1437f94eaf464eefa655dd4, type: 3}
+  m_Icon: {fileID: 2800000, guid: 477f4a46ae501944aa4df9d1dfa94c6b, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6910,7 +6923,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1675491589
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300012, guid: 1e904c44690f40a43b7fbd3a5d0b3a42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
