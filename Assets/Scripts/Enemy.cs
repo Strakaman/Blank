@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour{
 	private int health = 100;
 	private int damage = 10;
 	private Animator animator;
-	private string name;
+	private string enemyName;
 	private int redResis;
 
 	// Use this for initialization
@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour{
 		Debug.Log("Health is: " + health);
 		if (health <= 0) {
 			Destroy(gameObject, 1);
+			gameObject.collider2D.enabled = false;
 		}
 	}
 
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour{
 		Debug.Log ("COLLIDING");
 		if (coll.gameObject.tag == "RedSpellObject") {
 			takeDamage(50);
+
 		}
 	}
 
