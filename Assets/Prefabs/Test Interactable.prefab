@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: Test Interactable
   m_TagString: Interactable Object
-  m_Icon: {fileID: 2800000, guid: 970896f7a1437f94eaf464eefa655dd4, type: 3}
+  m_Icon: {fileID: 2800000, guid: 477f4a46ae501944aa4df9d1dfa94c6b, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

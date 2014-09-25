@@ -11,6 +11,13 @@ TagManager:
   - 
   - Interactable Object
   - 
+  - Water
+  - 
+  - W
+  - Wa
+  - Wat
+  - Wate
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast
@@ -51,4 +58,8 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: Player
+    userID: 2
+    uniqueID: 1675491589
     locked: 0
