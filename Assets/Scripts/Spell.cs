@@ -8,7 +8,7 @@ public abstract class Spell: ScriptableObject
 	protected GameObject player; //get transform for casting purposes
 	protected int manaCost; //can't cast if you don't have enough mana
 	protected bool isUnlocked = false; //spell is locked by default
-	protected int projectileSpeed; //for spell that shoot something out
+	protected int projectileSpeed=0; //for spell that shoot something out
 
 	//use as fake constructor
 	public virtual void initializeSpell(string n, string d, int m)
@@ -34,29 +34,37 @@ public abstract class Spell: ScriptableObject
 	//for spells that shoot something. uses player direction to figure out which way to fire.
 	public void createProjectile(Direction direction, GameObject bulletToClone)
 	{
-		GameObject clonedesu = createSpellObject(direction, bulletToClone);
+		Vector3 clonePosition = new Vector3(0,0,0) ;
+		Vector3 cloneVelocity = new Vector3(0,0,0);
+		Quaternion cloneOrientation = Quaternion.Euler(0,0,0); 
 		if (direction == Direction.down) {
-			clonedesu.transform.rotation = Quaternion.Euler(0, 0, 270);
-			clonedesu.rigidbody2D.velocity = new Vector3 (0, -projectileSpeed, 0);
+			clonePosition = player.transform.position + new Vector3(0,-1,0);
+			cloneVelocity = new Vector3 (0, -projectileSpeed, 0);
+			cloneOrientation = Quaternion.Euler(0, 0, 270);
 		}
 		else if (direction == Direction.up) {
-			clonedesu.transform.rotation = Quaternion.Euler(0, 0, 90);
-			clonedesu.rigidbody2D.velocity = new Vector3 (0, projectileSpeed, 0);
+			clonePosition = player.transform.position + new Vector3(0,1,0);
+			cloneVelocity = new Vector3 (0, projectileSpeed, 0);
+			cloneOrientation = Quaternion.Euler(0, 0, 90);
 		}
 		else if (direction == Direction.left) {
-			clonedesu.transform.rotation = Quaternion.Euler(0, 0, 180);
-			clonedesu.rigidbody2D.velocity = new Vector3 (-projectileSpeed, 0, 0);
+			clonePosition = player.transform.position + new Vector3(-1, 0, 0);
+			cloneVelocity = new Vector3 (-projectileSpeed, 0, 0);
+			cloneOrientation = Quaternion.Euler(0, 0, 180);
 		}
 		else if (direction == Direction.right) {
-			clonedesu.transform.rotation = Quaternion.Euler(0, 0, 0);
-			clonedesu.rigidbody2D.velocity = new Vector3 (projectileSpeed, 0, 0);
+			clonePosition = player.transform.position + new Vector3(1,0,0);
+			cloneVelocity = new Vector3 (projectileSpeed, 0, 0);
+			cloneOrientation = Quaternion.Euler(0, 0, 0);
 		}
+		GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		Destroy (clonedesu, 2);
 	}
 
-	public GameObject createSpellObject(Direction direction, GameObject bulletToClone)
+	public GameObject createSpellObject(Direction direction, GameObject bulletToClone, Vector3 placetoCreate, Vector3 velocity, Quaternion orientation)
 	{
-		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, player.transform.position, player.transform.rotation);
+		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, placetoCreate, orientation);
+		clonedesu.rigidbody2D.velocity = velocity;
 		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
 		return clonedesu;
 	}
