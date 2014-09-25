@@ -142,6 +142,10 @@ public class PlayerControllerScript : MonoBehaviour
 					}
 			}
 
+			if (Input.GetButton ("KUSH")) {
+				audio.Play();
+			}
+
 			/*	if (Input.GetButtonDown ("Bounce Spell")) {
 		BounceSpell ();
 		animator.SetBool ("Attack", true);
