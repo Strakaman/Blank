@@ -57,16 +57,9 @@ public abstract class Spell: ScriptableObject
 			cloneVelocity = new Vector3 (projectileSpeed, 0, 0);
 			cloneOrientation = Quaternion.Euler(0, 0, 0);
 		}
-		GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
+		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
+		GameObject clonedesu = Utilities.cloneObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		Destroy (clonedesu, 2);
-	}
-
-	public GameObject createSpellObject(Direction direction, GameObject bulletToClone, Vector3 placetoCreate, Vector3 velocity, Quaternion orientation)
-	{
-		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, placetoCreate, orientation);
-		clonedesu.rigidbody2D.velocity = velocity;
-		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
-		return clonedesu;
 	}
 		
 	/* 	subclass should call this before calling execute,
@@ -106,4 +99,13 @@ public abstract class Spell: ScriptableObject
 	//most spells are going to need to know what direction to fire
 	//each cast method should check to see if they player has enough mana to cast before they actually cast.
 	public abstract void cast(Direction dir);
+
+	//deprecated, use Utilities.cloneObject instead
+	/*public GameObject createSpellObject(Direction direction, GameObject bulletToClone, Vector3 placetoCreate, Vector3 velocity, Quaternion orientation)
+	{
+		GameObject clonedesu = (GameObject)Instantiate (bulletToClone, placetoCreate, orientation);
+		clonedesu.rigidbody2D.velocity = velocity;
+		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
+		return clonedesu;
+	}*/
 }
