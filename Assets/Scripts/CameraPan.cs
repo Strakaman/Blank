@@ -4,8 +4,10 @@ using System.Collections;
 public class CameraPan : MonoBehaviour {
 	public GameObject player;
 	public int numInvoke = 0;
-	public int i;
-	public int j;
+	public int width;
+	public int height;
+	private int screenWidth = Screen.width/10;
+	private int screenHeight = Screen.height/10;
 
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -22,38 +24,49 @@ public class CameraPan : MonoBehaviour {
 		Vector3 pos = Camera.main.WorldToViewportPoint(player.transform.position);
 		
 		if (pos.x < 0.0) {
-			i = -10;
-			j = 0;
-			numInvoke = 3;
-			InvokeRepeating("pan", 0.25f, 0.25F);
+			Debug.Log ("Screen width: " + Screen.width);
+			width = -1;
+			height = 0;
+			//numInvoke = 3;
+			InvokeRepeating("pan", 0.20f, 0.20F);
 			numInvoke = 0;
 		}
 		if (1.0 < pos.x) {
-			i = 10;
-			j = 0;
-			numInvoke = 3;
-			InvokeRepeating("pan", 0.25f, 0.25F);
+			Debug.Log ("Screen width: " + Screen.width);
+			width = 1;
+			height = 0;
+			//numInvoke = 3;
+			InvokeRepeating("pan", 0.20f, 0.20F);
 			numInvoke = 0;
 		}
 		if (pos.y < -0.2) {
-			i = 0;
-			j = -10;
-			InvokeRepeating("pan", 0.25f, 0.25F);
+			Debug.Log ("Screen height: " + Screen.height);
+			width = 0;
+			height = -1;
+			InvokeRepeating("pan", 0.20f, 0.20F);
 			numInvoke = 0;
 		}
 		if (1.2 < pos.y) {
-			i = 0;
-			j = +10;
-			InvokeRepeating("pan", 0.25f, 0.25F);
+			Debug.Log ("Screen height: " + Screen.height);
+			width = 0;
+			height = 1;
+			InvokeRepeating("pan", 0.20f, 0.20F);
 			numInvoke = 0;	
 		}
 	}
 
 	void pan() {
-		if (numInvoke < 20) {
-				numInvoke++;
-				Vector3 pan = new Vector3 (transform.position.x + i, transform.position.y + j, -10);
-				transform.position = Vector3.MoveTowards (transform.position, pan, .5f);
+		if (numInvoke < 9 && height != 0) {
+			numInvoke ++;
+				Vector3 pan = new Vector3 (transform.position.x + width, transform.position.y + height, -10);
+				//transform.position = Vector3.MoveTowards (transform.position, pan, 1);
+			transform.position = 
+		}
+		if (numInvoke < 16 && width != 0) {
+			numInvoke ++;
+			Vector3 pan = new Vector3 (transform.position.x + width, transform.position.y + height, -10);
+			//transform.position = Vector3.MoveTowards (transform.position, pan, 1);
+
 		}
 	}
 }
