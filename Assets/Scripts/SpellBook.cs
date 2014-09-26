@@ -11,6 +11,7 @@ public static class SpellBook
 	public static List<Spell> playerSpells = new List<Spell> ();
 	public const string REDSPELLNAME = "Red Rings of Death";
 	public const string YELLOWSPELLNAME = "Yellow Spark";
+	public const string BLUESPELLNAME = "Blue Swirl";
 
 	//used to add spell to spell book. Should only be called by game manager
 	public static void add (Spell sp)

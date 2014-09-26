@@ -4,7 +4,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 	public GameObject healthPickup;
 	public GameObject manaPickup;
-
+	public bool debugMode = true;
 	// Use this for initialization
 	void Awake () {
 		DontDestroyOnLoad (gameObject);
@@ -15,8 +15,16 @@ public class GameManager : MonoBehaviour {
 		SpellBook.add (spellObj);
 		YellowSpell spellObj2 = (YellowSpell)ScriptableObject.CreateInstance ("YellowSpell");
 		spellObj2.initializeSpell (SpellBook.YELLOWSPELLNAME, "Charges things", 30, 10);
-		spellObj2.unlockSpell ();
 		SpellBook.add (spellObj2);
+		BlueSpell spellObj3 = (BlueSpell)ScriptableObject.CreateInstance ("BlueSpell");
+		spellObj3.initializeSpell(SpellBook.BLUESPELLNAME, "Useful on water", 100);
+		SpellBook.add(spellObj3);
+		if (debugMode) //can switch flag at the top of game manager so everything acts in a debug mode to make testing easier
+		{
+			spellObj2.unlockSpell ();
+			spellObj3.unlockSpell();
+		}
+
 	}
 
 	/*pass in the x,y,and z coordinates of the place where you want the pickup to be dropped
