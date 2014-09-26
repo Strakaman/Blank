@@ -12,7 +12,7 @@ public class PlayerControllerScript : MonoBehaviour
 	public int currSpell = 0; //index used to determine player's current spell, mucho importante
 	private Vector3 s; //box collider size to help with raycasting
 	private Vector3 c; //box collider center to help with raycasting
-
+	private bool isPaused = false;
 // Use this for initialization
 	void Start ()
 	{
@@ -27,9 +27,12 @@ public class PlayerControllerScript : MonoBehaviour
 // Update is called once per frame
 	void Update ()
 	{
+		if (Time.timeScale!=0) 
+		{
 			PlayerInfo.changeMana (1);
 			CheckInputs ();
 			SpriteAnimation ();
+		}
 	}
 
 //Checks and sets the animation state for the player
@@ -107,33 +110,36 @@ public class PlayerControllerScript : MonoBehaviour
 */
 	void CheckInputs ()
 	{
-			//Consider modifying the same vector everytime instead of creating a new one, performance win?
-			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed, Input.GetAxis ("Vertical") * speed);
-			if (Input.GetButtonDown ("Spell Cycle Up")) {
-					changeSpell (true);
-			} else if (Input.GetButtonDown ("Spell Cycle Down")) {
-					changeSpell (false);
-			}
+				//Consider modifying the same vector everytime instead of creating a new one, performance win?
+				rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed, Input.GetAxis ("Vertical") * speed);
+				if (Input.GetButtonDown ("Spell Cycle Up")) {
+						changeSpell (true);
+				} else if (Input.GetButtonDown ("Spell Cycle Down")) {
+						changeSpell (false);
+				}
 
-			if (isStrafing () == false) {
-					SetDirection ();
-			}
+				if (isStrafing () == false) {
+						SetDirection ();
+				}
 
-			if (Input.GetButtonDown ("Use Spell")) {
-					if (SpellBook.playerSpells [currSpell] == null) {
+
+				if (Input.GetButtonDown ("Use Spell")) {
+						if (SpellBook.playerSpells [currSpell] == null) {
 		
-							changeSpell (true);
-					}
-					Spell datSpell = SpellBook.playerSpells [currSpell];
-					if (datSpell.hasEnoughMana ()) {
-							datSpell.subMana ();
-							datSpell.cast (direction);
-							animator.SetBool ("Attack", true);
-							Invoke ("stopAttackAnim", 0.5f);
-					} else {
-							Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
-					}
-			}
+								changeSpell (true);
+						}
+						Spell datSpell = SpellBook.playerSpells [currSpell];
+						if (datSpell.hasEnoughMana ()) {
+								datSpell.subMana ();
+								datSpell.cast (direction);
+								animator.SetBool ("Attack", true);
+								Invoke ("stopAttackAnim", 0.5f);
+						} else {
+								Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
+						}
+				}
+
+
 
 			if (Input.GetButtonDown ("Interact")) {
 					GameObject whatCanThouInteractWith;
