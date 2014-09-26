@@ -34,6 +34,7 @@ public abstract class Spell: ScriptableObject
 	//for spells that shoot something. uses player direction to figure out which way to fire.
 	public void createProjectile(Direction direction, GameObject bulletToClone)
 	{
+		if (player == null){player = GameObject.FindGameObjectWithTag("Player");}
 		Vector3 clonePosition = new Vector3(0,0,0) ;
 		Vector3 cloneVelocity = new Vector3(0,0,0);
 		Quaternion cloneOrientation = Quaternion.Euler(0,0,0); 

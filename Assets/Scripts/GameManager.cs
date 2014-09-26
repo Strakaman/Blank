@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+		DontDestroyOnLoad (gameObject);
 		//keep constructor but swap out current array for spells.add when implemented
 		RedSpell spellObj = (RedSpell)ScriptableObject.CreateInstance ("RedSpell");
 		spellObj.initializeSpell (SpellBook.REDSPELLNAME, "Has a tendency to burn things", 30, 10);
