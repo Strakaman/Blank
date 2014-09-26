@@ -2,12 +2,21 @@
 using System.Collections;
 
 public class GameManager : MonoBehaviour {
+	public static GameManager gM;
 	public GameObject healthPickup;
 	public GameObject manaPickup;
 	public bool debugMode = true;
 	// Use this for initialization
 	void Awake () {
-		DontDestroyOnLoad (gameObject);
+		if (!gM)
+		{
+			gM = this;
+			DontDestroyOnLoad (gameObject);
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
 		//keep constructor but swap out current array for spells.add when implemented
 		RedSpell spellObj = (RedSpell)ScriptableObject.CreateInstance ("RedSpell");
 		spellObj.initializeSpell (SpellBook.REDSPELLNAME, "Has a tendency to burn things", 30, 10);
