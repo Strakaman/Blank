@@ -59,6 +59,7 @@ public abstract class Spell: ScriptableObject
 		}
 		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		GameObject clonedesu = Utilities.cloneObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
+		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
 		Destroy (clonedesu, 2);
 	}
 		
