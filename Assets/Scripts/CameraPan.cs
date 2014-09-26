@@ -59,13 +59,13 @@ public class CameraPan : MonoBehaviour {
 		if (numInvoke < 9 && height != 0) {
 			numInvoke ++;
 				Vector3 pan = new Vector3 (transform.position.x + width, transform.position.y + height, -10);
-				//transform.position = Vector3.MoveTowards (transform.position, pan, 1);
-			transform.position = 
+				transform.position = Vector3.MoveTowards (transform.position, pan, 1);
+			//transform.position = 
 		}
 		if (numInvoke < 16 && width != 0) {
 			numInvoke ++;
 			Vector3 pan = new Vector3 (transform.position.x + width, transform.position.y + height, -10);
-			//transform.position = Vector3.MoveTowards (transform.position, pan, 1);
+			transform.position = Vector3.MoveTowards (transform.position, pan, 1);
 
 		}
 	}
