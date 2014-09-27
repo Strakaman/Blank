@@ -19,14 +19,14 @@ public class GameManager : MonoBehaviour {
 		}
 		//keep constructor but swap out current array for spells.add when implemented
 		RedSpell spellObj = (RedSpell)ScriptableObject.CreateInstance ("RedSpell");
-		spellObj.initializeSpell (SpellBook.REDSPELLNAME, "Has a tendency to burn things", 30, 10);
+		spellObj.initializeSpell (SpellBook.REDSPELLNAME, "Has a tendency to burn things", 30, 10,2);
 		spellObj.unlockSpell ();
 		SpellBook.add (spellObj);
 		YellowSpell spellObj2 = (YellowSpell)ScriptableObject.CreateInstance ("YellowSpell");
-		spellObj2.initializeSpell (SpellBook.YELLOWSPELLNAME, "Charges things", 30, 10);
+		spellObj2.initializeSpell (SpellBook.YELLOWSPELLNAME, "Charges things", 30, 10,2);
 		SpellBook.add (spellObj2);
 		BlueSpell spellObj3 = (BlueSpell)ScriptableObject.CreateInstance ("BlueSpell");
-		spellObj3.initializeSpell(SpellBook.BLUESPELLNAME, "Useful on water", 100);
+		spellObj3.initializeSpell(SpellBook.BLUESPELLNAME, "Useful on water", 100,1);
 		SpellBook.add(spellObj3);
 		if (debugMode) //can switch flag at the top of game manager so everything acts in a debug mode to make testing easier
 		{

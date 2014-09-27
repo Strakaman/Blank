@@ -9,13 +9,15 @@ public abstract class Spell: ScriptableObject
 	protected int manaCost; //can't cast if you don't have enough mana
 	protected bool isUnlocked = false; //spell is locked by default
 	protected int projectileSpeed=0; //for spell that shoot something out
+	protected float animationDuration;
 
 	//use as fake constructor
-	public virtual void initializeSpell(string n, string d, int m)
+	public virtual void initializeSpell(string n, string d, int m, float a)
 	{
 		spellName = n;
 		description = d;
 		manaCost = m;
+		animationDuration = a;
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
 
@@ -61,7 +63,7 @@ public abstract class Spell: ScriptableObject
 		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		GameObject clonedesu = Utilities.cloneObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
-		Destroy (clonedesu, 2);
+		Destroy (clonedesu,animationDuration);
 	}
 		
 	/* 	subclass should call this before calling execute,
@@ -86,7 +88,7 @@ public abstract class Spell: ScriptableObject
 	//let all Spells use the same subtract mana method to improve code maintenance
 	public void subMana()
 	{
-		PlayerInfo.changeMana(manaCost*-1);	
+		PlayerInfo.changeMana(-manaCost);	
 	}
 
 	public string getName()
