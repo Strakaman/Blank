@@ -145,7 +145,8 @@ public class PlayerControllerScript : MonoBehaviour
 					GameObject whatCanThouInteractWith;
 					if (facingInteractableObject (out whatCanThouInteractWith)) {
 							Debug.Log ("You're facing an interactable object with the name " + whatCanThouInteractWith.name + ", aren't you?");
-					}
+				whatCanThouInteractWith.SendMessage("interact");		
+			}
 			}
 
 			if (Input.GetButton ("KUSH")) {

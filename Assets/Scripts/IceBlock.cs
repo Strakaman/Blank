@@ -19,7 +19,7 @@ public class IceBlock : MonoBehaviour {
 		{
 			collider2D.enabled = false;
 			GameObject water = GameObject.FindGameObjectWithTag("Water"); //if we add animation, change this to invoke on helper method based on animation length
-			Debug.Log(water.name);
+			//Debug.Log(water.name);
 			Utilities.cloneObject(Direction.down, water, gameObject.transform.position, new Vector3(0,0,0), Quaternion.Euler(0,0,0));
 			//play animation?
 			Destroy(gameObject);
