@@ -24,9 +24,17 @@ public class InteractableSwitch : Interactable
 
 	public override void interact ()
 	{
-			isActive = !isActive;
-		Debug.Log ("is active hmm: " + isActive);
-			animator.SetBool ("isActive", isActive);
+		isActive = !isActive;
+		//Debug.Log ("is active hmm: " + isActive);
+		animator.SetBool ("isActive", isActive);
+		//for every child object associated with this switch, change it's status too	
+		foreach (Transform child in transform) {
+					GameObject goldenMegatron = child.gameObject;
+					if (goldenMegatron.CompareTag ("Switchable")) {
+							goldenMegatron.SendMessage ("flipStatus");
+					}
+			}
+
 	}
 
 }
