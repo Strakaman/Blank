@@ -226,6 +226,15 @@ public class PlayerControllerScript : MonoBehaviour
 			return false;
 	}
 
+	void OnCollisionEnter2D(Collision2D collInfo)
+	{
+		if (collInfo.gameObject.CompareTag("Enemy Projectile"))
+		{
+			PlayerInfo.changeHealth(-20);
+			//Debug.Log("Health decreased to: " + PlayerInfo.getHealth());
+		}
+	}
+
 /*void createProjectile (GameObject bulletToClone)
 {
 GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);
