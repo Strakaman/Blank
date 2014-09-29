@@ -8,10 +8,14 @@ public class Enemy : MonoBehaviour{
 	private string enemyName;
 	private int redResis;
 	public Direction direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
+	private SpriteRenderer healthbar;
+	private Vector3 healthscale;
 
 	// Use this for initialization
 	void Start () {
 		animator = (Animator)GetComponent ("Animator");
+		healthbar = GameObject.Find ("HealthBar").GetComponent<SpriteRenderer> ();
+		healthscale = healthbar.transform.localScale;
 	}
 	
 	// Update is called once per frame
@@ -25,6 +29,14 @@ public class Enemy : MonoBehaviour{
 		{
 			SpriteAnimation ();
 		}
+		if (health > 100) {
+			health = 100;
+		}
+		HealthUpdate();
+	}
+
+	void HealthUpdate() {
+		healthbar.transform.localScale = new Vector3 (healthscale.x * health * 0.01f, 1, 1);
 	}
 
 	
