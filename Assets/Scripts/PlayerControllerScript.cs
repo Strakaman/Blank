@@ -228,10 +228,10 @@ public class PlayerControllerScript : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D collInfo)
 	{
-		if (collInfo.gameObject.CompareTag("Enemy Projectile"))
+		if (collInfo.gameObject.CompareTag("EnemyProjectile"))
 		{
 			PlayerInfo.changeHealth(-20);
-			//Debug.Log("Health decreased to: " + PlayerInfo.getHealth());
+			Debug.Log("Health decreased to: " + PlayerInfo.getHealth());
 		}
 	}
 
