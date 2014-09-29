@@ -1,22 +1,21 @@
 Initialize engine version: 4.5.4f1 (e036f44c54c9)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 9.0c [igdumdx32.dll 8.15.10.2202]
-    Renderer: Intel(R) HD Graphics
-    Vendor:   Intel
-    VRAM:     880 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=0 RESZ=1 SlowINTZ=0
+    Version:  Direct3D 9.0c [atiu9pag.dll 8.14.1.6099]
+    Renderer: ATI Mobility Radeon HD 4200 Series  
+    Vendor:   ATI
+    VRAM:     1082 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=0 RAWZ=0 NULL=0 RESZ=1 SlowINTZ=1
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Nghia\Desktop\Blank\Prototype_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Nghia\Desktop\Blank\Prototype_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Nghia\Desktop\Blank\Prototype_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Nghia\Desktop\Blank\Prototype_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.095 seconds
-desktop: 1366x768 40Hz; virtual: 1366x768 at 0,0
+Platform assembly: C:\Users\Strakaman\Dropbox\Blank\Blank\Prototype_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Strakaman\Dropbox\Blank\Blank\Prototype_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Strakaman\Dropbox\Blank\Blank\Prototype_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Strakaman\Dropbox\Blank\Blank\Prototype_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.115 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-NullReferenceException: Object reference not set to an instance of an object
-  at Dash.Start () [0x00000] in <filename unknown>:0 
+Clicked End Game
  
-(Filename:  Line: -1)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
