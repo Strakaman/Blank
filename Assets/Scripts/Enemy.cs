@@ -115,8 +115,10 @@ public class Enemy : MonoBehaviour{
 	void OnCollisionEnter2D(Collision2D coll) {
 		//Debug.Log ("COLLIDING");
 		if (coll.gameObject.tag == "RedSpellObject") {
-			takeDamage(50);
-
+			takeDamage(25);
+			float verticalPush = coll.gameObject.transform.position.y - transform.position.y;
+			float horizontalPush = coll.gameObject.transform.position.x - transform.position.x;
+			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * 1000);
 		}
 	}
 

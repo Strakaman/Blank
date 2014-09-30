@@ -231,7 +231,17 @@ public class PlayerControllerScript : MonoBehaviour
 		if (collInfo.gameObject.CompareTag("EnemyProjectile"))
 		{
 			PlayerInfo.changeHealth(-20);
+			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
+			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
+			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * 1000);
 			//Debug.Log("Health decreased to: " + PlayerInfo.getHealth());
+		}
+		if (collInfo.gameObject.CompareTag("Enemy"))
+		{
+			PlayerInfo.changeHealth(-10);
+			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
+			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
+			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * 1000);
 		}
 	}
 
