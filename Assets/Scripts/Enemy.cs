@@ -14,8 +14,20 @@ public class Enemy : MonoBehaviour{
 	// Use this for initialization
 	void Start () {
 		animator = (Animator)GetComponent ("Animator");
-		healthbar = GameObject.Find ("HealthBar").GetComponent<SpriteRenderer> ();
-		healthscale = healthbar.transform.localScale;
+		foreach (Transform child in transform) {
+			foreach (Transform grandChild in child) {
+				GameObject hpbar = grandChild.gameObject;
+				if (hpbar.CompareTag ("HealthBar")) {
+					healthbar = hpbar.GetComponent<SpriteRenderer> ();
+					healthscale = healthbar.transform.localScale;
+					break;
+				}
+			}
+		}
+	}
+
+	void HealthUpdate() {
+		healthbar.transform.localScale = new Vector3 (healthscale.x * health * 0.01f, 1, 1);
 	}
 	
 	// Update is called once per frame
@@ -33,10 +45,6 @@ public class Enemy : MonoBehaviour{
 			health = 100;
 		}
 		HealthUpdate();
-	}
-
-	void HealthUpdate() {
-		healthbar.transform.localScale = new Vector3 (healthscale.x * health * 0.01f, 1, 1);
 	}
 
 	
