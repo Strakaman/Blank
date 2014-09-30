@@ -150,7 +150,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Use Spell
-    descriptiveName: 
+    descriptiveName: Casts currently selected spell
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: space

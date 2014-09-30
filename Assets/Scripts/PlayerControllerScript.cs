@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerControllerScript : MonoBehaviour
@@ -144,7 +144,7 @@ public class PlayerControllerScript : MonoBehaviour
 			if (Input.GetButtonDown ("Interact")) {
 					GameObject whatCanThouInteractWith;
 					if (facingInteractableObject (out whatCanThouInteractWith)) {
-							Debug.Log ("You're facing an interactable object with the name " + whatCanThouInteractWith.name + ", aren't you?");
+							//Debug.Log ("You're facing an interactable object with the name " + whatCanThouInteractWith.name + ", aren't you?");
 				whatCanThouInteractWith.SendMessage("interact");		
 			}
 			}
@@ -231,7 +231,7 @@ public class PlayerControllerScript : MonoBehaviour
 		if (collInfo.gameObject.CompareTag("EnemyProjectile"))
 		{
 			PlayerInfo.changeHealth(-20);
-			Debug.Log("Health decreased to: " + PlayerInfo.getHealth());
+			//Debug.Log("Health decreased to: " + PlayerInfo.getHealth());
 		}
 	}
 
