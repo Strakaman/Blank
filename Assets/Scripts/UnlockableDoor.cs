@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UnlockableDoor : MonoBehaviour {
+public class UnlockableDoor : Switchable {
 
 	public bool isLocked;
 	public Animator animator;
@@ -16,11 +16,23 @@ public class UnlockableDoor : MonoBehaviour {
 	
 	}
 	/*called by interactable switch to change the status of the door */
-	void flipStatus()
+	public override void flipStatus()
 	{
 		isLocked = !isLocked;
 		updateStatus();
 	}
+
+	/** 
+	 * called by a pressure plate that can have multiple triggers
+	 * If you want the door to be locked,   pass in false
+	 * If you want the door to be unlocked, pass in true
+	 */
+	public override void setStatus(bool activeStatus)
+	{
+		isLocked = !activeStatus; 
+		updateStatus();
+	}
+
 	/**
 	 * If the door is locked,  reenable it's collider and update the animation
 	 * If the door is unlocked, disable it's collider and update the animation
@@ -29,7 +41,6 @@ public class UnlockableDoor : MonoBehaviour {
 	{
 		animator.SetBool ("isLocked", isLocked);
 		collider2D.enabled = isLocked;
-
 	}
 
 }

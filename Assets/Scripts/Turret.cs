@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Turret : MonoBehaviour {
+public class Turret : Switchable {
 	public GameObject refBullet;
 	public Direction direction;
 	public int projectileSpeed = 20;
@@ -24,7 +24,7 @@ public class Turret : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	if ((isActive)&&(inRange()) &&(canFire()))
+	if ((isActive) && (inRange()) && (canFire()))
 		{
 			fireBullet();
 		}
@@ -105,9 +105,20 @@ public class Turret : MonoBehaviour {
 		Destroy (clonedesu,1);
 	}
 
-	void flipStatus()
+	public override void flipStatus()
 	{
 		isActive = !isActive;
+		updateStatus();
+	}
+
+	/** 
+	 * called by a pressure plate that can have multiple triggers
+	 * If you want the door to be locked,   pass in false
+	 * If you want the door to be unlocked, pass in true
+	 */
+	public override void setStatus(bool activeStatus)
+	{
+		isActive = !activeStatus; 
 		updateStatus();
 	}
 	/**
