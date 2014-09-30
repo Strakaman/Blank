@@ -1,58 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
-	public static GameManager gM;
-	public GameObject healthPickup;
-	public GameObject manaPickup;
-	public bool debugMode = true;
-	// Use this for initialization
-	void Awake () {
-		if (!gM)
+public class GameManager : MonoBehaviour
+{
+		public static GameManager gM;
+		public GameObject healthPickup;
+		public GameObject manaPickup;
+		public bool debugMode = true;
+		// Use this for initialization
+		void Awake ()
 		{
-			gM = this;
-			DontDestroyOnLoad (gameObject);
-		}
-		else
-		{
-			Destroy(gameObject);
-		}
-		//keep constructor but swap out current array for spells.add when implemented
-		RedSpell spellObj = (RedSpell)ScriptableObject.CreateInstance ("RedSpell");
-		spellObj.initializeSpell (SpellBook.REDSPELLNAME, "Has a tendency to burn things", 30, 10,2);
-		spellObj.unlockSpell ();
-		SpellBook.add (spellObj);
-		YellowSpell spellObj2 = (YellowSpell)ScriptableObject.CreateInstance ("YellowSpell");
-		spellObj2.initializeSpell (SpellBook.YELLOWSPELLNAME, "Charges things", 30, 10,2);
-		SpellBook.add (spellObj2);
-		BlueSpell spellObj3 = (BlueSpell)ScriptableObject.CreateInstance ("BlueSpell");
-		spellObj3.initializeSpell(SpellBook.BLUESPELLNAME, "Useful on water", 100,1);
-		SpellBook.add(spellObj3);
-		if (debugMode) //can switch flag at the top of game manager so everything acts in a debug mode to make testing easier
-		{
-			spellObj2.unlockSpell ();
-			spellObj3.unlockSpell();
+				if (!gM) {
+						gM = this;
+						DontDestroyOnLoad (gameObject);
+				} else {
+						Destroy (gameObject);
+				}
+				Utilities.intializeSpellBook (debugMode);
 		}
 
-	}
-
-	/*pass in the x,y,and z coordinates of the place where you want the pickup to be dropped
+		/*pass in the x,y,and z coordinates of the place where you want the pickup to be dropped
 	pickup needs to exist in unity and be a child prefab of the game manager prefab
 	Ex: when maybe a monster dies or something, pass in the position of the transform of the monster*/
-	void DropHealthPickup(Vector3 locationToDrop)
-	{
-		Instantiate (healthPickup, locationToDrop, new Quaternion());
-	}
+		void DropHealthPickup (Vector3 locationToDrop)
+		{
+				Instantiate (healthPickup, locationToDrop, new Quaternion ());
+		}
 
-	/* same as health above*/
-	void DropManaPickup(Vector3 locationToDrop)
-	{
-		Instantiate (manaPickup, locationToDrop, new Quaternion());
-	}
+		/* same as health above*/
+		void DropManaPickup (Vector3 locationToDrop)
+		{
+				Instantiate (manaPickup, locationToDrop, new Quaternion ());
+		}
 
-	// Update is called once per frame
-	void Update () {
+		// Update is called once per frame
+		void Update ()
+		{
 
 	
-	}
+		}
 }

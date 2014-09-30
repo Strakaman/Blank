@@ -396,7 +396,7 @@ Transform:
   m_PrefabInternal: {fileID: 684107163}
   m_GameObject: {fileID: 179706310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.29836082, y: .0266828537, z: .5}
+  m_LocalPosition: {x: 3.24383783, y: .908893108, z: .5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1756098562}
@@ -1139,11 +1139,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.29836082
+      value: 3.24383783
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .0266828537
+      value: .908893108
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3438,9 +3438,9 @@ GameObject:
   - 4: {fileID: 1857775060}
   - 212: {fileID: 1857775059}
   - 50: {fileID: 1857775058}
-  - 61: {fileID: 1857775057}
   - 95: {fileID: 1857775056}
   - 114: {fileID: 1857775061}
+  - 58: {fileID: 1857775057}
   m_Layer: 11
   m_Name: Enemy Projectile
   m_TagString: EnemyProjectile
@@ -3464,17 +3464,17 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!61 &1857775057
-BoxCollider2D:
+--- !u!58 &1857775057
+CircleCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100010, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+  m_PrefabParentObject: {fileID: 5800004, guid: b6dfe671e2406c24d92d8a67a23d65e4,
     type: 2}
   m_PrefabInternal: {fileID: 1179793720}
   m_GameObject: {fileID: 1857775055}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .589999974, y: .349999994}
+  m_Radius: .5
   m_Center: {x: 0, y: 0}
 --- !u!50 &1857775058
 Rigidbody2D:
