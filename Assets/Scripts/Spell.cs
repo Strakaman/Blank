@@ -61,7 +61,7 @@ public abstract class Spell: ScriptableObject
 			cloneOrientation = Quaternion.Euler(0, 0, 0);
 		}
 		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
-		Debug.Log(cloneVelocity);
+		//Debug.Log(cloneVelocity);
 		GameObject clonedesu = Utilities.cloneObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
 		Destroy (clonedesu,animationDuration);
