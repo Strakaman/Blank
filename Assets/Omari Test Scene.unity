@@ -355,7 +355,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &179706312
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -410,6 +409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
+  Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
 --- !u!212 &179706316
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -481,7 +482,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &201587763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1333,7 +1333,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1009279447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2084,7 +2083,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1260802715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2747,7 +2745,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1539857721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2765,6 +2762,8 @@ MonoBehaviour:
   speed: 5
   bulSpeed: 10
   currSpell: 0
+  Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
 --- !u!212 &1539857722
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3150,7 +3149,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1657292457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3516,7 +3514,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1765757859
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3606,7 +3603,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
@@ -3648,7 +3645,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!58 &1857775057
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3917,7 +3913,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1961451657
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,6 +13,10 @@ public class PlayerControllerScript : MonoBehaviour
 	private Vector3 s; //box collider size to help with raycasting
 	private Vector3 c; //box collider center to help with raycasting
 	private bool isPaused = false;
+	private float hittime;
+	public Material Default;
+	public Material Hit;
+
 // Use this for initialization
 	void Start ()
 	{
@@ -32,6 +36,9 @@ public class PlayerControllerScript : MonoBehaviour
 			PlayerInfo.changeMana (1);
 			CheckInputs ();
 			SpriteAnimation ();
+		}
+		if (hittime + 0.1f < Time.time) {
+			GetComponent<SpriteRenderer>().material = Default;
 		}
 	}
 
@@ -226,25 +233,33 @@ public class PlayerControllerScript : MonoBehaviour
 			return false;
 	}
 
-	void OnCollisionEnter2D(Collision2D collInfo)
+	void OnCollisionStay2D(Collision2D collInfo)
 	{
-		if (collInfo.gameObject.CompareTag("EnemyProjectile"))
-		{
-			PlayerInfo.changeHealth(-20);
-			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
-			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
-			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * 1000);
-			//Debug.Log("Health decreased to: " + PlayerInfo.getHealth());
-		}
+
 		if (collInfo.gameObject.CompareTag("Enemy"))
 		{
-			PlayerInfo.changeHealth(-10);
-			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
-			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
-			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * 1000);
+			damageProperties(collInfo, -10, 1000, 0.5f);
+			GetComponent<SpriteRenderer>().material = Hit;
 		}
 	}
 
+	void OnCollisionEnter2D(Collision2D collInfo) {
+		if (collInfo.gameObject.CompareTag("EnemyProjectile"))
+		{
+			damageProperties(collInfo, -20, 1000, 0.1f);
+			GetComponent<SpriteRenderer>().material = Hit;
+		}
+	}
+
+	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
+		if (hittime + hitdelay < Time.time) {
+			hittime = Time.time;
+			PlayerInfo.changeHealth(damage);
+			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
+			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
+			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
+		}
+	}
 /*void createProjectile (GameObject bulletToClone)
 {
 GameObject clonedesu = (GameObject)Instantiate (bulletToClone, transform.position, transform.rotation);

@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour{
 	public Direction direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
 	private SpriteRenderer healthbar;
 	private Vector3 healthscale;
+	private float hittime;
+	public Material Default;
+	public Material Hit;
 
 	// Use this for initialization
 	void Start () {
@@ -45,6 +48,10 @@ public class Enemy : MonoBehaviour{
 			health = 100;
 		}
 		HealthUpdate();
+
+		if (hittime + 0.1f < Time.time) {
+			GetComponent<SpriteRenderer>().material = Default;
+		}
 	}
 
 	
@@ -115,10 +122,18 @@ public class Enemy : MonoBehaviour{
 	void OnCollisionEnter2D(Collision2D coll) {
 		//Debug.Log ("COLLIDING");
 		if (coll.gameObject.tag == "RedSpellObject") {
-			takeDamage(25);
-			float verticalPush = coll.gameObject.transform.position.y - transform.position.y;
-			float horizontalPush = coll.gameObject.transform.position.x - transform.position.x;
-			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * 1000);
+			damageProperties(coll, 25, 1000, 0.1f);
+			GetComponent<SpriteRenderer>().material = Hit;
+		}
+	}
+
+	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
+		if (hittime + hitdelay < Time.time) {
+			hittime = Time.time;
+			takeDamage(damage);
+			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
+			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
+			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
 		}
 	}
 

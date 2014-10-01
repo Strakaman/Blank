@@ -190,6 +190,8 @@ MonoBehaviour:
   speed: 5
   bulSpeed: 10
   currSpell: 0
+  Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
