@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour{
 	public Material Default;
 	public Material Hit;
 	private bool stunned = false;
+	private bool slowed = false;
 
 	// Use this for initialization
 	void Start () {
@@ -56,6 +57,9 @@ public class Enemy : MonoBehaviour{
 		}
 		if (stunned == true) {
 			rigidbody2D.velocity = new Vector2(0,0);
+		}
+		if (slowed == true) {
+			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x/2, rigidbody2D.velocity.y/2);	
 		}
 	}
 
@@ -124,6 +128,10 @@ public class Enemy : MonoBehaviour{
 		animator.SetBool ("Right", right);
 	}
 
+	void OnCollisionStay2D(Collision2D coll) {
+
+	}
+
 	void OnCollisionEnter2D(Collision2D coll) {
 		//Debug.Log ("COLLIDING");
 		if (coll.gameObject.tag == "RedSpellObject") {
@@ -134,15 +142,17 @@ public class Enemy : MonoBehaviour{
 			Debug.Log("YELLOW");
 			stunned = true;
 			Invoke("setStunFalse", 1.5f);
-			//stunned = false;
-			//Invoke("setStunFalse()", 3);
 		}
 		if (coll.gameObject.tag == "BlueSpellObject") {
-
+			slowed = true;	
+			Invoke ("setSlowFalse", 3f);
 		}
 	}
 	void setStunFalse() {
 		stunned = false;
+	}
+	void setSlowFalse() {
+		slowed = false;
 	}
 
 	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
