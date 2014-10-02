@@ -172,9 +172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1539857714}
-  numInvoke: 0
-  width: 0
-  height: 0
 --- !u!212 &5092647
 SpriteRenderer:
   m_ObjectHideFlags: 0

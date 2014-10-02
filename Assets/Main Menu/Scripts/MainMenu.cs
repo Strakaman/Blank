@@ -19,7 +19,6 @@ public class MainMenu : MonoBehaviour {
 		if (GUI.Button (new Rect (Screen.width * .5f, Screen.height * .55f, Screen.width * .5f, Screen.height * .1f), "End Game")) {
 						//print ("Clicked End Game");
 			Application.Quit();
-	
 		}
 	}
 }

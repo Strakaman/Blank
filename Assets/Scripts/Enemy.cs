@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour{
 	private float hittime;
 	public Material Default;
 	public Material Hit;
+	private bool stunned = false;
 
 	// Use this for initialization
 	void Start () {
@@ -37,6 +38,7 @@ public class Enemy : MonoBehaviour{
 	void Update () {
 		//Debug.Log("Health is: " + health);
 		if (health <= 0) {
+			rigidbody2D.velocity = new Vector2(0, 0);
 			Destroy(gameObject, 1);
 			gameObject.collider2D.enabled = false;
 		}
@@ -51,6 +53,9 @@ public class Enemy : MonoBehaviour{
 
 		if (hittime + 0.1f < Time.time) {
 			GetComponent<SpriteRenderer>().material = Default;
+		}
+		if (stunned == true) {
+			rigidbody2D.velocity = new Vector2(0,0);
 		}
 	}
 
@@ -125,6 +130,19 @@ public class Enemy : MonoBehaviour{
 			damageProperties(coll, 25, 1000, 0.1f);
 			GetComponent<SpriteRenderer>().material = Hit;
 		}
+		if (coll.gameObject.tag == "YellowSpellObject") {
+			Debug.Log("YELLOW");
+			stunned = true;
+			Invoke("setStunFalse", 1.5f);
+			//stunned = false;
+			//Invoke("setStunFalse()", 3);
+		}
+		if (coll.gameObject.tag == "BlueSpellObject") {
+
+		}
+	}
+	void setStunFalse() {
+		stunned = false;
 	}
 
 	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
@@ -142,9 +160,6 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void Attack() {
-
-
-
 		dealDamage ();
 	}
 
