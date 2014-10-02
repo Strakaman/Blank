@@ -49,7 +49,6 @@ public class ChargeStation : MonoBehaviour {
 
 	void updateAnimation()
 	{
-		Debug.Log(chargeLevel/chargeNeededforFull);
 		animator.SetFloat("chargePercentage",(chargeLevel/chargeNeededforFull)*100);
 	}
 }

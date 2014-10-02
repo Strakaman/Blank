@@ -3,11 +3,11 @@ using System.Collections;
 
 public class CameraPan : MonoBehaviour {
 	public GameObject player;
-	public int numInvoke = 0;
-	public int width;
-	public int height;
-	private int screenWidth = Screen.width/10;
-	private int screenHeight = Screen.height/10;
+	private int numInvoke = 0;
+	private int width;
+	private int height;
+	//private int screenWidth = Screen.width/10;
+	//private int screenHeight = Screen.height/10;
 
 	// Update is called once per frame
 	void FixedUpdate () {

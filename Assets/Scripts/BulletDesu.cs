@@ -14,11 +14,11 @@ public class BulletDesu : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D collInfo) {
 	{
-			//Debug.Log(collInfo.gameObject.name);		
-			animator.SetBool ("Does Collide", true);
-			gameObject.collider2D.enabled = false;
-			rigidbody2D.velocity = new Vector2(0,0);
-			Destroy(gameObject,.5f);
-				}
+		//Debug.Log(collInfo.gameObject.name);		
+		animator.SetBool ("Does Collide", true);
+		gameObject.collider2D.enabled = false;
+		rigidbody2D.velocity = new Vector2(0,0);
+		Destroy(gameObject,.5f);
+		}
 	}
 }

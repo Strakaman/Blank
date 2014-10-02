@@ -1,4 +1,8 @@
 Save data stores player's last scene, list of unlocked spells, and last position
 Omari Test Scene
 True|True|True
+<<<<<<< HEAD
 -0.7866111|-6.465771|0
+=======
+-0.7866212|-6.469898|0
+>>>>>>> FETCH_HEAD
