@@ -21,13 +21,18 @@ public class NPC : Interactable {
 		{
 			GUILayout.BeginArea(new Rect(700,600,400,400));
 			GUILayout.Label(delete);
-			//Debug.Log ("implementing guistuff");
-		}
-	}
+			//if (GUI.Button(new Rect(800,700,100,100),""))
+			//{
+			//
+			//}
+			Debug.Log ("implementing guistuff");
 
+		}
+		GUILayout.EndArea();
+	}
 
 	public	override void interact()
 	{
-		displayText = true;
+		displayText = !displayText;
 	}
 }

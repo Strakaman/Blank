@@ -25,8 +25,7 @@ public class MainMenu : MonoBehaviour
 	{
 
 			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), backgroundTexture);
-
-<<<<<<< HEAD
+		
 			if (GUI.Button (new Rect (Screen.width * .5f, Screen.height * .4f, Screen.width * .5f, Screen.height * .1f), "New Game")) {
 					//print ("Clicked Play Game");
 					Application.LoadLevel (Application.loadedLevel + 1); //theoretically this should be the first level
@@ -46,12 +45,6 @@ public class MainMenu : MonoBehaviour
 							showYesNoPrompt = false;
 					}
 			}
-=======
-		if (GUI.Button (new Rect (Screen.width * .5f, Screen.height * .55f, Screen.width * .5f, Screen.height * .1f), "End Game")) {
-						//print ("Clicked End Game");
-			Application.Quit();
 		}
->>>>>>> FETCH_HEAD
 	}
 
-}

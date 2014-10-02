@@ -34,7 +34,6 @@ public class InteractableSwitch : Interactable
 							goldenMegatron.SendMessage ("flipStatus");
 					}
 			}
-
 	}
 
 }
