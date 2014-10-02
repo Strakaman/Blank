@@ -230,4 +230,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundTexture: {fileID: 2800000, guid: 06f0d546ec70b40c997797db8b4b298b, type: 3}
+  showYesNoPrompt: 0
   guiPlacementY: 0
