@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NPC : Interactable {
 	string delete = "Annie are you okay?";
-	string delete2 = "Are you okay? Annie";
+	//string delete2 = "Are you okay? Annie";
 	bool displayText = false;
 	// Use this for initialization
 	void Start () {
@@ -28,7 +28,6 @@ public class NPC : Interactable {
 			Debug.Log ("implementing guistuff");
 
 		}
-		GUILayout.EndArea();
 	}
 
 	public	override void interact()

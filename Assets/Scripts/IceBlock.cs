@@ -2,10 +2,17 @@
 using System.Collections;
 
 public class IceBlock : MonoBehaviour {
-
+	bool isIceBlock;
 	// Use this for initialization
 	void Start () {
-	
+		if (gameObject.CompareTag("Ice Block"))
+		{
+			isIceBlock = true;
+		}
+		else
+		{
+			isIceBlock = false;
+		}
 	}
 	
 	// Update is called once per frame
@@ -15,7 +22,7 @@ public class IceBlock : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collInfo)
 	{	//when a blue spell touches water, it turns to ice
-		if (collInfo.gameObject.tag.Equals("RedSpellObject"))
+		if ((isIceBlock)&&(collInfo.gameObject.tag.Equals("RedSpellObject")))
 		{
 			collider2D.enabled = false;
 			GameObject water = GameObject.FindGameObjectWithTag("Water"); //if we add animation, change this to invoke on helper method based on animation length

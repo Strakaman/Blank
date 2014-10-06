@@ -24,7 +24,7 @@ public class PressurePlate : MonoBehaviour
 
 	void OnTriggerStay2D (Collider2D trigInfo)
 	{
-			if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block"))) {
+		if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
 					//Debug.Log("trigger on due to: " + trigInfo.tag);
 					TriggerChildren (true);
 			}
@@ -32,7 +32,7 @@ public class PressurePlate : MonoBehaviour
 
 	void OnTriggerExit2D (Collider2D trigInfo)
 	{
-			if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block"))) {
+		if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
 					//Debug.Log("trigger off due to: " + trigInfo.tag);
 					TriggerChildren (false);
 			}
