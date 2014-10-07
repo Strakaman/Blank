@@ -101,5 +101,18 @@ public static class Utilities
 				}
 
 		}
+
+	/*
+	 * Calls flipStatus methof on all switchable objects that are children to parent transform
+	 */
+	public static void flipStatusInChildren(Transform parentTransform)
+	{
+		foreach (Transform child in parentTransform) {
+			GameObject goldenMegatron = child.gameObject;
+			if (goldenMegatron.CompareTag ("Switchable")) {
+				goldenMegatron.SendMessage ("flipStatus");
+			}
+		}
+	}
 }
 
