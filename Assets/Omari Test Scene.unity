@@ -249,6 +249,7 @@ GameObject:
   - 212: {fileID: 29882366}
   - 61: {fileID: 29882364}
   - 114: {fileID: 29882368}
+  - 114: {fileID: 29882365}
   m_Layer: 0
   m_Name: Short Vertical Wall
   m_TagString: Untagged
@@ -268,6 +269,19 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .319999993, y: .319999993}
   m_Center: {x: 0, y: 0}
+--- !u!114 &29882365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: a05e0197208717c4097bb4ecf37b3717,
+    type: 2}
+  m_PrefabInternal: {fileID: 1253769401}
+  m_GameObject: {fileID: 29882363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
 --- !u!212 &29882366
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -328,6 +342,7 @@ GameObject:
   - 61: {fileID: 146196131}
   - 50: {fileID: 146196130}
   - 114: {fileID: 146196129}
+  - 114: {fileID: 146196133}
   m_Layer: 0
   m_Name: Regular Block
   m_TagString: Regular Block
@@ -359,6 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIceBlock: 0
 --- !u!50 &146196130
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -410,6 +426,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9234e080ab5164d4baee3dd29b8906b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &146196133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400048, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 146196127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Regular Block
+  - Weighted
 --- !u!1 &151915710
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +457,7 @@ GameObject:
   - 114: {fileID: 151915712}
   - 96: {fileID: 1539857716}
   - 82: {fileID: 1539857723}
+  - 114: {fileID: 151915715}
   m_Layer: 9
   m_Name: Player1
   m_TagString: Player
@@ -501,6 +533,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: a5c91f887f521614785fd52e4eaf7c91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &151915715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: 4f7f3b7c2cf83bc4780bae88a4a80def,
+    type: 2}
+  m_PrefabInternal: {fileID: 1818806909}
+  m_GameObject: {fileID: 151915710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Player
+  - Weighted
 --- !u!1 &179706310
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +562,7 @@ GameObject:
   - 114: {fileID: 179706313}
   - 50: {fileID: 179706312}
   - 95: {fileID: 179706311}
+  - 114: {fileID: 179706318}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: Enemy
@@ -630,6 +678,21 @@ Transform:
   - {fileID: 1756098562}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &179706318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 425471850}
+  m_GameObject: {fileID: 179706310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Enemy
+  - Weighted
 --- !u!1 &201587761
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +706,7 @@ GameObject:
   - 61: {fileID: 201587763}
   - 95: {fileID: 201587762}
   - 114: {fileID: 201587767}
+  - 114: {fileID: 201587768}
   m_Layer: 0
   m_Name: SavePoint
   m_TagString: Interactable Object
@@ -737,6 +801,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43634276bcdc19742b2ec4808877a665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &201587768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: f6ace411266062f4a842ed78a053780a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1677704369}
+  m_GameObject: {fileID: 201587761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Interactable Object
 --- !u!1 &227627703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,6 +1226,7 @@ GameObject:
   - 212: {fileID: 468887402}
   - 61: {fileID: 468887401}
   - 114: {fileID: 468887400}
+  - 114: {fileID: 468887404}
   m_Layer: 0
   m_Name: Mana Pickup
   m_TagString: 
@@ -1215,6 +1294,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &468887404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8ea71be187539b14ebbea272c363f24d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1221596297}
+  m_GameObject: {fileID: 468887399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
 --- !u!1 &486010408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1521,7 @@ GameObject:
   - 114: {fileID: 523796704}
   - 61: {fileID: 523796703}
   - 95: {fileID: 523796702}
+  - 114: {fileID: 523796707}
   m_Layer: 0
   m_Name: Charge Station
   m_TagString: Untagged
@@ -1513,6 +1606,19 @@ Transform:
   - {fileID: 2123197552}
   m_Father: {fileID: 0}
   m_RootOrder: 16
+--- !u!114 &523796707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 3450eff9b5b0df34181500837a87684e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1083229130}
+  m_GameObject: {fileID: 523796701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
 --- !u!1 &633515024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,6 +1630,7 @@ GameObject:
   - 212: {fileID: 633515027}
   - 61: {fileID: 633515026}
   - 114: {fileID: 633515025}
+  - 114: {fileID: 633515029}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Switchable
@@ -1594,6 +1701,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1260802718}
   m_RootOrder: 1
+--- !u!114 &633515029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 6fcddfcf786450f44b6a2422cef2763a,
+    type: 2}
+  m_PrefabInternal: {fileID: 229882503}
+  m_GameObject: {fileID: 633515024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Switchable
 --- !u!1 &741439891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,6 +1945,7 @@ GameObject:
   - 61: {fileID: 1009279448}
   - 114: {fileID: 1009279447}
   - 95: {fileID: 1009279446}
+  - 114: {fileID: 1009279450}
   m_Layer: 0
   m_Name: Unlockable Door
   m_TagString: Switchable
@@ -1908,6 +2030,20 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300020, guid: 37238dd57bb982e43bb26f6290bfaa03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1009279450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: d17661e9300305e47b285c13cc981149,
+    type: 2}
+  m_PrefabInternal: {fileID: 1331644897}
+  m_GameObject: {fileID: 1009279444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Switchable
 --- !u!1 &1013956516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +2056,7 @@ GameObject:
   - 61: {fileID: 1013956518}
   - 50: {fileID: 1013956517}
   - 114: {fileID: 1013956521}
+  - 114: {fileID: 1013956522}
   m_Layer: 0
   m_Name: Ice Block
   m_TagString: Ice Block
@@ -2002,6 +2139,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIceBlock: 0
+--- !u!114 &1013956522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400038, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 1013956516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Ice Block
+  - Weighted
 --- !u!1 &1026268890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,6 +2338,7 @@ GameObject:
   - 114: {fileID: 1089254719}
   - 50: {fileID: 1089254718}
   - 95: {fileID: 1089254717}
+  - 114: {fileID: 1089254723}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: Enemy
@@ -2300,6 +2454,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300016, guid: a468c6ffd1d085e40901057f90f956c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1089254723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 1641728679}
+  m_GameObject: {fileID: 1089254715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Enemy
+  - Weighted
 --- !u!1 &1110694075
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,6 +2756,7 @@ GameObject:
   - 212: {fileID: 1231991288}
   - 61: {fileID: 1231991287}
   - 50: {fileID: 1231991286}
+  - 114: {fileID: 1231991290}
   m_Layer: 11
   m_Name: Blue Spell
   m_TagString: BlueSpellObject
@@ -2657,6 +2827,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1651765900}
   m_RootOrder: 4
+--- !u!114 &1231991290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400040, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 1231991285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - BlueSpellObject
 --- !u!1 &1232918457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,6 +2852,7 @@ GameObject:
   - 212: {fileID: 1232918461}
   - 61: {fileID: 1232918460}
   - 114: {fileID: 1232918459}
+  - 114: {fileID: 1232918462}
   m_Layer: 0
   m_Name: Mana Pickup
   m_TagString: 
@@ -2735,6 +2920,19 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c8aa4d768e33b25409a60083e0db380f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1232918462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400032, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 1232918457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
 --- !u!1001 &1253769401
 Prefab:
   m_ObjectHideFlags: 0
@@ -2791,6 +2989,7 @@ GameObject:
   - 212: {fileID: 1260802716}
   - 114: {fileID: 1260802715}
   - 95: {fileID: 1260802714}
+  - 114: {fileID: 1260802719}
   m_Layer: 0
   m_Name: Interactable Switch
   m_TagString: Interactable Object
@@ -2877,6 +3076,20 @@ Transform:
   - {fileID: 633515028}
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!114 &1260802719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 031d7b08da61343478b6e6a36970005f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1301981879}
+  m_GameObject: {fileID: 1260802713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Interactable Object
 --- !u!1001 &1301981879
 Prefab:
   m_ObjectHideFlags: 0
@@ -3006,6 +3219,7 @@ GameObject:
   - 212: {fileID: 1310990382}
   - 61: {fileID: 1310990381}
   - 114: {fileID: 1310990380}
+  - 114: {fileID: 1310990383}
   m_Layer: 0
   m_Name: Health Pickup
   m_TagString: 
@@ -3073,6 +3287,19 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f7a46b571b8e9b644a6408f7c7a4a19b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1310990383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400036, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 1310990378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
 --- !u!1 &1323626968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3227,6 +3454,7 @@ GameObject:
   - 212: {fileID: 1379472158}
   - 61: {fileID: 1379472156}
   - 114: {fileID: 1379472160}
+  - 114: {fileID: 1379472157}
   m_Layer: 0
   m_Name: Short Vertical Wall
   m_TagString: Untagged
@@ -3246,6 +3474,19 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .319999993, y: .319999993}
   m_Center: {x: 0, y: 0}
+--- !u!114 &1379472157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: a05e0197208717c4097bb4ecf37b3717,
+    type: 2}
+  m_PrefabInternal: {fileID: 325813223}
+  m_GameObject: {fileID: 1379472155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
 --- !u!212 &1379472158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3332,6 +3573,7 @@ GameObject:
   - 212: {fileID: 1397656783}
   - 61: {fileID: 1397656782}
   - 114: {fileID: 1397656781}
+  - 114: {fileID: 1397656785}
   m_Layer: 0
   m_Name: Health Pickup
   m_TagString: 
@@ -3399,6 +3641,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1397656785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 455f3bddc377dfd4ab74bf91b530394b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1133891393}
+  m_GameObject: {fileID: 1397656780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
 --- !u!1 &1411109421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,6 +3668,7 @@ GameObject:
   - 114: {fileID: 1411109425}
   - 50: {fileID: 1411109424}
   - 95: {fileID: 1411109423}
+  - 114: {fileID: 1411109429}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: Enemy
@@ -3528,6 +3784,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300016, guid: a468c6ffd1d085e40901057f90f956c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1411109429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 2022865729}
+  m_GameObject: {fileID: 1411109421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Enemy
+  - Weighted
 --- !u!1001 &1497854640
 Prefab:
   m_ObjectHideFlags: 0
@@ -3934,6 +4205,7 @@ GameObject:
   - 212: {fileID: 1619763474}
   - 58: {fileID: 1619763473}
   - 50: {fileID: 1619763472}
+  - 114: {fileID: 1619763475}
   m_Layer: 11
   m_Name: Bounce
   m_TagString: YellowSpellObject
@@ -4008,6 +4280,20 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1619763475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400034, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 1619763470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - YellowSpellObject
 --- !u!1001 &1641728679
 Prefab:
   m_ObjectHideFlags: 0
@@ -4064,6 +4350,7 @@ GameObject:
   - 61: {fileID: 1641859220}
   - 114: {fileID: 1641859219}
   - 95: {fileID: 1641859218}
+  - 114: {fileID: 1641859223}
   m_Layer: 0
   m_Name: Unlockable Door
   m_TagString: Switchable
@@ -4148,6 +4435,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 913534293}
   m_RootOrder: 5
+--- !u!114 &1641859223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: d17661e9300305e47b285c13cc981149,
+    type: 2}
+  m_PrefabInternal: {fileID: 1776322897}
+  m_GameObject: {fileID: 1641859217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Switchable
 --- !u!1 &1651765899
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,6 +4528,7 @@ GameObject:
   - 61: {fileID: 1657292458}
   - 114: {fileID: 1657292457}
   - 95: {fileID: 1657292456}
+  - 114: {fileID: 1657292461}
   m_Layer: 0
   m_Name: Pressure Plate
   m_TagString: Untagged
@@ -4312,6 +4614,19 @@ Transform:
   - {fileID: 1961451655}
   m_Father: {fileID: 0}
   m_RootOrder: 15
+--- !u!114 &1657292461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 43a20c95c0dce7848b8b21424cece059,
+    type: 2}
+  m_PrefabInternal: {fileID: 1187812821}
+  m_GameObject: {fileID: 1657292455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
 --- !u!1 &1669823304
 GameObject:
   m_ObjectHideFlags: 0
@@ -4323,6 +4638,7 @@ GameObject:
   - 212: {fileID: 1669823308}
   - 61: {fileID: 1669823307}
   - 114: {fileID: 1669823306}
+  - 114: {fileID: 1669823309}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
@@ -4389,6 +4705,20 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f7d59248eabfa134b814955c8c121d4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1669823309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400042, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 1669823304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Water
 --- !u!1001 &1677704369
 Prefab:
   m_ObjectHideFlags: 0
@@ -4567,6 +4897,7 @@ GameObject:
   - 50: {fileID: 1765757859}
   - 95: {fileID: 1765757858}
   - 58: {fileID: 1765757857}
+  - 114: {fileID: 1765757862}
   m_Layer: 11
   m_Name: Fire
   m_TagString: RedSpellObject
@@ -4668,6 +4999,20 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 925a9226a8e79594fa6fed79aec7d977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1765757862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400046, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 1765757855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - RedSpellObject
 --- !u!1001 &1773894770
 Prefab:
   m_ObjectHideFlags: 0
@@ -4793,7 +5138,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
@@ -4813,6 +5162,7 @@ GameObject:
   - 95: {fileID: 1857775056}
   - 114: {fileID: 1857775061}
   - 58: {fileID: 1857775057}
+  - 114: {fileID: 1857775062}
   m_Layer: 11
   m_Name: Enemy Projectile
   m_TagString: EnemyProjectile
@@ -4912,6 +5262,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+--- !u!114 &1857775062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400044, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1179793720}
+  m_GameObject: {fileID: 1857775055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Enemy
+  - Weighted
 --- !u!1 &1896427089
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,6 +5288,7 @@ GameObject:
   - 212: {fileID: 1896427091}
   - 61: {fileID: 1896427090}
   - 114: {fileID: 1896427093}
+  - 114: {fileID: 1896427094}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
@@ -4989,6 +5355,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4cac71f52a02564690b6e23b0fefd1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1896427094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 87eb8245338e1f445bafb4d84814e8ac,
+    type: 2}
+  m_PrefabInternal: {fileID: 1497854640}
+  m_GameObject: {fileID: 1896427089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Water
 --- !u!1 &1899312225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,6 +5477,7 @@ GameObject:
   - 61: {fileID: 1961451658}
   - 114: {fileID: 1961451657}
   - 95: {fileID: 1961451656}
+  - 114: {fileID: 1961451660}
   m_Layer: 0
   m_Name: Unlockable Door
   m_TagString: Switchable
@@ -5181,6 +5562,20 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300020, guid: 37238dd57bb982e43bb26f6290bfaa03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1961451660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: d17661e9300305e47b285c13cc981149,
+    type: 2}
+  m_PrefabInternal: {fileID: 19480475}
+  m_GameObject: {fileID: 1961451654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Switchable
 --- !u!1 &2000609320
 GameObject:
   m_ObjectHideFlags: 0
@@ -5464,6 +5859,7 @@ GameObject:
   - 61: {fileID: 2123197555}
   - 114: {fileID: 2123197554}
   - 95: {fileID: 2123197553}
+  - 114: {fileID: 2123197557}
   m_Layer: 0
   m_Name: Unlockable Door
   m_TagString: Switchable
@@ -5548,3 +5944,17 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300020, guid: 37238dd57bb982e43bb26f6290bfaa03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &2123197557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: d17661e9300305e47b285c13cc981149,
+    type: 2}
+  m_PrefabInternal: {fileID: 385467894}
+  m_GameObject: {fileID: 2123197551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Switchable

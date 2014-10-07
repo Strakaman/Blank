@@ -8,48 +8,20 @@ TagManager:
   - YellowSpellObject
   - BlueSpellObject
   - OrangeSpellObject
-  - 
+  - HealthBar
   - Interactable Object
-  - 
-  - Water
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - Switchable
+  - Water
+  - Regular Block
   - Ice Block
-  - 
-  - 
-  - 
-  - 
-  - 
   - Enemy
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - EnemyProjectile
+  - UnTagged
   - 
   - 
   - 
   - 
   - 
-  - 
-  - Switch
-  - 
-  - 
-  - Switchabl
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

@@ -47,6 +47,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 95: {fileID: 9500000}
   - 58: {fileID: 5800000}
+  - 114: {fileID: 11400046}
   m_Layer: 11
   m_Name: Fire
   m_TagString: RedSpellObject
@@ -117,6 +118,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000002}
   - 114: {fileID: 11400012}
+  - 114: {fileID: 11400038}
   m_Layer: 0
   m_Name: Ice Block
   m_TagString: Ice Block
@@ -135,6 +137,7 @@ GameObject:
   - 212: {fileID: 21200014}
   - 61: {fileID: 6100002}
   - 50: {fileID: 5000004}
+  - 114: {fileID: 11400040}
   m_Layer: 11
   m_Name: Blue Spell
   m_TagString: BlueSpellObject
@@ -153,6 +156,7 @@ GameObject:
   - 212: {fileID: 21200016}
   - 61: {fileID: 6100004}
   - 114: {fileID: 11400014}
+  - 114: {fileID: 11400032}
   m_Layer: 0
   m_Name: Mana Pickup
   m_TagString: 
@@ -171,6 +175,7 @@ GameObject:
   - 212: {fileID: 21200018}
   - 61: {fileID: 6100006}
   - 114: {fileID: 11400016}
+  - 114: {fileID: 11400036}
   m_Layer: 0
   m_Name: Health Pickup
   m_TagString: 
@@ -189,6 +194,7 @@ GameObject:
   - 212: {fileID: 21200020}
   - 58: {fileID: 5800002}
   - 50: {fileID: 5000006}
+  - 114: {fileID: 11400034}
   m_Layer: 11
   m_Name: Bounce
   m_TagString: YellowSpellObject
@@ -224,6 +230,7 @@ GameObject:
   - 212: {fileID: 21200022}
   - 61: {fileID: 6100008}
   - 114: {fileID: 11400022}
+  - 114: {fileID: 11400042}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
@@ -261,6 +268,7 @@ GameObject:
   - 95: {fileID: 9500002}
   - 114: {fileID: 11400026}
   - 58: {fileID: 5800004}
+  - 114: {fileID: 11400044}
   m_Layer: 11
   m_Name: Enemy Projectile
   m_TagString: EnemyProjectile
@@ -297,6 +305,7 @@ GameObject:
   - 61: {fileID: 6100010}
   - 50: {fileID: 5000010}
   - 114: {fileID: 11400030}
+  - 114: {fileID: 11400048}
   m_Layer: 0
   m_Name: Regular Block
   m_TagString: Regular Block
@@ -957,6 +966,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
+--- !u!114 &11400034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - YellowSpellObject
+--- !u!114 &11400036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags: []
+--- !u!114 &11400038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Ice Block
+  - Weighted
+--- !u!114 &11400040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - BlueSpellObject
+--- !u!114 &11400042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Water
+--- !u!114 &11400044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Enemy
+  - Weighted
+--- !u!114 &11400046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - RedSpellObject
+--- !u!114 &11400048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - Regular Block
+  - Weighted
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
