@@ -35,13 +35,7 @@ public class ChargeStation : MonoBehaviour {
 				if(chargeLevel >= chargeNeededforFull)
 				{
 					atFullCharge = true;
-					foreach(Transform child in transform)
-					{
-						GameObject goldenMegatron = child.gameObject;
-						if (goldenMegatron.CompareTag ("Switchable")) {
-							goldenMegatron.SendMessage ("flipStatus");
-						}
-					}
+					Utilities.flipStatusInChildren(transform);
 				}
 			}
 		}
