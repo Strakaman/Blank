@@ -11,12 +11,6 @@ public class PressurePlate : MonoBehaviour
 			animator = (Animator)GetComponent ("Animator");
 	}
 
-	// Update is called once per frame
-	void Update ()
-	{
-
-	}
-
 	void updateAnimation ()
 	{
 			animator.SetBool ("isActive", isActive);
@@ -24,7 +18,8 @@ public class PressurePlate : MonoBehaviour
 
 	void OnTriggerStay2D (Collider2D trigInfo)
 	{
-		if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
+		if (Utilities.hasMatchingTag("Weighted",trigInfo.gameObject)) {
+		//if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
 					//Debug.Log("trigger on due to: " + trigInfo.tag);
 					TriggerChildren (true);
 			}
@@ -32,7 +27,8 @@ public class PressurePlate : MonoBehaviour
 
 	void OnTriggerExit2D (Collider2D trigInfo)
 	{
-		if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
+		if (Utilities.hasMatchingTag("Weighted",trigInfo.gameObject)) {
+		//if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
 					//Debug.Log("trigger off due to: " + trigInfo.tag);
 					TriggerChildren (false);
 			}
@@ -41,11 +37,6 @@ public class PressurePlate : MonoBehaviour
 	void TriggerChildren (bool trigOnTruetrigOffFalse)
 	{
 			animator.SetBool ("isActive", trigOnTruetrigOffFalse);
-			foreach (Transform child in transform) {
-					GameObject goldenMegatron = child.gameObject;
-					if (goldenMegatron.CompareTag ("Switchable")) {
-							goldenMegatron.SendMessage ("setStatus", trigOnTruetrigOffFalse);
-					}
-			}
+			Utilities.setStatusInChildren(transform, trigOnTruetrigOffFalse);
 	}
 }

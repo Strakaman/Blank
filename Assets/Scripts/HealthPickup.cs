@@ -16,7 +16,7 @@ public class HealthPickup : MonoBehaviour {
 	//when they player touches this object, destroy it and increase player's health
 	void OnTriggerEnter2D(Collider2D whatICollidedWith)
 	{
-		if (whatICollidedWith.gameObject.tag == "Player")
+		if (Utilities.hasMatchingTag("Player",whatICollidedWith.gameObject))
 		{
 			//Debug.Log ("Player health increased by: " + increaseHealth + " to: " + PlayerInfo.getHealth());
 			PlayerInfo.changeHealth(increaseHealth);

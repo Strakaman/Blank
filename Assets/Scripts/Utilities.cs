@@ -103,7 +103,7 @@ public static class Utilities
 		}
 
 	/*
-	 * Calls flipStatus methof on all switchable objects that are children to parent transform
+	 * Calls flipStatus method on all switchable objects that are children to parent transform
 	 */
 	public static void flipStatusInChildren(Transform parentTransform)
 	{
@@ -113,6 +113,29 @@ public static class Utilities
 				goldenMegatron.SendMessage ("flipStatus");
 			}
 		}
+	}
+
+	/*
+	 * Calls setStatus methof on all switchable objects that are children to parent transform
+	 */
+	public static void setStatusInChildren(Transform parentTransform, bool status)
+	{
+		foreach (Transform child in parentTransform) {
+			GameObject goldenMegatron = child.gameObject;
+			if (goldenMegatron.CompareTag ("Switchable")) {
+				goldenMegatron.SendMessage ("setStatus", status);
+			}
+		}
+	}
+
+	/*
+	 * Checks passed in Game object to see if any of it's tags are of the requested value
+	 */ 
+	public static bool hasMatchingTag(string tagToCheckFor, GameObject objectToCheck)
+	{
+		MultiTagScript mult =  objectToCheck.GetComponent<MultiTagScript>();
+		if (mult != null) { return mult.objectHasTag(tagToCheckFor);}
+		return false;
 	}
 }
 

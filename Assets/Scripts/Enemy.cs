@@ -129,8 +129,8 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void OnTriggerStay2D(Collider2D coll) {
-		if (coll.gameObject.tag == "BlueSpellObject") {
-			Debug.Log("I  blue myself");
+		if (Utilities.hasMatchingTag("BlueSpellObject",coll.gameObject)) {
+			//Debug.Log("I  blue myself");
 			slowed = true;	
 			Invoke ("setSlowFalse", 5f);
 		}
@@ -138,11 +138,11 @@ public class Enemy : MonoBehaviour{
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		//Debug.Log ("COLLIDING");
-		if (coll.gameObject.tag == "RedSpellObject") {
+		if (Utilities.hasMatchingTag("RedSpellObject",coll.gameObject)) {
 			damageProperties(coll, 25, 1000, 0.1f);
 			GetComponent<SpriteRenderer>().material = Hit;
 		}
-		if (coll.gameObject.tag == "YellowSpellObject") {
+		if (Utilities.hasMatchingTag("YellowSpellObject",coll.gameObject)) {
 			stunned = true;
 			Invoke("setStunFalse", 1.5f);
 		}

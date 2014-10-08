@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class IceBlock : MonoBehaviour {
+public class Block : MonoBehaviour {
 	bool isIceBlock;
 	// Use this for initialization
 	void Start () {
@@ -22,7 +22,8 @@ public class IceBlock : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collInfo)
 	{	//when a blue spell touches water, it turns to ice
-		if ((isIceBlock)&&(collInfo.gameObject.tag.Equals("RedSpellObject")))
+		//if ((isIceBlock)&&(collInfo.gameObject.tag.Equals("RedSpellObject")))
+			if ((isIceBlock)&&(Utilities.hasMatchingTag("RedSpellObject",collInfo.gameObject)))
 		{
 			collider2D.enabled = false;
 			GameObject water = GameObject.FindGameObjectWithTag("Water"); //if we add animation, change this to invoke on helper method based on animation length

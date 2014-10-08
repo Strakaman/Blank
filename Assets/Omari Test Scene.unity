@@ -374,7 +374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isIceBlock: 0
 --- !u!50 &146196130
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2055,8 +2054,8 @@ GameObject:
   - 212: {fileID: 1013956519}
   - 61: {fileID: 1013956518}
   - 50: {fileID: 1013956517}
-  - 114: {fileID: 1013956521}
   - 114: {fileID: 1013956522}
+  - 114: {fileID: 1013956521}
   m_Layer: 0
   m_Name: Ice Block
   m_TagString: Ice Block
@@ -2122,7 +2121,7 @@ Transform:
   m_PrefabInternal: {fileID: 1179793720}
   m_GameObject: {fileID: 1013956516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.86555409, y: 50, z: -100}
+  m_LocalPosition: {x: -3, y: 50, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1651765900}
@@ -2139,7 +2138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isIceBlock: 0
 --- !u!114 &1013956522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2651,6 +2649,10 @@ Prefab:
     - target: {fileID: 21200012, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
       propertyPath: m_SortingLayerID
       value: 1675491589
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}

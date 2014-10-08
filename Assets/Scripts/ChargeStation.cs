@@ -27,7 +27,7 @@ public class ChargeStation : MonoBehaviour {
 	
 	void OnCollisionEnter2D(Collision2D collInfo)
 	{
-		if (collInfo.gameObject.CompareTag("YellowSpellObject"))
+		if (Utilities.hasMatchingTag("YellowSpellObject",collInfo.gameObject))
 		{
 			if (!atFullCharge)
 			{

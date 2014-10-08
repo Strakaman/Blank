@@ -224,7 +224,7 @@ public class PlayerControllerScript : MonoBehaviour
 					Ray ray = new Ray (new Vector3 (x, y, 0), castDirection);
 					//Debug.DrawRay(ray.origin,ray.direction);
 					RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, .25f, 9);
-					if (hit && hit.collider && ((hit.collider.CompareTag ("Interactable Object")))) {
+					if (hit && hit.collider && Utilities.hasMatchingTag("Interactable Object",hit.collider.gameObject)) {
 							potentialInteractableICollidedWith = hit.collider.gameObject;
 							return true;
 					}
@@ -236,7 +236,7 @@ public class PlayerControllerScript : MonoBehaviour
 	void OnCollisionStay2D(Collision2D collInfo)
 	{
 
-		if (collInfo.gameObject.CompareTag("Enemy"))
+		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject))
 		{
 			damageProperties(collInfo, -10, 1000, 0.5f);
 			GetComponent<SpriteRenderer>().material = Hit;
@@ -244,7 +244,7 @@ public class PlayerControllerScript : MonoBehaviour
 	}
 
 	void OnCollisionEnter2D(Collision2D collInfo) {
-		if (collInfo.gameObject.CompareTag("EnemyProjectile"))
+		if (Utilities.hasMatchingTag("EnemyProjectile",collInfo.gameObject))
 		{
 			damageProperties(collInfo, -20, 1000, 0.1f);
 			GetComponent<SpriteRenderer>().material = Hit;

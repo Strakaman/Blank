@@ -5,7 +5,7 @@ public class LoadLevel : MonoBehaviour {
 
 	// Use this for initialization
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Player") {
+		if (Utilities.hasMatchingTag("Player",coll.gameObject)) {
 			Application.LoadLevel ("Omari Test Scene");
 		}
 	}

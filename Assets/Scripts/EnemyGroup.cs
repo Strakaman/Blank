@@ -12,7 +12,7 @@ public class EnemyGroup : MonoBehaviour {
 		numofNonChildren = 0;
 		foreach (Transform child in transform)
 		{
-			if (child.CompareTag("Enemy"))
+			if (Utilities.hasMatchingTag("Enemy",child.gameObject))
 			{
 				numOfChildEnemies++;
 			}
