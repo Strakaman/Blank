@@ -10,8 +10,8 @@ public class NPCScript : Interactable {
 	public int edgeMarginPercentage;
 	public GameObject omari;
 	private Animator omariAnimator;
-	GUIStyle smallFont;
-	GUIStyle largeFont;
+	//GUIStyle smallFont;
+	//GUIStyle largeFont;
 
 	private bool talking;
 	private bool toggleGUI;
@@ -21,10 +21,10 @@ public class NPCScript : Interactable {
 
 	void Start () {
 		omariAnimator = (Animator)omari.GetComponent ("Animator");
-		smallFont = new GUIStyle();
-		largeFont = new GUIStyle();
-		smallFont.fontSize = 10;
-		largeFont.fontSize = 32;
+		//smallFont = new GUIStyle();
+		//largeFont = new GUIStyle();
+		//smallFont.fontSize = 10;
+		//largeFont.fontSize = 32;
 		omari.renderer.enabled = false;
 		textBoxTexture.enabled = false;
 		int edgeMargin = (Screen.width/100) * edgeMarginPercentage;
