@@ -736,7 +736,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500002
 Animator:
   serializedVersion: 3
@@ -751,7 +750,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -893,6 +891,8 @@ MonoBehaviour:
   healthPickup: {fileID: 100018}
   manaPickup: {fileID: 100016}
   debugMode: 1
+  talkTextGUI: {fileID: 0}
+  edgeMarginPercentage: 0
 --- !u!114 &11400020
 MonoBehaviour:
   m_ObjectHideFlags: 1
