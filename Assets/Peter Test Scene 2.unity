@@ -1801,6 +1801,7 @@ MonoBehaviour:
   textBoxTexture: {fileID: 584764344}
   textTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
+  edgeMarginPercentage: 10
   omari: {fileID: 1878078892}
 --- !u!61 &475029038
 BoxCollider2D:
@@ -3123,8 +3124,6 @@ MonoBehaviour:
   healthPickup: {fileID: 1251166546}
   manaPickup: {fileID: 1476181635}
   debugMode: 1
-  talkTextGUI: {fileID: 243572901}
-  edgeMarginPercentage: 10
 --- !u!1 &911043237
 GameObject:
   m_ObjectHideFlags: 0

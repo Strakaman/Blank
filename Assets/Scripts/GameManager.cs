@@ -7,13 +7,8 @@ public class GameManager : MonoBehaviour
 		public GameObject healthPickup;
 		public GameObject manaPickup;
 		public bool debugMode = true;
-		public GUIText talkTextGUI;
-		public int edgeMarginPercentage;
 
 		void Start() {
-			int edgeMargin = (Screen.width/100) * edgeMarginPercentage;
-			//Vector2 pixel = new Vector2 (edgeMargin, edgeMargin);
-			talkTextGUI.pixelOffset = new Vector2 (edgeMargin, edgeMargin);
 		}
 
 		// Use this for initialization

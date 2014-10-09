@@ -157,7 +157,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1360089712}
   m_Father: {fileID: 0}
   m_RootOrder: 12
 --- !u!114 &5092646
@@ -376,27 +377,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkLines:
-  - I want to be the very best, that no one ever was.
-  - DUN DUN DUN DNU
-  - To catch them all is my real test.
-  - To train them is my cause...
-  - I will travel across the land, searching far and wide.
-  - DUN DUN DUN DUN
-  - Teach Pokemon to under stand, the power that's inside...
-  - POKEMON! (Gotta Catch them all) its you and me
-  - I know its my destiny!
-  - Pokemon! oh, you're my best friend.
-  - In a world we must defend.
-  - Pokemon! (Gotta catch them all!) a heart so true!!
-  - Our courage will pull us through!
-  - You teach me and I'll teach you!
-  - PO-KE-MON!!!!
-  - Gotta catch 'em all, POH KEH MON!
+  - Peter Peter
+  - Pumpkin eater
+  - Had a wife
+  - And couldn't keep her!
   talkTextGUI: {fileID: 1470075410}
   textBoxTexture: {fileID: 360319736}
   textTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
-  omari: {fileID: 0}
+  edgeMarginPercentage: 10
+  omari: {fileID: 1360089709}
 --- !u!61 &98233149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -430,7 +420,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 1e904c44690f40a43b7fbd3a5d0b3a42, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 255c6a96efa1ae445bf955657cbc9f8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &98233151
 Transform:
@@ -3524,7 +3514,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: 255c6a96efa1ae445bf955657cbc9f8f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26e3aeec92f40fb4d8d0fc892fb86b07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!95 &1360089711
 Animator:
@@ -3535,7 +3525,7 @@ Animator:
   m_GameObject: {fileID: 1360089709}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5412bf2d5c0875948b8f1cf6cbfe9042, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3548,11 +3538,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1360089709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.27536121, y: .24440363, z: -10}
+  m_LocalPosition: {x: -4.56969881, y: .989382744, z: 4.98999977}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 5092645}
+  m_RootOrder: 0
 --- !u!1001 &1360902560
 Prefab:
   m_ObjectHideFlags: 0
@@ -4713,8 +4703,6 @@ MonoBehaviour:
   healthPickup: {fileID: 1310990378}
   manaPickup: {fileID: 1232918457}
   debugMode: 1
-  talkTextGUI: {fileID: 0}
-  edgeMarginPercentage: 0
 --- !u!114 &1651765902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4938,9 +4926,38 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400002, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
+      propertyPath: talkLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
       propertyPath: m_RootOrder
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: 255c6a96efa1ae445bf955657cbc9f8f,
+        type: 3}
+    - target: {fileID: 11400002, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
+      propertyPath: omari
+      value: 
+      objectReference: {fileID: 1360089709}
+    - target: {fileID: 11400002, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
+      propertyPath: talkLines.Array.data[0]
+      value: Peter Peter
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
+      propertyPath: talkLines.Array.data[1]
+      value: Pumpkin eater
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
+      propertyPath: talkLines.Array.data[2]
+      value: Had a wife
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
+      propertyPath: talkLines.Array.data[3]
+      value: And couldn't keep her!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}

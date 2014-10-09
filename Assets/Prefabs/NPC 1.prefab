@@ -145,6 +145,7 @@ MonoBehaviour:
   textBoxTexture: {fileID: 13100000}
   textTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
+  edgeMarginPercentage: 10
   omari: {fileID: 0}
 --- !u!131 &13100000
 GUITexture:

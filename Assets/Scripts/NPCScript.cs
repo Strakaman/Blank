@@ -7,6 +7,7 @@ public class NPCScript : Interactable {
 	public GUITexture textBoxTexture;
 	public Texture textTexture;
 	public int textScrollSpeed;
+	public int edgeMarginPercentage;
 	public GameObject omari;
 	private Animator omariAnimator;
 	GUIStyle smallFont;
@@ -26,6 +27,10 @@ public class NPCScript : Interactable {
 		largeFont.fontSize = 32;
 		omari.renderer.enabled = false;
 		textBoxTexture.enabled = false;
+		int edgeMargin = (Screen.width/100) * edgeMarginPercentage;
+		//Vector2 pixel = new Vector2 (edgeMargin, edgeMargin);
+		talkTextGUI.pixelOffset = new Vector2 (edgeMargin, edgeMargin);
+
 	}
 
 	// Update is called once per frame
@@ -45,7 +50,7 @@ public class NPCScript : Interactable {
 					} else {
 						currentLine = 0;
 						talkTextGUI.text = "";
-						updateNPC(false);
+						updateNPC(false); //sets all the booleans to display 
 					}
 				}
 			}
@@ -81,8 +86,9 @@ public class NPCScript : Interactable {
 
 	public override void interact(GameObject player)
 	{
+		player.rigidbody2D.velocity = new Vector2(0,0);
 		playerScript = player.GetComponent<PlayerControllerScript>();
-		Debug.Log(playerScript);
+		//Debug.Log(playerScript);
 		updateNPC(true);
 		currentLine = 0;
 		//talkTextGUI.text = talkLines[currentLine];
