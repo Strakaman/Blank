@@ -22,7 +22,7 @@ public class InteractableSwitch : Interactable
 		animator.SetBool ("isActive", isActive);
 	}
 
-	public override void interact ()
+	public override void interact (GameObject player)
 	{
 		isActive = !isActive;
 		//Debug.Log ("is active hmm: " + isActive);

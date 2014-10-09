@@ -15,7 +15,7 @@ public class SavePoint : Interactable
 	
 		}
 
-		public override void interact ()
+		public override void interact (GameObject player)
 		{
 				PlayerInfo.resetPlayer ();
 				Utilities.saveGame ();

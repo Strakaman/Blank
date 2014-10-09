@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NPCScript : MonoBehaviour {
+public class NPCScript : Interactable {
 	public string[] talkLines;
 	public GUIText talkTextGUI;
 	public GUITexture textBoxTexture;
@@ -28,22 +28,6 @@ public class NPCScript : MonoBehaviour {
 		textBoxTexture.enabled = false;
 	}
 
-	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.collider.tag == "Player") {
-			playerScript = coll.collider.GetComponent<PlayerControllerScript>();
-			Debug.Log(playerScript);
-			talking = true;
-			toggleGUI = true;
-			textBoxTexture.enabled = true;
-			omari.renderer.enabled = true;
-			currentLine = 0;
-			//talkTextGUI.text = talkLines[currentLine];
-			StartCoroutine(startScrolling());
-			playerScript.enabled = false;
-			playerScript.animator.enabled = false;
-		}
-	}
-
 	// Update is called once per frame
 	void Update () {
 		if (talking) {
@@ -61,12 +45,7 @@ public class NPCScript : MonoBehaviour {
 					} else {
 						currentLine = 0;
 						talkTextGUI.text = "";
-						talking = false;
-						toggleGUI = false;
-						textBoxTexture.enabled = false;
-						playerScript.enabled = true;
-						playerScript.animator.enabled = true;
-						omari.renderer.enabled = false;
+						updateNPC(false);
 					}
 				}
 			}
@@ -84,12 +63,47 @@ public class NPCScript : MonoBehaviour {
 				omariAnimator.SetBool("Talking", true);
 				yield return new WaitForSeconds(1/textScrollSpeed);
 			} else {
-				return true;
+				yield return true;
 			}
 		}
 		omariAnimator.SetBool("Talking", false);
 		textIsScrolling = false;
 	}
+	public void updateNPC(bool isNPCactive)
+	{
+		talking = isNPCactive;
+		toggleGUI = isNPCactive;
+		textBoxTexture.enabled = isNPCactive;
+		omari.renderer.enabled = isNPCactive;
+		playerScript.enabled = !isNPCactive;
+		playerScript.animator.enabled = !isNPCactive;
+	}
+
+	public override void interact(GameObject player)
+	{
+		playerScript = player.GetComponent<PlayerControllerScript>();
+		Debug.Log(playerScript);
+		updateNPC(true);
+		currentLine = 0;
+		//talkTextGUI.text = talkLines[currentLine];
+		StartCoroutine(startScrolling());
+	}
+
+	/*void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.collider.tag == "Player") {
+			playerScript = coll.collider.GetComponent<PlayerControllerScript>();
+			Debug.Log(playerScript);
+			talking = true;
+			toggleGUI = true;
+			textBoxTexture.enabled = true;
+			omari.renderer.enabled = true;
+			currentLine = 0;
+			//talkTextGUI.text = talkLines[currentLine];
+			StartCoroutine(startScrolling());
+			playerScript.enabled = false;
+			playerScript.animator.enabled = false;
+		}
+	}*/
 
 	/*void OnGUI(){
 		if (toggleGUI == true) {
@@ -97,5 +111,4 @@ public class NPCScript : MonoBehaviour {
 			GUI.Label (new Rect(100, Screen.height/1.25f, 900, 150), talkLines[currentLine], largeFont);
 		}
 	}*/
-
 }

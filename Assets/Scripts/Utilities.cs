@@ -55,7 +55,7 @@ public static class Utilities
 						float.TryParse (coordinates [0], out x);
 						float.TryParse (coordinates [1], out y);
 						float.TryParse (coordinates [2], out z);
-						Vector3 playaPos = new Vector3(x,y,z);
+						//Vector3 playaPos = new Vector3(x,y,z);
 						loader.Close(); 
 						Application.LoadLevel(currLevelName);
 						//TODO: move plaver to position of loading
