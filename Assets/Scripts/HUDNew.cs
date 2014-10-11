@@ -23,7 +23,7 @@ public class HUDNew : MonoBehaviour {
 		
 	}
 	
-	/*void OnGUI() {
+	void OnGUI() {
 		GUI.skin = theSkin;
 		//BGTexture.setPixel (0,0, new Color (0,0,0,0.5));
 		GUI.backgroundColor = new Color (0, 0, 0, 0.5);
@@ -33,5 +33,5 @@ public class HUDNew : MonoBehaviour {
 		//GUI.Box (new Rect ((1.0/6)Screen.width, (1.0/12)Screen.height, (2.0/3)Screen.width, (1.0/6)Screen.height), BGTexture);
 		GUI.Label (new Rect (Screen.width - 100, 25, 100, 100), "Mana: " + PlayerInfo.getMana());
 		GUI.Label (new Rect (50, 50, 100, 100), "Current Spell: " + PlayerInfo.getCurrSpell().getName());
-	}*/
+	}
 }
