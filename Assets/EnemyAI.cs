@@ -15,15 +15,22 @@ public class EnemyAI : MonoBehaviour {
 	//public Direction direction;
 	private GameObject enemy;
 	private Direction direction;
+	private Vector3 s; //box collider size to help with raycasting
+	private Vector3 c; //box collider center to help with raycasting
+	private LayerMask pMask = 1 << 9;
 
 	void Start() {
+		player = GameObject.FindGameObjectWithTag ("Player");
 		col = GetComponent<CircleCollider2D>();
+		BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
+		s = zollider.size;
+		c = zollider.center;
 	}
 
 	void Update () {
 		//Player = GameObject.FindGameObjectWithTag ("Player").transform.position;
 		//rigidbody2D.velocity = (Playerdirection.normalized * speed);
-		player = GameObject.FindGameObjectWithTag ("Player");
+
 		playerTransform = player.transform.position;
 		direction = (Direction)gameObject.GetComponent<Enemy>().getDirection();
 
@@ -32,6 +39,7 @@ public class EnemyAI : MonoBehaviour {
 			Chasing();
 		}
 	}
+
 	void OnTriggerStay2D (Collider2D other)
 	{
 		Debug.Log ("TWO COLLIDERS!!!");
@@ -39,11 +47,7 @@ public class EnemyAI : MonoBehaviour {
 		if(other.gameObject == player)
 		{
 			Debug.Log ("Player");
-			// By default the player is not in sight.
-			playerInSight = false;
-			
-			// Create a vector from the enemy to the player and store the angle between it and forward.
-			//Vector3 direction = other.transform.position - transform.position;
+
 			Vector2 p = transform.position; //get current player position to cast ray from
 			Vector3 castDirection; //set the raycast direction to vertical or horizontal based on direction player is facing
 			int xAxisDir = 0;
@@ -63,11 +67,14 @@ public class EnemyAI : MonoBehaviour {
 				float x = (p.x + c.x + (s.x / 2)) - (s.x / 2 * i * (yAxisDir * yAxisDir)) + ((s.x / 2 * (xAxisDir - 1)) * (xAxisDir * xAxisDir));
 				float y = (p.y + c.y + (s.y / 2)) - (s.y / 2 * i * (xAxisDir * xAxisDir)) + ((s.y / 2 * (yAxisDir - 1)) * (yAxisDir * yAxisDir));
 				Ray ray = new Ray (new Vector3 (x, y, 0), castDirection);
-				//Debug.DrawRay(ray.origin,ray.direction);
-				RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, .25f, 9);
-				if (hit && hit.collider && Utilities.hasMatchingTag("Interactable Object",hit.collider.gameObject)) {
-					potentialInteractableICollidedWith = hit.collider.gameObject;
-					return true;
+				Debug.DrawRay(ray.origin,ray.direction);
+				RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, 1000f, pMask);
+				if (hit.collider) {
+					Debug.Log(hit.collider.name);
+				}
+				if (hit && hit.collider.gameObject == player) {
+					Debug.Log("PLAYER IS IN SIGHT");
+					playerInSight = true;
 				}
 			}
 

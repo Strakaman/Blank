@@ -87,6 +87,10 @@ public class Enemy : MonoBehaviour{
 			direction = Direction.up;
 		}
 	}
+
+	public Direction getDirection() {
+		return direction;
+	}
 	
 	//Sets the walking animation for the player if they are moving
 	void setWalk ()
