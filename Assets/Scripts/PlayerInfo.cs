@@ -5,13 +5,18 @@ using System.Collections;
  * Made static because it makes my life easier
  * Since no instance of this class will ever be created, all added variables/methods should be static
  */
-public static class PlayerInfo 
+public static class PlayerInfo
 {
 	private const int MAXMANA = 300; //max MP that player can have
 	private const int MAXHEALTH = 100; //max HP that player can have
 	private static int mana = MAXMANA; //initialize player mana
 	private static int health = MAXHEALTH; //initialize player health
 	private static Spell currentSpell = null;
+	private static int powerModifier = 1;
+	private static float pdT=0; 
+	private static int defenseModifier = 1;
+	private static int speedModifier = 1;
+	private static float buffTime = 10;
 	//umm....get the player's current health
 	public static int getHealth()
 	{
@@ -71,5 +76,24 @@ public static class PlayerInfo
 	public static void setCurrSpell(Spell s)
 	{
 		currentSpell = s;
+	}
+
+	public static int getPowerModifier()
+	{
+		return powerModifier;
+	}
+	public static void powerUp()
+	{
+		powerModifier = 2;
+		pdT += Time.deltaTime;
+		if (pdT > buffTime)
+		{
+			pdT = 0;
+			powerModifier = 1;
+		}
+		else
+		{
+			powerUp();
+		}
 	}
 }
