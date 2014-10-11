@@ -16,7 +16,6 @@ public static class PlayerInfo
 	private static float pdT=0; 
 	private static int defenseModifier = 1;
 	private static int speedModifier = 1;
-	private static float buffTime = 10;
 	//umm....get the player's current health
 	public static int getHealth()
 	{
@@ -82,18 +81,15 @@ public static class PlayerInfo
 	{
 		return powerModifier;
 	}
-	public static void powerUp()
+
+	public static void PowerUp()
 	{
 		powerModifier = 2;
-		pdT += Time.deltaTime;
-		if (pdT > buffTime)
-		{
-			pdT = 0;
-			powerModifier = 1;
-		}
-		else
-		{
-			powerUp();
-		}
+		GameObject.FindGameObjectWithTag("GameController").SendMessage("InvokePowerReset");
+	}
+
+	public static void PowerDown()
+	{
+		powerModifier = 1;
 	}
 }

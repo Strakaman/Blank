@@ -36,7 +36,16 @@ public class GameManager : MonoBehaviour
 		{
 				Instantiate (manaPickup, locationToDrop, new Quaternion ());
 		}
+		
+	void InvokePowerReset()
+	{
+		Invoke("PowerDown",10);
+	}
 
+	void PowerDown()
+	{
+		PlayerInfo.PowerDown();
+	}
 		// Update is called once per frame
 		void Update ()
 		{
