@@ -5,7 +5,7 @@ public class NPCScript : Interactable {
 	public string[] talkLines;
 	public GUIText talkTextGUI;
 	public GUITexture textBoxTexture;
-	//public Texture textTexture;
+	public Texture textTexture;
 	public int textScrollSpeed;
 	public int edgeMarginPercentage;
 	public GameObject omari;
@@ -33,10 +33,14 @@ public class NPCScript : Interactable {
 		talkTextGUI.pixelOffset = new Vector2 (edgeMargin, edgeMargin);
 		//textStuffPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
 		//omari.transform.position = new Vector3(textStuffPosition.x+15,textStuffPosition.y, 5);
-		//omari.transform.position = new Vector3(transform.position.x+10,transform.position.y, 5);
-		//talkTextGUI.transform.position = new Vector3(0,transform.position.y,talkTextGUI.transform.position.z);
-		//textBoxTexture.transform.position = new Vector3(2.5f, transform.position.y, textBoxTexture.transform.position.z);
-	
+		omari.transform.position = new Vector3(transform.position.x+10,transform.position.y, 5);
+		float x = transform.position.x + 40;
+		foreach (Transform child in transform)
+		{
+			Debug.Log(x + name);
+			child.position = new Vector3(x, transform.position.y, child.position.z);
+			//child.position = new Vector3(textStuffPosition.x +40, textStuffPosition.y, child.position.z);
+		}
 	}
 
 	// Update is called once per frame
