@@ -181,7 +181,7 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void takeDamage(int damage) {
-		health -= damage*PlayerInfo.getPowerModifier();
+		health -= damage*PlayerInfo.GetPowerModifier();
 	}
 
 	void dealDamage() {
