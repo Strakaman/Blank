@@ -245,7 +245,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &16644734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,7 +909,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &144580596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1372,7 +1370,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &206837434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2594,7 +2591,7 @@ Transform:
   m_Children:
   - {fileID: 1129239859}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!114 &416027706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2767,7 +2764,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &416027713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3413,7 +3409,7 @@ Transform:
   m_LocalScale: {x: 2.51661706, y: 2.51661706, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!1001 &536969439
 Prefab:
   m_ObjectHideFlags: 0
@@ -3819,7 +3815,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &621379815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3880,7 +3875,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!1001 &676070823
 Prefab:
   m_ObjectHideFlags: 0
@@ -5113,7 +5108,7 @@ Transform:
   m_Children:
   - {fileID: 392824625}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
 --- !u!114 &886273230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5144,7 +5139,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &886273232
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5462,7 +5456,7 @@ Transform:
   - {fileID: 346541784}
   - {fileID: 750180253}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!1 &1021097376
 GameObject:
   m_ObjectHideFlags: 0
@@ -6123,7 +6117,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1130336467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6300,7 +6293,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1156333635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6424,7 +6416,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1184826990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7365,7 +7356,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1315157697
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7457,7 +7447,7 @@ Transform:
   m_Children:
   - {fileID: 1733748959}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!1 &1324686335
 GameObject:
   m_ObjectHideFlags: 0
@@ -7747,7 +7737,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 22
 --- !u!1 &1358680482
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,7 +7814,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1358680487
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8599,7 +8588,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1509040526
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10430,7 +10418,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1830865122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10809,7 +10796,7 @@ Transform:
   - {fileID: 1509040522}
   - {fileID: 2085663771}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
 --- !u!114 &1949492645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11135,7 +11122,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &2030012365
 Rigidbody2D:
   m_ObjectHideFlags: 0
