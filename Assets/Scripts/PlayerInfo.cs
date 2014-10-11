@@ -13,7 +13,6 @@ public static class PlayerInfo
 	private static int health = MAXHEALTH; //initialize player health
 	private static Spell currentSpell = null;
 	private static int powerModifier = 1;
-	private static float pdT=0; 
 	private static int defenseModifier = 1;
 	private static int speedModifier = 1;
 	//umm....get the player's current health
@@ -77,9 +76,19 @@ public static class PlayerInfo
 		currentSpell = s;
 	}
 
-	public static int getPowerModifier()
+	public static int GetPowerModifier()
 	{
 		return powerModifier;
+	}
+
+	public static int GetDefenseModifier()
+	{
+		return defenseModifier;
+	}
+
+	public static int GetSpeedModifier()
+	{
+		return speedModifier;
 	}
 
 	public static void PowerUp()
@@ -91,5 +100,27 @@ public static class PlayerInfo
 	public static void PowerDown()
 	{
 		powerModifier = 1;
+	}
+
+	public static void SpeedUp()
+	{
+		speedModifier = 2;
+		GameObject.FindGameObjectWithTag("GameController").SendMessage("InvokeSpeedReset");
+	}
+	
+	public static void SpeedDown()
+	{
+		speedModifier = 1;
+	}
+
+	public static void InvulnUp()
+	{
+		defenseModifier = 0;
+		GameObject.FindGameObjectWithTag("GameController").SendMessage("InvokeInvulnReset");
+	}
+	
+	public static void InvulnDown()
+	{
+		defenseModifier = 1;
 	}
 }

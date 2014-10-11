@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
 		public static GameManager gM;
 		public GameObject healthPickup;
 		public GameObject manaPickup;
+		public GameObject powerPickup;
+	public GameObject speedPickup;
+	public GameObject invulnPickup;
 		public bool debugMode = true;
 
 		void Start() {
@@ -36,15 +39,50 @@ public class GameManager : MonoBehaviour
 		{
 				Instantiate (manaPickup, locationToDrop, new Quaternion ());
 		}
-		
+
+	void DropPowerPickup (Vector3 locationToDrop)
+	{
+		Instantiate (powerPickup, locationToDrop, new Quaternion ());
+	}
+	
+	void DropSpeedPickup (Vector3 locationToDrop)
+	{
+		Instantiate (speedPickup, locationToDrop, new Quaternion ());
+	}
+
+	void DropInvulnPickup (Vector3 locationToDrop)
+	{
+		Instantiate (invulnPickup, locationToDrop, new Quaternion ());
+	}
+	
 	void InvokePowerReset()
 	{
 		Invoke("PowerDown",10);
 	}
 
+	void InvokeSpeedReset()
+	{
+		Invoke("SpeedDown",10);
+	}
+
+	void InvokeInvulnReset()
+	{
+		Invoke("InvulnDown",10);
+	}
+
 	void PowerDown()
 	{
 		PlayerInfo.PowerDown();
+	}
+
+	void SpeedDown()
+	{
+		PlayerInfo.SpeedDown();
+	}
+
+	void InvulnDown()
+	{
+		PlayerInfo.InvulnDown();
 	}
 		// Update is called once per frame
 		void Update ()

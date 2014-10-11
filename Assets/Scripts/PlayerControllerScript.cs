@@ -239,7 +239,6 @@ public class PlayerControllerScript : MonoBehaviour
 		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject))
 		{
 			damageProperties(collInfo, -10, 1000, 0.5f);
-			GetComponent<SpriteRenderer>().material = Hit;
 		}
 	}
 
@@ -247,12 +246,12 @@ public class PlayerControllerScript : MonoBehaviour
 		if (Utilities.hasMatchingTag("EnemyProjectile",collInfo.gameObject))
 		{
 			damageProperties(collInfo, -20, 1000, 0.1f);
-			GetComponent<SpriteRenderer>().material = Hit;
 		}
 	}
 
 	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
-		if (hittime + hitdelay < Time.time) {
+		GetComponent<SpriteRenderer>().material = Hit;
+		if ((hittime + hitdelay < Time.time)/*&& PlayerInfo.g*/) {
 			hittime = Time.time;
 			PlayerInfo.changeHealth(damage);
 			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
