@@ -811,6 +811,10 @@ Prefab:
       propertyPath: backgrounds.Array.data[1]
       value: 
       objectReference: {fileID: 556722457}
+    - target: {fileID: 11400002, guid: 80fea08e8f384a341aaa635364335ebf, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80fea08e8f384a341aaa635364335ebf, type: 2}
   m_RootGameObject: {fileID: 5092640}
@@ -1465,6 +1469,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a86209283367c3f4aaffc03c5846fa4f, type: 2}
+    - target: {fileID: 11400002, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
+      propertyPath: direction
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
   m_RootGameObject: {fileID: 1632327342}
@@ -2516,8 +2524,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  playerInSight: 0
-  fieldOfViewAngle: 110
 --- !u!61 &664363618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2599,8 +2605,9 @@ MonoBehaviour:
 --- !u!58 &664363623
 CircleCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 5800000, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 1324420279}
   m_GameObject: {fileID: 664363614}
   m_Enabled: 1
   m_Material: {fileID: 0}
@@ -5160,6 +5167,7 @@ GameObject:
   - 50: {fileID: 1432135681}
   - 95: {fileID: 1432135680}
   - 114: {fileID: 1432135687}
+  - 58: {fileID: 1432135688}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: Enemy
@@ -5211,8 +5219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  playerInSight: 0
-  fieldOfViewAngle: 110
 --- !u!61 &1432135683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5291,6 +5297,18 @@ MonoBehaviour:
   objectTags:
   - Enemy
   - Weighted
+--- !u!58 &1432135688
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 252513739}
+  m_GameObject: {fileID: 1432135679}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 4
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1446952032
 GameObject:
   m_ObjectHideFlags: 0
@@ -5806,6 +5824,7 @@ GameObject:
   - 50: {fileID: 1632327344}
   - 95: {fileID: 1632327343}
   - 114: {fileID: 1632327350}
+  - 58: {fileID: 1632327351}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: Enemy
@@ -5857,8 +5876,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  playerInSight: 0
-  fieldOfViewAngle: 110
 --- !u!61 &1632327346
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5937,6 +5954,18 @@ MonoBehaviour:
   objectTags:
   - Enemy
   - Weighted
+--- !u!58 &1632327351
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 338001359}
+  m_GameObject: {fileID: 1632327342}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 4
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1645364116
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,12 +7,10 @@ public class EnemyAI : MonoBehaviour {
 	private float Xdif;
 	private float Ydif;
 	public float speed;
-	public bool playerInSight;                      // Whether or not the player is currently sighted.
-	public float fieldOfViewAngle = 110f;           // Number of degrees, centred on forward, for the enemy see.
+	private bool playerInSight;                      // Whether or not the player is currently sighted.
 	private CircleCollider2D col;                     // Reference to the sphere collider trigger component.
 	private GameObject player;                      // Reference to the player.
 	private Vector3 playerTransform;                      // Reference to the player's transform.
-	//public Direction direction;
 	private GameObject enemy;
 	private Direction direction;
 	private Vector3 s; //box collider size to help with raycasting
@@ -30,23 +28,21 @@ public class EnemyAI : MonoBehaviour {
 	void Update () {
 		//Player = GameObject.FindGameObjectWithTag ("Player").transform.position;
 		//rigidbody2D.velocity = (Playerdirection.normalized * speed);
-
 		playerTransform = player.transform.position;
 		direction = (Direction)gameObject.GetComponent<Enemy>().getDirection();
-
 		if (playerInSight) {
-			Debug.Log ("Chasing");
+			//Debug.Log ("Chasing");
 			Chasing();
 		}
 	}
 
 	void OnTriggerStay2D (Collider2D other)
 	{
-		Debug.Log ("TWO COLLIDERS!!!");
+		//Debug.Log ("TWO COLLIDERS!!!");
 		// If the player has entered the trigger sphere...
 		if(other.gameObject == player)
 		{
-			Debug.Log ("Player");
+			//Debug.Log ("Player");
 
 			Vector2 p = transform.position; //get current player position to cast ray from
 			Vector3 castDirection; //set the raycast direction to vertical or horizontal based on direction player is facing
@@ -69,31 +65,29 @@ public class EnemyAI : MonoBehaviour {
 				Ray ray = new Ray (new Vector3 (x, y, 0), castDirection);
 				Debug.DrawRay(ray.origin,ray.direction);
 				RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, col.radius, pMask);
-				if (hit.collider) {
-					Debug.Log(hit.collider.name);
-				}
 				if (hit && hit.collider.gameObject == player) {
-					Debug.Log("PLAYER IS IN SIGHT");
+					//Debug.Log("PLAYER IS IN SIGHT");
 					playerInSight = true;
 				}
 			}
-
-//			float angle = Vector3.Angle(direction, transform.forward);
-			/*If the angle between forward and where the player is, is less than half the angle of view...
-			if(angle < fieldOfViewAngle * 0.5f)
-			{
-				Debug.Log ("Field of View");
-			}*/
 		}
 	}
-	
+
+	public void setPlayerInSight(bool inSight) {
+		if (inSight = true) {
+			playerInSight = true;
+		} else if (inSight = false) {
+			playerInSight = false;
+		}
+	}
+
 	void OnTriggerExit2D (Collider2D other)
 	{
 		// If the player leaves the trigger zone...
 		if (other.gameObject == player) {
 			// ... the player is not in sight.
 			playerInSight = false;
-			Debug.Log("NOT IN SIGHT");
+			//Debug.Log("NOT IN SIGHT");
 		}
 	}
 

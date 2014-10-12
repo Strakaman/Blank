@@ -4,9 +4,7 @@ using System.Collections;
 public class EnemySight : MonoBehaviour {
 	public bool playerInSight;                      // Whether or not the player is currently sighted.
 	private GameObject player;                      // Reference to the player.
-	private Vector3 playerTransform;                      // Reference to the player's transform.
 	private CircleCollider2D col;                     // Reference to the sphere collider trigger component.
-	public float fieldOfViewAngle = 110f;           // Number of degrees, centred on forward, for the enemy see.
 	private Direction direction;
 	private Vector3 s; //box collider size to help with raycasting
 	private Vector3 c; //box collider center to help with raycasting
@@ -14,6 +12,7 @@ public class EnemySight : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Player");
 		BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
 		s = zollider.size;
 		c = zollider.center;
@@ -22,7 +21,7 @@ public class EnemySight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		direction = (Direction)gameObject.GetComponent<Enemy>().getDirection();
 	}
 	void OnTriggerStay2D (Collider2D other)
 	{

@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour{
 	public Material Default;
 	public Material Hit;
 	private bool stunned = false;
-	private bool slowed = false;
+	private bool slowed = false; 
 
 	// Use this for initialization
 	void Start () {
@@ -146,6 +146,7 @@ public class Enemy : MonoBehaviour{
 		if (Utilities.hasMatchingTag("RedSpellObject",coll.gameObject)) {
 			damageProperties(coll, 25, 100, 0.1f);
 			GetComponent<SpriteRenderer>().material = Hit;
+
 		}
 		if (Utilities.hasMatchingTag("YellowSpellObject",coll.gameObject)) {
 			stunned = true;
@@ -182,6 +183,7 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void takeDamage(int damage) {
+		gameObject.GetComponent<EnemyAI> ().setPlayerInSight (true);
 		health -= damage*PlayerInfo.GetPowerModifier();
 	}
 
