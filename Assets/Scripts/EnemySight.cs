@@ -7,55 +7,70 @@ public class EnemySight : MonoBehaviour {
 	private Vector3 playerTransform;                      // Reference to the player's transform.
 	private CircleCollider2D col;                     // Reference to the sphere collider trigger component.
 	public float fieldOfViewAngle = 110f;           // Number of degrees, centred on forward, for the enemy see.
+	private Direction direction;
+	private Vector3 s; //box collider size to help with raycasting
+	private Vector3 c; //box collider center to help with raycasting
+	private LayerMask pMask = 1 << 9;
 
 	// Use this for initialization
 	void Start () {
-	
+		BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
+		s = zollider.size;
+		c = zollider.center;
+		col = GetComponent<CircleCollider2D>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
-	
 	void OnTriggerStay2D (Collider2D other)
 	{
 		Debug.Log ("TWO COLLIDERS!!!");
 		// If the player has entered the trigger sphere...
 		if(other.gameObject == player)
 		{
-			// By default the player is not in sight.
-			playerInSight = false;
+			Debug.Log ("Player");
 			
-			// Create a vector from the enemy to the player and store the angle between it and forward.
-			Vector3 direction = other.transform.position - transform.position;
-			float angle = Vector3.Angle(direction, transform.forward);
+			Vector2 p = transform.position; //get current player position to cast ray from
+			Vector3 castDirection; //set the raycast direction to vertical or horizontal based on direction player is facing
+			int xAxisDir = 0;
+			int yAxisDir = 0;
+			if (direction == Direction.up) {
+				yAxisDir = 1;		
+			} else if (direction == Direction.down) {
+				yAxisDir = -1;
+			} else if (direction == Direction.right) {
+				xAxisDir = 1;
+			} else if (direction == Direction.left) {
+				xAxisDir = -1;
+			}
+			castDirection = new Vector3 (xAxisDir, yAxisDir);
 			
-			// If the angle between forward and where the player is, is less than half the angle of view...
-			if(angle < fieldOfViewAngle * 0.5f)
-			{
-				RaycastHit hit;
-				
-				// ... and if a raycast towards the player hits something...
-				if(Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius))
-				{
-					// ... and if the raycast hits the player...
-					if(hit.collider.gameObject == player)
-					{
-						// ... the player is in sight.
-						playerInSight = true;
-					}
+			for (int i = 0; i < 3; i++) {
+				float x = (p.x + c.x + (s.x / 2)) - (s.x / 2 * i * (yAxisDir * yAxisDir)) + ((s.x / 2 * (xAxisDir - 1)) * (xAxisDir * xAxisDir));
+				float y = (p.y + c.y + (s.y / 2)) - (s.y / 2 * i * (xAxisDir * xAxisDir)) + ((s.y / 2 * (yAxisDir - 1)) * (yAxisDir * yAxisDir));
+				Ray ray = new Ray (new Vector3 (x, y, 0), castDirection);
+				Debug.DrawRay(ray.origin,ray.direction);
+				RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, col.radius, pMask);
+				if (hit.collider) {
+					Debug.Log(hit.collider.name);
+				}
+				if (hit && hit.collider.gameObject == player) {
+					Debug.Log("PLAYER IS IN SIGHT");
+					playerInSight = true;
 				}
 			}
 		}
 	}
 	
-	void OnTriggerExit (Collider other)
+	void OnTriggerExit2D (Collider2D other)
 	{
 		// If the player leaves the trigger zone...
-		if(other.gameObject == player)
+		if (other.gameObject == player) {
 			// ... the player is not in sight.
 			playerInSight = false;
+			Debug.Log("NOT IN SIGHT");
+		}
 	}
 }

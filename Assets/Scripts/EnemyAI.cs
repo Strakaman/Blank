@@ -68,7 +68,7 @@ public class EnemyAI : MonoBehaviour {
 				float y = (p.y + c.y + (s.y / 2)) - (s.y / 2 * i * (xAxisDir * xAxisDir)) + ((s.y / 2 * (yAxisDir - 1)) * (yAxisDir * yAxisDir));
 				Ray ray = new Ray (new Vector3 (x, y, 0), castDirection);
 				Debug.DrawRay(ray.origin,ray.direction);
-				RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, 1000f, pMask);
+				RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, col.radius, pMask);
 				if (hit.collider) {
 					Debug.Log(hit.collider.name);
 				}

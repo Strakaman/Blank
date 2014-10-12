@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: b17802764d5db964c848d716346f96c8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: First-Enemy
+    21300002: First-Enemy_0
+    21300004: First-Enemy_1
+    21300006: First-Enemy_2
+    21300008: First-Enemy_3
+    21300010: First-Enemy_4
+    21300012: First-Enemy_5
+    21300014: First-Enemy_6
+    21300016: First-Enemy_7
+    21300018: First-Enemy_8
+    21300020: First-Enemy_9
+    21300022: First-Enemy_10
+    21300024: First-Enemy_11
+    21300026: First-Enemy_12
+    21300028: First-Enemy_13
+    21300030: First-Enemy_14
+    21300032: First-Enemy_15
+    21300034: First-Enemy_16
+    21300036: First-Enemy_17
+    21300038: First-Enemy_18
+    21300040: First-Enemy_19
+    21300042: First-Enemy_20
+    21300044: First-Enemy_21
+    21300046: First-Enemy_22
+    21300048: First-Enemy_23
+    21300050: First-Enemy_24
+    21300052: First-Enemy_25
+    21300054: First-Enemy_26
+    21300056: First-Enemy_27
+    21300058: First-Enemy_28
+    21300060: First-Enemy_29
+    21300062: First-Enemy_30
+    21300064: First-Enemy_31
+    21300066: First-Enemy_32
+    21300068: First-Enemy_33
+    21300070: First-Enemy_34
+    21300072: First-Enemy_35
+    21300074: First-Enemy_36
+    21300076: First-Enemy_37
+    21300078: First-Enemy_38
+    21300080: First-Enemy_39
+    21300082: First-Enemy_40
+    21300084: First-Enemy_41
+    21300086: First-Enemy_42
+    21300088: First-Enemy_43
+    21300090: First-Enemy_44
+    21300092: First-Enemy_45
+    21300094: First-Enemy_46
+    21300096: First-Enemy_47
+    21300098: First-Enemy_48
+    21300100: First-Enemy_49
+    21300102: First-Enemy_50
+    21300104: First-Enemy_51
+    21300106: First-Enemy_52
+    21300108: First-Enemy_53
+    21300110: First-Enemy_54
+    21300112: First-Enemy_55
+    21300114: First-Enemy_56
+    21300116: First-Enemy_57
+    21300118: First-Enemy_58
+    21300120: First-Enemy_59
+    21300122: First-Enemy_60
+    21300124: First-Enemy_61
+    21300126: First-Enemy_62
+    21300128: First-Enemy_63
+    21300130: First-Enemy_64
+    21300132: First-Enemy_65
+    21300134: First-Enemy_66
+    21300136: First-Enemy_67
+    21300138: First-Enemy_68
+    21300140: First-Enemy_69
+    21300142: First-Enemy_70
+    21300144: First-Enemy_71
+    21300146: First-Enemy_72
+    21300148: First-Enemy_73
+    21300150: First-Enemy_74
+    21300152: First-Enemy_75
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: First-Enemy_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 784
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 783
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 782
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_3
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 782
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 696
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 696
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_6
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 696
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 696
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 612
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 612
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 612
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_11
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 612
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 512
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_13
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 512
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 512
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_16
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_17
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 396
+        width: 100
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_18
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 396
+        width: 100
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_20
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 284
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_21
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 284
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 284
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 164
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_51
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 92
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: First-Enemy_23
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 23
+        width: 105
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

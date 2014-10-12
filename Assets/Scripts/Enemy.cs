@@ -40,6 +40,7 @@ public class Enemy : MonoBehaviour{
 		//Debug.Log("Health is: " + health);
 		if (health <= 0) {
 			rigidbody2D.velocity = new Vector2(0, 0);
+			animator.SetBool("Death", true);
 			Destroy(gameObject, 1);
 			gameObject.collider2D.enabled = false;
 		}
@@ -143,7 +144,7 @@ public class Enemy : MonoBehaviour{
 	void OnCollisionEnter2D(Collision2D coll) {
 		//Debug.Log ("COLLIDING");
 		if (Utilities.hasMatchingTag("RedSpellObject",coll.gameObject)) {
-			damageProperties(coll, 25, 1000, 0.1f);
+			damageProperties(coll, 25, 100, 0.1f);
 			GetComponent<SpriteRenderer>().material = Hit;
 		}
 		if (Utilities.hasMatchingTag("YellowSpellObject",coll.gameObject)) {
