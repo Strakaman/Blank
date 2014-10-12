@@ -1584,11 +1584,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -13.3002071
+      value: -13.3047724
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8.95728302
+      value: -9.06424999
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1612,8 +1612,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: b1cf05ac02ca21e49aef9e054f522a1b,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
   m_RootGameObject: {fileID: 416027704}
@@ -2677,12 +2682,12 @@ Transform:
   m_PrefabInternal: {fileID: 241404786}
   m_GameObject: {fileID: 416027704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.3002071, y: -8.95728302, z: 0}
+  m_LocalPosition: {x: -13.3047724, y: -9.06424999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1129239859}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!114 &416027706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2895,7 +2900,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1675491589
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300014, guid: a5c91f887f521614785fd52e4eaf7c91, type: 3}
+  m_Sprite: {fileID: 21300002, guid: b1cf05ac02ca21e49aef9e054f522a1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &418607871
 GameObject:
@@ -3966,7 +3971,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!1001 &676070823
 Prefab:
   m_ObjectHideFlags: 0
