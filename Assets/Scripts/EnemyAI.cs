@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class EnemyAI : MonoBehaviour {
-	
+	public float chaseTime = 2;
+	public float speed;
 	private Vector2 Playerdirection;
 	private float Xdif;
 	private float Ydif;
-	public float speed;
 	private bool playerInSight;                      // Whether or not the player is currently sighted.
 	private CircleCollider2D col;                     // Reference to the sphere collider trigger component.
 	private GameObject player;                      // Reference to the player.
@@ -73,20 +73,19 @@ public class EnemyAI : MonoBehaviour {
 		}
 	}
 
-	public void setPlayerInSight(bool inSight) {
-		if (inSight = true) {
-			playerInSight = true;
-		} else if (inSight = false) {
-			playerInSight = false;
-		}
+	public void setPlayerInSightTrue() {
+		playerInSight = true;
 	}
-
+	public void setPlayerInSightFalse() {
+		playerInSight = false;
+	}
+	
 	void OnTriggerExit2D (Collider2D other)
 	{
 		// If the player leaves the trigger zone...
 		if (other.gameObject == player) {
 			// ... the player is not in sight.
-			playerInSight = false;
+			Invoke("setPlayerInSightFalse", chaseTime);
 			//Debug.Log("NOT IN SIGHT");
 		}
 	}

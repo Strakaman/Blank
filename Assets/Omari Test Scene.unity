@@ -668,6 +668,7 @@ GameObject:
   - 50: {fileID: 179706312}
   - 95: {fileID: 179706311}
   - 114: {fileID: 179706318}
+  - 58: {fileID: 179706319}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: Enemy
@@ -685,12 +686,11 @@ Animator:
   m_GameObject: {fileID: 179706310}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 88101de77cda9054aaa7cff7be15884d, type: 2}
+  m_Controller: {fileID: 9100000, guid: a86209283367c3f4aaffc03c5846fa4f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &179706312
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -730,7 +730,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .600000024, y: 1}
+  m_Size: {x: .899999976, y: .899999976}
   m_Center: {x: 0, y: 0}
 --- !u!114 &179706315
 MonoBehaviour:
@@ -768,7 +768,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300016, guid: a468c6ffd1d085e40901057f90f956c7, type: 3}
+  m_Sprite: {fileID: 21300002, guid: b17802764d5db964c848d716346f96c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &179706317
 Transform:
@@ -798,6 +798,18 @@ MonoBehaviour:
   objectTags:
   - Enemy
   - Weighted
+--- !u!58 &179706319
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 425471850}
+  m_GameObject: {fileID: 179706310}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 4
+  m_Center: {x: 0, y: 0}
 --- !u!1 &201587761
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +846,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &201587763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1788,7 +1799,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &523796703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2224,7 +2234,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1009279447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,6 +2591,7 @@ GameObject:
   - 50: {fileID: 1089254718}
   - 95: {fileID: 1089254717}
   - 114: {fileID: 1089254723}
+  - 58: {fileID: 1089254724}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: Enemy
@@ -2612,12 +2622,11 @@ Animator:
   m_GameObject: {fileID: 1089254715}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 88101de77cda9054aaa7cff7be15884d, type: 2}
+  m_Controller: {fileID: 9100000, guid: a86209283367c3f4aaffc03c5846fa4f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1089254718
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2657,7 +2666,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .600000024, y: 1}
+  m_Size: {x: .899999976, y: .899999976}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1089254721
 MonoBehaviour:
@@ -2695,7 +2704,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300016, guid: a468c6ffd1d085e40901057f90f956c7, type: 3}
+  m_Sprite: {fileID: 21300002, guid: b17802764d5db964c848d716346f96c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1089254723
 MonoBehaviour:
@@ -2712,6 +2721,18 @@ MonoBehaviour:
   objectTags:
   - Enemy
   - Weighted
+--- !u!58 &1089254724
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 1641728679}
+  m_GameObject: {fileID: 1089254715}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 4
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1110694075
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,7 +3228,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1260802715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3569,7 +3589,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &1360089712
 Transform:
   m_ObjectHideFlags: 0
@@ -3856,6 +3875,7 @@ GameObject:
   - 50: {fileID: 1411109424}
   - 95: {fileID: 1411109423}
   - 114: {fileID: 1411109429}
+  - 58: {fileID: 1411109430}
   m_Layer: 0
   m_Name: EnemyTest
   m_TagString: Enemy
@@ -3886,12 +3906,11 @@ Animator:
   m_GameObject: {fileID: 1411109421}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 88101de77cda9054aaa7cff7be15884d, type: 2}
+  m_Controller: {fileID: 9100000, guid: a86209283367c3f4aaffc03c5846fa4f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1411109424
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3931,7 +3950,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .600000024, y: 1}
+  m_Size: {x: .899999976, y: .899999976}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1411109427
 MonoBehaviour:
@@ -3969,7 +3988,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300016, guid: a468c6ffd1d085e40901057f90f956c7, type: 3}
+  m_Sprite: {fileID: 21300002, guid: b17802764d5db964c848d716346f96c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1411109429
 MonoBehaviour:
@@ -3986,6 +4005,18 @@ MonoBehaviour:
   objectTags:
   - Enemy
   - Weighted
+--- !u!58 &1411109430
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: bb0e3a74e9b102f419dedd5ad13f0356,
+    type: 2}
+  m_PrefabInternal: {fileID: 2022865729}
+  m_GameObject: {fileID: 1411109421}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 4
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1470075409
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,7 +4246,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1539857721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4656,7 +4686,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1641859219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4838,7 +4867,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1657292457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5278,7 +5306,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1765757859
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5517,7 +5544,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!58 &1857775057
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5843,7 +5869,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1961451657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6225,7 +6250,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2123197554
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -183,7 +183,7 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void takeDamage(int damage) {
-		gameObject.GetComponent<EnemyAI> ().setPlayerInSight (true);
+		gameObject.GetComponent<EnemyAI> ().setPlayerInSightTrue();
 		health -= damage*PlayerInfo.GetPowerModifier();
 	}
 
