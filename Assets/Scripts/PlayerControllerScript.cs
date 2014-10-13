@@ -118,7 +118,8 @@ public class PlayerControllerScript : MonoBehaviour
 	void CheckInputs ()
 	{
 				//Consider modifying the same vector everytime instead of creating a new one, performance win?
-				rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed, Input.GetAxis ("Vertical") * speed);
+				rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier(), 
+		                                    		Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier());
 				if (Input.GetButtonDown ("Spell Cycle Up")) {
 						changeSpell (true);
 				} else if (Input.GetButtonDown ("Spell Cycle Down")) {
@@ -250,6 +251,10 @@ public class PlayerControllerScript : MonoBehaviour
 	}
 
 	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
+		if (PlayerInfo.GetDefenseModifier() == 0)
+		{
+			return;
+		}
 		GetComponent<SpriteRenderer>().material = Hit;
 		if ((hittime + hitdelay < Time.time)/*&& PlayerInfo.g*/) {
 			hittime = Time.time;

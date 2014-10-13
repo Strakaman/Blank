@@ -66,59 +66,78 @@ public static class PlayerInfo
 		}
 	}
 
+	//For GUI display
 	public static Spell getCurrSpell()
 	{
 		return currentSpell;
 	}
 
+	//To be able to update GUI
 	public static void setCurrSpell(Spell s)
 	{
 		currentSpell = s;
 	}
 
+	//I think we can use this to make sure anymodifiers on the player disappear when they die
+	public static void ResetStatModifiers()
+	{
+		powerModifier = 1;
+		speedModifier = 1;
+		defenseModifier = 1;
+	}
+
+	//used for enemy damage taken calculation
 	public static int GetPowerModifier()
 	{
 		return powerModifier;
 	}
 
+	//used for player damage taken calculation
 	public static int GetDefenseModifier()
 	{
 		return defenseModifier;
 	}
 
+	//used for movement distance calculation
 	public static int GetSpeedModifier()
 	{
 		return speedModifier;
 	}
 
+	//called by corresponding pickup item
 	public static void PowerUp()
 	{
 		powerModifier = 2;
 		GameObject.FindGameObjectWithTag("GameController").SendMessage("InvokePowerReset");
 	}
 
+	//called when corresponding pickup item should expire
 	public static void PowerDown()
 	{
 		powerModifier = 1;
 	}
 
+	//called by corresponding pickup item
 	public static void SpeedUp()
 	{
 		speedModifier = 2;
 		GameObject.FindGameObjectWithTag("GameController").SendMessage("InvokeSpeedReset");
 	}
-	
+
+	//called when corresponding pickup item should expir
 	public static void SpeedDown()
 	{
 		speedModifier = 1;
 	}
 
+	//called by corresponding pickup item
 	public static void InvulnUp()
 	{
 		defenseModifier = 0;
 		GameObject.FindGameObjectWithTag("GameController").SendMessage("InvokeInvulnReset");
 	}
-	
+
+	//called when corresponding pickup item should expir
 	public static void InvulnDown()
 	{
 		defenseModifier = 1;

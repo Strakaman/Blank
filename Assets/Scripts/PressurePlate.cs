@@ -21,7 +21,8 @@ public class PressurePlate : MonoBehaviour
 		if (Utilities.hasMatchingTag("Weighted",trigInfo.gameObject)) {
 		//if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
 					//Debug.Log("trigger on due to: " + trigInfo.tag);
-					TriggerChildren (true);
+			isActive = true;
+			TriggerChildren (true);
 			}
 	}
 
@@ -30,12 +31,14 @@ public class PressurePlate : MonoBehaviour
 		if (Utilities.hasMatchingTag("Weighted",trigInfo.gameObject)) {
 		//if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
 					//Debug.Log("trigger off due to: " + trigInfo.tag);
-					TriggerChildren (false);
+			isActive = false;	
+			TriggerChildren (false);
 			}
 	}
 
 	void TriggerChildren (bool trigOnTruetrigOffFalse)
 	{
+
 			animator.SetBool ("isActive", trigOnTruetrigOffFalse);
 			Utilities.setStatusInChildren(transform, trigOnTruetrigOffFalse);
 	}
