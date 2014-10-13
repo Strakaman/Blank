@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour{
 	public Material Hit;
 	private bool stunned = false;
 	private bool slowed = false; 
+	private bool isHit = false;
 
 	// Use this for initialization
 	void Start () {
@@ -164,10 +165,18 @@ public class Enemy : MonoBehaviour{
 		if (hittime + hitdelay < Time.time) {
 			hittime = Time.time;
 			takeDamage(damage);
+			isHit = true;
 			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
 			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
 			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
 		}
+	}
+
+	public bool isHitTrue() {
+		return isHit;
+	}
+	public void isHitFalse() {
+		isHit = false;
 	}
 
 	void Movement() {

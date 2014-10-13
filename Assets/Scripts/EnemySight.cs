@@ -2,36 +2,45 @@
 using System.Collections;
 
 public class EnemySight : MonoBehaviour {
-	public bool playerInSight;                      // Whether or not the player is currently sighted.
+	//public bool playerInSight;                      // Whether or not the player is currently sighted.
 	private GameObject player;                      // Reference to the player.
 	private CircleCollider2D col;                     // Reference to the sphere collider trigger component.
 	private Direction direction;
 	private Vector3 s; //box collider size to help with raycasting
 	private Vector3 c; //box collider center to help with raycasting
 	private LayerMask pMask = 1 << 9;
+	public float chaseTime = 2;
+	private GameObject enemy;
+	//private bool outOfRange;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
-		BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
+		transform.position = gameObject.GetComponentInParent <EnemyAI>().transform.position;
+		BoxCollider2D zollider = GetComponentInParent<BoxCollider2D> (); //get attached collider, store size and center
 		s = zollider.size;
 		c = zollider.center;
 		col = GetComponent<CircleCollider2D>();
+		//outOfRange = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		direction = (Direction)gameObject.GetComponent<Enemy>().getDirection();
+		direction = (Direction)gameObject.GetComponentInParent<Enemy>().getDirection();
+		/*if (outOfRange = true) {
+			Invoke("invokeSetFalse", chaseTime);
+			outOfRange = false;
+		}*/
 	}
 	void OnTriggerStay2D (Collider2D other)
 	{
-		Debug.Log ("TWO COLLIDERS!!!");
+		//Debug.Log ("TWO COLLIDERS!!!");
 		// If the player has entered the trigger sphere...
 		if(other.gameObject == player)
 		{
 			Debug.Log ("Player");
 			
-			Vector2 p = transform.position; //get current player position to cast ray from
+			Vector2 p = gameObject.GetComponentInParent <EnemyAI>().transform.position; //get current enemy position to cast ray from
 			Vector3 castDirection; //set the raycast direction to vertical or horizontal based on direction player is facing
 			int xAxisDir = 0;
 			int yAxisDir = 0;
@@ -52,13 +61,17 @@ public class EnemySight : MonoBehaviour {
 				Ray ray = new Ray (new Vector3 (x, y, 0), castDirection);
 				Debug.DrawRay(ray.origin,ray.direction);
 				RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, col.radius, pMask);
-				if (hit.collider) {
-					Debug.Log(hit.collider.name);
-				}
 				if (hit && hit.collider.gameObject == player) {
-					Debug.Log("PLAYER IS IN SIGHT");
-					playerInSight = true;
+					//Debug.Log("PLAYER IS IN SIGHT");
+					//playerInSight = true;
+					gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
 				}
+			}
+		}
+		if (other.gameObject.CompareTag ("Enemy")) {
+			if (other.gameObject.GetComponentInParent<Enemy>().isHitTrue() == true) {
+				gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
+				other.gameObject.GetComponentInParent<Enemy>().isHitFalse();
 			}
 		}
 	}
@@ -68,8 +81,14 @@ public class EnemySight : MonoBehaviour {
 		// If the player leaves the trigger zone...
 		if (other.gameObject == player) {
 			// ... the player is not in sight.
-			playerInSight = false;
-			Debug.Log("NOT IN SIGHT");
+			//playerInSight = false;
+			//outOfRange = true;
+			Invoke("invokeSetFalse", chaseTime);
+			//Debug.Log("NOT IN SIGHT");
 		}
+	}
+
+	void invokeSetFalse() {
+		gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightFalse();
 	}
 }
