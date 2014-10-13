@@ -31,9 +31,6 @@ public class NPCScript : Interactable {
 		int edgeMargin = (Screen.width/100) * edgeMarginPercentage;
 		//Vector2 pixel = new Vector2 (edgeMargin, edgeMargin);
 		talkTextGUI.pixelOffset = new Vector2 (edgeMargin, edgeMargin);
-		//omariStuffPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
-		//omari.transform.position = new Vector3(omariStuffPosition.x,omariStuffPosition.y, omari.transform.position.z);
-		//omari.transform.position = new Vector3(transform.position.x+10,transform.position.y, 5);
 		float x = transform.position.x + 40;
 		/*foreach (Transform child in transform)
 		{
@@ -98,8 +95,9 @@ public class NPCScript : Interactable {
 	{
 		omariStuffPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
 		omari.transform.position = new Vector3(omariStuffPosition.x-7,omariStuffPosition.y, omari.transform.position.z);
-		//omari.transform.position = new Vector3(-7,-1, omari.transform.position.z);
-		Debug.Log(omari.transform.position);
+		talkTextGUI.transform.position = new Vector3(0,-.12f,talkTextGUI.transform.position.z);
+		textBoxTexture.transform.position = new Vector3(0.3198967f,0.07225594f,textBoxTexture.transform.position.z);
+		transform.parent.transform.position = new Vector3(0,0,-10);
 		player.rigidbody2D.velocity = new Vector2(0,0);
 		playerScript = player.GetComponent<PlayerControllerScript>();
 		//Debug.Log(playerScript);
