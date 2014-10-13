@@ -245,6 +245,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &16644734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,6 +910,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &144580596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,6 +1372,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &206837434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2860,6 +2863,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &416027713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3911,6 +3915,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &621379815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5236,6 +5241,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &886273232
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6271,6 +6277,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1130336467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6447,6 +6454,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1156333635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6570,6 +6578,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1184826990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7511,6 +7520,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1315157697
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7981,6 +7991,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1358680487
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8755,6 +8766,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1509040526
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -10585,6 +10597,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1830865122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11338,6 +11351,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &2030012365
 Rigidbody2D:
   m_ObjectHideFlags: 0
