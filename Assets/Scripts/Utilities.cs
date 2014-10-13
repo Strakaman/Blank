@@ -5,7 +5,7 @@ using System;
 
 public static class Utilities
 {
-		static bool debugModeOrNot;
+		public static bool inDebugMode;
 
 		public static void saveGame ()
 		{
@@ -39,7 +39,7 @@ public static class Utilities
 						StreamReader loader = new StreamReader (savePath, false);
 						loader.ReadLine ();
 						String currLevelName = loader.ReadLine ();
-						intializeSpellBook (debugModeOrNot);
+						intializeSpellBook (inDebugMode);
 						String[] unlockBools = loader.ReadLine ().Split ('|');
 						int length = unlockBools.Length;
 						int i;
@@ -81,7 +81,7 @@ public static class Utilities
 
 		public static void intializeSpellBook (bool debugMode)
 		{
-				debugModeOrNot = debugMode;
+				inDebugMode = debugMode;
 				if (SpellBook.size () > 0) {
 						return;
 				} //just in case I'm trying to add to a spell book that's already there.
