@@ -18,7 +18,7 @@ public class NPCScript : Interactable {
 	private bool textIsScrolling;
 	private PlayerControllerScript playerScript;
 	private int currentLine;
-	private Vector3 textStuffPosition;
+	private Vector3 omariStuffPosition;
 
 	void Start () {
 		omariAnimator = (Animator)omari.GetComponent ("Animator");
@@ -31,16 +31,16 @@ public class NPCScript : Interactable {
 		int edgeMargin = (Screen.width/100) * edgeMarginPercentage;
 		//Vector2 pixel = new Vector2 (edgeMargin, edgeMargin);
 		talkTextGUI.pixelOffset = new Vector2 (edgeMargin, edgeMargin);
-		//textStuffPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
-		//omari.transform.position = new Vector3(textStuffPosition.x+15,textStuffPosition.y, 5);
-		omari.transform.position = new Vector3(transform.position.x+10,transform.position.y, 5);
+		//omariStuffPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
+		//omari.transform.position = new Vector3(omariStuffPosition.x,omariStuffPosition.y, omari.transform.position.z);
+		//omari.transform.position = new Vector3(transform.position.x+10,transform.position.y, 5);
 		float x = transform.position.x + 40;
-		foreach (Transform child in transform)
+		/*foreach (Transform child in transform)
 		{
 			Debug.Log(x + name);
 			child.position = new Vector3(x, transform.position.y, child.position.z);
 			//child.position = new Vector3(textStuffPosition.x +40, textStuffPosition.y, child.position.z);
-		}
+		}*/
 	}
 
 	// Update is called once per frame
@@ -75,13 +75,13 @@ public class NPCScript : Interactable {
 			if(textIsScrolling && currentLine == startLine){
 				displayText += talkLines[currentLine][i];
 				talkTextGUI.text = displayText;
-				omariAnimator.SetBool("Talking", true);
+				//omariAnimator.SetBool("Talking", true);
 				yield return new WaitForSeconds(1/textScrollSpeed);
 			} else {
 				yield return true;
 			}
 		}
-		omariAnimator.SetBool("Talking", false);
+		//omariAnimator.SetBool("Talking", false);
 		textIsScrolling = false;
 	}
 	public void updateNPC(bool isNPCactive)
@@ -91,11 +91,15 @@ public class NPCScript : Interactable {
 		textBoxTexture.enabled = isNPCactive;
 		omari.renderer.enabled = isNPCactive;
 		playerScript.enabled = !isNPCactive;
-		playerScript.animator.enabled = !isNPCactive;
+		//playerScript.animator.enabled = !isNPCactive;
 	}
 
 	public override void interact(GameObject player)
 	{
+		omariStuffPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
+		omari.transform.position = new Vector3(omariStuffPosition.x-7,omariStuffPosition.y, omari.transform.position.z);
+		//omari.transform.position = new Vector3(-7,-1, omari.transform.position.z);
+		Debug.Log(omari.transform.position);
 		player.rigidbody2D.velocity = new Vector2(0,0);
 		playerScript = player.GetComponent<PlayerControllerScript>();
 		//Debug.Log(playerScript);
