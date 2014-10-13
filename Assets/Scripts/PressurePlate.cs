@@ -19,8 +19,6 @@ public class PressurePlate : MonoBehaviour
 	void OnTriggerStay2D (Collider2D trigInfo)
 	{
 		if (Utilities.hasMatchingTag("Weighted",trigInfo.gameObject)) {
-		//if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
-					//Debug.Log("trigger on due to: " + trigInfo.tag);
 			isActive = true;
 			TriggerChildren (true);
 			}
@@ -29,8 +27,6 @@ public class PressurePlate : MonoBehaviour
 	void OnTriggerExit2D (Collider2D trigInfo)
 	{
 		if (Utilities.hasMatchingTag("Weighted",trigInfo.gameObject)) {
-		//if ((trigInfo.CompareTag ("Player")) || (trigInfo.CompareTag ("Ice Block")) ||(trigInfo.CompareTag ("Regular Block"))) {
-					//Debug.Log("trigger off due to: " + trigInfo.tag);
 			isActive = false;	
 			TriggerChildren (false);
 			}

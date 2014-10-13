@@ -109,7 +109,7 @@ public static class Utilities
 	{
 		foreach (Transform child in parentTransform) {
 			GameObject goldenMegatron = child.gameObject;
-			if (goldenMegatron.CompareTag ("Switchable")) {
+			if (hasMatchingTag("Switchable",goldenMegatron)) {
 				goldenMegatron.SendMessage ("flipStatus");
 			}
 		}
@@ -122,7 +122,7 @@ public static class Utilities
 	{
 		foreach (Transform child in parentTransform) {
 			GameObject goldenMegatron = child.gameObject;
-			if (goldenMegatron.CompareTag ("Switchable")) {
+			if (hasMatchingTag("Switchable", goldenMegatron)) {
 				goldenMegatron.SendMessage ("setStatus", status);
 			}
 		}

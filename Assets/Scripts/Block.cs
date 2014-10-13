@@ -5,7 +5,7 @@ public class Block : MonoBehaviour {
 	bool isIceBlock;
 	// Use this for initialization
 	void Start () {
-		if (gameObject.CompareTag("Ice Block"))
+		if (Utilities.hasMatchingTag("Ice Block",gameObject))
 		{
 			isIceBlock = true;
 		}

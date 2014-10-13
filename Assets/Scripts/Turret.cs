@@ -51,7 +51,7 @@ public class Turret : Switchable {
 				Ray ray = new Ray (new Vector3 (x, y, 0), castDirection);
 				Debug.DrawRay(ray.origin,ray.direction);
 			RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction,15,pMask);
-				if (hit && hit.collider && ((hit.collider.CompareTag ("Player")))) {
+				if (hit && hit.collider && ((Utilities.hasMatchingTag("Player",hit.collider.gameObject)))) {
 					return true;
 				}
 			}
