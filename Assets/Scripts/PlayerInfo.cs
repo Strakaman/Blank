@@ -15,6 +15,8 @@ public static class PlayerInfo
 	private static int powerModifier = 1;
 	private static int defenseModifier = 1;
 	private static int speedModifier = 1;
+	private static PState playerState = PState.inmenus;
+
 	//umm....get the player's current health
 	public static int getHealth()
 	{
@@ -141,5 +143,15 @@ public static class PlayerInfo
 	public static void InvulnDown()
 	{
 		defenseModifier = 1;
+	}
+
+	public static PState GetState()
+	{
+		return playerState;
+	}
+
+	public static void SetState(PState stateToSet)
+	{
+		playerState = stateToSet;
 	}
 }

@@ -12,7 +12,7 @@ public class PlayerControllerScript : MonoBehaviour
 	public int currSpell = 0; //index used to determine player's current spell, mucho importante
 	private Vector3 s; //box collider size to help with raycasting
 	private Vector3 c; //box collider center to help with raycasting
-	private bool isPaused = false;
+	//private bool isPaused = false; //no Idea what this is for, delete?
 	private float hittime;
 	public Material Default;
 	public Material Hit;
@@ -20,6 +20,7 @@ public class PlayerControllerScript : MonoBehaviour
 // Use this for initialization
 	void Start ()
 	{
+		PlayerInfo.SetState(PState.normal);
 		PlayerInfo.setCurrSpell(SpellBook.playerSpells[currSpell]);
 			animator = (Animator)GetComponent ("Animator");
 			BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
