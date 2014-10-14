@@ -23,8 +23,11 @@ public class Parallaxing : MonoBehaviour {
 		
 		// asigning coresponding parallaxScales
 		parallaxScales = new float[backgrounds.Length];
+
 		for (int i = 0; i < backgrounds.Length; i++) {
-			parallaxScales[i] = backgrounds[i].position.z*-1;
+			if (backgrounds[i] != null && parallaxScales[i] != null) {
+				parallaxScales [i] = backgrounds [i].position.z * -1;
+			}
 		}
 	}
 	
@@ -33,22 +36,23 @@ public class Parallaxing : MonoBehaviour {
 		
 		// for each background
 		for (int i = 0; i < backgrounds.Length; i++) {
-			// the parallax is the opposite of the camera movement because the previous frame multiplied by the scale
-			float parallax = (previousCamPos.x - cam.position.x) * parallaxScales[i];
-			float parallax2 = (previousCamPos.y - cam.position.y) * parallaxScales[i];
+			if (backgrounds[i] != null && parallaxScales[i] != null) {
+				// the parallax is the opposite of the camera movement because the previous frame multiplied by the scale
+				float parallax = (previousCamPos.x - cam.position.x) * parallaxScales [i];
+				float parallax2 = (previousCamPos.y - cam.position.y) * parallaxScales [i];
 			
-			// set a target x position which is the current position plus the parallax
-			float backgroundTargetPosX = backgrounds[i].position.x + parallax;
-			float backgroundTargetPosY = backgrounds[i].position.y + parallax2;
-
-			// create a target position which is the background's current position with it's target x position
-			Vector3 backgroundTargetPos = new Vector3 (backgroundTargetPosX, backgrounds[i].position.y, backgrounds[i].position.z);
-			Vector3 backgroundTargetPos2 = new Vector3 (backgrounds[i].position.x, backgroundTargetPosY, backgrounds[i].position.z);
-			// fade between current position and the target position using lerp
-			backgrounds[i].position = Vector3.Lerp (backgrounds[i].position, backgroundTargetPos, smoothing * Time.deltaTime);
-			backgrounds[i].position = Vector3.Lerp (backgrounds[i].position, backgroundTargetPos2, smoothing * Time.deltaTime);
-		}
+				// set a target x position which is the current position plus the parallax
+				float backgroundTargetPosX = backgrounds [i].position.x + parallax;
+				float backgroundTargetPosY = backgrounds [i].position.y + parallax2;
 		
+				// create a target position which is the background's current position with it's target x position
+				Vector3 backgroundTargetPos = new Vector3 (backgroundTargetPosX, backgrounds [i].position.y, backgrounds [i].position.z);
+				Vector3 backgroundTargetPos2 = new Vector3 (backgrounds [i].position.x, backgroundTargetPosY, backgrounds [i].position.z);
+				// fade between current position and the target position using lerp
+				backgrounds [i].position = Vector3.Lerp (backgrounds [i].position, backgroundTargetPos, smoothing * Time.deltaTime);
+				backgrounds [i].position = Vector3.Lerp (backgrounds [i].position, backgroundTargetPos2, smoothing * Time.deltaTime);
+			}
+		}
 		// set the previousCamPos to the camera's position at the end of the frame
 		previousCamPos = cam.position;
 	}
