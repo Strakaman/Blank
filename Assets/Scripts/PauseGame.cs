@@ -7,6 +7,9 @@ public class PauseGame : MonoBehaviour {
 
 	void Update()
 	{
+		if (PlayerInfo.GetState() != PState.normal) {
+			return;
+		}
 		if (Input.GetButtonDown ("pause"))
 		{
 			paused = togglePause ();
