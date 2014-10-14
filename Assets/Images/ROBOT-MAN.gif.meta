@@ -1,11 +1,37 @@
 fileFormatVersion: 2
-guid: a089d1bb7d209344aae630a9f4ad6faf
+guid: 44bb642672fa8e244b9ac5474d8003cb
 TextureImporter:
   fileIDToRecycleName:
     21300000: ROBOT-MAN_0
     21300002: ROBOT-MAN_1
     21300004: ROBOT-MAN_2
     21300006: ROBOT-MAN_3
+    21300008: ROBOT-MAN_4
+    21300010: ROBOT-MAN_5
+    21300012: ROBOT-MAN_6
+    21300014: ROBOT-MAN_7
+    21300016: ROBOT-MAN_8
+    21300018: ROBOT-MAN_9
+    21300020: ROBOT-MAN_10
+    21300022: ROBOT-MAN_11
+    21300024: ROBOT-MAN_12
+    21300026: ROBOT-MAN_13
+    21300028: ROBOT-MAN_14
+    21300030: ROBOT-MAN_15
+    21300032: ROBOT-MAN_16
+    21300034: ROBOT-MAN_17
+    21300036: ROBOT-MAN_18
+    21300038: ROBOT-MAN_19
+    21300040: ROBOT-MAN_20
+    21300042: ROBOT-MAN_21
+    21300044: ROBOT-MAN_22
+    21300046: ROBOT-MAN_23
+    21300048: ROBOT-MAN_24
+    21300050: ROBOT-MAN_25
+    21300052: ROBOT-MAN_26
+    21300054: ROBOT-MAN_28
+    21300056: ROBOT-MAN_32
+    21300058: ROBOT-MAN_33
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,39 +77,139 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 58
+        y: 785
         width: 150
-        height: 222
+        height: 150
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ROBOT-MAN_1
+    - name: ROBOT-MAN_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 58
+        x: 5
+        y: 595
         width: 150
-        height: 223
+        height: 150
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ROBOT-MAN_2
+    - name: ROBOT-MAN_10
       rect:
         serializedVersion: 2
-        x: 325
-        y: 58
-        width: 150
-        height: 224
+        x: 35
+        y: 395
+        width: 110
+        height: 150
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ROBOT-MAN_3
+    - name: ROBOT-MAN_15
       rect:
         serializedVersion: 2
-        x: 485
-        y: 60
-        width: 150
-        height: 222
+        x: 25
+        y: 185
+        width: 110
+        height: 150
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_21
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_22
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_23
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_24
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_25
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_26
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_28
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_32
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 40
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROBOT-MAN_33
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 40
+        width: 70
+        height: 110
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
