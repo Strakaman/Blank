@@ -23,10 +23,29 @@ public static class PlayerInfo
 		return health; 
 	}
 
+	//set player's health to a specific value like if the level was restarted
+	public static void setHealth(int setToWhat)
+	{
+		health = setToWhat;
+		if (health > MAXHEALTH)
+		{
+			health = MAXHEALTH;
+		}
+	}
+
 	//get player's current MP
 	public static int getMana()
 	{
 		return mana;
+	}
+
+	//set player's MP to a specific value like if the level was restarted
+	public static void setMana(int setToWhat){
+		mana += setToWhat;
+		if (mana > MAXMANA)
+		{
+			mana = MAXMANA;
+		}
 	}
 
 	//used maybe after player dies or a full restore pickup is dropped to reset the players stuff

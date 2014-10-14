@@ -25,7 +25,24 @@ public class GameManager : MonoBehaviour
 				}
 				Utilities.intializeSpellBook (debugMode);
 		}
-
+		
+	void OnLevelWasLoaded(int level) {
+		Debug.Log("Rever Roaded");
+		/**
+		 * If current level matches checkpoint level, player has died and and the checkpoint data needs reloading
+		 * If current level does not match checkpoint level, checkpoint data needs saving because player got here naturally
+		 */
+		if (level == CheckPointState.CPlevel)
+		{
+			PlayerInfo.setHealth(CheckPointState.CPhealth);
+			PlayerInfo.setMana(CheckPointState.CPmana);
+			SpellBook.setSpellBools(CheckPointState.CPspellBools);
+		}
+		else
+		{
+			CheckPointState.UpdateState(PlayerInfo.getHealth(),PlayerInfo.getMana(),level,SpellBook.getSpellBools());
+		}
+	}
 		/*pass in the x,y,and z coordinates of the place where you want the pickup to be dropped
 	pickup needs to exist in unity and be a child prefab of the game manager prefab
 	Ex: when maybe a monster dies or something, pass in the position of the transform of the monster*/

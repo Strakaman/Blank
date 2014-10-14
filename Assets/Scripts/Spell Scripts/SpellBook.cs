@@ -51,6 +51,42 @@ public static class SpellBook
 			}
 			return counter;
 	}
+
+	public static bool[] getSpellBools()
+	{
+		bool[] spellBools = new bool[playerSpells.Count];
+		int i = 0;
+		foreach (Spell s in playerSpells)
+		{
+			if (s.isSpellUnlocked())
+			{
+				spellBools[i] = true;
+			}
+			else
+			{
+				spellBools[i] = false;
+			}
+			i++;
+		}
+		return spellBools;
+	}
+
+	public static void setSpellBools(bool[] spellBools)
+	{
+		int i=0;
+		foreach (Spell s in playerSpells)
+		{
+			if (spellBools[i])
+			{
+				s.unlockSpell();
+			}
+			else
+			{
+				s.relockSpell();
+			}
+			i++;
+		}
+	}
 }
 
 

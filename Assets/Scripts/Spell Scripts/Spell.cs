@@ -27,6 +27,12 @@ public abstract class Spell: ScriptableObject
 		isUnlocked = true;
 	}
 
+	//use to lock spell in case player unlocked a spell and then died
+	public void relockSpell()
+	{
+		isUnlocked = false;
+	}
+
 	//tells if spell is unlocked, used to determine when cycling through spells whether or not to skip past this one.
 	public bool isSpellUnlocked()
 	{
