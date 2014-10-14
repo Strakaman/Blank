@@ -65,12 +65,14 @@ public class EnemySight : MonoBehaviour {
 					//Debug.Log("PLAYER IS IN SIGHT");
 					//playerInSight = true;
 					gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
+					gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
 				}
 			}
 		}
 		if (other.gameObject.CompareTag ("Enemy")) {
 			if (other.gameObject.GetComponentInParent<Enemy>().isHitTrue() == true) {
 				gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
+				gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
 				other.gameObject.GetComponentInParent<Enemy>().isHitFalse();
 			}
 		}
@@ -90,5 +92,6 @@ public class EnemySight : MonoBehaviour {
 
 	void invokeSetFalse() {
 		gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightFalse();
+		gameObject.GetComponentInParent<Ranged>().setPlayerInSightFalse();
 	}
 }

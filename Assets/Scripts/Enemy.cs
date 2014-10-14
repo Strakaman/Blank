@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour{
 	private bool stunned = false;
 	private bool slowed = false; 
 	private bool isHit = false;
-
+	
 	// Use this for initialization
 	void Start () {
 		animator = (Animator)GetComponent ("Animator");
