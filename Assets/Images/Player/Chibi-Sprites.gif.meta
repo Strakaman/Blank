@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: 35eb61b1a62e05d49b0c9861210cb932
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Chibi-Sprites
+    21300002: Chibi-Sprites_0
+    21300004: Chibi-Sprites_1
+    21300006: Chibi-Sprites_2
+    21300008: Chibi-Sprites_3
+    21300010: Chibi-Sprites_4
+    21300012: Chibi-Sprites_5
+    21300014: Chibi-Sprites_6
+    21300016: Chibi-Sprites_7
+    21300018: Chibi-Sprites_8
+    21300020: Chibi-Sprites_9
+    21300022: Chibi-Sprites_10
+    21300024: Chibi-Sprites_11
+    21300026: Chibi-Sprites_12
+    21300028: Chibi-Sprites_13
+    21300030: Chibi-Sprites_14
+    21300032: Chibi-Sprites_15
+    21300034: Chibi-Sprites_16
+    21300036: Chibi-Sprites_17
+    21300038: Chibi-Sprites_18
+    21300040: Chibi-Sprites_19
+    21300042: Chibi-Sprites_20
+    21300044: Chibi-Sprites_21
+    21300046: Chibi-Sprites_22
+    21300048: Chibi-Sprites_23
+    21300050: Chibi-Sprites_24
+    21300052: Chibi-Sprites_25
+    21300054: Chibi-Sprites_26
+    21300056: Chibi-Sprites_27
+    21300058: Chibi-Sprites_28
+    21300060: Chibi-Sprites_29
+    21300062: Chibi-Sprites_30
+    21300064: Chibi-Sprites_31
+    21300066: Chibi-Sprites_32
+    21300068: Chibi-Sprites_33
+    21300070: Chibi-Sprites_34
+    21300072: Chibi-Sprites_35
+    21300074: Chibi-Sprites_36
+    21300076: Chibi-Sprites_37
+    21300078: Chibi-Sprites_38
+    21300080: Chibi-Sprites_39
+    21300082: Chibi-Sprites_40
+    21300084: Chibi-Sprites_41
+    21300086: Chibi-Sprites_42
+    21300088: Chibi-Sprites_43
+    21300090: Chibi-Sprites_44
+    21300092: Chibi-Sprites_45
+    21300094: Chibi-Sprites_46
+    21300096: Chibi-Sprites_47
+    21300098: Chibi-Sprites_48
+    21300100: Chibi-Sprites_49
+    21300102: Chibi-Sprites_50
+    21300104: Chibi-Sprites_51
+    21300106: Chibi-Sprites_52
+    21300108: Chibi-Sprites_53
+    21300110: Chibi-Sprites_54
+    21300112: Chibi-Sprites_55
+    21300114: Chibi-Sprites_56
+    21300116: Chibi-Sprites_57
+    21300118: Chibi-Sprites_58
+    21300120: Chibi-Sprites_59
+    21300122: Chibi-Sprites_60
+    21300124: Chibi-Sprites_61
+    21300126: Chibi-Sprites_62
+    21300128: Chibi-Sprites_63
+    21300130: Chibi-Sprites_64
+    21300132: Chibi-Sprites_65
+    21300134: Chibi-Sprites_66
+    21300136: Chibi-Sprites_67
+    21300138: Chibi-Sprites_68
+    21300140: Chibi-Sprites_69
+    21300142: Chibi-Sprites_70
+    21300144: Chibi-Sprites_71
+    21300146: Chibi-Sprites_72
+    21300148: Chibi-Sprites_73
+    21300150: Chibi-Sprites_74
+    21300152: Chibi-Sprites_75
+    21300154: Chibi-Sprites_76
+    21300156: Chibi-Sprites_77
+    21300158: Chibi-Sprites_78
+    21300160: Chibi-Sprites_79
+    21300162: Chibi-Sprites_80
+    21300164: Chibi-Sprites_81
+    21300166: Chibi-Sprites_82
+    21300168: Chibi-Sprites_83
+    21300170: Chibi-Sprites_84
+    21300172: Chibi-Sprites_85
+    21300174: Chibi-Sprites_86
+    21300176: Chibi-Sprites_87
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Chibi-Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1145
+        width: 95
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1145
+        width: 105
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1150
+        width: 95
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1140
+        width: 85
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1135
+        width: 85
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1135
+        width: 95
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1145
+        width: 105
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1155
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1140
+        width: 90
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1135
+        width: 90
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 1135
+        width: 90
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 995
+        width: 95
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 990
+        width: 105
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 990
+        width: 85
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 985
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 980
+        width: 75
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 985
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 990
+        width: 105
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 990
+        width: 85
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 985
+        width: 90
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 980
+        width: 90
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 985
+        width: 90
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 825
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 820
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 825
+        width: 85
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 820
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 820
+        width: 90
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 820
+        width: 85
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 825
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 825
+        width: 85
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_30
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 820
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_31
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 815
+        width: 90
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_32
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 820
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_33
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 665
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 660
+        width: 90
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_35
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 665
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_36
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 670
+        width: 85
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_37
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 670
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_38
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 665
+        width: 85
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_39
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 665
+        width: 90
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_40
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 665
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_41
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 670
+        width: 85
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_42
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 665
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_43
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 670
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_44
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 500
+        width: 75
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_45
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 500
+        width: 80
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_46
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 510
+        width: 80
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_47
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 495
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_48
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 490
+        width: 75
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_49
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 490
+        width: 80
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_50
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 500
+        width: 80
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_51
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 510
+        width: 75
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_52
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 495
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_53
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 490
+        width: 80
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_54
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 490
+        width: 80
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_55
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 350
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_56
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 345
+        width: 85
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_57
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 345
+        width: 85
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_58
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 340
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_59
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 335
+        width: 80
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_60
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 340
+        width: 90
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_61
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 345
+        width: 90
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_62
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 345
+        width: 80
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_63
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 340
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_64
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 335
+        width: 80
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_65
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 340
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_66
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 180
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_67
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 175
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_68
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 180
+        width: 95
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_69
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 175
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_70
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 175
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_71
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 175
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_72
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 180
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_73
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 180
+        width: 95
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_74
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 175
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_75
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 170
+        width: 95
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_76
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 175
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_77
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 30
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_78
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 25
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_79
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 20
+        width: 95
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_80
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 25
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_81
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 30
+        width: 95
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_82
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 30
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_83
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 25
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_84
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 25
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_85
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 25
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_86
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 30
+        width: 95
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chibi-Sprites_87
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 25
+        width: 95
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
