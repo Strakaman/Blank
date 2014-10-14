@@ -8,6 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main Menu.unity
   - enabled: 1
-    path: Assets/Peter Test Scene.unity
+    path: Assets/Intro.unity
+  - enabled: 1
+    path: Assets/Tutorial Level.unity
+  - enabled: 1
+    path: Assets/Peter Test Scene 2.unity
   - enabled: 1
     path: Assets/Omari Test Scene.unity
