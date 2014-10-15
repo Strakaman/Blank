@@ -38,7 +38,7 @@ public class EnemySight : MonoBehaviour {
 		// If the player has entered the trigger sphere...
 		if(other.gameObject == player)
 		{
-			Debug.Log ("Player");
+			//Debug.Log ("Player");
 			
 			Vector2 p = gameObject.GetComponentInParent <EnemyAI>().transform.position; //get current enemy position to cast ray from
 			Vector3 castDirection; //set the raycast direction to vertical or horizontal based on direction player is facing
@@ -65,15 +65,20 @@ public class EnemySight : MonoBehaviour {
 					//Debug.Log("PLAYER IS IN SIGHT");
 					//playerInSight = true;
 					gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
-					gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
+					if (Utilities.hasMatchingTag("Ranged", gameObject.transform.parent.gameObject)) {
+						//Debug.Log("poop");
+						gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
+					}
 				}
 			}
 		}
 		if (other.gameObject.CompareTag ("Enemy")) {
 			if (other.gameObject.GetComponentInParent<Enemy>().isHitTrue() == true) {
 				gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
-				gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
 				other.gameObject.GetComponentInParent<Enemy>().isHitFalse();
+				if (Utilities.hasMatchingTag("Ranged",gameObject.transform.parent.gameObject)) {
+					gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
+				}
 			}
 		}
 	}
@@ -92,6 +97,8 @@ public class EnemySight : MonoBehaviour {
 
 	void invokeSetFalse() {
 		gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightFalse();
-		gameObject.GetComponentInParent<Ranged>().setPlayerInSightFalse();
+		if (Utilities.hasMatchingTag("Ranged",gameObject.transform.parent.gameObject)) {
+			gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
+		}
 	}
 }
