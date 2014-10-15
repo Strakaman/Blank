@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
 		}
 		
 	void OnLevelWasLoaded(int level) {
-		Debug.Log("Rever Roaded");
 		/**
 		 * If current level matches checkpoint level, player has died and and the checkpoint data needs reloading
 		 * If current level does not match checkpoint level, checkpoint data needs saving because player got here naturally
