@@ -54,7 +54,7 @@ public class AggroNavi : MonoBehaviour {
 	}
 
 
-	void OnTriggerStay2D(Collision2D collInfo)
+	void OnTriggerStay2D(Collider2D collInfo)
 	{
 		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject))
 		{
