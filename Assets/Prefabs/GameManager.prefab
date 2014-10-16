@@ -653,7 +653,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.47681427, y: 9.61962414, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
@@ -1332,16 +1332,16 @@ MonoBehaviour:
   mp: {fileID: 2800000, guid: f11085a393c487549a1ce7ae3ad9e8b3, type: 3}
   hpPosition:
     serializedVersion: 2
-    x: .0250000004
-    y: .0500000007
-    width: .200000003
-    height: .0500000007
+    x: .0274999999
+    y: .0549999997
+    width: .180000007
+    height: .0399999991
   mpPosition:
     serializedVersion: 2
-    x: .0250000004
-    y: .150000006
-    width: .200000003
-    height: .0399999991
+    x: .0274999999
+    y: .155000001
+    width: .180000007
+    height: .0299999993
   hpContainerPosition:
     serializedVersion: 2
     x: .0250000004
