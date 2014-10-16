@@ -10,9 +10,13 @@ public class Enemy : MonoBehaviour{
 	public Direction direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
 	private SpriteRenderer healthbar;
 	private Vector3 healthscale;
-	private float hittime;
+	private float hitTime;
+	private float slowTime;
+	private float stunTime;
 	public Material Default;
 	public Material Hit;
+	public Material Stun;
+	public Material Slow;
 	protected bool stunned = false;
 	private bool slowed = false; 
 	private bool isHit = false;
@@ -54,7 +58,7 @@ public class Enemy : MonoBehaviour{
 		}
 		HealthUpdate();
 
-		if (hittime + 0.1f < Time.time) {
+		if (hitTime + 0.1f < Time.time) {
 			GetComponent<SpriteRenderer>().material = Default;
 		}
 		if (stunned == true) {
@@ -138,6 +142,7 @@ public class Enemy : MonoBehaviour{
 		if (Utilities.hasMatchingTag("BlueSpellObject",coll.gameObject)) {
 			//Debug.Log("I  blue myself");
 			slowed = true;	
+			GetComponent<SpriteRenderer>().material = Slow;
 			Invoke ("setSlowFalse", 5f);
 		}
 	}
@@ -151,6 +156,8 @@ public class Enemy : MonoBehaviour{
 		}
 		if (Utilities.hasMatchingTag("YellowSpellObject",coll.gameObject)) {
 			stunned = true;
+			damageProperties(coll, 0, 0, 0.1f);
+			GetComponent<SpriteRenderer>().material = Stun;
 			Invoke("setStunFalse", 1.5f);
 		}
 	}
@@ -162,8 +169,8 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
-		if (hittime + hitdelay < Time.time) {
-			hittime = Time.time;
+		if (hitTime + hitdelay < Time.time) {
+			hitTime = Time.time;
 			takeDamage(damage);
 			isHit = true;
 			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
