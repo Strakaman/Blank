@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour{
 	private float hittime;
 	public Material Default;
 	public Material Hit;
-	private bool stunned = false;
+	protected bool stunned = false;
 	private bool slowed = false; 
 	private bool isHit = false;
 	

@@ -4,14 +4,14 @@ using System.Collections;
 public class Ranged : Enemy {
 	public GameObject refBullet;
 	protected GameObject enemy;
-	protected int projectileSpeed = 5;
+	protected int projectileSpeed = 4;
 	protected GameObject player;
 	private Vector2 Playerdirection;
 	private float Xdif;
 	private float Ydif;
 	private Vector3 playerTransform; 
 	private bool playerInSight;    
-	public const float COOLDOWNTIME = .5f;
+	public const float COOLDOWNTIME = 1f;
 	private float timeSinceLastFired = 0f;
 	
 	// Use this for initialization
@@ -23,10 +23,10 @@ public class Ranged : Enemy {
 	// Update is called once per frame
 	void Update () {
 		playerTransform = player.transform.position;
-		if (playerInSight == true && canFire()) {
-			//Debug.Log("IN SIGHT!");
-			rangedAttack();
-		} 
+		if (playerInSight == true && canFire () && !stunned) {
+						//Debug.Log("IN SIGHT!");
+			rangedAttack ();
+		}
 	}
 
 	private bool canFire()
