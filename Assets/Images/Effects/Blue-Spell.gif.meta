@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: a6bd5a8bf3c68a74d9fa5143590c394d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Blue-Spell_0
+    21300002: Blue-Spell_1
+    21300004: Blue-Spell_2
+    21300006: Blue-Spell_3
+    21300008: Blue-Spell_4
+    21300010: Blue-Spell_5
+    21300012: Blue-Spell_6
+    21300014: Blue-Spell_7
+    21300016: Blue-Spell_8
+    21300018: Blue-Spell_9
+    21300020: Blue-Spell_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 2
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Blue-Spell_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 106
+        width: 136
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 77
+        width: 155
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 61
+        width: 222
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_3
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 43
+        width: 235
+        height: 232
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_4
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 36
+        width: 246
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_5
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 25
+        width: 247
+        height: 252
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_6
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 21
+        width: 255
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_7
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 14
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_8
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 25
+        width: 268
+        height: 264
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_9
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 14
+        width: 273
+        height: 269
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Blue-Spell_10
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 10
+        width: 268
+        height: 277
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
