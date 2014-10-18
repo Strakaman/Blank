@@ -24,6 +24,7 @@ public class Ranged : Enemy {
 	void Update () {
 		playerTransform = player.transform.position;
 		if (playerInSight == true && canFire () && !stunned) {
+			Debug.Log("stun: " + stunned);
 						//Debug.Log("IN SIGHT!");
 			rangedAttack ();
 		}

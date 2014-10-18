@@ -62,10 +62,14 @@ public class Enemy : MonoBehaviour{
 			GetComponent<SpriteRenderer>().material = Default;
 		}
 		if (stunned == true) {
+			GetComponent<SpriteRenderer>().material = Stun;
+			//GetComponent<SpriteRenderer>().material = Default;
 			rigidbody2D.velocity = new Vector2(0,0);
+			Invoke("setStunFalse", 3f);
 		}
 		if (slowed == true) {
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x/2, rigidbody2D.velocity.y/2);	
+			Invoke ("setSlowFalse", 5f);
 		}
 	}
 
@@ -142,8 +146,7 @@ public class Enemy : MonoBehaviour{
 		if (Utilities.hasMatchingTag("BlueSpellObject",coll.gameObject)) {
 			//Debug.Log("I  blue myself");
 			slowed = true;	
-			GetComponent<SpriteRenderer>().material = Slow;
-			Invoke ("setSlowFalse", 5f);
+			GetComponent<SpriteRenderer>().material = Slow;;
 		}
 	}
 
@@ -155,10 +158,8 @@ public class Enemy : MonoBehaviour{
 
 		}
 		if (Utilities.hasMatchingTag("YellowSpellObject",coll.gameObject)) {
-			stunned = true;
 			damageProperties(coll, 0, 0, 0.1f);
-			GetComponent<SpriteRenderer>().material = Stun;
-			Invoke("setStunFalse", 1.5f);
+			stunned = true;
 		}
 	}
 	void setStunFalse() {
