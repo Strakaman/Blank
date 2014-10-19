@@ -84,7 +84,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
   - 58: {fileID: 5800000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WhiteSpellObject
   m_TagString: WhiteSpellObject
   m_Icon: {fileID: 0}
@@ -103,9 +103,10 @@ GameObject:
   - 58: {fileID: 5800002}
   - 114: {fileID: 11400012}
   - 50: {fileID: 5000000}
-  m_Layer: 0
+  - 114: {fileID: 11400014}
+  m_Layer: 11
   m_Name: WhiteBullet
-  m_TagString: Untagged
+  m_TagString: WhiteBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301,7 +302,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
-  m_Mass: .00999999978
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -424,6 +425,19 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 1
   animationTime: .200000003
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145711522cacaab4a95ca9a9d6c88538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTags:
+  - WhiteBullet
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

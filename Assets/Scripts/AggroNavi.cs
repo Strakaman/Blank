@@ -16,7 +16,7 @@ public class AggroNavi : MonoBehaviour {
 	private const float COOLDOWNTIME = 5f;
 	private const int ROUNDSPERBURST = 5;
 	private const float BURSTDELAY = .2f;
-	private float timeSinceLastFired = 0f;
+	private float timeSinceLastFired = COOLDOWNTIME -2f; //so basically two seconds after it's cast it should start firing
 	Quaternion cloneOrientation = Quaternion.Euler(0,0,0);
 
 	// Use this for initialization
@@ -25,13 +25,17 @@ public class AggroNavi : MonoBehaviour {
 		{
 			player = GameObject.FindGameObjectWithTag("Player");
 		}
+		if (refBullet)
+		{
+			refBullet = GameObject.FindGameObjectWithTag("WhiteBullet");
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (inBeastMode)
 		{
-			transform.position = (player.transform.position - (new Vector3(-1,0,0)));
+			transform.position = (player.transform.position - (new Vector3(1,0,0)));
 			timeSinceLastFired += Time.deltaTime;
 		}
 	}
@@ -44,8 +48,8 @@ public class AggroNavi : MonoBehaviour {
 
 	void shotsFired ()
 	{
-		Xdif = transform.position.x - enemyPosition.x;
-		Ydif = transform.position.y - enemyPosition.y;
+		Xdif = enemyPosition.x - transform.position.x;
+		Ydif = enemyPosition.y - transform.position.y;
 		shotDirection = new Vector2 (Xdif, Ydif);
 		Vector2 cloneVelocity = (shotDirection.normalized * projectileSpeed);
 		GameObject clonedesu = Utilities.cloneObject(Direction.down, refBullet, transform.position, cloneVelocity, cloneOrientation);

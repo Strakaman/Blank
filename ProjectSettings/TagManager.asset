@@ -17,13 +17,27 @@ TagManager:
   - Enemy
   - EnemyProjectile
   - UnTagged
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - WhiteSpellObject
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - WhiteBullet
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

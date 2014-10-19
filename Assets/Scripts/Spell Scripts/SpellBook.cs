@@ -12,6 +12,7 @@ public static class SpellBook
 	public const string REDSPELLNAME = "Red Rings of Death";
 	public const string YELLOWSPELLNAME = "Yellow Spark";
 	public const string BLUESPELLNAME = "Blue Swirl";
+	public const string WHITESPELLNAME = "White Betty";
 
 	//used to add spell to spell book. Should only be called by game manager
 	public static void add (Spell sp)

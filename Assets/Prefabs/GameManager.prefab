@@ -426,9 +426,10 @@ GameObject:
   - 212: {fileID: 21200008}
   - 58: {fileID: 5800010}
   - 114: {fileID: 11400024}
-  m_Layer: 0
+  - 50: {fileID: 5000014}
+  m_Layer: 11
   m_Name: WhiteBullet
-  m_TagString: Untagged
+  m_TagString: WhiteBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -445,7 +446,7 @@ GameObject:
   - 114: {fileID: 11400066}
   - 114: {fileID: 11400064}
   - 58: {fileID: 5800012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WhiteSpellObject
   m_TagString: WhiteSpellObject
   m_Icon: {fileID: 0}
@@ -972,6 +973,21 @@ Rigidbody2D:
   m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5000014
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100044}
+  m_Mass: 9.99999975e-05
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1637,6 +1653,7 @@ MonoBehaviour:
   blueSpell: {fileID: 2800000, guid: eadb50723f722fb4d82709b1c2e93cbc, type: 3}
   yellowSpell: {fileID: 2800000, guid: 20cbf7cff373b8f46b70f84b248ce62d, type: 3}
   orangeSpell: {fileID: 2800000, guid: a412501bd2ab28c46a5183eab21e9bc5, type: 3}
+  whiteSpell: {fileID: 2800000, guid: fe7129797f51da143a801dd6837a364b, type: 3}
   hpBar: {fileID: 2800000, guid: b697d3d85e1afe5439108c529e09b456, type: 3}
   mpBar: {fileID: 2800000, guid: c0e74a4d6c45da94bbdcac8a7e90cc6c, type: 3}
   hp: {fileID: 2800000, guid: 218d1e425252a5d4499b81d42a3b6218, type: 3}

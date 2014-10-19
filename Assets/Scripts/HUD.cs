@@ -6,6 +6,7 @@ public class HUD : MonoBehaviour {
 	public Texture2D blueSpell;
 	public Texture2D yellowSpell;
 	public Texture2D orangeSpell;
+	public Texture2D whiteSpell;
 	public Texture2D hpBar;
 	public Texture2D mpBar;
 	public Texture2D hp;
@@ -60,6 +61,9 @@ public class HUD : MonoBehaviour {
 		}
 		if (PlayerInfo.getCurrSpell ().GetType().ToString() == "OrangeSpell") {
 			drawSpell (orangeSpell);
+		}
+		if (PlayerInfo.getCurrSpell ().GetType().ToString() == "WhiteSpell") {
+			drawSpell (whiteSpell);
 		}
 	}
 
