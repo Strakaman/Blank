@@ -35,7 +35,8 @@ public class AggroNavi : MonoBehaviour {
 	void Update () {
 		if (inBeastMode)
 		{
-			transform.position = (player.transform.position - (new Vector3(1,0,0)));
+			//transform.position = (player.transform.position - (new Vector3(1,0,0))); //legacy code
+			transform.RotateAround (player.transform.position, Vector3.back, 2);
 			timeSinceLastFired += Time.deltaTime;
 		}
 	}
