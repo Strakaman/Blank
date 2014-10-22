@@ -172,12 +172,20 @@ public class PlayerControllerScript : MonoBehaviour
 					
 					int oldCost = datSpell.getCost();
 					datSpell.setCost(newCost);
-					//bool logged = false;
+					bool logged = false;
 
-				if (PlayerInfo.getMana() >= datSpell.getCost()*5*amountChargedSoFar)
-					InvokeRepeating("startAttackAnim", 0, 0.2f);
+					if (PlayerInfo.getMana() >= datSpell.getCost()*5*amountChargedSoFar){
+						Invoke("startAttackAnim", 0f);
+						for (int i = 0; i<amountChargedSoFar*5-1; i++){
+							Invoke("startAttackAnim", 0.1f * i);
+						if (PlayerInfo.getMana() <= 0 && !logged) Debug.Log ("Out of mana during charged spell.");
+						}
+					}
+					else if (PlayerInfo.getMana() >= datSpell.getCost()){
+						Invoke ("startAttackAnim", 0f);
+					}
+					else {}
 					Invoke ("stopChargeAttack", amountChargedSoFar);
-
 					datSpell.setCost(oldCost);
 				}
 				
