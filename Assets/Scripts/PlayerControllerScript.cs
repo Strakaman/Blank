@@ -153,13 +153,13 @@ public class PlayerControllerScript : MonoBehaviour
 						if (canCharge)
 							chargeStartTime = Time.time;
 				}
-				//Charged spell
-				if (canCharge && Input.GetButton ("Use Spell")) {
-					amountChargedSoFar = Time.time - chargeStartTime;
-				}
+	
+			//Charged spell
+			if (canCharge && Input.GetButton ("Use Spell")) {
+				amountChargedSoFar = Time.time - chargeStartTime;
+			}
 
 			if (canCharge && Input.GetButtonUp("Use Spell")){
-				
 				if (amountChargedSoFar > chargeTimeRequired){
 					if (SpellBook.playerSpells [currSpell] == null) {
 						changeSpell (true);
@@ -174,12 +174,11 @@ public class PlayerControllerScript : MonoBehaviour
 					datSpell.setCost(newCost);
 					Direction initialDirection = direction; 
 					bool logged = false;
-				
+			
 					for (int i = 0; i<(int)amountChargedSoFar*6; i++){ //i<# of times spell is cast, adds 6 every second.
 						if (datSpell.hasEnoughMana()){
-							datSpell.cast (initialDirection);
-							Invoke ("startAttackAnim", 0.1f);
-							//Invoke ("stopAttackAnim", 0.5f);
+							InvokeRepeating ("startAttackAnim", 0, 0.1f);
+							Invoke ("stopAttackAnim", 0.5f);
 						}
 						else if (!logged){
 							Debug.Log ("You're out of MP during a charged spell cast. But why do we need to log this?");
@@ -216,11 +215,12 @@ public class PlayerControllerScript : MonoBehaviour
 
 	void stopAttackAnim ()
 	{
-			animator.SetBool ("Attack", false);
+		animator.SetBool ("Attack", false);
 	}
 	void startAttackAnim ()
 	{
-		animator.SetBool ("Attack", true);
+		Spell datSpell = SpellBook.playerSpells [currSpell];
+		datSpell.cast (direction);		animator.SetBool ("Attack", true);
 	}
 
 	void changeSpell (bool prevFalsenextTrue)
