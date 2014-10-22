@@ -119,4 +119,11 @@ public abstract class Spell: ScriptableObject
 		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
 		return clonedesu;
 	}*/
+
+	public int getCost (){
+		return manaCost;
+	}
+	public void setCost(int newCost){
+		manaCost = newCost;
+	}
 }

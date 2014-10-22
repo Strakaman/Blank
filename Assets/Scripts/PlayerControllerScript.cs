@@ -16,6 +16,10 @@ public class PlayerControllerScript : MonoBehaviour
 	private float hittime;
 	public Material Default;
 	public Material Hit;
+	private bool canCharge = true;//charging enabled by defualt
+	private float chargeTimeRequired = 1.0f;
+	private float amountChargedSoFar = 0;
+	private float chargeStartTime = 0;
 
 // Use this for initialization
 	void Start ()
@@ -146,8 +150,49 @@ public class PlayerControllerScript : MonoBehaviour
 						} else {
 								Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
 						}
+						if (canCharge)
+							chargeStartTime = Time.time;
+				}
+				//Charged spell
+				if (canCharge && Input.GetButton ("Use Spell")) {
+					amountChargedSoFar = Time.time - chargeStartTime;
 				}
 
+			if (canCharge && Input.GetButtonUp("Use Spell")){
+				
+				if (amountChargedSoFar > chargeTimeRequired){
+					if (SpellBook.playerSpells [currSpell] == null) {
+						changeSpell (true);
+					}
+					Spell datSpell = SpellBook.playerSpells [currSpell];
+					
+					//Charged spells have lower cost than regular spells.
+					if (amountChargedSoFar > 5.0f) amountChargedSoFar = 5.1f; //maximum charge is 5 seconds
+					int newCost = 50;
+					
+					int oldCost = datSpell.getCost();
+					datSpell.setCost(newCost);
+					Direction initialDirection = direction; 
+					bool logged = false;
+				
+					for (int i = 0; i<(int)amountChargedSoFar*6; i++){ //i<# of times spell is cast, adds 6 every second.
+						if (datSpell.hasEnoughMana()){
+							datSpell.cast (initialDirection);
+							Invoke ("startAttackAnim", 0.1f);
+							//Invoke ("stopAttackAnim", 0.5f);
+						}
+						else if (!logged){
+							Debug.Log ("You're out of MP during a charged spell cast. But why do we need to log this?");
+						}
+						else{
+						}
+					}
+					datSpell.setCost(oldCost);
+				}
+				
+				chargeStartTime = 0;
+				amountChargedSoFar = 0;
+			}
 
 
 			if (Input.GetButtonDown ("Interact")) {
@@ -172,6 +217,10 @@ public class PlayerControllerScript : MonoBehaviour
 	void stopAttackAnim ()
 	{
 			animator.SetBool ("Attack", false);
+	}
+	void startAttackAnim ()
+	{
+		animator.SetBool ("Attack", true);
 	}
 
 	void changeSpell (bool prevFalsenextTrue)
