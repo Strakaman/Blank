@@ -17,7 +17,7 @@ public class PlayerControllerScript : MonoBehaviour
 	public Material Default;
 	public Material Hit;
 	private bool canCharge = true;//charging enabled by defualt
-	private float chargeTimeRequired = 1.0f;
+	private float chargeTimeRequired = 1f;
 	private float amountChargedSoFar = 0;
 	private float chargeStartTime = 0;
 
@@ -167,25 +167,17 @@ public class PlayerControllerScript : MonoBehaviour
 					Spell datSpell = SpellBook.playerSpells [currSpell];
 					
 					//Charged spells have lower cost than regular spells.
-					if (amountChargedSoFar > 5.0f) amountChargedSoFar = 5.1f; //maximum charge is 5 seconds
-					int newCost = 50;
+					if (amountChargedSoFar > 5.0f) amountChargedSoFar = 5.0f; //maximum charge is 5 seconds
+					int newCost = (int)Mathf.Ceil(datSpell.getCost()*0.75f);
 					
 					int oldCost = datSpell.getCost();
 					datSpell.setCost(newCost);
-					Direction initialDirection = direction; 
-					bool logged = false;
-			
-					for (int i = 0; i<(int)amountChargedSoFar*6; i++){ //i<# of times spell is cast, adds 6 every second.
-						if (datSpell.hasEnoughMana()){
-							InvokeRepeating ("startAttackAnim", 0, 0.1f);
-							Invoke ("stopAttackAnim", 0.5f);
-						}
-						else if (!logged){
-							Debug.Log ("You're out of MP during a charged spell cast. But why do we need to log this?");
-						}
-						else{
-						}
-					}
+					//bool logged = false;
+
+				if (PlayerInfo.getMana() >= datSpell.getCost()*5*amountChargedSoFar)
+					InvokeRepeating("startAttackAnim", 0, 0.2f);
+					Invoke ("stopChargeAttack", amountChargedSoFar);
+
 					datSpell.setCost(oldCost);
 				}
 				
@@ -217,10 +209,20 @@ public class PlayerControllerScript : MonoBehaviour
 	{
 		animator.SetBool ("Attack", false);
 	}
+
+	/*IEnumerator chargeAttack(){
+		InvokeRepeating("startAttackAnim", 0, 0.2f);
+		yield return new WaitForSeconds((int)amountChargedSoFar);
+		Invoke ("stopAttackAnim", 0f);
+	}*/
+
 	void startAttackAnim ()
 	{
 		Spell datSpell = SpellBook.playerSpells [currSpell];
-		datSpell.cast (direction);		animator.SetBool ("Attack", true);
+		datSpell.cast (direction);		animator.SetBool ("Attack", true); datSpell.subMana();
+	}
+	void stopChargeAttack(){
+		CancelInvoke("startAttackAnim");
 	}
 
 	void changeSpell (bool prevFalsenextTrue)
