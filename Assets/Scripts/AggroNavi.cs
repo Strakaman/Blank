@@ -25,6 +25,7 @@ public class AggroNavi : MonoBehaviour {
 		{
 			player = GameObject.FindGameObjectWithTag("Player");
 		}
+		this.transform.parent = player.transform;
 		if (refBullet)
 		{
 			refBullet = GameObject.FindGameObjectWithTag("WhiteBullet");
@@ -55,6 +56,7 @@ public class AggroNavi : MonoBehaviour {
 		Vector2 cloneVelocity = (shotDirection.normalized * projectileSpeed);
 		GameObject clonedesu = Utilities.cloneObject(Direction.down, refBullet, transform.position, cloneVelocity, cloneOrientation);
 		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
+		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
 		Destroy (clonedesu,2);
 	}
 
