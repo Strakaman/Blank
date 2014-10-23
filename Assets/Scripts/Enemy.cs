@@ -151,7 +151,7 @@ public class Enemy : MonoBehaviour{
 	}
 	void callDamage(DamageStruct dstruct)
 	{
-		damageProperties(dstruct.coll.gameObject, dstruct.damage, 100, 0.1f);
+		damageProperties(dstruct.coll.gameObject, dstruct.damage, dstruct.knockback, dstruct.hitDelay);
 		GetComponent<SpriteRenderer>().material = Hit;
 	}
 

@@ -6,6 +6,8 @@ public class BulletDesu : MonoBehaviour {
 	public int damage;
 	public float animationTime;
 	public string whoToDamage;
+	public int projectileKnockback;
+	public float hitDelay;
 	// Use this for initialization
 	void Start () {
 		animator = (Animator)GetComponent ("Animator");
@@ -23,7 +25,7 @@ public class BulletDesu : MonoBehaviour {
 		gameObject.collider2D.enabled = false;
 		if (Utilities.hasMatchingTag(whoToDamage,collInfo.gameObject))
 		{
-			DamageStruct thisisntastructanymore = new DamageStruct(damage,collider2D.gameObject);
+			DamageStruct thisisntastructanymore = new DamageStruct(damage,collider2D.gameObject,100,.1f);
 			collInfo.gameObject.SendMessage("callDamage",thisisntastructanymore);
 		}
 		rigidbody2D.velocity = new Vector2(0,0);

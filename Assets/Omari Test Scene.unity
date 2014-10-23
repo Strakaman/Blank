@@ -946,7 +946,7 @@ GameObject:
   - 4: {fileID: 179706317}
   - 114: {fileID: 179706313}
   - 58: {fileID: 179706319}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SightRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1808,6 +1808,10 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400024, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
+      propertyPath: projectileKnockback
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
   m_RootGameObject: {fileID: 1651765899}
@@ -1962,7 +1966,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
       propertyPath: m_RootOrder
@@ -2234,7 +2238,7 @@ GameObject:
   - 4: {fileID: 492437878}
   - 114: {fileID: 492437880}
   - 58: {fileID: 492437879}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SightRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2294,6 +2298,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .5
   whoToDamage: Player
+  projectileKnockback: 1000
+  hitDelay: .100000001
 --- !u!1 &523796701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,6 +2869,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .200000003
   whoToDamage: Enemy
+  projectileKnockback: 0
+  hitDelay: .100000001
 --- !u!58 &861452051
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5511,7 +5519,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1651765900}
   - 114: {fileID: 1651765901}
-  - 114: {fileID: 1651765902}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -5565,18 +5572,6 @@ MonoBehaviour:
   speedPickup: {fileID: 2049269947}
   invulnPickup: {fileID: 1877672803}
   debugMode: 1
---- !u!114 &1651765902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400020, guid: b6dfe671e2406c24d92d8a67a23d65e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 395051680}
-  m_GameObject: {fileID: 1651765899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 703c3485cd092db459a30784e047c89e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1657292455
 GameObject:
   m_ObjectHideFlags: 0
@@ -6116,6 +6111,8 @@ MonoBehaviour:
   damage: 25
   animationTime: .5
   whoToDamage: Enemy
+  projectileKnockback: 100
+  hitDelay: .100000001
 --- !u!212 &1765757861
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6235,7 +6232,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d17661e9300305e47b285c13cc981149, type: 2}
@@ -6401,7 +6398,7 @@ GameObject:
   - 4: {fileID: 1815913432}
   - 114: {fileID: 1815913434}
   - 58: {fileID: 1815913433}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SightRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6634,6 +6631,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .5
   whoToDamage: Player
+  projectileKnockback: 1000
+  hitDelay: .100000001
 --- !u!114 &1857775062
 MonoBehaviour:
   m_ObjectHideFlags: 0

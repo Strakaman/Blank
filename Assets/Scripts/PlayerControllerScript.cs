@@ -299,18 +299,23 @@ public class PlayerControllerScript : MonoBehaviour
 
 		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject))
 		{
-			damageProperties(collInfo, -10, 1000, 0.5f);
+			damageProperties(collInfo.gameObject, -10, 1000, 0.5f);
 		}
 	}
 
 	void OnCollisionEnter2D(Collision2D collInfo) {
-		if (Utilities.hasMatchingTag("EnemyProjectile",collInfo.gameObject))
-		{
-			damageProperties(collInfo, -20, 1000, 0.1f);
-		}
+	//	if (Utilities.hasMatchingTag("EnemyProjectile",collInfo.gameObject))
+	//	{
+	//		damageProperties(collInfo, -20, 1000, 0.1f);
+	//	}
 	}
 
-	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
+	void callDamage(DamageStruct dstruct)
+	{
+		damageProperties(dstruct.coll.gameObject, -dstruct.damage, dstruct.knockback, dstruct.hitDelay);
+	}
+
+	void damageProperties(GameObject collInfo, int damage, int knockback, float hitdelay) {
 		if (PlayerInfo.GetDefenseModifier() == 0)
 		{
 			return;

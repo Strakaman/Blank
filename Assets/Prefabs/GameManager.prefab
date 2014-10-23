@@ -1273,6 +1273,8 @@ MonoBehaviour:
   damage: 25
   animationTime: .5
   whoToDamage: Enemy
+  projectileKnockback: 100
+  hitDelay: .100000001
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1328,6 +1330,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .5
   whoToDamage: Player
+  projectileKnockback: 1000
+  hitDelay: .100000001
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1406,6 +1410,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .200000003
   whoToDamage: Enemy
+  projectileKnockback: 20
+  hitDelay: .100000001
 --- !u!114 &11400026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1421,6 +1427,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .5
   whoToDamage: Player
+  projectileKnockback: 1000
+  hitDelay: .100000001
 --- !u!114 &11400028
 MonoBehaviour:
   m_ObjectHideFlags: 1
