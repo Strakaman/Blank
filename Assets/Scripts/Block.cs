@@ -23,7 +23,7 @@ public class Block : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collInfo)
 	{	//when a blue spell touches water, it turns to ice
 		//if ((isIceBlock)&&(collInfo.gameObject.tag.Equals("RedSpellObject")))
-			if ((isIceBlock)&&(Utilities.hasMatchingTag("RedSpellObject",collInfo.gameObject)))
+			if ((isIceBlock)&&(Utilities.hasMatchingTag("Melter",collInfo.gameObject)))
 		{
 			collider2D.enabled = false;
 			GameObject water = GameObject.FindGameObjectWithTag("Water"); //if we add animation, change this to invoke on helper method based on animation length
