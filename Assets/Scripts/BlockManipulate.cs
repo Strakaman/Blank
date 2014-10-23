@@ -1,17 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BlockManipulate : MonoBehaviour {
+public class BlockManipulate : Interactable {
+	private bool isGrabbed;
 
 
+	public void Start() {
+
+	}
 	// Update is called once per frame
-	void OnCollisionEnter2D (Collision2D coll) {
-				while (coll.gameObject.tag == "Player") {
-				Debug.Log("Colliding");
-						if (Input.GetButtonDown("Grab")) {
-						Debug.Log("Grabbing");
-								transform.parent = coll.gameObject.transform;
-						}
+	public override void interact (GameObject player) {
+		if (!isGrabbed) {
+						PlayerInfo.SetState (PState.grabbing);
+						this.transform.parent = player.transform;
+						isGrabbed = true;
+						PlayerInfo.setGrabModifier(0.5f);
+				} else {
+						PlayerInfo.SetState (PState.normal);
+						this.transform.parent = null;
+						isGrabbed = false;
+						PlayerInfo.setGrabModifier(1f);
 				}
-		}
+
+				
+	}
+
 }

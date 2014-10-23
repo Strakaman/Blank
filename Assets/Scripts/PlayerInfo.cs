@@ -15,6 +15,7 @@ public static class PlayerInfo
 	private static int powerModifier = 1;
 	private static int defenseModifier = 1;
 	private static int speedModifier = 1;
+	private static float grabModifier = 1;
 	private static PState playerState = PState.inmenus;
 
 	//umm....get the player's current health
@@ -124,6 +125,15 @@ public static class PlayerInfo
 	public static int GetSpeedModifier()
 	{
 		return speedModifier;
+	}
+
+	public static float GetGrabModifier()
+	{
+		return grabModifier;
+	}
+
+	public static void setGrabModifier(float modifier) {
+		grabModifier = modifier;
 	}
 
 	//called by corresponding pickup item
