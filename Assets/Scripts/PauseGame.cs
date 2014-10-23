@@ -43,4 +43,12 @@ public class PauseGame : MonoBehaviour {
 		}
 				
 	}
+
+	void OnGUI()
+	{
+		if (paused)
+		{
+
+		}
+	}
 }
