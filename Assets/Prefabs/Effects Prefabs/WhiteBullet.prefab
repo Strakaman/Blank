@@ -73,6 +73,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .200000003
   whoToDamage: Enemy
+  projectileKnockback: 20
+  hitDelay: .100000001
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
