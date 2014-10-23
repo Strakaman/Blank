@@ -14,7 +14,7 @@ public class Dash : MonoBehaviour {
 
 	void Update()
 	{
-		if ((canBoost == true) && Input.GetButtonDown ("Slide") && (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0))
+		if ((canBoost == true) && Input.GetButtonDown ("Slide") && (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) && PlayerInfo.GetState().Equals(PState.normal))
 		{
 			StartCoroutine( Boost(.5f) ); //Start the Coroutine called "Boost", and feed it the time we want it to boost us
 		}

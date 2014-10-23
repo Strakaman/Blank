@@ -45,6 +45,9 @@ public class PlayerControllerScript : MonoBehaviour
 		if (hittime + 0.1f < Time.time) {
 			GetComponent<SpriteRenderer>().material = Default;
 		}
+		if (PlayerInfo.GetState().Equals(PState.grabbing)) {
+
+		}
 	}
 
 //Checks and sets the animation state for the player
@@ -56,7 +59,7 @@ public class PlayerControllerScript : MonoBehaviour
 
 	bool isStrafing ()
 	{
-			if (Input.GetButton ("Strafe")) {
+			if (Input.GetButton ("Strafe") || PlayerInfo.GetState().Equals(PState.grabbing)) {
 					return true;
 			} else {
 					return false;
@@ -123,8 +126,8 @@ public class PlayerControllerScript : MonoBehaviour
 	void CheckInputs ()
 	{
 				//Consider modifying the same vector everytime instead of creating a new one, performance win?
-				rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier(), 
-		                                    		Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier());
+				rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(), 
+		                                    		Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier());
 				if (Input.GetButtonDown ("Spell Cycle Up")) {
 						changeSpell (true);
 				} else if (Input.GetButtonDown ("Spell Cycle Down")) {
@@ -136,7 +139,7 @@ public class PlayerControllerScript : MonoBehaviour
 				}
 
 
-				if (Input.GetButtonDown ("Use Spell")) {
+		if (Input.GetButtonDown ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)) {
 						if (SpellBook.playerSpells [currSpell] == null) {
 		
 								changeSpell (true);
@@ -155,11 +158,11 @@ public class PlayerControllerScript : MonoBehaviour
 				}
 	
 			//Charged spell
-			if (canCharge && Input.GetButton ("Use Spell")) {
+		if (canCharge && Input.GetButton ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)) {
 				amountChargedSoFar = Time.time - chargeStartTime;
 			}
 
-			if (canCharge && Input.GetButtonUp("Use Spell")){
+		if (canCharge && Input.GetButtonUp("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)){
 				if (amountChargedSoFar > chargeTimeRequired){
 					if (SpellBook.playerSpells [currSpell] == null) {
 						changeSpell (true);

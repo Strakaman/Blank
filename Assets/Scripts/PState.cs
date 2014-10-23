@@ -6,6 +6,7 @@ public enum PState {
 	normal = 0, //player actually playing the game and can move/shoot/etc. 
 	inmenus = 1, //player maybe at the main or pause menu
 	talking = 2, //player talking to an NPC or reading a sign or something
+	grabbing = 3, //player is grabbing a block
 	dead = 9 //player just died, use to maybe pop up death menu option
 
 };
