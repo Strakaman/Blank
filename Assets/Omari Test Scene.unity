@@ -2289,6 +2289,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
+  whoToDamage: 
 --- !u!1 &523796701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2857,6 +2858,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 1
   animationTime: .200000003
+  whoToDamage: 
 --- !u!58 &861452051
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6109,6 +6111,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
+  whoToDamage: 
 --- !u!212 &1765757861
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6146,6 +6149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTags:
   - RedSpellObject
+  - Melter
 --- !u!1001 &1773894770
 Prefab:
   m_ObjectHideFlags: 0
@@ -6625,6 +6629,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
+  whoToDamage: 
 --- !u!114 &1857775062
 MonoBehaviour:
   m_ObjectHideFlags: 0

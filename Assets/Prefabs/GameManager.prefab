@@ -1273,6 +1273,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
+  whoToDamage: 
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1327,6 +1328,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
+  whoToDamage: 
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1416,6 +1418,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 1
   animationTime: .200000003
+  whoToDamage: 
 --- !u!114 &11400026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1430,6 +1433,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
+  whoToDamage: 
 --- !u!114 &11400028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1555,6 +1559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTags:
   - RedSpellObject
+  - Melter
 --- !u!114 &11400048
 MonoBehaviour:
   m_ObjectHideFlags: 1

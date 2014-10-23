@@ -149,16 +149,21 @@ public class Enemy : MonoBehaviour{
 			GetComponent<SpriteRenderer>().material = Slow;;
 		}
 	}
+	void callDamage(DamageStruct dstruct)
+	{
+		damageProperties(dstruct.coll.gameObject, dstruct.damage, 100, 0.1f);
+		GetComponent<SpriteRenderer>().material = Hit;
+	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		//Debug.Log ("COLLIDING");
-		if (Utilities.hasMatchingTag("RedSpellObject",coll.gameObject)) {
-			damageProperties(coll, 25, 100, 0.1f);
-			GetComponent<SpriteRenderer>().material = Hit;
+		//if (Utilities.hasMatchingTag("RedSpellObject",coll.gameObject)) {
+		//	damageProperties(coll, 25, 100, 0.1f);
+		//	GetComponent<SpriteRenderer>().material = Hit;
 
-		}
+		//}
 		if (Utilities.hasMatchingTag("YellowSpellObject",coll.gameObject)) {
-			damageProperties(coll, 0, 0, 0.1f);
+			damageProperties(coll.gameObject, 0, 0, 0.1f);
 			stunned = true;
 		}
 	}
@@ -169,13 +174,13 @@ public class Enemy : MonoBehaviour{
 		slowed = false;
 	}
 
-	void damageProperties(Collision2D collInfo, int damage, int knockback, float hitdelay) {
+	void damageProperties(GameObject collInfoObj, int damage, int knockback, float hitdelay) {
 		if (hitTime + hitdelay < Time.time) {
 			hitTime = Time.time;
 			takeDamage(damage);
 			isHit = true;
-			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
-			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
+			float verticalPush = collInfoObj.transform.position.y - transform.position.y;
+			float horizontalPush = collInfoObj.transform.position.x - transform.position.x;
 			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
 		}
 	}
@@ -187,9 +192,6 @@ public class Enemy : MonoBehaviour{
 		isHit = false;
 	}
 
-	void Movement() {
-		
-	}
 
 	void Attack() {
 		dealDamage ();

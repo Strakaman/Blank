@@ -164,6 +164,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
+  whoToDamage: 
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTags:
   - RedSpellObject
+  - Melter
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
