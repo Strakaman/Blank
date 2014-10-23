@@ -1271,9 +1271,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 10
+  damage: 25
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Enemy
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Player
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1416,9 +1416,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 1
+  damage: 10
   animationTime: .200000003
-  whoToDamage: 
+  whoToDamage: Enemy
 --- !u!114 &11400026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Player
 --- !u!114 &11400028
 MonoBehaviour:
   m_ObjectHideFlags: 1

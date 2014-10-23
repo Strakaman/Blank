@@ -192,11 +192,6 @@ public class Enemy : MonoBehaviour{
 		isHit = false;
 	}
 
-
-	void Attack() {
-		dealDamage ();
-	}
-
 	bool withinRange() {
 		return false;
 	}
@@ -204,9 +199,5 @@ public class Enemy : MonoBehaviour{
 	void takeDamage(int damage) {
 		gameObject.GetComponent<EnemyAI> ().setPlayerInSightTrue();
 		health -= damage*PlayerInfo.GetPowerModifier();
-	}
-
-	void dealDamage() {
-		PlayerInfo.changeHealth(-damage);
 	}
 }
