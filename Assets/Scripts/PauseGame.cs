@@ -20,14 +20,14 @@ public class PauseGame : MonoBehaviour {
 		{
 			Time.timeScale = 0f;
 			guiTexture.enabled = true;
-			Debug.Log("Game is Paused");
+			//Debug.Log("Game is Paused");
 
 		}
 		else
 		{
 			Time.timeScale = 1f;
 			guiTexture.enabled = false;
-			Debug.Log("Game is Resumed");
+			//Debug.Log("Game is Resumed");
 		}
 	}
 

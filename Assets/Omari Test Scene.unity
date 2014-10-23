@@ -1804,6 +1804,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 151915710}
+    - target: {fileID: 400002, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
   m_RootGameObject: {fileID: 1651765899}
@@ -2289,7 +2293,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Player
 --- !u!1 &523796701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,9 +2860,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 1
+  damage: 10
   animationTime: .200000003
-  whoToDamage: 
+  whoToDamage: Enemy
 --- !u!58 &861452051
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6045,7 +6049,7 @@ Transform:
   m_PrefabInternal: {fileID: 395051680}
   m_GameObject: {fileID: 1765757855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100000, y: 25, z: -100}
+  m_LocalPosition: {x: 0, y: 25, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 741439892}
@@ -6109,9 +6113,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 10
+  damage: 25
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Enemy
 --- !u!212 &1765757861
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6629,7 +6633,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Player
 --- !u!114 &1857775062
 MonoBehaviour:
   m_ObjectHideFlags: 0

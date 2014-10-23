@@ -1,13 +1,13 @@
 using UnityEngine;
-public class DamageStruct : MonoBehaviour
+public struct DamageStruct
 		{
-			public DamageStruct(int d, Collider2D c)
+			public DamageStruct(int d, GameObject o)
 	{
 		damage = d;
-		coll = c;
+		coll = o;
 	}
 			public int damage;
-			public Collider2D coll;
+			public GameObject coll;
 		}
 
 

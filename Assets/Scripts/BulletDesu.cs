@@ -18,11 +18,12 @@ public class BulletDesu : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D collInfo) {
 		//Debug.Log(collInfo.gameObject.name);		
-		if (animator) animator.SetBool ("Does Collide", true);
+		if (animator) {
+			animator.SetBool ("Does Collide", true);}
 		gameObject.collider2D.enabled = false;
 		if (Utilities.hasMatchingTag(whoToDamage,collInfo.gameObject))
 		{
-			DamageStruct thisisntastructanymore = new DamageStruct(damage,collider2D);
+			DamageStruct thisisntastructanymore = new DamageStruct(damage,collider2D.gameObject);
 			collInfo.gameObject.SendMessage("callDamage",thisisntastructanymore);
 		}
 		rigidbody2D.velocity = new Vector2(0,0);

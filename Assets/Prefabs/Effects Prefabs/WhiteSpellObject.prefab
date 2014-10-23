@@ -423,8 +423,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 1
+  damage: 10
   animationTime: .200000003
+  whoToDamage: Enemy
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
