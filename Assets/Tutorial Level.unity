@@ -1865,7 +1865,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Player
 --- !u!212 &279769286
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2313,7 +2313,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_LocalScale.x
@@ -3872,7 +3872,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46ce4c97508eab94a9f8e224c508974b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfba3889fb9217438ec578913b48931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &565758104
 Transform:
@@ -4163,7 +4163,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: direction
@@ -4583,7 +4583,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: direction
@@ -4764,7 +4764,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46ce4c97508eab94a9f8e224c508974b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfba3889fb9217438ec578913b48931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &683250012
 Transform:
@@ -5575,7 +5575,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: direction
@@ -5913,7 +5913,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46ce4c97508eab94a9f8e224c508974b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfba3889fb9217438ec578913b48931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &848474786
 Transform:
@@ -6955,7 +6955,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46ce4c97508eab94a9f8e224c508974b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfba3889fb9217438ec578913b48931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &941976810
 Transform:
@@ -9228,7 +9228,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   damage: 10
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Player
 --- !u!95 &1358680486
 Animator:
   serializedVersion: 3
@@ -9964,9 +9964,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 10
+  damage: 25
   animationTime: .5
-  whoToDamage: 
+  whoToDamage: Enemy
 --- !u!212 &1509040528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10372,7 +10372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: direction
@@ -10657,7 +10657,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46ce4c97508eab94a9f8e224c508974b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfba3889fb9217438ec578913b48931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1621793996
 Transform:
@@ -10917,9 +10917,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 1
+  damage: 10
   animationTime: .200000003
-  whoToDamage: 
+  whoToDamage: Enemy
 --- !u!4 &1715399408
 Transform:
   m_ObjectHideFlags: 0
@@ -12280,7 +12280,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46ce4c97508eab94a9f8e224c508974b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfba3889fb9217438ec578913b48931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1875696100
 Transform:
@@ -12423,7 +12423,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: direction
@@ -12593,7 +12593,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46ce4c97508eab94a9f8e224c508974b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfba3889fb9217438ec578913b48931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1933446118
 Transform:
@@ -12708,7 +12708,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1949492644}
   - 114: {fileID: 1949492646}
-  - 114: {fileID: 1949492645}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -12744,18 +12743,6 @@ Transform:
   - {fileID: 279769284}
   m_Father: {fileID: 0}
   m_RootOrder: 20
---- !u!114 &1949492645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400020, guid: b6dfe671e2406c24d92d8a67a23d65e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 536969439}
-  m_GameObject: {fileID: 1949492643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 703c3485cd092db459a30784e047c89e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1949492646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13091,7 +13078,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fcddfcf786450f44b6a2422cef2763a, type: 2}
       propertyPath: m_LocalScale.x
@@ -13948,7 +13935,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46ce4c97508eab94a9f8e224c508974b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfba3889fb9217438ec578913b48931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2098533554
 Transform:
