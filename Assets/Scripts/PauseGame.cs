@@ -48,7 +48,10 @@ public class PauseGame : MonoBehaviour {
 	{
 		if (paused)
 		{
-
+			//GUI.Box(Rect(Screen.width /2 - 100,Screen.height /2 - 100,250,200), "Game Paused");
+			//if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2 - 50,250,50), "Resume")){
+			//	paused = togglePause();
+			//}
 		}
 	}
 }

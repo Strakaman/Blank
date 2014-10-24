@@ -3,7 +3,7 @@
 //*							Written by Grady Featherstone								*
 //										© Copyright 2011										*
 //*******************************************************************************
-var mainMenuSceneName : String;
+/*var mainMenuSceneName : String;
 var pauseMenuFont : Font;
 private var pauseEnabled = false;			
 
@@ -99,4 +99,4 @@ GUI.skin.button.font = pauseMenuFont;
 			Application.Quit();
 		}
 	}
-}
+}*/

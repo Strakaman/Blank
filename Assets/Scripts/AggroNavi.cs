@@ -25,7 +25,7 @@ public class AggroNavi : MonoBehaviour {
 		{
 			player = GameObject.FindGameObjectWithTag("Player");
 		}
-		this.transform.parent = player.transform;
+
 		if (refBullet)
 		{
 			refBullet = GameObject.FindGameObjectWithTag("WhiteBullet");
@@ -46,6 +46,11 @@ public class AggroNavi : MonoBehaviour {
 	void BeastMode()
 	{
 		inBeastMode = true;
+		if (player == null)
+		{
+			player = GameObject.FindGameObjectWithTag("Player");
+		}
+		this.transform.parent = player.transform;
 	}
 
 	void shotsFired ()
