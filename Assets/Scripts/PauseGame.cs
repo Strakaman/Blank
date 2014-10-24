@@ -48,10 +48,19 @@ public class PauseGame : MonoBehaviour {
 	{
 		if (paused)
 		{
-			//GUI.Box(Rect(Screen.width /2 - 100,Screen.height /2 - 100,250,200), "Game Paused");
-			//if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2 - 50,250,50), "Resume")){
-			//	paused = togglePause();
-			//}
+			GUI.Box(new Rect(Screen.width /2 - 100,Screen.height /2 - 100,250,175), "Game Paused");
+			if(GUI.Button(new Rect(Screen.width /2 - 100,Screen.height /2 - 75,250,50), "Resume")){
+				paused = togglePause();
+			}
+			if (GUI.Button (new Rect (Screen.width /2 - 100,Screen.height /2-25,250,50), "Quit to Main Menu")){
+				Application.LoadLevel("Main Menu");
+				Destroy(GameObject.FindGameObjectWithTag("GameManager"));
+				paused = togglePause();
+			}
+			if (GUI.Button (new Rect (Screen.width /2 - 100,Screen.height /2 + 25,250,50), "Quit Game")){
+				paused = togglePause();
+				Application.Quit();
+			}
 		}
 	}
 }
