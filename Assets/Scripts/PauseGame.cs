@@ -7,58 +7,58 @@ public class PauseGame : MonoBehaviour {
 
 	void Update()
 	{
-		if (PlayerInfo.GetState() != PState.normal) {
-			return;
-		}
 		if (Input.GetButtonDown ("pause"))
 		{
-			paused = togglePause ();
-
+			if (paused)
+			{
+				ResumeTheGame();
+			}
+			else if (PlayerInfo.GetState().Equals(PState.normal)) //players can only pause when not dead, etc.
+			{
+				PauseTheGame();
+			}
 		}
-
 		if (paused) 
 		{
 			Time.timeScale = 0f;
-			guiTexture.enabled = true;
+			//guiTexture.enabled = true;
 			//Debug.Log("Game is Paused");
-
 		}
 		else
 		{
 			Time.timeScale = 1f;
-			guiTexture.enabled = false;
+			//guiTexture.enabled = false;
 			//Debug.Log("Game is Resumed");
 		}
 	}
 
-	bool togglePause()
+	void PauseTheGame()
 	{
-		if (paused == true) 
-		{
-			return false;
-		}
-		else
-		{
-			return true;
-		}
-				
+		paused = true;
+		PlayerInfo.SetState(PState.inmenus);
 	}
 
-	void OnGUI()
+	void ResumeTheGame()
+	{
+		paused = false;
+		PlayerInfo.SetState(PState.normal);
+	}
+
+	void OnGUI() //draw pause menu with player options
 	{
 		if (paused)
 		{
 			GUI.Box(new Rect(Screen.width /2 - 100,Screen.height /2 - 100,250,175), "Game Paused");
 			if(GUI.Button(new Rect(Screen.width /2 - 100,Screen.height /2 - 75,250,50), "Resume")){
-				paused = togglePause();
+				ResumeTheGame();
 			}
 			if (GUI.Button (new Rect (Screen.width /2 - 100,Screen.height /2-25,250,50), "Quit to Main Menu")){
 				Application.LoadLevel("Main Menu");
-				Destroy(GameObject.FindGameObjectWithTag("GameManager"));
-				paused = togglePause();
+				ResumeTheGame();
+				PlayerInfo.SetState(PState.inmenus); //still set player as inmenus since main menu is also a menu
 			}
 			if (GUI.Button (new Rect (Screen.width /2 - 100,Screen.height /2 + 25,250,50), "Quit Game")){
-				paused = togglePause();
+				ResumeTheGame();
 				Application.Quit();
 			}
 		}

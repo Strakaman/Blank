@@ -45,6 +45,7 @@ public class HUD : MonoBehaviour {
 		GUI.Label (new Rect (Screen.width - 100, 25, 100, 100), "Mana: " + PlayerInfo.getMana());
 		GUI.Label (new Rect (50, 50, 100, 100), "Current Spell: " + PlayerInfo.getCurrSpell().getName());
 		 */
+		if(PlayerInfo.GetState().Equals(PState.inmenus)) return; //dont draw HUD if player is in menu since it looks weird
 		drawBar (hpContainerPosition, hpBar);
 		drawBar (mpContainerPosition, mpBar);
 		barUpdate (hpPosition, hp, healthScale);
