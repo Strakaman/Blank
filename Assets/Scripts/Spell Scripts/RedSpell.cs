@@ -25,4 +25,8 @@ public class RedSpell : Spell
 		createProjectile (dir, redRefObject);
 	}
 
+	public override void castCharge(Direction dir)
+	{
+		
+	}
 }

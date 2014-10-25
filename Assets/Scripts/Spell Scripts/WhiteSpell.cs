@@ -31,4 +31,9 @@ public class WhiteSpell : Spell
 		clonedesu.SendMessage("BeastMode");
 		Destroy (clonedesu,animationDuration);
 	}
+
+	public override void castCharge(Direction dir)
+	{
+		
+	}
 }

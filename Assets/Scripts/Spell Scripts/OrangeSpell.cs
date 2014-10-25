@@ -24,5 +24,9 @@ public class OrangeSpell : Spell
 		 */
 		createProjectile (dir, redRefObject);
 	}
-	
+
+	public override void castCharge(Direction dir)
+	{
+		
+	}
 }

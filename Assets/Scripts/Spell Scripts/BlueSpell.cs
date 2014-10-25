@@ -19,4 +19,9 @@ public class BlueSpell : Spell
 	{
 		createProjectile (dir, blueRefObject);
 	}
+
+	public override void castCharge(Direction dir)
+	{
+
+	}
 }

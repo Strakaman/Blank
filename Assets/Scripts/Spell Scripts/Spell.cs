@@ -111,6 +111,10 @@ public abstract class Spell: ScriptableObject
 	//each cast method should check to see if they player has enough mana to cast before they actually cast.
 	public abstract void cast(Direction dir);
 
+	//every charge is now going to have a charge version, so get hype
+	//still need direction knowledge and still check to see if player has enough mana
+	public abstract void castCharge(Direction dir);
+
 	//deprecated, use Utilities.cloneObject instead
 	/*public GameObject createSpellObject(Direction direction, GameObject bulletToClone, Vector3 placetoCreate, Vector3 velocity, Quaternion orientation)
 	{

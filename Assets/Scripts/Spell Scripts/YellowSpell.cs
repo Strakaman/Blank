@@ -19,5 +19,10 @@ public class YellowSpell : Spell
 	{
 		createProjectile (dir, yellowRefObject);
 	}
+
+	public override void castCharge(Direction dir)
+	{
+		
+	}
 }
 
