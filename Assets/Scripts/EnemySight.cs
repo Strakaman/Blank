@@ -12,7 +12,7 @@ public class EnemySight : MonoBehaviour {
 	public float chaseTime = 2;
 	private GameObject enemy;
 	//private bool outOfRange;
-
+	
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
@@ -65,6 +65,7 @@ public class EnemySight : MonoBehaviour {
 					//Debug.Log("PLAYER IS IN SIGHT");
 					//playerInSight = true;
 					gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
+					//Debug.Log(gameObject.GetComponentInParent<EnemyAI>().getPlayerInSight());
 					if (Utilities.hasMatchingTag("Ranged", gameObject.transform.parent.gameObject)) {
 						//Debug.Log("poop");
 						gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
@@ -94,7 +95,7 @@ public class EnemySight : MonoBehaviour {
 			//Debug.Log("NOT IN SIGHT");
 		}
 	}
-
+	
 	void invokeSetFalse() {
 		gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightFalse();
 		if (Utilities.hasMatchingTag("Ranged",gameObject.transform.parent.gameObject)) {

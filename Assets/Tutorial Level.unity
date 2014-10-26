@@ -271,7 +271,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &16644734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,7 +1031,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &144580596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1375,7 +1373,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &206837434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,6 +1863,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .5
   whoToDamage: Player
+  projectileKnockback: 1000
+  hitDelay: .100000001
 --- !u!212 &279769286
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2381,7 +2380,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &346900213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2984,7 +2982,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &416027713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4232,7 +4229,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &621379815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5706,7 +5702,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &831397027
 Prefab:
   m_ObjectHideFlags: 0
@@ -5807,7 +5802,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &831974552
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5926,7 +5920,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1001 &848882950
 Prefab:
   m_ObjectHideFlags: 0
@@ -6497,7 +6491,7 @@ GameObject:
   - 4: {fileID: 886273229}
   - 114: {fileID: 886273233}
   - 58: {fileID: 886273237}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SightRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6548,7 +6542,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &886273232
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -6687,7 +6680,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &886749628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7755,7 +7747,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1130336467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7990,7 +7981,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1156333635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8115,7 +8105,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1184826990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8865,7 +8854,7 @@ GameObject:
   - 4: {fileID: 1315157702}
   - 114: {fileID: 1315157698}
   - 58: {fileID: 1315157703}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SightRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8904,7 +8893,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1315157697
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9102,7 +9090,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1327573361
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9229,6 +9216,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .5
   whoToDamage: Player
+  projectileKnockback: 1000
+  hitDelay: .100000001
 --- !u!95 &1358680486
 Animator:
   serializedVersion: 3
@@ -9244,7 +9233,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1358680487
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9474,7 +9462,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1407508012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9523,7 +9510,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1001 &1446665875
 Prefab:
   m_ObjectHideFlags: 0
@@ -9812,7 +9799,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1480026713
 Prefab:
   m_ObjectHideFlags: 0
@@ -9934,7 +9920,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1509040526
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9967,6 +9952,8 @@ MonoBehaviour:
   damage: 25
   animationTime: .5
   whoToDamage: Enemy
+  projectileKnockback: 100
+  hitDelay: .100000001
 --- !u!212 &1509040528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10732,7 +10719,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1633174571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10920,6 +10906,8 @@ MonoBehaviour:
   damage: 10
   animationTime: .200000003
   whoToDamage: Enemy
+  projectileKnockback: 20
+  hitDelay: .100000001
 --- !u!4 &1715399408
 Transform:
   m_ObjectHideFlags: 0
@@ -11292,7 +11280,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1757615206
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -11818,7 +11805,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1830865122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11982,87 +11968,6 @@ Prefab:
   m_RootGameObject: {fileID: 1455023678}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1852232394
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1852232396}
-  - 114: {fileID: 1852232395}
-  m_Layer: 0
-  m_Name: A*
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1852232395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1852232394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  astarData:
-    hasBeenReverted: 0
-    data: 504b0304140000080800d7a25645cc7cc5e53f00000048000000090024006d6574612e6a736f6e0a00200000000000010018006c18aa9d70eecf016c18aa9d70eecf016c18aa9d70eecf01ab562a4b2d2acecccf53b25232d633d53352d2514a2f4a2cc82856b23200324b335380ace8581da592ca8254bfc4dc5428372f3f25d539bf34af04ccaf0500504b01022d00140000080800d7a25645cc7cc5e53f000000480000000900240000000000000000000000000000006d6574612e6a736f6e0a00200000000000010018006c18aa9d70eecf016c18aa9d70eecf016c18aa9d70eecf01504b050600000000010001005b0000008a0000000000
-    data_backup: 
-    data_cachedStartup: 
-    revertData: 
-    cacheStartup: 0
-    compress: 0
-  showNavGraphs: 1
-  showUnwalkableNodes: 1
-  debugMode: 0
-  debugFloor: 0
-  debugRoof: 20000
-  showSearchTree: 0
-  unwalkableNodeDebugSize: .300000012
-  logPathResults: 1
-  maxNearestNodeDistance: 100
-  scanOnStartup: 1
-  fullGetNearestSearch: 0
-  prioritizeGraphs: 0
-  prioritizeGraphsLimit: 1
-  colorSettings:
-    _NodeConnection: {r: 1, g: 1, b: 1, a: .899999976}
-    _UnwalkableNode: {r: 1, g: 0, b: 0, a: .5}
-    _BoundsHandles: {r: .289999992, g: .453999996, b: .740999997, a: .899999976}
-    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: .5}
-    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: .5}
-    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: .5}
-    _MeshColor: {r: .125, g: .68599999, b: 0, a: .189999998}
-    _AreaColors: []
-  tagNames: []
-  heuristic: 2
-  heuristicScale: 1
-  threadCount: 0
-  maxFrameTime: 1
-  minAreaSize: 10
-  limitGraphUpdates: 1
-  maxGraphUpdateFreq: .200000003
-  lastScanTime: 0
-  inGameDebugPath: 
-  isScanning: 0
-  showGraphs: 0
---- !u!4 &1852232396
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1852232394}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52085.5117, y: -1078.70947, z: -1509.07031}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
 --- !u!1 &1858342868
 GameObject:
   m_ObjectHideFlags: 0
@@ -13313,7 +13218,7 @@ GameObject:
   - 4: {fileID: 2030012362}
   - 114: {fileID: 2030012366}
   - 58: {fileID: 2030012370}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SightRadius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13364,7 +13269,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &2030012365
 Rigidbody2D:
   m_ObjectHideFlags: 0

@@ -3,13 +3,11 @@ using System.Collections;
 //Note this line, if it is left out, the script won't know that the class 'Path' exists and it will throw compiler errors
 //This line should always be present at the top of scripts which use pathfinding
 using Pathfinding;
-
-public class EnemyAI : MonoBehaviour {
+public class AstarAI : MonoBehaviour {
 	//The point to move to
 	private Vector3 targetPosition;
 	private GameObject player;   
 	private Seeker seeker;
-	private bool playerInSight;                      // Whether or not the player is currently sighted.
 	private bool followPath;
 	
 	//The calculated path
@@ -37,24 +35,24 @@ public class EnemyAI : MonoBehaviour {
 			currentWaypoint = 0;
 		}
 	}
-	
+
 	void Update() {
 		//Direction to the next waypoint
 		if (followPath && currentWaypoint < path.vectorPath.Count) {
-						Vector3 dir = (path.vectorPath [currentWaypoint] - transform.position).normalized;
-						dir *= speed * Time.fixedDeltaTime;
-						this.rigidbody2D.velocity = dir;
-				}
+			Vector3 dir = (path.vectorPath [currentWaypoint] - transform.position).normalized;
+			dir *= speed * Time.fixedDeltaTime;
+			this.rigidbody2D.velocity = dir;
+		}
 	}
-	
+
 	void calculatePath() {
 		seeker.StartPath (transform.position,targetPosition, OnPathComplete);
 	}
-	
+
 	public void FixedUpdate () {
 		targetPosition = player.transform.position;
 		Invoke("calculatePath", 1);
-		
+
 		if (path == null) {
 			//We have no path to move after yet
 			followPath = false;
@@ -75,12 +73,5 @@ public class EnemyAI : MonoBehaviour {
 			followPath = true;
 			return;
 		}
-	}
-
-	public void setPlayerInSightTrue() {
-		playerInSight = true;
-	}
-	public void setPlayerInSightFalse() {
-		playerInSight = false;
 	}
 } 
