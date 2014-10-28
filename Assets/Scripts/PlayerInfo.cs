@@ -69,8 +69,9 @@ public static class PlayerInfo
 		if (health <= 0)
 		{
 			health = 0;
-			Application.LoadLevel(Application.loadedLevel);
-			//TODO: kill player workflow
+			//Application.LoadLevel(Application.loadedLevel);
+			//TODO: play death animation
+			SetState(PState.dead);
 		}
 	}
 	/*used to increase or decreased player's mana. 
