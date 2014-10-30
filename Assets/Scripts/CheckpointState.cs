@@ -15,13 +15,15 @@ public static class CheckPointState
 	public static int CPmana;
 	public static int CPlevel= -3; //guarentees that the level does not exist, so gamemanager will know to set state
 	public static bool[] CPspellBools;
+	public static bool CPchargeEnabled;
 
-	public static void UpdateState(int Phealth, int PMana, int Plevel, bool[] PspellBools)
+	public static void UpdateState(int Phealth, int PMana, int Plevel, bool[] PspellBools, bool PchargeEnabled)
 	{
 		CPhealth = Phealth;
 		CPmana = PMana;
 		CPlevel = Plevel;
 		CPspellBools = PspellBools;
+		CPchargeEnabled = PchargeEnabled;
 	}
 }
 

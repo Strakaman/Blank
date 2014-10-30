@@ -102,6 +102,7 @@ public static class Utilities
 						spellObj2.unlockSpell ();
 						spellObj3.unlockSpell ();
 						spellObj4.unlockSpell ();
+						PlayerInfo.SetCanCharge(true);
 				}
 
 		}

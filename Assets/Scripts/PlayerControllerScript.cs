@@ -19,7 +19,6 @@ public class PlayerControllerScript : MonoBehaviour
 	private bool canCharge = true;//charging enabled by defualt
 	private float chargeTimeRequired = 1f;
 	private float amountChargedSoFar = 0;
-	private float chargeStartTime = 0;
 
 // Use this for initialization
 	void Start ()
@@ -46,7 +45,6 @@ public class PlayerControllerScript : MonoBehaviour
 			GetComponent<SpriteRenderer>().material = Default;
 		}
 		if (PlayerInfo.GetState().Equals(PState.grabbing)) {
-
 		}
 	}
 
@@ -153,16 +151,14 @@ public class PlayerControllerScript : MonoBehaviour
 						} else {
 								Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
 						}
-						if (canCharge)
-							chargeStartTime = Time.time;
 				}
 	
 			//Charged spell
-		if (canCharge && Input.GetButton ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)) {
-				amountChargedSoFar = Time.time - chargeStartTime;
+		if (Input.GetButton ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)&& PlayerInfo.CanCharge()) {
+				amountChargedSoFar = Time.deltaTime;
 			}
 
-		if (canCharge && Input.GetButtonUp("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)){
+		if (Input.GetButtonUp("Use Spell") && PlayerInfo.GetState().Equals(PState.normal) && PlayerInfo.CanCharge()){
 				if (amountChargedSoFar > chargeTimeRequired){
 					if (SpellBook.playerSpells [currSpell] == null) {
 						changeSpell (true);
@@ -191,8 +187,6 @@ public class PlayerControllerScript : MonoBehaviour
 					Invoke ("stopChargeAttack", amountChargedSoFar);
 					datSpell.setCost(oldCost);
 				}
-				
-				chargeStartTime = 0;
 				amountChargedSoFar = 0;
 			}
 

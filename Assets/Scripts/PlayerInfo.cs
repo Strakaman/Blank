@@ -11,12 +11,13 @@ public static class PlayerInfo
 	private const int MAXHEALTH = 100; //max HP that player can have
 	private static int mana = MAXMANA; //initialize player mana
 	private static int health = MAXHEALTH; //initialize player health
-	private static Spell currentSpell = null;
+	private static Spell currentSpell = null; 
 	private static int powerModifier = 1;
 	private static int defenseModifier = 1;
 	private static int speedModifier = 1;
 	private static float grabModifier = 1;
-	private static PState playerState = PState.inmenus;
+	private static PState playerState = PState.inmenus; 
+	private static bool chargeEnabled = false;
 
 	//umm....get the player's current health
 	public static int getHealth()
@@ -184,5 +185,15 @@ public static class PlayerInfo
 	public static void SetState(PState stateToSet)
 	{
 		playerState = stateToSet;
+	}
+
+	public static void SetCanCharge(bool setToWhat)
+	{
+		chargeEnabled = setToWhat;
+	}
+
+	public static bool CanCharge()
+	{
+		return chargeEnabled;
 	}
 }

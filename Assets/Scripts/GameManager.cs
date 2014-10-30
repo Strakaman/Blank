@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
 		public GameObject healthPickup;
 		public GameObject manaPickup;
 		public GameObject powerPickup;
-	public GameObject speedPickup;
-	public GameObject invulnPickup;
+		public GameObject speedPickup;
+		public GameObject invulnPickup;
 		public bool debugMode = true;
 
 		void Start() {
@@ -36,10 +36,11 @@ public class GameManager : MonoBehaviour
 			PlayerInfo.setHealth(CheckPointState.CPhealth);
 			PlayerInfo.setMana(CheckPointState.CPmana);
 			SpellBook.setSpellBools(CheckPointState.CPspellBools);
+			PlayerInfo.SetCanCharge(CheckPointState.CPchargeEnabled);
 		}
 		else
 		{
-			CheckPointState.UpdateState(PlayerInfo.getHealth(),PlayerInfo.getMana(),level,SpellBook.getSpellBools());
+			CheckPointState.UpdateState(PlayerInfo.getHealth(),PlayerInfo.getMana(),level,SpellBook.getSpellBools(),PlayerInfo.CanCharge());
 		}
 	}
 		/*pass in the x,y,and z coordinates of the place where you want the pickup to be dropped
