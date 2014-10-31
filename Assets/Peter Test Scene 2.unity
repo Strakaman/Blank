@@ -3283,6 +3283,7 @@ MonoBehaviour:
   hp: {fileID: 2800000, guid: 218d1e425252a5d4499b81d42a3b6218, type: 3}
   mp: {fileID: 2800000, guid: f11085a393c487549a1ce7ae3ad9e8b3, type: 3}
   hudBG: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
+  messageBar: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   hpPosition:
     serializedVersion: 2
     x: .0274999999
@@ -3319,6 +3320,19 @@ MonoBehaviour:
     y: .00999999978
     width: .375
     height: .230000004
+  messageBarPosition:
+    serializedVersion: 2
+    x: .629999995
+    y: .00999999978
+    width: .375
+    height: .100000001
+  messagePosition:
+    serializedVersion: 2
+    x: .699999988
+    y: .0399999991
+    width: 1
+    height: 1
+  message: Out of mana, kupo!
 --- !u!4 &728543658
 Transform:
   m_ObjectHideFlags: 0
