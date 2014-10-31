@@ -205,6 +205,7 @@ GameObject:
   - 95: {fileID: 9500004}
   - 58: {fileID: 5800006}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400076}
   m_Layer: 11
   m_Name: YellowSpell
   m_TagString: YellowSpellObject
@@ -447,22 +448,6 @@ GameObject:
   m_Layer: 11
   m_Name: WhiteSpellObject
   m_TagString: WhiteSpellObject
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &100048
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 400048}
-  - 131: {fileID: 13100000}
-  m_Layer: 0
-  m_Name: HUD BG Box
-  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -757,7 +742,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400050}
-  - {fileID: 400048}
   m_Father: {fileID: 400022}
   m_RootOrder: 15
 --- !u!4 &400042
@@ -796,18 +780,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400010}
   m_RootOrder: 4
---- !u!4 &400048
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
-  m_Children: []
-  m_Father: {fileID: 400040}
-  m_RootOrder: 1
 --- !u!4 &400050
 Transform:
   m_ObjectHideFlags: 1
@@ -979,7 +951,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100020}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -1238,7 +1210,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500002
 Animator:
   serializedVersion: 3
@@ -1253,7 +1224,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500004
 Animator:
   serializedVersion: 3
@@ -1268,7 +1238,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500006
 Animator:
   serializedVersion: 3
@@ -1283,7 +1252,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500008
 Animator:
   serializedVersion: 3
@@ -1298,7 +1266,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1726,6 +1693,8 @@ MonoBehaviour:
   mpBar: {fileID: 2800000, guid: c0e74a4d6c45da94bbdcac8a7e90cc6c, type: 3}
   hp: {fileID: 2800000, guid: 218d1e425252a5d4499b81d42a3b6218, type: 3}
   mp: {fileID: 2800000, guid: f11085a393c487549a1ce7ae3ad9e8b3, type: 3}
+  hudBG: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
+  messageBar: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   hpPosition:
     serializedVersion: 2
     x: .0274999999
@@ -1756,6 +1725,25 @@ MonoBehaviour:
     y: .0799999982
     width: .0500000007
     height: .100000001
+  hudBGPosition:
+    serializedVersion: 2
+    x: 0
+    y: .00999999978
+    width: .375
+    height: .230000004
+  messageBarPosition:
+    serializedVersion: 2
+    x: .629999995
+    y: .00999999978
+    width: .375
+    height: .100000001
+  messagePosition:
+    serializedVersion: 2
+    x: .699999988
+    y: .0399999991
+    width: 1
+    height: 1
+  message: Out of mana, kupo!
 --- !u!114 &11400064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1834,25 +1822,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 400010}
   startPosition: 4
---- !u!131 &13100000
-GUITexture:
+--- !u!114 &11400076
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100048}
+  m_GameObject: {fileID: 100020}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
-  m_PixelInset:
-    serializedVersion: 2
-    x: 0
-    y: 260
-    width: 310
-    height: 95
-  m_LeftBorder: 10
-  m_RightBorder: 0
-  m_TopBorder: 0
-  m_BottomBorder: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba64b7569b47e814da391508dd30b500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
