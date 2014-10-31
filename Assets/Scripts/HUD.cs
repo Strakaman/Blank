@@ -11,11 +11,13 @@ public class HUD : MonoBehaviour {
 	public Texture2D mpBar;
 	public Texture2D hp;
 	public Texture2D mp;
+	public Texture2D hudBG;
 	public Rect hpPosition;
 	public Rect mpPosition;
 	public Rect hpContainerPosition;
 	public Rect mpContainerPosition;
 	public Rect spellPosition;
+	public Rect hudBGPosition;
 	private float health;
 	private float healthScale;
 	private float mana;
@@ -46,6 +48,7 @@ public class HUD : MonoBehaviour {
 		GUI.Label (new Rect (50, 50, 100, 100), "Current Spell: " + PlayerInfo.getCurrSpell().getName());
 		 */
 		if(PlayerInfo.GetState().Equals(PState.inmenus)) return; //dont draw HUD if player is in menu since it looks weird
+		drawBar (hudBGPosition, hudBG);
 		drawBar (hpContainerPosition, hpBar);
 		drawBar (mpContainerPosition, mpBar);
 		barUpdate (hpPosition, hp, healthScale);
