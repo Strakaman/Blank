@@ -6,7 +6,7 @@ using System;
 public static class Utilities
 {
 		public static bool inDebugMode;
-
+		public static GameObject GUIBroadCaster;
 		public static void saveGame ()
 		{
 				//Debug.Log (Application.dataPath);
@@ -141,6 +141,18 @@ public static class Utilities
 		MultiTagScript mult =  objectToCheck.GetComponent<MultiTagScript>();
 		if (mult != null) { return mult.objectHasTag(tagToCheckFor);}
 		return false;
+	}
+
+	/*
+	 * Method for displaying a non-modal message to the player on the screen
+	 * message will appear in the top right and fade away after a set period of time
+	 */ 
+	public static void TellPlayer(string whatToTellThem)
+	{
+		if (GUIBroadCaster == null) { 
+			GUIBroadCaster = GameObject.FindGameObjectWithTag("GUIBroadCaster");
+		}
+		GUIBroadCaster.BroadcastMessage("BroadcastNewMessage",whatToTellThem);
 	}
 }
 

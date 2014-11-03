@@ -80,6 +80,7 @@ public class HUD : MonoBehaviour {
 
 	void drawBar(Rect pos, Texture2D bar) {
 		GUI.DrawTexture (getScreenRect(pos), bar);
+
 	}
 	
 

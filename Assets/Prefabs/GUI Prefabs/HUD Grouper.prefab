@@ -24,6 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 131: {fileID: 13100000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: HUD BG Box
   m_TagString: Untagged
@@ -105,6 +106,8 @@ MonoBehaviour:
   mpBar: {fileID: 2800000, guid: c0e74a4d6c45da94bbdcac8a7e90cc6c, type: 3}
   hp: {fileID: 2800000, guid: 218d1e425252a5d4499b81d42a3b6218, type: 3}
   mp: {fileID: 2800000, guid: f11085a393c487549a1ce7ae3ad9e8b3, type: 3}
+  hudBG: {fileID: 0}
+  messageBar: {fileID: 0}
   hpPosition:
     serializedVersion: 2
     x: .0274999999
@@ -135,6 +138,36 @@ MonoBehaviour:
     y: .0799999982
     width: .0500000007
     height: .100000001
+  hudBGPosition:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  messageBarPosition:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  messagePosition:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  message: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc2cfc283957dc4e88225b711fe500b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
