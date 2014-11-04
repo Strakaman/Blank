@@ -12,16 +12,16 @@ public class HUD : MonoBehaviour {
 	public Texture2D hp;
 	public Texture2D mp;
 	public Texture2D hudBG;
-	public Texture2D messageBar;
+	//public Texture2D messageBar;
 	public Rect hpPosition;
 	public Rect mpPosition;
 	public Rect hpContainerPosition;
 	public Rect mpContainerPosition;
 	public Rect spellPosition;
 	public Rect hudBGPosition;
-	public Rect messageBarPosition;
-	public Rect messagePosition;
-	public string message;
+	//public Rect messageBarPosition;
+	//public Rect messagePosition;
+	//public string message;
 	private float health;
 	private float healthScale;
 	private float mana;
@@ -53,9 +53,11 @@ public class HUD : MonoBehaviour {
 		 */
 		if(PlayerInfo.GetState().Equals(PState.inmenus)) return; //dont draw HUD if player is in menu since it looks weird
 		drawBar (hudBGPosition, hudBG);
-		message = "Out of mana, kupo!";
+		/*message = "Out of mana, kupo!"; 
 		drawBar (messageBarPosition, messageBar);
 		GUI.Label (getScreenRect (messagePosition), message);
+		* deprecated code
+		*/
 		drawBar (hpContainerPosition, hpBar);
 		drawBar (mpContainerPosition, mpBar);
 		barUpdate (hpPosition, hp, healthScale);
