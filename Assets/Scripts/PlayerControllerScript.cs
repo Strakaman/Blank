@@ -149,7 +149,8 @@ public class PlayerControllerScript : MonoBehaviour
 								animator.SetBool ("Attack", true);
 								Invoke ("stopAttackAnim", 0.5f);
 						} else {
-								Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
+							Utilities.TellPlayer("You're out of mana, kupo!")	;
+							Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
 						}
 				}
 	
