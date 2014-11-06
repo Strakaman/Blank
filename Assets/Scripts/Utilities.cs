@@ -86,17 +86,17 @@ public static class Utilities
 						return;
 				} //just in case I'm trying to add to a spell book that's already there.
 				RedSpell spellObj = (RedSpell)ScriptableObject.CreateInstance ("RedSpell");
-				spellObj.initializeSpell (SpellBook.REDSPELLNAME, "Has a tendency to burn things", 30, 10, 2);
+				spellObj.initializeSpell (SpellBook.REDSPELLNAME, "Has a tendency to burn things", 30, 10,2,90,2);
 				spellObj.unlockSpell ();
 				SpellBook.add (spellObj);
 				YellowSpell spellObj2 = (YellowSpell)ScriptableObject.CreateInstance ("YellowSpell");
-				spellObj2.initializeSpell (SpellBook.YELLOWSPELLNAME, "Charges things", 30, 10, 2);
+				spellObj2.initializeSpell (SpellBook.YELLOWSPELLNAME, "Charges things", 30, 10, 2,120,3);
 				SpellBook.add (spellObj2);
 				BlueSpell spellObj3 = (BlueSpell)ScriptableObject.CreateInstance ("BlueSpell");
-				spellObj3.initializeSpell (SpellBook.BLUESPELLNAME, "Useful on water", 100, 1);
+				spellObj3.initializeSpell (SpellBook.BLUESPELLNAME, "Useful on water", 100, 1,200,3);
 				SpellBook.add (spellObj3);
 				WhiteSpell spellObj4 = (WhiteSpell)ScriptableObject.CreateInstance ("WhiteSpell");
-				spellObj4.initializeSpell (SpellBook.WHITESPELLNAME, "Aggressive guide", 300, 30);
+				spellObj4.initializeSpell (SpellBook.WHITESPELLNAME, "Aggressive guide", 300, 30,300,8);
 				SpellBook.add (spellObj4);
 				if (debugMode) { //can switch flag at the top of game manager so everything acts in a debug mode to make testing easier
 						spellObj2.unlockSpell ();

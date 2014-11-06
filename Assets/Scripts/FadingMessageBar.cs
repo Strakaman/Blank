@@ -25,7 +25,7 @@ public class FadingMessageBar : MonoBehaviour {
 		if (Input.GetKeyDown(";")) { //for debugging
 			BroadcastNewMessage("Current Time: " + Time.time);
 		}
-		Debug.Log ("Screen Width: + " + Screen.width + " Screen Height: " + Screen.height);
+		//Debug.Log ("Screen Width: + " + Screen.width + " Screen Height: " + Screen.height);
 	}
 	void OnGUI()
 	{

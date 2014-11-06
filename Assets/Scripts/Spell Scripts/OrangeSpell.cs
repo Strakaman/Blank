@@ -6,9 +6,9 @@ public class OrangeSpell : Spell
 	GameObject redRefObject;
 	//stupid constructor synthax required to make subclass derive from base class properly
 	
-	public void initializeSpell(string nameDesu, string descriptionDesu, int manaCostDesu, int projSpeedDesu, float animDuration) 
+	public void initializeSpell(string nameDesu, string descriptionDesu, int manaCostDesu, int projSpeedDesu, float animDuration, int thechargeManaCost,int thechargeTimeRequir) 
 	{
-		base.initializeSpell(nameDesu, descriptionDesu, manaCostDesu, animDuration);
+		base.initializeSpell(nameDesu, descriptionDesu, manaCostDesu, animDuration, thechargeManaCost, thechargeTimeRequir);
 		redRefObject = GameObject.FindGameObjectWithTag("OrangeSpellObject");
 		projectileSpeed = projSpeedDesu;
 	}

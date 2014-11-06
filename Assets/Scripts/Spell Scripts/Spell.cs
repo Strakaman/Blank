@@ -10,15 +10,19 @@ public abstract class Spell: ScriptableObject
 	protected bool isUnlocked = false; //spell is locked by default
 	protected int projectileSpeed=0; //for spell that shoot something out
 	protected float animationDuration;
+	protected int chargeManaCost; //charge spells will have their own mana cost
+	protected int chargeTimeRequired;
 
 	//use as fake constructor
-	public virtual void initializeSpell(string n, string d, int m, float a)
+	public virtual void initializeSpell(string n, string d, int m, float a, int chC, int chT)
 	{
 		spellName = n;
 		description = d;
 		manaCost = m;
 		animationDuration = a;
 		player = GameObject.FindGameObjectWithTag("Player");
+		chargeManaCost = chC;
+		chargeTimeRequired = chT;
 	}
 
 	//unlocks spell so it can be reached when cycling through spells
@@ -83,9 +87,11 @@ public abstract class Spell: ScriptableObject
 		}
 	}
 	//checks the player info to see if they have enough mana to cast
-	public bool hasEnoughMana()
+	public bool hasEnoughMana(bool isChargedCheck)
 	{
-		if (PlayerInfo.getMana() >= manaCost)
+		int costToCheck = manaCost;
+		if (isChargedCheck) {costToCheck = chargeManaCost;}
+		if (PlayerInfo.getMana() >= costToCheck)
 		{
 			return true;
 		}
@@ -93,10 +99,13 @@ public abstract class Spell: ScriptableObject
 	}
 
 	//let all Spells use the same subtract mana method to improve code maintenance
-	public void subMana()
+	public void subMana(bool subChargedInstead)
 	{
-		PlayerInfo.changeMana(-manaCost);	
+		int costToSub = manaCost;
+		if (subChargedInstead) {costToSub = chargeManaCost;}
+		PlayerInfo.changeMana(-costToSub);	
 	}
+
 
 	public string getName()
 	{

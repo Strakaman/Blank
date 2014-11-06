@@ -7,9 +7,9 @@ public class YellowSpell : Spell
 	GameObject yellowRefObject; //used so that spell knows what object to clone when it casts
 	
 	//method created to set instance variables, can't use constructor because superclass is ScriptableObject
-	public void initializeSpell(string nameDesu, string descriptionDesu, int manaCostDesu, int projSpeedDesu, float animDuration) 
+	public void initializeSpell(string nameDesu, string descriptionDesu, int manaCostDesu, int projSpeedDesu, float animDuration, int thechargeManaCost, int thechargeTimeRequir) 
 	{
-		base.initializeSpell(nameDesu, descriptionDesu, manaCostDesu,animDuration);
+		base.initializeSpell(nameDesu, descriptionDesu, manaCostDesu,animDuration, thechargeManaCost, thechargeTimeRequir);
 		yellowRefObject = GameObject.FindGameObjectWithTag("YellowSpellObject");
 		projectileSpeed = projSpeedDesu;
 	}
@@ -22,7 +22,7 @@ public class YellowSpell : Spell
 
 	public override void castCharge(Direction dir)
 	{
-		
+		createProjectile (dir, yellowRefObject);
 	}
 }
 

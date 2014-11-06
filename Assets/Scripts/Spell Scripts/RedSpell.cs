@@ -4,12 +4,14 @@ using System.Collections;
 public class RedSpell : Spell
 {
 	GameObject redRefObject;
+	GameObject chargedRedRefObject;
 	//stupid constructor synthax required to make subclass derive from base class properly
 
-	public void initializeSpell(string nameDesu, string descriptionDesu, int manaCostDesu, int projSpeedDesu, float animDuration) 
+	public void initializeSpell(string nameDesu, string descriptionDesu, int manaCostDesu, int projSpeedDesu, float animDuration, int thechargeManaCost, int thechargeTimeRequired) 
 	{
-		base.initializeSpell(nameDesu, descriptionDesu, manaCostDesu, animDuration);
+		base.initializeSpell(nameDesu, descriptionDesu, manaCostDesu, animDuration, thechargeManaCost, thechargeTimeRequired);
 		redRefObject = GameObject.FindGameObjectWithTag("RedSpellObject");
+		chargedRedRefObject = GameObject.FindGameObjectWithTag("ChargedRedSpellObject");
 		projectileSpeed = projSpeedDesu;
 	}
 
@@ -27,6 +29,6 @@ public class RedSpell : Spell
 
 	public override void castCharge(Direction dir)
 	{
-		
+		createProjectile (dir, chargedRedRefObject);
 	}
 }

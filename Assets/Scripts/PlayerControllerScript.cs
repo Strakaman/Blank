@@ -123,10 +123,19 @@ public class PlayerControllerScript : MonoBehaviour
 */
 	void CheckInputs ()
 	{
+		if(PlayerInfo.GetState().Equals(PState.dead)) {return ;} //dead ppl can't move
 				//Consider modifying the same vector everytime instead of creating a new one, performance win?
 				rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(), 
 		                                    		Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier());
-				if (Input.GetButtonDown ("Spell Cycle Up")) {
+		
+		if (Input.GetButtonDown ("Interact")) {
+			GameObject whatCanThouInteractWith;
+			if (facingInteractableObject (out whatCanThouInteractWith)) {
+				//Debug.Log ("You're facing an interactable object with the name " + whatCanThouInteractWith.name + ", aren't you?");
+				whatCanThouInteractWith.SendMessage("interact",gameObject);		
+			}
+		}
+			if (Input.GetButtonDown ("Spell Cycle Up")) {
 						changeSpell (true);
 				} else if (Input.GetButtonDown ("Spell Cycle Down")) {
 						changeSpell (false);
@@ -143,24 +152,34 @@ public class PlayerControllerScript : MonoBehaviour
 								changeSpell (true);
 						}
 						Spell datSpell = SpellBook.playerSpells [currSpell];
-						if (datSpell.hasEnoughMana ()) {
-								datSpell.subMana ();
+						if (datSpell.hasEnoughMana (false)) {
+								datSpell.subMana (false);
 								datSpell.cast (direction);
 								animator.SetBool ("Attack", true);
 								Invoke ("stopAttackAnim", 0.5f);
 						} else {
-							Utilities.TellPlayer("You're out of mana, kupo!")	;
-							Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
+							Utilities.TellPlayer("Out of MP!")	;
+							//Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
 						}
 				}
 	
 			//Charged spell
 		if (Input.GetButton ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)&& PlayerInfo.CanCharge()) {
-				amountChargedSoFar = Time.deltaTime;
+				amountChargedSoFar += Time.deltaTime;
 			}
 
 		if (Input.GetButtonUp("Use Spell") && PlayerInfo.GetState().Equals(PState.normal) && PlayerInfo.CanCharge()){
-				if (amountChargedSoFar > chargeTimeRequired){
+			if (amountChargedSoFar > chargeTimeRequired){
+				Spell datSpell = SpellBook.playerSpells [currSpell];
+				if (datSpell.hasEnoughMana (true)) {
+					datSpell.subMana (true);
+					datSpell.castCharge (direction);
+					animator.SetBool ("Attack", true);
+					Invoke ("stopAttackAnim", 0.5f);
+				} else {
+					Utilities.TellPlayer("Not enough MP to execute charge!")	;
+				}
+					/*
 					if (SpellBook.playerSpells [currSpell] == null) {
 						changeSpell (true);
 					}
@@ -186,19 +205,12 @@ public class PlayerControllerScript : MonoBehaviour
 					}
 					else {}
 					Invoke ("stopChargeAttack", amountChargedSoFar);
-					datSpell.setCost(oldCost);
+					datSpell.setCost(oldCost);*/
 				}
 				amountChargedSoFar = 0;
 			}
 
 
-			if (Input.GetButtonDown ("Interact")) {
-					GameObject whatCanThouInteractWith;
-					if (facingInteractableObject (out whatCanThouInteractWith)) {
-							//Debug.Log ("You're facing an interactable object with the name " + whatCanThouInteractWith.name + ", aren't you?");
-				whatCanThouInteractWith.SendMessage("interact",gameObject);		
-			}
-			}
 
 			if (Input.GetButton ("KUSH")) {
 				audio.Play();
@@ -225,7 +237,8 @@ public class PlayerControllerScript : MonoBehaviour
 	void startAttackAnim ()
 	{
 		Spell datSpell = SpellBook.playerSpells [currSpell];
-		datSpell.cast (direction);		animator.SetBool ("Attack", true); datSpell.subMana();
+		datSpell.cast (direction);		animator.SetBool ("Attack", true); 
+		datSpell.subMana(false);
 	}
 	void stopChargeAttack(){
 		CancelInvoke("startAttackAnim");
