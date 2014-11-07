@@ -409,7 +409,7 @@ public class Seeker : MonoBehaviour {
 	 * 
 	 * \a callback will be called when the path has completed.
 	 * \a Callback will not be called if the path is canceled (e.g when a new path is requested before the previous one has completed) */
-	public Path StartPath (Path p, OnPathDelegate callback = null, int graphMask = -1) {
+	public Path StartPath (Path p, OnPathDelegate callback , int graphMask) {
 		p.enabledTags = traversableTags.tagsChange;
 		p.tagPenalties = tagPenalties;
 		
@@ -452,7 +452,7 @@ public class Seeker : MonoBehaviour {
 		RunModifiers (ModifierPass.PreProcess, path);
 		
 		//Send the request to the pathfinder
-		AstarPath.StartPath (path);
+		AstarPath.StartPath (path,false);
 		
 		return path;
 	}
@@ -464,7 +464,7 @@ public class Seeker : MonoBehaviour {
 		
 		RunModifiers (ModifierPass.PreProcess, p);
 		
-		AstarPath.StartPath (p);
+		AstarPath.StartPath (p,false);
 	}
 	
 	public void OnDrawGizmos () {

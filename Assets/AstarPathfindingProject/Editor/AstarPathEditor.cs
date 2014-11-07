@@ -233,7 +233,7 @@ public class AstarPathEditor : Editor {
 		}
 		
 		SetAstarEditorSettings ();
-		CheckGraphEditors ();
+		CheckGraphEditors (false);
 		
 		//This doesn't get saved by Unity anyway for some reason
 		//SerializeGraphs (new AstarSerializer (script));
@@ -243,7 +243,7 @@ public class AstarPathEditor : Editor {
 			//graphEditors[i].OnDisableUndo ();
 		}
 		
-		SaveGraphsAndUndo ();
+		SaveGraphsAndUndo (EventType.Used);
 	}
 	
 	public void OnDestroy () {
@@ -426,7 +426,7 @@ public class AstarPathEditor : Editor {
 		
 		AstarProfiler.StartProfile ("Check Updates and Editors");
 		CheckForUpdates ();
-		CheckGraphEditors ();
+		CheckGraphEditors (false);
 		AstarProfiler.EndProfile ("Check Updates and Editors");
 		
 		//End loading and checking
@@ -807,7 +807,7 @@ public class AstarPathEditor : Editor {
 		DrawDarkSkinDialog ();
 		
 		//Show the graph inspectors
-		CheckGraphEditors ();
+		CheckGraphEditors (false);
 
 		EditorGUILayoutx.FadeArea graphsFadeArea = GUILayoutx.BeginFadeArea (script.showGraphs,"Graphs", "showGraphInspectors", EditorGUILayoutx.defaultAreaStyle, topBoxHeaderStyle);
 		script.showGraphs = graphsFadeArea.open;
@@ -1090,7 +1090,7 @@ public class AstarPathEditor : Editor {
 					graphEditors[next] = graphEditors[index];
 					graphEditors[index] = tmpEditor;
 				}
-				CheckGraphEditors ();
+				CheckGraphEditors (false);
 				Repaint ();
 			}
 			if (GUILayout.Button (new GUIContent ("Down","Decrease the graph priority"),GUILayout.Width (40))) {
@@ -1109,7 +1109,7 @@ public class AstarPathEditor : Editor {
 					graphEditors[next] = graphEditors[index];
 					graphEditors[index] = tmpEditor;
 				}
-				CheckGraphEditors ();
+				CheckGraphEditors (false);
 				Repaint ();
 			}
 		}
@@ -1212,7 +1212,7 @@ public class AstarPathEditor : Editor {
 		//Some GUI controls might change this to Used, so we need to grab it here
 		EventType et = Event.current.type;
 		
-		CheckGraphEditors ();
+		CheckGraphEditors (false);
 		for (int i=0;i<script.graphs.Length;i++) {
 			
 			NavGraph graph = script.graphs[i];
@@ -1974,7 +1974,7 @@ public class AstarPathEditor : Editor {
 	}
 	
 	/** Make sure every graph has a graph editor */
-	public void CheckGraphEditors (bool forceRebuild = false) {
+	public void CheckGraphEditors (bool forceRebuild) {
 		if (forceRebuild || graphEditors == null || script.graphs == null || script.graphs.Length != graphEditors.Length) {
 				
 			if (script.graphs == null) {
@@ -2051,14 +2051,14 @@ public class AstarPathEditor : Editor {
 	public void RemoveGraph (NavGraph graph) {
 		GUILayoutx.RemoveID ("graph_"+graph.guid);
 		script.astarData.RemoveGraph (graph);
-		CheckGraphEditors ();
+		CheckGraphEditors (false);
 		GUI.changed = true;
 		Repaint ();
 	}
 	
 	public void AddGraph (System.Type type) {
 		script.astarData.AddGraph (type);
-		CheckGraphEditors ();
+		CheckGraphEditors (false);
 		
 		GUI.changed = true;
 	}
@@ -2084,7 +2084,7 @@ public class AstarPathEditor : Editor {
 		
 		AstarProfiler.StartProfile ("OnDrawGizmosEditor");
 		
-		CheckGraphEditors ();
+		CheckGraphEditors (false);
 		
 		for (int i=0;i<script.graphs.Length;i++) {
 			
@@ -2129,7 +2129,7 @@ public class AstarPathEditor : Editor {
 		}
 		return h;
 	}
-	public void SaveGraphsAndUndo (EventType et = EventType.Used) {
+	public void SaveGraphsAndUndo (EventType et ) {
 		//Serialize the settings of the graphs
 
 		//Dont process undo events in editor, we don't want to reset graphs
@@ -2148,7 +2148,7 @@ public class AstarPathEditor : Editor {
 				HandleUndo ();
 			}
 
-			CheckGraphEditors ();
+			CheckGraphEditors (false);
 			// Deserializing a graph does not necessarily yield the same hash as the data loaded from
 			// this is (probably) because editor settings are not saved all the time
 			// so we explicitly ignore the new hash
@@ -2280,14 +2280,14 @@ public class AstarPathEditor : Editor {
 				script.astarData.DeserializeGraphsPart (sr);
 				
 				//Make sure every graph has a graph editor
-				CheckGraphEditors ();
+				CheckGraphEditors (false);
 				sr.DeserializeEditorSettings (graphEditors);
 				
 				sr.CloseDeserialize();
 			} else {
 				Debug.Log ("Invalid data file (cannot read zip).\nThe data is either corrupt or it was saved using a 3.0.x or earlier version of the system");
 				//Make sure every graph has a graph editor
-				CheckGraphEditors ();
+				CheckGraphEditors (false);
 			}
 			return true;
 		}));

@@ -362,7 +362,7 @@ namespace Pathfinding {
 				string path = AssetDatabase.GetAssetPath (obj);
 				
 				if (!path.Contains ("Resources/")) {
-					if (FixLabel ("Object must be in the 'Resources' folder")) {
+					if (FixLabel ("Object must be in the 'Resources' folder","Fix",40)) {
 						if (!System.IO.Directory.Exists (Application.dataPath+"/Resources")) {
 							System.IO.Directory.CreateDirectory (Application.dataPath+"/Resources");
 							AssetDatabase.Refresh ();
