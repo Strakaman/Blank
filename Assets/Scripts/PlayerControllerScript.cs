@@ -16,7 +16,6 @@ public class PlayerControllerScript : MonoBehaviour
 	private float hittime;
 	public Material Default;
 	public Material Hit;
-	private bool canCharge = true;//charging enabled by defualt
 	private float chargeTimeRequired = 1f;
 	private float amountChargedSoFar = 0;
 
@@ -319,6 +318,11 @@ public class PlayerControllerScript : MonoBehaviour
 	//	{
 	//		damageProperties(collInfo, -20, 1000, 0.1f);
 	//	}
+	}
+
+	void SlowYourself()
+	{
+		Debug.Log("Slowing not yet implemented...");
 	}
 
 	void callDamage(DamageStruct dstruct)

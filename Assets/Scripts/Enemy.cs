@@ -143,12 +143,12 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void OnTriggerStay2D(Collider2D coll) {
-		if (Utilities.hasMatchingTag("BlueSpellObject",coll.gameObject)) {
+		/*if (Utilities.hasMatchingTag("BlueSpellObject",coll.gameObject)) {
 			//Debug.Log("I  blue myself");
 			slowed = true;	
-			GetComponent<SpriteRenderer>().material = Slow;;
-		}
+			GetComponent<SpriteRenderer>().material = Slow;;}*/ //deprecated once slowing was moved to BlueSlower class
 	}
+
 	void callDamage(DamageStruct dstruct)
 	{
 		damageProperties(dstruct.coll.gameObject, dstruct.damage, dstruct.knockback, dstruct.hitDelay);
@@ -170,6 +170,13 @@ public class Enemy : MonoBehaviour{
 	void setStunFalse() {
 		stunned = false;
 	}
+
+	void SlowYourself()
+	{
+		slowed = true;
+		GetComponent<SpriteRenderer>().material = Slow;
+	}
+
 	void setSlowFalse() {
 		slowed = false;
 	}

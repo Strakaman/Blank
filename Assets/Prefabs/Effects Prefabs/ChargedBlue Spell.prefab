@@ -9,14 +9,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400000}
+  - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
-  - 95: {fileID: 9500000}
-  - 58: {fileID: 5800000}
   - 114: {fileID: 11400002}
+  - 95: {fileID: 9500000}
+  - 114: {fileID: 11400000}
   m_Layer: 11
-  m_Name: ChargedFire
-  m_TagString: ChargedRedSpellObject
+  m_Name: ChargedBlue Spell
+  m_TagString: ChargedBlueSpellObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100000, y: 400, z: -100}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.21206903, y: 450, z: -100}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -39,25 +39,25 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 9.99999975e-05
-  m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_Mass: 1
+  m_LinearDrag: 100
+  m_AngularDrag: 100
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5800000
-CircleCollider2D:
+--- !u!61 &6100000
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Radius: .349999994
+  m_IsTrigger: 1
+  m_Size: {x: 1.25, y: 1.25}
   m_Center: {x: 0, y: 0}
 --- !u!95 &9500000
 Animator:
@@ -68,7 +68,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81ff889b66c1fcd48b08120d02e1de04, type: 2}
+  m_Controller: {fileID: 9100000, guid: c4dd1ea0bea3cc64095ac609383a2a35, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -82,15 +82,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d17e2dd6cd3c4874eb4451bf092c5991, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ffa1e2a90b7ade4791da20ff5d1199b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  damage: 100
-  animationTime: .5
-  whoToDamage: Enemy
-  projectileKnockback: 200
-  hitDelay: .100000001
+  whoToSlow: Enemy
+  damage: 2
+  chargedVersion: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,8 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectTags:
-  - RedSpellObject
-  - Melter
+  - BlueSpellObject
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -125,7 +121,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300044, guid: f565382f6ff3368408b4fc68e050f014, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a6bd5a8bf3c68a74d9fa5143590c394d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
