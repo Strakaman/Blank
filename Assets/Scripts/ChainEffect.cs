@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ChainEffect : MonoBehaviour {
 	private bool checkEnemyInRadius;
+	public GameObject ChainChecker;
 	private GameObject colTarget;
 	private GameObject target;
 	private Vector2 targetDirection;
@@ -12,20 +13,22 @@ public class ChainEffect : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		checkEnemyInRadius = false;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-	}//	NO COMMENTS
+	}
 
 	void OnCollisionEnter2D(Collision2D collInfo) {
 		//Debug.Log(collInfo.gameObject.name);	
 		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject)) {
 			//Debug.Log("actually triggered");
+
 			checkEnemyInRadius = true;
-			Physics2D.IgnoreCollision(gameObject.collider2D,collInfo.gameObject.collider2D);
+			//Physics2D.IgnoreCollision(gameObject.collider2D,collInfo.gameObject.collider2D);
+			//Debug.Log(gameObject.collider2D.isTrigger);
 			//gameObject.collider2D.enabled = false;
 			colTarget = collInfo.gameObject;
 			Destroy (gameObject, .5f);
