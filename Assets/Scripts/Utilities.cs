@@ -154,5 +154,20 @@ public static class Utilities
 		}
 		GUIBroadCaster.BroadcastMessage("BroadcastNewMessage",whatToTellThem);
 	}
+
+	public static void rotateObject(Direction direction, GameObject obj) {
+		if (direction == Direction.up) {
+			obj.transform.Rotate(new Vector3(0, 0, 90));
+		}
+		if (direction == Direction.down) {
+			obj.transform.Rotate(new Vector3(0, 0, 270));
+		}
+		if (direction == Direction.right) {
+			obj.transform.Rotate(new Vector3(0, 0, 0));
+		}
+		if (direction == Direction.left) {
+			obj.transform.Rotate(new Vector3(0, 0, 180));
+		}
+	}
 }
 
