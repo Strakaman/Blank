@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour{
-	private int health = 100;
+	public int health = 100;
+	public int maxHealth = 100;
 	private int damage = 10;
 	private Animator animator;
 	private string enemyName;
@@ -47,7 +48,9 @@ public class Enemy : MonoBehaviour{
 		//Debug.Log("Health is: " + health);
 		if (health <= 0) {
 			rigidbody2D.velocity = new Vector2(0, 0);
+			if (animator) {
 			animator.SetBool("Death", true);
+			}
 			Destroy(gameObject, 1);
 			gameObject.collider2D.enabled = false;
 		}
@@ -55,8 +58,8 @@ public class Enemy : MonoBehaviour{
 		{
 			SpriteAnimation ();
 		}
-		if (health > 100) {
-			health = 100;
+		if (health > maxHealth) {
+			health = maxHealth;
 		}
 		HealthUpdate();
 		/*
@@ -96,9 +99,11 @@ public class Enemy : MonoBehaviour{
 	//Checks and sets the animation state for the player
 	void SpriteAnimation ()
 	{
-		SetDirection ();
-		setWalk ();
-		setIdle ();
+		if (animator) {
+						SetDirection ();
+						setWalk ();
+						setIdle ();
+				}
 	}
 	
 	
@@ -224,7 +229,9 @@ public class Enemy : MonoBehaviour{
 	}
 
 	void takeDamage(int damage) {
-		gameObject.GetComponent<EnemyAI> ().setPlayerInSightTrue();
+		if (gameObject.GetComponent<EnemyAI> ()) {
+						gameObject.GetComponent<EnemyAI> ().setPlayerInSightTrue ();
+				}
 		health -= damage*PlayerInfo.GetPowerModifier();
 	}
 }

@@ -19,10 +19,10 @@ public class EnemyAIOld : MonoBehaviour {
 		//Player = GameObject.FindGameObjectWithTag ("Player").transform.position;
 		//rigidbody2D.velocity = (Playerdirection.normalized * speed);
 		playerTransform = player.transform.position;
-		if (playerInSight) {
+		//if (playerInSight) {
 			//Debug.Log ("Chasing");
 			Chasing();
-		}
+		//}
 	}
 	
 	public void setPlayerInSightTrue() {
