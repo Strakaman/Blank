@@ -18,13 +18,15 @@ public class ChainEffect : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-	}
+	}//	NO COMMENTS
 
 	void OnCollisionEnter2D(Collision2D collInfo) {
 		//Debug.Log(collInfo.gameObject.name);	
 		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject)) {
+			//Debug.Log("actually triggered");
 			checkEnemyInRadius = true;
-			gameObject.collider2D.enabled = false;
+			Physics2D.IgnoreCollision(gameObject.collider2D,collInfo.gameObject.collider2D);
+			//gameObject.collider2D.enabled = false;
 			colTarget = collInfo.gameObject;
 			Destroy (gameObject, .5f);
 			//Debug.Log("True");
@@ -37,6 +39,8 @@ public class ChainEffect : MonoBehaviour {
 		//Debug.Log (Utilities.hasMatchingTag("Enemy",collInfo.gameObject));
 		if (checkEnemyInRadius == true && Utilities.hasMatchingTag("Enemy", collInfo.gameObject) && collInfo != colTarget) {
 			//Debug.Log ("CHAIN!");
+
+			//gameObject.collider2D.enabled = true;
 			target = collInfo.gameObject;
 			projectileTrajectory(target);
 			Destroy (gameObject, .5f);

@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour{
 	protected bool stunned = false;
 	private bool slowed = false; 
 	private bool isHit = false;
+	private bool alreadyStunned = false;
+	private bool alreadySlowed = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -57,19 +59,36 @@ public class Enemy : MonoBehaviour{
 			health = 100;
 		}
 		HealthUpdate();
-
-		if (hitTime + 0.1f < Time.time) {
+		/*
+		 * call to update after getting hit so that we go back to default material,
+		 * but if the enemy is stunned or slowed, we shouldn't go back to the old sprite
+		 */ 
+		if ((hitTime + 0.1f < Time.time)&&(!alreadyStunned)&&(!alreadySlowed)) {
 			GetComponent<SpriteRenderer>().material = Default;
 		}
-		if (stunned == true) {
-			GetComponent<SpriteRenderer>().material = Stun;
-			//GetComponent<SpriteRenderer>().material = Default;
-			rigidbody2D.velocity = new Vector2(0,0);
-			Invoke("setStunFalse", 3f);
-		}
+
 		if (slowed == true) {
-			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x/2, rigidbody2D.velocity.y/2);	
-			Invoke ("setSlowFalse", 5f);
+			GetComponent<SpriteRenderer>().material = Slow;
+			if (!alreadySlowed) {
+				alreadySlowed = true;
+				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x/2, rigidbody2D.velocity.y/2);	
+				Invoke ("setSlowFalse", 5f);
+			}
+		}
+
+		if (stunned == true)  {
+			GetComponent<SpriteRenderer>().material = Stun;   
+			if(!alreadyStunned){
+				alreadyStunned = true;
+				//GetComponent<SpriteRenderer>().material = Default;
+				rigidbody2D.velocity = new Vector2(0,0);
+				Invoke("setStunFalse", 3f);
+			}
+		}
+
+		if (hitTime +0.1f >= Time.time)
+		{
+			GetComponent<SpriteRenderer>().material = Hit;
 		}
 	}
 
@@ -169,16 +188,17 @@ public class Enemy : MonoBehaviour{
 	}
 	void setStunFalse() {
 		stunned = false;
+		alreadyStunned = false;
 	}
 
 	void SlowYourself()
 	{
 		slowed = true;
-		GetComponent<SpriteRenderer>().material = Slow;
 	}
 
 	void setSlowFalse() {
 		slowed = false;
+		alreadySlowed = false;
 	}
 
 	void damageProperties(GameObject collInfoObj, int damage, int knockback, float hitdelay) {
