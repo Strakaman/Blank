@@ -2,9 +2,7 @@
 using System.Collections;
 
 public class ChainEffect : MonoBehaviour {
-	private bool checkEnemyInRadius;
-	public GameObject ChainChecker;
-	private GameObject colTarget;
+	public GameObject chainChecker;
 	private GameObject target;
 	private Vector2 targetDirection;
 	private float Xdif;
@@ -24,32 +22,22 @@ public class ChainEffect : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collInfo) {
 		//Debug.Log(collInfo.gameObject.name);	
 		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject)) {
-			//Debug.Log("actually triggered");
-
-			checkEnemyInRadius = true;
-			//Physics2D.IgnoreCollision(gameObject.collider2D,collInfo.gameObject.collider2D);
+			Physics2D.IgnoreCollision(gameObject.collider2D,collInfo.gameObject.collider2D); //so that it can pass through any enemy that it already hit
 			//Debug.Log(gameObject.collider2D.isTrigger);
 			//gameObject.collider2D.enabled = false;
-			colTarget = collInfo.gameObject;
-			Destroy (gameObject, .5f);
-			//Debug.Log("True");
-		} else {
-			Destroy (gameObject, .5f);
+			chainChecker.SendMessage("BeastMode",collInfo.gameObject); //trigger the child to check if any enemies are in range
+			Destroy (gameObject, 1f); //should last longer if it hit at least one enemy
+		} 
+		else
+		{
+			Destroy (gameObject, .5f); //destroy regardless
 		}
 	}
 
-	void OnTriggerStay2D(Collider2D collInfo) {
-		//Debug.Log (Utilities.hasMatchingTag("Enemy",collInfo.gameObject));
-		if (checkEnemyInRadius == true && Utilities.hasMatchingTag("Enemy", collInfo.gameObject) && collInfo != colTarget) {
-			//Debug.Log ("CHAIN!");
-
-			//gameObject.collider2D.enabled = true;
-			target = collInfo.gameObject;
-			projectileTrajectory(target);
-			Destroy (gameObject, .5f);
-		}
-	}
-
+	/*
+	 * Based on the the new target's destination and this object's current location,
+	 * calculates a direction vector and sends the projectile on it's way!
+	 */ 
 	void projectileTrajectory (GameObject target)
 	{
 		//Debug.Log ("CHAIN!");
