@@ -14,8 +14,8 @@ public class Enemy : MonoBehaviour{
 	protected Vector3 healthVector;
 	protected float healthScale;
 	protected float hitTime;
-	public float slowTime;
-	public float stunTime;
+	public float slowTime = 5f;
+	public float stunTime = 3f;
 	public Material Default;
 	public Material Hit;
 	public Material Stun;
@@ -134,7 +134,7 @@ public class Enemy : MonoBehaviour{
 			if (!alreadySlowed) {
 				alreadySlowed = true;
 				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x/2, rigidbody2D.velocity.y/2);	
-				Invoke ("setSlowFalse", 5f);
+				Invoke ("setSlowFalse", slowTime);
 			}
 		}
 		
@@ -144,7 +144,7 @@ public class Enemy : MonoBehaviour{
 				alreadyStunned = true;
 				//GetComponent<SpriteRenderer>().material = Default;
 				rigidbody2D.velocity = new Vector2(0,0);
-				Invoke("setStunFalse", 3f);
+				Invoke("setStunFalse", stunTime);
 			}
 		}
 		

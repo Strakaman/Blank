@@ -15,7 +15,9 @@ public class Boss : Enemy {
 		checkNullObjects ();
 		if (numObjects != 0) {
 			health = maxHealth;
+			if (!stunned && !slowed) {
 			GetComponent<SpriteRenderer> ().material = Default;
+			}
 		} else {
 			GetComponent<EnemyAIOld>().speed = berserkSpeed;
 
