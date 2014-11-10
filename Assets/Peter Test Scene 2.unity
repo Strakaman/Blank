@@ -410,7 +410,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
@@ -2401,6 +2401,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
+      propertyPath: canStun
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
+      propertyPath: canSlow
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
   m_RootGameObject: {fileID: 1600120967}
@@ -2443,7 +2451,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 031d7b08da61343478b6e6a36970005f, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 031d7b08da61343478b6e6a36970005f, type: 2}
@@ -3108,7 +3116,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
@@ -3232,7 +3240,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
@@ -4955,7 +4963,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bf27d20f5e74bbd4cb8f79a486dbb9bb, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: bf27d20f5e74bbd4cb8f79a486dbb9bb, type: 2}
       propertyPath: omari
@@ -5494,6 +5502,8 @@ MonoBehaviour:
   hitDelay: .25
   isOn: 1
   animator: {fileID: 0}
+  canStun: 0
+  canSlow: 0
 --- !u!61 &1227952318
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5595,7 +5605,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f82b295959da7f34f85a7d8517109682, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f82b295959da7f34f85a7d8517109682, type: 2}
@@ -7071,6 +7081,8 @@ MonoBehaviour:
   hitDelay: .25
   isOn: 1
   animator: {fileID: 0}
+  canStun: 0
+  canSlow: 1
 --- !u!58 &1600120969
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7883,6 +7895,14 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: Stun
+      value: 
+      objectReference: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
+    - target: {fileID: 11400006, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: Slow
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ebd55f8bc1ddb747abb4843bac18232, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
   m_RootGameObject: {fileID: 2127306595}
@@ -8584,7 +8604,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cb920214c351af5478317f5df1beb045, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: cb920214c351af5478317f5df1beb045, type: 2}
       propertyPath: omari
@@ -9156,6 +9176,8 @@ MonoBehaviour:
   currSpell: 0
   Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
+  Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
+  Slow: {fileID: 2100000, guid: 1ebd55f8bc1ddb747abb4843bac18232, type: 2}
 --- !u!212 &2127306601
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class PlayerControllerScript : MonoBehaviour
 	private float hittime;
 	public Material Default;
 	public Material Hit;
+	public Material Stun;
+	public Material Slow;
 	private float chargeTimeRequired = 1f;
 	private float amountChargedSoFar = 0;
 
@@ -40,7 +42,7 @@ public class PlayerControllerScript : MonoBehaviour
 			CheckInputs ();
 			SpriteAnimation ();
 		}
-		if (hittime + 0.1f < Time.time) {
+		if (hittime + 0.1f < Time.time && PlayerInfo.GetState() == PState.normal) {
 			GetComponent<SpriteRenderer>().material = Default;
 		}
 		if (PlayerInfo.GetState().Equals(PState.grabbing)) {
@@ -123,10 +125,30 @@ public class PlayerControllerScript : MonoBehaviour
 	void CheckInputs ()
 	{
 		if(PlayerInfo.GetState().Equals(PState.dead)) {return ;} //dead ppl can't move
-				//Consider modifying the same vector everytime instead of creating a new one, performance win?
-				rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(), 
-		                                    		Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier());
-		
+		//Consider modifying the same vector everytime instead of creating a new one, performance win?
+		if (PlayerInfo.GetState().Equals(PState.normal)) {
+		rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(), 
+		                       Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier());
+		}
+		if (PlayerInfo.GetState().Equals(PState.slowed)) {
+			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier() / 2, 
+			                                    Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier()) / 2;
+			GetComponent<SpriteRenderer>().material = Slow;
+			if (hittime + 0.5f < Time.time) {
+				hittime = Time.time;
+				PlayerInfo.SetState(PState.normal);
+				//Debug.Log("Reset state: " + PlayerInfo.GetState());
+			}
+		}
+		if (PlayerInfo.GetState().Equals(PState.stunned)) {
+			rigidbody2D.velocity = new Vector2(0,0);
+			GetComponent<SpriteRenderer>().material = Stun;
+			if (hittime + 0.1f < Time.time) {
+				hittime = Time.time;
+				PlayerInfo.SetState(PState.normal);
+				//Debug.Log("Reset state: " + PlayerInfo.GetState());
+			}
+		}
 		if (Input.GetButtonDown ("Interact")) {
 			GameObject whatCanThouInteractWith;
 			if (facingInteractableObject (out whatCanThouInteractWith)) {
