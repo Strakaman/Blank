@@ -4,7 +4,7 @@ using System.Collections;
 public class Boss : Enemy {
 	public GameObject[] protectObjects;
 	private int numObjects;
-	public int berserkSpeed = 5;
+	public float berserkSpeed = 4;
 
 	void Start() {
 		enemyStart ();
@@ -12,22 +12,27 @@ public class Boss : Enemy {
 
 	void Update() {
 		enemyUpdate ();
-		checkNullObjects ();
+		bossUpdate ();
+	}
+
+	void bossUpdate() {
+		checkNullObjects (protectObjects);
 		if (numObjects != 0) {
 			health = maxHealth;
 			if (!stunned && !slowed) {
-			GetComponent<SpriteRenderer> ().material = Default;
+				GetComponent<SpriteRenderer> ().material = Default;
 			}
 		} else {
 			GetComponent<EnemyAIOld>().speed = berserkSpeed;
-
+			
 		}
 	}
 
-	void checkNullObjects() {
-		numObjects = protectObjects.Length;
-		for (int i = 0; i < protectObjects.Length; i++) {
-			if (protectObjects[i] == null) {
+	//Checks to see how many objects are not null in an array. 
+	public void checkNullObjects(GameObject[] array) {
+		numObjects = array.Length;
+		for (int i = 0; i < array.Length; i++) {
+			if (array[i] == null) {
 				numObjects--;
 			}
 		}

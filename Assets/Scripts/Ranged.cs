@@ -7,18 +7,21 @@ public class Ranged : Enemy {
 	private Vector2 Playerdirection;
 	private float Xdif;
 	private float Ydif;
-	private Vector3 playerTransform; 
-	public bool playerInSight;    
+	private Vector3 playerTransform;  
 	public float COOLDOWNTIME = 1f;
 	private float timeSinceLastFired = 0f;
 		
 	// Update is called once per frame
 	void Update () {
 		enemyUpdate ();
+		rangedUpdate ();
+	}
+
+	void rangedUpdate() {
 		playerTransform = player.transform.position;
 		if (playerInSight == true && canFire () && !stunned) {
 			//Debug.Log("stun: " + stunned);
-						//Debug.Log("IN SIGHT!");
+			//Debug.Log("IN SIGHT!");
 			rangedAttack ();
 		}
 	}
@@ -35,13 +38,6 @@ public class Ranged : Enemy {
 			timeSinceLastFired += Time.deltaTime;
 			return false;
 		}
-	}
-
-	public void setPlayerInSightTrue() {
-		playerInSight = true;
-	}
-	public void setPlayerInSightFalse() {
-		playerInSight = false;
 	}
 
 	private void rangedAttack()

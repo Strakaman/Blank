@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour{
+	public bool playerInSight; // Whether or not the player is currently sighted.
 	public float health = 100; //Initial health
 	public float maxHealth = 100; //Max health
 	public int collisionDamDealt = 10; //Damage enemy deals to player
@@ -222,10 +223,10 @@ public class Enemy : MonoBehaviour{
 	//Method to set the animation for all four directions
 	public void SetBools (bool down, bool up, bool left, bool right)
 	{
-		animator.SetBool ("Down", down);
-		animator.SetBool ("Top", up);
-		animator.SetBool ("Left", left);
-		animator.SetBool ("Right", right);
+				animator.SetBool ("Down", down);
+				animator.SetBool ("Top", up);
+				animator.SetBool ("Left", left);
+				animator.SetBool ("Right", right);
 	}
 
 	protected void callDamage(DamageStruct dstruct)
@@ -249,9 +250,7 @@ public class Enemy : MonoBehaviour{
 
 	//Sets the damage for which the enemy will take. 
 	protected void takeDamage(int damage) {
-		if (gameObject.GetComponent<EnemyAIOld> ()) {
-			gameObject.GetComponent<EnemyAIOld> ().setPlayerInSightTrue ();
-		}
+		playerInSight = true;
 		health -= damage*PlayerInfo.GetPowerModifier();
 	}
 
@@ -287,5 +286,16 @@ public class Enemy : MonoBehaviour{
 
 	public bool isStunned() {
 		return stunned;
+	}
+
+	public void setPlayerInSightTrue() {
+		playerInSight = true;
+	}
+	public void setPlayerInSightFalse() {
+		playerInSight = false;
+	}
+
+	public bool getPlayerInSight() {
+		return playerInSight;
 	}
 }

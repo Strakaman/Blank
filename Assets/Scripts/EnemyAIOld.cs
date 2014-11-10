@@ -7,7 +7,6 @@ public class EnemyAIOld : MonoBehaviour {
 	private Vector2 Playerdirection;
 	private float Xdif;
 	private float Ydif;
-	private bool playerInSight;                      // Whether or not the player is currently sighted.
 	private GameObject player;                      // Reference to the player.
 	private Vector3 playerTransform;                      // Reference to the player's transform.
 	
@@ -19,19 +18,12 @@ public class EnemyAIOld : MonoBehaviour {
 		//Player = GameObject.FindGameObjectWithTag ("Player").transform.position;
 		//rigidbody2D.velocity = (Playerdirection.normalized * speed);
 		playerTransform = player.transform.position;
-		//if (playerInSight) {
+		if (GetComponent<Enemy>().playerInSight == true) {
 		//Debug.Log ("Chasing");
-		if (gameObject.GetComponent<Enemy> ().isStunned () == false) {
-			Chasing ();
+			if (gameObject.GetComponent<Enemy> ().isStunned () == false) {
+				Chasing ();
+			}
 		}
-		//}
-	}
-	
-	public void setPlayerInSightTrue() {
-		playerInSight = true;
-	}
-	public void setPlayerInSightFalse() {
-		playerInSight = false;
 	}
 	
 	void Chasing ()
