@@ -284,6 +284,8 @@ MonoBehaviour:
   Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
   Slow: {fileID: 2100000, guid: 1ebd55f8bc1ddb747abb4843bac18232, type: 2}
   refBullet: {fileID: 0}
+  projectileSpeed: 4
+  playerInSight: 0
   COOLDOWNTIME: 1
 --- !u!212 &21200000
 SpriteRenderer:

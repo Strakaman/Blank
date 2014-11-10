@@ -48,7 +48,9 @@ public class EnemyAI : MonoBehaviour {
 	}
 	
 	void calculatePath() {
-		seeker.StartPath (transform.position,targetPosition, OnPathComplete);
+		if (seeker) {
+			seeker.StartPath (transform.position, targetPosition, OnPathComplete);
+		}
 	}
 	
 	public void FixedUpdate () {

@@ -8,7 +8,7 @@ public class Ranged : Enemy {
 	private float Xdif;
 	private float Ydif;
 	private Vector3 playerTransform; 
-	private bool playerInSight;    
+	public bool playerInSight;    
 	public float COOLDOWNTIME = 1f;
 	private float timeSinceLastFired = 0f;
 		
