@@ -16,9 +16,11 @@ public class EnemySight : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		transform.position = gameObject.GetComponentInParent <Enemy>().transform.position;
-		BoxCollider2D zollider = GetComponentInParent<BoxCollider2D> (); //get attached collider, store size and center
-		s = zollider.size;
-		c = zollider.center;
+		if (GetComponentInParent<BoxCollider2D>()) {
+			BoxCollider2D zollider = GetComponentInParent<BoxCollider2D> (); //get attached collider, store size and center
+			s = zollider.size;
+			c = zollider.center;
+		}
 		col = GetComponent<CircleCollider2D>();
 		//outOfRange = false;
 	}

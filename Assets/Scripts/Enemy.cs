@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour{
+	public static bool globalPlayerInSight = false; //If true, all enemies in scene will chase player. 
 	public bool playerInSight; // Whether or not the player is currently sighted.
 	public float health = 100; //Initial health
 	public float maxHealth = 100; //Max health
@@ -11,12 +12,12 @@ public class Enemy : MonoBehaviour{
 	protected Animator animator;
 	public string enemyName;
 	public Direction direction = 0; //0 is down, 1 is up, 2 is left, 3 is right
-	protected SpriteRenderer healthBar;
-	protected Vector3 healthVector;
-	protected float healthScale;
+	protected SpriteRenderer healthBar; //Health bar sprite to be used
+	protected Vector3 healthVector; //Vector of health bar
+	protected float healthScale; //Scale health bar to size of health container.
 	protected float hitTime;
-	public float slowTime = 5f;
-	public float stunTime = 3f;
+	public float slowTime = 5f; //Slow duration
+	public float stunTime = 3f; //Stun duration
 	public Material Default;
 	public Material Hit;
 	public Material Stun;
@@ -40,6 +41,9 @@ public class Enemy : MonoBehaviour{
 	protected void enemyStart() {
 		getAnimator ();
 		setObjects ();
+		if (globalPlayerInSight) {
+			playerInSight = true;
+		}
 	}
 
 	// Update is called once per frame
