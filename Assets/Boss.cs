@@ -14,7 +14,10 @@ public class Boss : Enemy {
 		checkNullObjects ();
 		if (numObjects != 0) {
 			health = maxHealth;
-			GetComponent<SpriteRenderer>().material = Default;
+			GetComponent<SpriteRenderer> ().material = Default;
+		} else {
+			GetComponent<EnemyAIOld>().speed = 5;
+
 		}
 	}
 

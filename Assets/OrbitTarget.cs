@@ -8,8 +8,9 @@ public class OrbitTarget : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (target == null) {
-			Destroy(gameObject);
+			Destroy (gameObject);
+		} else {
+			gameObject.transform.position = target.transform.position;
 		}
-		gameObject.transform.position = target.transform.position;
 	}
 }
