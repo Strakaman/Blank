@@ -4,6 +4,7 @@ using System.Collections;
 public class Boss : Enemy {
 	public GameObject[] protectObjects;
 	private int numObjects;
+	public int berserkSpeed = 5;
 
 	void Start() {
 		enemyStart ();
@@ -16,7 +17,7 @@ public class Boss : Enemy {
 			health = maxHealth;
 			GetComponent<SpriteRenderer> ().material = Default;
 		} else {
-			GetComponent<EnemyAIOld>().speed = 5;
+			GetComponent<EnemyAIOld>().speed = berserkSpeed;
 
 		}
 	}

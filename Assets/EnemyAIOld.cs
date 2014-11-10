@@ -20,8 +20,10 @@ public class EnemyAIOld : MonoBehaviour {
 		//rigidbody2D.velocity = (Playerdirection.normalized * speed);
 		playerTransform = player.transform.position;
 		//if (playerInSight) {
-			//Debug.Log ("Chasing");
-			Chasing();
+		//Debug.Log ("Chasing");
+		if (gameObject.GetComponent<Enemy> ().isStunned () == false) {
+			Chasing ();
+		}
 		//}
 	}
 	

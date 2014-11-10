@@ -284,4 +284,8 @@ public class Enemy : MonoBehaviour{
 		slowed = false;
 		alreadySlowed = false;
 	}
+
+	public bool isStunned() {
+		return stunned;
+	}
 }
