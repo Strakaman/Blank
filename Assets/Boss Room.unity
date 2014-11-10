@@ -3764,6 +3764,7 @@ MonoBehaviour:
   - {fileID: 1026534166}
   - {fileID: 579623397}
   - {fileID: 1211963151}
+  berserkSpeed: 5
 --- !u!1 &1550788997
 GameObject:
   m_ObjectHideFlags: 0
