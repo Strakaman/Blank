@@ -7,8 +7,8 @@ using System.Collections;
  */
 public static class PlayerInfo
 {
-	private const int MAXMANA = 300; //max MP that player can have
-	private const int MAXHEALTH = 100; //max HP that player can have
+	private const int MAXMANA = 3000; //max MP that player can have
+	private const int MAXHEALTH = 1000; //max HP that player can have
 	private static int mana = MAXMANA; //initialize player mana
 	private static int health = MAXHEALTH; //initialize player health
 	private static Spell currentSpell = null; 
@@ -25,6 +25,10 @@ public static class PlayerInfo
 		return health; 
 	}
 
+	public static int getMaxHealth() {
+		return MAXHEALTH;
+	}
+
 	//set player's health to a specific value like if the level was restarted
 	public static void setHealth(int setToWhat)
 	{
@@ -39,6 +43,10 @@ public static class PlayerInfo
 	public static int getMana()
 	{
 		return mana;
+	}
+
+	public static int getMaxMana() {
+		return MAXMANA;
 	}
 
 	//set player's MP to a specific value like if the level was restarted

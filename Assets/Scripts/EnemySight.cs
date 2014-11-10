@@ -16,7 +16,7 @@ public class EnemySight : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
-		transform.position = gameObject.GetComponentInParent <EnemyAI>().transform.position;
+		transform.position = gameObject.GetComponentInParent <EnemyAIOld>().transform.position;
 		BoxCollider2D zollider = GetComponentInParent<BoxCollider2D> (); //get attached collider, store size and center
 		s = zollider.size;
 		c = zollider.center;
@@ -40,7 +40,7 @@ public class EnemySight : MonoBehaviour {
 		{
 			//Debug.Log ("Player");
 			
-			Vector2 p = gameObject.GetComponentInParent <EnemyAI>().transform.position; //get current enemy position to cast ray from
+			Vector2 p = gameObject.GetComponentInParent <EnemyAIOld>().transform.position; //get current enemy position to cast ray from
 			Vector3 castDirection; //set the raycast direction to vertical or horizontal based on direction player is facing
 			int xAxisDir = 0;
 			int yAxisDir = 0;
@@ -64,7 +64,7 @@ public class EnemySight : MonoBehaviour {
 				if (hit && hit.collider.gameObject == player) {
 					//Debug.Log("PLAYER IS IN SIGHT");
 					//playerInSight = true;
-					gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
+					gameObject.GetComponentInParent<EnemyAIOld>().setPlayerInSightTrue();
 					//Debug.Log(gameObject.GetComponentInParent<EnemyAI>().getPlayerInSight());
 					if (Utilities.hasMatchingTag("Ranged", gameObject.transform.parent.gameObject)) {
 						//Debug.Log("poop");
@@ -75,7 +75,7 @@ public class EnemySight : MonoBehaviour {
 		}
 		if (other.gameObject.CompareTag ("Enemy")) {
 			if (other.gameObject.GetComponentInParent<Enemy>().isHitTrue() == true) {
-				gameObject.GetComponentInParent<EnemyAI>().setPlayerInSightTrue();
+				gameObject.GetComponentInParent<EnemyAIOld>().setPlayerInSightTrue();
 				other.gameObject.GetComponentInParent<Enemy>().isHitFalse();
 				if (Utilities.hasMatchingTag("Ranged",gameObject.transform.parent.gameObject)) {
 					gameObject.GetComponentInParent<Ranged>().setPlayerInSightTrue();
