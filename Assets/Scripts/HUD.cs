@@ -26,6 +26,8 @@ public class HUD : MonoBehaviour {
 	private float healthScale;
 	private float mana;
 	private float manaScale;
+	private float maxHealth;
+	private float maxMana;
 
 	// Use this for initialization
 	void Start () {
@@ -36,8 +38,10 @@ public class HUD : MonoBehaviour {
 	void Update () {
 		health = PlayerInfo.getHealth ();
 		mana = PlayerInfo.getMana ();
-		healthScale = health / 100;
-		manaScale = mana / 300;
+		maxHealth = PlayerInfo.getMaxHealth();
+		maxMana = PlayerInfo.getMaxMana();
+		healthScale = health / maxHealth;
+		manaScale = mana / maxMana;
 	}
 
 	void barUpdate(Rect pos, Texture2D tex, float scale) {

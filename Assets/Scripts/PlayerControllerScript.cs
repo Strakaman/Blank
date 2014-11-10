@@ -304,22 +304,6 @@ public class PlayerControllerScript : MonoBehaviour
 			return false;
 	}
 
-	void OnCollisionStay2D(Collision2D collInfo)
-	{
-
-		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject))
-		{
-			damageProperties(collInfo.gameObject, -10, 1000, 0.5f);
-		}
-	}
-
-	void OnCollisionEnter2D(Collision2D collInfo) {
-	//	if (Utilities.hasMatchingTag("EnemyProjectile",collInfo.gameObject))
-	//	{
-	//		damageProperties(collInfo, -20, 1000, 0.1f);
-	//	}
-	}
-
 	void SlowYourself()
 	{
 		Debug.Log("Slowing not yet implemented...");
