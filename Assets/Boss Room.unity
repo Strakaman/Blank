@@ -3516,6 +3516,72 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 4874857b32e04ac41a8c0a4165cba884, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1420252908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1420252911}
+  - 212: {fileID: 1420252910}
+  - 95: {fileID: 1420252909}
+  m_Layer: 0
+  m_Name: Charging
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1420252909
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420252908}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2fd5ee7572d816c42bd95ae0e1cd6692, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1420252910
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420252908}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300020, guid: 75dfd9e1a77aa234d9fbdf48fe73792d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1420252911
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420252908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2127306602}
+  m_RootOrder: 0
 --- !u!1 &1463876125
 GameObject:
   m_ObjectHideFlags: 0
@@ -4185,6 +4251,72 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 4874857b32e04ac41a8c0a4165cba884, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1624603210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1624603213}
+  - 212: {fileID: 1624603212}
+  - 95: {fileID: 1624603211}
+  m_Layer: 0
+  m_Name: Charged
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1624603211
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624603210}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea0fc304c1fecf144a3c5bac4e50b706, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1624603212
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624603210}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300020, guid: 75dfd9e1a77aa234d9fbdf48fe73792d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1624603213
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624603210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2127306602}
+  m_RootOrder: 1
 --- !u!1 &1645364116
 GameObject:
   m_ObjectHideFlags: 0
@@ -4513,6 +4645,30 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: Slow
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ebd55f8bc1ddb747abb4843bac18232, type: 2}
+    - target: {fileID: 11400006, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: Stun
+      value: 
+      objectReference: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
+    - target: {fileID: 11400006, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: Charge
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c23e4bc12dd37b45afe581e59e36037, type: 2}
+    - target: {fileID: 11400006, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: Charging
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b861cc951998f3479fd95a63485169f, type: 2}
+    - target: {fileID: 11400006, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: chargingObject
+      value: 
+      objectReference: {fileID: 1420252908}
+    - target: {fileID: 11400006, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
+      propertyPath: chargedObject
+      value: 
+      objectReference: {fileID: 1624603210}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
   m_RootGameObject: {fileID: 2127306595}
@@ -5359,6 +5515,12 @@ MonoBehaviour:
   currSpell: 0
   Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
+  Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
+  Slow: {fileID: 2100000, guid: 1ebd55f8bc1ddb747abb4843bac18232, type: 2}
+  Charging: {fileID: 2100000, guid: 5b861cc951998f3479fd95a63485169f, type: 2}
+  Charge: {fileID: 2100000, guid: 8c23e4bc12dd37b45afe581e59e36037, type: 2}
+  chargingObject: {fileID: 1420252908}
+  chargedObject: {fileID: 1624603210}
 --- !u!212 &2127306601
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5391,7 +5553,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1420252911}
+  - {fileID: 1624603213}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!96 &2127306603

@@ -5521,8 +5521,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   canStun: 0
   canSlow: 0
-  slowDur: 0
-  stunDur: 0
+  slowDur: 5
+  stunDur: 1
 --- !u!61 &1227952318
 BoxCollider2D:
   m_ObjectHideFlags: 0

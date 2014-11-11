@@ -18,6 +18,12 @@ public class PlayerControllerScript : MonoBehaviour
 	public Material Hit;
 	public Material Stun;
 	public Material Slow;
+	public Material Charging;
+	public Material Charge;
+	public GameObject chargingObject;
+	public GameObject chargedObject;
+	private bool charging;
+	private bool fullCharged;
 	private float chargeTimeRequired = 1f;
 	private float amountChargedSoFar = 0;
 
@@ -43,8 +49,6 @@ public class PlayerControllerScript : MonoBehaviour
 		}
 		if (hittime + 0.1f < Time.time && PlayerInfo.GetState() == PState.normal) {
 			GetComponent<SpriteRenderer>().material = Default;
-		}
-		if (PlayerInfo.GetState().Equals(PState.grabbing)) {
 		}
 	}
 
@@ -186,9 +190,29 @@ public class PlayerControllerScript : MonoBehaviour
 			//Charged spell
 		if (Input.GetButton ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)&& PlayerInfo.CanCharge()) {
 				amountChargedSoFar += Time.deltaTime;
-			}
+				if (amountChargedSoFar > 0.25f && !fullCharged) {
+					//GetComponent<SpriteRenderer>().material = Charging;
+					chargingObject.GetComponent<SpriteRenderer>().enabled = true;
+					charging = true;
+				}
+				if (amountChargedSoFar > chargeTimeRequired) {
+					fullCharged = true;
+					//GetComponent<SpriteRenderer>().material = Charge;
+					chargedObject.GetComponent<SpriteRenderer>().enabled = true;
+				}
+			/*
+			if (GetComponent<SpriteRenderer>().material.color.Equals(Charging.color)) {
+				GetComponent<SpriteRenderer>().material = Default;
+				Debug.Log("DEFAULT!");
+			} else {
+				GetComponent<SpriteRenderer>().material = Charging;
+				Debug.Log("CHARGING");
+			}*/
+		}
 
 		if (Input.GetButtonUp("Use Spell") && PlayerInfo.GetState().Equals(PState.normal) && PlayerInfo.CanCharge()){
+			charging = false;
+			chargingObject.GetComponent<SpriteRenderer>().enabled = false;
 			if (amountChargedSoFar > chargeTimeRequired){
 				Spell datSpell = SpellBook.playerSpells [currSpell];
 				if (datSpell.hasEnoughMana (true)) {
@@ -228,6 +252,8 @@ public class PlayerControllerScript : MonoBehaviour
 					datSpell.setCost(oldCost);*/
 				}
 				amountChargedSoFar = 0;
+				fullCharged = false;
+				chargedObject.GetComponent<SpriteRenderer>().enabled = false;
 			}
 
 
