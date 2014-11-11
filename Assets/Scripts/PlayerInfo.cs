@@ -18,6 +18,8 @@ public static class PlayerInfo
 	private static float grabModifier = 1;
 	private static PState playerState = PState.inmenus; 
 	private static bool chargeEnabled = false;
+	private static float slowDur;
+	private static float stunDur;
 
 	//umm....get the player's current health
 	public static int getHealth()
@@ -203,5 +205,19 @@ public static class PlayerInfo
 	public static bool CanCharge()
 	{
 		return chargeEnabled;
+	}
+
+	public static float getStunDur() {
+		return stunDur;
+	}
+	public static float getSlowDur() {
+		return slowDur;
+	}
+
+	public static void setStunDur(float duration) {
+		stunDur = duration;
+	}
+	public static void setSlowDur(float duration) {
+		slowDur = duration;
 	}
 }

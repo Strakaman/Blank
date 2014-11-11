@@ -30,7 +30,6 @@ public class PlayerControllerScript : MonoBehaviour
 			BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
 			s = zollider.size;
 			c = zollider.center;
-			
 	}
 
 // Update is called once per frame
@@ -134,7 +133,7 @@ public class PlayerControllerScript : MonoBehaviour
 			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier() / 2, 
 			                                    Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier()) / 2;
 			GetComponent<SpriteRenderer>().material = Slow;
-			if (hittime + 0.5f < Time.time) {
+			if (hittime + PlayerInfo.getSlowDur() < Time.time) {
 				hittime = Time.time;
 				PlayerInfo.SetState(PState.normal);
 				//Debug.Log("Reset state: " + PlayerInfo.GetState());
@@ -143,7 +142,7 @@ public class PlayerControllerScript : MonoBehaviour
 		if (PlayerInfo.GetState().Equals(PState.stunned)) {
 			rigidbody2D.velocity = new Vector2(0,0);
 			GetComponent<SpriteRenderer>().material = Stun;
-			if (hittime + 0.1f < Time.time) {
+			if (hittime + PlayerInfo.getStunDur() < Time.time) {
 				hittime = Time.time;
 				PlayerInfo.SetState(PState.normal);
 				//Debug.Log("Reset state: " + PlayerInfo.GetState());

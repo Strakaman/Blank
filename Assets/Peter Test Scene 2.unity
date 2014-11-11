@@ -371,6 +371,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1227952320}
+  - {fileID: 1600120971}
   m_Father: {fileID: 0}
   m_RootOrder: 9
 --- !u!1001 &38743994
@@ -2367,15 +2368,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 19046601}
     m_Modifications:
     - target: {fileID: 400000, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.79816675
+      value: -6.36688948
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.88100863
+      value: 1.45720243
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2399,15 +2400,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
       propertyPath: canStun
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
       propertyPath: canSlow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
+      propertyPath: isOn
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
+      propertyPath: stunDur
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
+      propertyPath: slowDur
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69695e84a0f863846af9541ce5e626a4, type: 2}
@@ -5504,6 +5521,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   canStun: 0
   canSlow: 0
+  slowDur: 0
+  stunDur: 0
 --- !u!61 &1227952318
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7081,8 +7100,10 @@ MonoBehaviour:
   hitDelay: .25
   isOn: 1
   animator: {fileID: 0}
-  canStun: 0
-  canSlow: 1
+  canStun: 1
+  canSlow: 0
+  slowDur: 0
+  stunDur: 1
 --- !u!58 &1600120969
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7092,7 +7113,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1600120967}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Radius: .400000006
   m_Center: {x: 0, y: 0}
 --- !u!212 &1600120970
@@ -7125,11 +7146,11 @@ Transform:
   m_PrefabInternal: {fileID: 560989922}
   m_GameObject: {fileID: 1600120967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.79816675, y: 3.88100863, z: 0}
+  m_LocalPosition: {x: -6.36688948, y: 1.45720243, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 19046601}
+  m_RootOrder: 1
 --- !u!50 &1600120972
 Rigidbody2D:
   m_ObjectHideFlags: 0

@@ -9,6 +9,13 @@ public class DamageTrap : Switchable {
 	public Animator animator;
 	public bool canStun = false;
 	public bool canSlow = false;
+	public float slowDur = 5;
+	public float stunDur = 1;
+
+	void Update() {
+		PlayerInfo.setStunDur(stunDur);
+		PlayerInfo.setSlowDur(slowDur);
+	}
 
 	public override void flipStatus()
 	{
@@ -43,9 +50,11 @@ public class DamageTrap : Switchable {
 			//struct used to pass more than one parameter through send message, which only lets you pass one object as a parameter
 			coll.gameObject.SendMessage("callDamage", laserStruct);
 			if (canStun) {
+
 				PlayerInfo.SetState(PState.stunned);
 			}
 			if (canSlow) {
+
 				PlayerInfo.SetState(PState.slowed);
 			}
 		}
@@ -57,9 +66,11 @@ public class DamageTrap : Switchable {
 			//struct used to pass more than one parameter through send message, which only lets you pass one object as a parameter
 			coll.gameObject.SendMessage("callDamage", laserStruct);
 			if (canStun) {
+				//PlayerInfo.setStunDur(stunDur);
 				PlayerInfo.SetState(PState.stunned);
 			}
 			if (canSlow) {
+				//PlayerInfo.setSlowDur(slowDur);
 				PlayerInfo.SetState(PState.slowed);
 			}
 		}
