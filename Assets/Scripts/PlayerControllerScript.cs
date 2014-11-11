@@ -14,6 +14,8 @@ public class PlayerControllerScript : MonoBehaviour
 	private Vector3 c; //box collider center to help with raycasting
 	//private bool isPaused = false; //no Idea what this is for, delete?
 	private float hittime;
+	private float stunTime;
+	private float slowTime;
 	public Material Default;
 	public Material Hit;
 	public Material Stun;
@@ -47,7 +49,7 @@ public class PlayerControllerScript : MonoBehaviour
 			CheckInputs ();
 			SpriteAnimation ();
 		}
-		if (hittime + 0.1f < Time.time && PlayerInfo.GetState() == PState.normal) {
+		if (hittime + 0.1f < Time.time && PlayerInfo.getStun() == false && PlayerInfo.getSlow() == false) {
 			GetComponent<SpriteRenderer>().material = Default;
 		}
 	}
@@ -129,26 +131,26 @@ public class PlayerControllerScript : MonoBehaviour
 	{
 		if(PlayerInfo.GetState().Equals(PState.dead)) {return ;} //dead ppl can't move
 		//Consider modifying the same vector everytime instead of creating a new one, performance win?
-		if (PlayerInfo.GetState().Equals(PState.normal)) {
+		if (PlayerInfo.GetState().Equals(PState.normal) || PlayerInfo.GetState().Equals(PState.grabbing)) {
 		rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(), 
 		                       Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier());
 		}
-		if (PlayerInfo.GetState().Equals(PState.slowed)) {
+		if (PlayerInfo.getSlow()) {
 			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier() / 2, 
 			                                    Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier()) / 2;
 			GetComponent<SpriteRenderer>().material = Slow;
-			if (hittime + PlayerInfo.getSlowDur() < Time.time) {
-				hittime = Time.time;
-				PlayerInfo.SetState(PState.normal);
+			if (slowTime + PlayerInfo.getSlowDur() < Time.time) {
+				slowTime = Time.time;
+				PlayerInfo.setSlow(false);
 				//Debug.Log("Reset state: " + PlayerInfo.GetState());
 			}
 		}
-		if (PlayerInfo.GetState().Equals(PState.stunned)) {
+		if (PlayerInfo.getStun()) {
 			rigidbody2D.velocity = new Vector2(0,0);
 			GetComponent<SpriteRenderer>().material = Stun;
-			if (hittime + PlayerInfo.getStunDur() < Time.time) {
-				hittime = Time.time;
-				PlayerInfo.SetState(PState.normal);
+			if (stunTime + PlayerInfo.getStunDur() < Time.time) {
+				stunTime = Time.time;
+				PlayerInfo.setStun(false);
 				//Debug.Log("Reset state: " + PlayerInfo.GetState());
 			}
 		}
@@ -170,7 +172,7 @@ public class PlayerControllerScript : MonoBehaviour
 				}
 
 
-		if (Input.GetButtonDown ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)) {
+		if (Input.GetButtonDown ("Use Spell") && (PlayerInfo.GetState().Equals(PState.normal))) {
 						if (SpellBook.playerSpells [currSpell] == null) {
 		
 								changeSpell (true);
@@ -188,7 +190,7 @@ public class PlayerControllerScript : MonoBehaviour
 				}
 	
 			//Charged spell
-		if (Input.GetButton ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal)&& PlayerInfo.CanCharge()) {
+		if (Input.GetButton ("Use Spell") && PlayerInfo.GetState().Equals(PState.normal) && PlayerInfo.CanCharge()) {
 				amountChargedSoFar += Time.deltaTime;
 				if (amountChargedSoFar > 0.25f && !fullCharged) {
 					//GetComponent<SpriteRenderer>().material = Charging;

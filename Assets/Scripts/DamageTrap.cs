@@ -51,11 +51,11 @@ public class DamageTrap : Switchable {
 			coll.gameObject.SendMessage("callDamage", laserStruct);
 			if (canStun) {
 
-				PlayerInfo.SetState(PState.stunned);
+				PlayerInfo.setStun(true);
 			}
 			if (canSlow) {
 
-				PlayerInfo.SetState(PState.slowed);
+				PlayerInfo.setSlow(true);
 			}
 		}
 	}
@@ -67,11 +67,11 @@ public class DamageTrap : Switchable {
 			coll.gameObject.SendMessage("callDamage", laserStruct);
 			if (canStun) {
 				//PlayerInfo.setStunDur(stunDur);
-				PlayerInfo.SetState(PState.stunned);
+				PlayerInfo.setStun(true);
 			}
 			if (canSlow) {
 				//PlayerInfo.setSlowDur(slowDur);
-				PlayerInfo.SetState(PState.slowed);
+				PlayerInfo.setSlow(true);
 			}
 		}
 	}

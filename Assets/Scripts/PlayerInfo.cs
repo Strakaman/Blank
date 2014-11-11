@@ -7,7 +7,7 @@ using System.Collections;
  */
 public static class PlayerInfo
 {
-	private const int MAXMANA = 3000; //max MP that player can have
+	private const int MAXMANA = 300; //max MP that player can have
 	private const int MAXHEALTH = 1000; //max HP that player can have
 	private static int mana = MAXMANA; //initialize player mana
 	private static int health = MAXHEALTH; //initialize player health
@@ -20,6 +20,8 @@ public static class PlayerInfo
 	private static bool chargeEnabled = false;
 	private static float slowDur;
 	private static float stunDur;
+	private static bool stunned;
+	private static bool slowed;
 
 	//umm....get the player's current health
 	public static int getHealth()
@@ -220,4 +222,19 @@ public static class PlayerInfo
 	public static void setSlowDur(float duration) {
 		slowDur = duration;
 	}
+
+	public static bool getStun() {
+		return stunned;
+	}
+	public static bool getSlow() {
+		return slowed;
+	}
+	
+	public static void setStun(bool stun) {
+		stunned = stun;
+	}
+	public static void setSlow(bool slow) {
+		slowed = slow;
+	}
+
 }
