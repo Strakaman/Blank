@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 75dfd9e1a77aa234d9fbdf48fe73792d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CHARGING!!!!_0
+    21300002: CHARGING!!!!_1
+    21300004: CHARGING!!!!_2
+    21300006: CHARGING!!!!_3
+    21300008: CHARGING!!!!_4
+    21300010: CHARGING!!!!_5
+    21300012: CHARGING!!!!_6
+    21300014: CHARGING!!!!_7
+    21300016: CHARGING!!!!_8
+    21300018: CHARGING!!!!_9
+    21300020: CHARGING!!!!_10
+    21300022: CHARGING!!!!_11
+    21300024: CHARGING!!!!_12
+    21300026: CHARGING!!!!_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CHARGING!!!!_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 406
+        width: 228
+        height: 229
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 408
+        width: 221
+        height: 227
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_2
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 407
+        width: 222
+        height: 228
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_3
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 407
+        width: 216
+        height: 228
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_4
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 407
+        width: 201
+        height: 228
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_5
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 185
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 210
+        width: 148
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_7
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 212
+        width: 127
+        height: 131
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_8
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 217
+        width: 114
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_9
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 165
+        width: 224
+        height: 227
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_10
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 48
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_11
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 35
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_12
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 20
+        width: 135
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CHARGING!!!!_13
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 0
+        width: 167
+        height: 154
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
