@@ -11,6 +11,7 @@ public class ManaPickup : Pickupable {
 		{
 			//Debug.Log ("Player mana increased by: " + increaseManaAmount + " to: " + PlayerInfo.getMana());
 			PlayerInfo.changeMana(increaseManaAmount);
+			Utilities.TellPlayer("MP Restored!");
 			Destroy(this.gameObject);
 		}
 	}

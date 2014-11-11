@@ -11,6 +11,7 @@ public class DamagePickup : Pickupable {
 		{
 			//Debug.Log ("Player health increased by: " + increaseHealth + " to: " + PlayerInfo.getHealth());
 			PlayerInfo.PowerUp();
+			Utilities.TellPlayer("Temporary Power Up! Spells do 2x damage!");
 			Destroy(this.gameObject);
 		}
 	}

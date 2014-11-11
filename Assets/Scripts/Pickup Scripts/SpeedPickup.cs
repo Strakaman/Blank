@@ -10,6 +10,7 @@ public class SpeedPickup : Pickupable {
 		if (Utilities.hasMatchingTag("Player",whatICollidedWith.gameObject))
 		{
 			PlayerInfo.SpeedUp();
+			Utilities.TellPlayer("Temporary Speed Boost!");
 			Destroy(this.gameObject);
 		}
 	}

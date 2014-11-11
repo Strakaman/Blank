@@ -2359,16 +2359,6 @@ MonoBehaviour:
   - To train them is my cause...
   - I will travel across the land, searching far and wide.
   - DUN DUN DUN DUN
-  - Teach Pokemon to under stand, the power that's inside...
-  - POKEMON! (Gotta Catch them all) its you and me
-  - I know its my destiny!
-  - Pokemon! oh, you're my best friend.
-  - In a world we must defend.
-  - Pokemon! (Gotta catch them all!) a heart so true!!
-  - Our courage will pull us through!
-  - You teach me and I'll teach you!
-  - PO-KE-MON!!!!
-  - Gotta catch 'em all, POH KEH MON!
   talkTextGUI: {fileID: 243572901}
   textBoxTexture: {fileID: 584764344}
   textScrollSpeed: 50
@@ -3407,16 +3397,6 @@ MonoBehaviour:
   talkLines:
   - Today the wind...
   - Is troubled...
-  - But the wind is...
-  - Weeping just a little...
-  - It seems as though the wind...
-  - Blew something unpleasant...
-  - Into town...
-  - Let us make haste...
-  - Lest the wind ceases...
-  - HEY THIS IS BAD!
-  - THE POTATOES AT THE CONVENIENCE STORE IS HALF OFF!
-  - LETS GET GOING!
   talkTextGUI: {fileID: 246458814}
   textBoxTexture: {fileID: 904559497}
   textScrollSpeed: 50
@@ -3978,6 +3958,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
+      propertyPath: talkLines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b63eb46b641dd134a90db75b8917ec9f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6870,6 +6854,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 2862f5ec76bb46243a101f528c287c92, type: 2}
+      propertyPath: talkLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2862f5ec76bb46243a101f528c287c92, type: 2}
       propertyPath: m_RootOrder
       value: 8
@@ -7194,6 +7182,8 @@ MonoBehaviour:
   currSpell: 0
   Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
+  Stun: {fileID: 0}
+  Slow: {fileID: 0}
 --- !u!212 &2127306601
 SpriteRenderer:
   m_ObjectHideFlags: 0

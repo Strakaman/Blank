@@ -12,6 +12,7 @@ public class HealthPickup : Pickupable {
 		{
 			//Debug.Log ("Player health increased by: " + increaseHealth + " to: " + PlayerInfo.getHealth());
 			PlayerInfo.changeHealth(increaseHealth);
+			Utilities.TellPlayer("Health Restored!");
 			Destroy(this.gameObject);
 		}
 	}

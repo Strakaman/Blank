@@ -64,7 +64,7 @@ public class Enemy : MonoBehaviour{
 	void OnCollisionEnter2D(Collision2D coll) {
 		//If yellow spell object collides with enemy, stun the enemy.
 		if (Utilities.hasMatchingTag("YellowSpellObject",coll.gameObject)) {
-			damageProperties(coll.gameObject, 0, 0, 0.1f);
+			damageProperties(coll.gameObject, 5, 0, 0.1f);
 			stunned = true;
 		}
 	}

@@ -505,6 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6245000e25c9b11408df59ba3817b479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInSight: 0
   health: 100
   maxHealth: 100
   collisionDamDealt: 10
@@ -512,8 +513,8 @@ MonoBehaviour:
   hitDelay: .5
   enemyName: 
   direction: 0
-  slowTime: 0
-  stunTime: 0
+  slowTime: 5
+  stunTime: 3
   Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
   Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
@@ -714,7 +715,7 @@ Transform:
   m_PrefabInternal: {fileID: 1454138906}
   m_GameObject: {fileID: 151915710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.30799174, y: .632836461, z: 0}
+  m_LocalPosition: {x: 6.59049845, y: 4.75004864, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -751,6 +752,8 @@ MonoBehaviour:
   currSpell: 0
   Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
+  Stun: {fileID: 0}
+  Slow: {fileID: 0}
 --- !u!212 &151915714
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1032,6 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6245000e25c9b11408df59ba3817b479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInSight: 0
   health: 100
   maxHealth: 100
   collisionDamDealt: 10
@@ -1039,8 +1043,8 @@ MonoBehaviour:
   hitDelay: .5
   enemyName: 
   direction: 0
-  slowTime: 0
-  stunTime: 0
+  slowTime: 5
+  stunTime: 3
   Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
   Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
@@ -5313,11 +5317,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.30799174
+      value: 6.59049845
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .632836461
+      value: 4.75004864
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4f7f3b7c2cf83bc4780bae88a4a80def, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6822,6 +6826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6245000e25c9b11408df59ba3817b479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInSight: 0
   health: 100
   maxHealth: 100
   collisionDamDealt: 10
@@ -6829,8 +6834,8 @@ MonoBehaviour:
   hitDelay: .5
   enemyName: 
   direction: 0
-  slowTime: 0
-  stunTime: 0
+  slowTime: 5
+  stunTime: 3
   Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
   Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
