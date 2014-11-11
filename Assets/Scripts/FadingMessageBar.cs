@@ -10,21 +10,20 @@ public class FadingMessageBar : MonoBehaviour {
 	Color guiTextureOriginalColor;
 	public GUIText datText; //set by prefab
 	public GUITexture datTexture; //set by prefab
-	Vector2 pO;
+
 	void Start(){
 		//Debug.Log("GUITEXT: " + datText.material.color.a + " GUITEXTURE: " + datTexture.color.a);
 		guiTextOriginalColor = datText.material.color; //save the gui colors since we alter them when fading
 		guiTextureOriginalColor = datTexture.color;
 		datTexture.enabled = false; //disable by default since there is no message yet
 		datText.enabled = false;
-		pO = datText.pixelOffset;
 	}
 
 	void Update(){
 
-		if (Input.GetKeyDown(";")) { //for debugging
+		/*if (Input.GetKeyDown(";")) { //for debugging
 			BroadcastNewMessage("Current Time: " + Time.time);
-		}
+		}*/
 		//Debug.Log ("Screen Width: + " + Screen.width + " Screen Height: " + Screen.height);
 	}
 	void OnGUI()
