@@ -1,0 +1,36 @@
+STage Music Loops
+Normal Stage
+Boss Music
+Credits Music?
+
+Sound Clips
+No Mana
+NPC text scrolling
+NPC  initial talk sound (Kinda like "hey, listen!")
+Spell being Cast? (Maybe not since every spell might have an "On create" sound)
+charging
+walking?
+getting hit 
+White spell shooting
+white spell appearing
+Red spell exploding
+Charged Blue Swirl
+Charged Yellow Lightning
+yellow shooting and then per chaining
+Block being pushed (maybe if velocity != 0, play sound)
+dying scream?
+enemy noticing player (for enemies that have sight)
+pressure plate being entered and maybe exited (might be hard with the way that it is triggered)
+ranged enemy firing
+turret firing
+switch being pressed
+game pause and unpause
+vector push activating
+ice block melting
+water pool freezing
+
+
+Fix
+yellow charge
+turrent not always shooting when it should
+door locking/unlocking
