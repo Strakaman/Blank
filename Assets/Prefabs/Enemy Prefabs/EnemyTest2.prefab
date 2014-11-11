@@ -174,6 +174,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -236,11 +237,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39eb1966fbb97e94da02da3c1e5d3939, type: 3}
+  m_Script: {fileID: 11500000, guid: b8d9ad2ce57c2d54395f0cffde9f9e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chaseTime: 2
   speed: 100
-  nextWaypointDistance: 3
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -252,7 +253,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6245000e25c9b11408df59ba3817b479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInSight: 0
+  health: 100
+  maxHealth: 100
+  collisionDamDealt: 10
+  knockbackDealt: 1000
+  hitDelay: .5
+  enemyName: 
   direction: 0
+  slowTime: 5
+  stunTime: 3
   Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
   Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}

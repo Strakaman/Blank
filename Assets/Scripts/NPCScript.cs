@@ -8,17 +8,16 @@ public class NPCScript : Interactable
 	public GUITexture textBoxTexture;
 	public int textScrollSpeed;
 	public int edgeMarginPercentage;
-	public GameObject omari;
 	private bool talking;
 	//private bool toggleGUI; //used for animating mouths which was removed
 	private bool textIsScrolling;
 	private PlayerControllerScript playerScript;
 	private int currentLine;
 	private Vector3 omariStuffPosition;
+	public Texture2D npcImage;
 
 	void Start ()
 	{
-			if (omari) omari.renderer.enabled = false;
 			textBoxTexture.enabled = false;
 			int edgeMargin = (Screen.width / 100) * edgeMarginPercentage;
 			//Vector2 pixel = new Vector2 (edgeMargin, edgeMargin);
@@ -90,7 +89,6 @@ public class NPCScript : Interactable
 			talking = isNPCactive;
 			//toggleGUI = isNPCactive;
 			textBoxTexture.enabled = isNPCactive;
-			if (omari) omari.renderer.enabled = isNPCactive;
 			playerScript.enabled = !isNPCactive;
 	}
 
@@ -98,7 +96,6 @@ public class NPCScript : Interactable
 	{
 			//ensures text and pic elements are in the right position
 			omariStuffPosition = GameObject.FindGameObjectWithTag ("MainCamera").transform.position;
-			if (omari) omari.transform.position = new Vector3 (omariStuffPosition.x - 7, omariStuffPosition.y, omari.transform.position.z);
 			talkTextGUI.transform.position = new Vector3 (0, -.12f, talkTextGUI.transform.position.z);
 			textBoxTexture.transform.position = new Vector3 (0.3198967f, 0.07225594f, textBoxTexture.transform.position.z);
 			transform.parent.transform.position = new Vector3 (0, 0, -10);
@@ -110,6 +107,17 @@ public class NPCScript : Interactable
 			//talkTextGUI.text = talkLines[currentLine];
 			StartCoroutine (startScrolling ());
 	}
+
+	void OnGUI()
+	{
+		if (talking) //scale image to screen size
+		{
+		talkTextGUI.pixelOffset = new Vector2((Screen.width*20)/818, (Screen.height*150)/825) ;
+		textBoxTexture.pixelInset = new Rect(-Screen.width/2,-40,Screen.width*1.5f,(Screen.height/12)+40);
+		GUI.DrawTexture(new Rect(-50 , Screen.height/3, Screen.width/3.5f, Screen.height/2),npcImage);
+		}
+	}
+
 
 	public virtual void FollowUps()
 	{
