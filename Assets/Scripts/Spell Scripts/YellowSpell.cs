@@ -27,18 +27,22 @@ public class YellowSpell : Spell
 		if (player == null){player = GameObject.FindGameObjectWithTag("Player");}
 		Vector3 clonePosition = new Vector3(0,0,0) ;
 		Vector3 cloneVelocity = new Vector3(0,0,0);
-		Quaternion cloneOrientation = Quaternion.Euler(0,0,0); 
+		Quaternion cloneOrientation = cloneOrientation = Quaternion.Euler(0,0,0); 
 		if (dir == Direction.down) {
-			clonePosition = player.transform.position + new Vector3(0,5f,0);
+			clonePosition = player.transform.position + new Vector3(0,-5.35f,0);
+			cloneOrientation = Quaternion.Euler(0, 0, 270);
 		}
 		else if (dir == Direction.up) {
-			clonePosition = player.transform.position + new Vector3(0,5.0f,0);
+			clonePosition = player.transform.position + new Vector3(0,5.25f,0);
+			cloneOrientation = Quaternion.Euler(0, 0, 90);
 		}
 		else if (dir == Direction.left) {
 			clonePosition = player.transform.position + new Vector3(-5.0f, 0, 0);
+			cloneOrientation = Quaternion.Euler(0, 0, 180);
 		}
 		else if (dir == Direction.right) {
 			clonePosition = player.transform.position + new Vector3(5.0f,0,0);
+			//assume default orientation for right
 		}
 		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		//Debug.Log(cloneVelocity);
