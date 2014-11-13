@@ -19,6 +19,7 @@ Charged Yellow Lightning
 yellow shooting and then per chaining
 Block being pushed (maybe if velocity != 0, play sound)
 dying scream?
+enemies die
 enemy noticing player (for enemies that have sight)
 pressure plate being entered and maybe exited (might be hard with the way that it is triggered)
 ranged enemy firing
@@ -34,3 +35,7 @@ Fix
 yellow charge
 turrent not always shooting when it should
 door locking/unlocking
+
+After Tuesday
+Fire explosion actually does damage
+QUAAAAALity art
