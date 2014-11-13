@@ -14,7 +14,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: Unlockable Door
+  m_Name: Locked Door
   m_TagString: Switchable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,6 +57,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -65,7 +66,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95dbd9c226b686a4786f9f3a9fe0416d, type: 3}
+  m_Script: {fileID: 11500000, guid: 332665d2fe08e0c4ea1f8302806a3155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isLocked: 1
