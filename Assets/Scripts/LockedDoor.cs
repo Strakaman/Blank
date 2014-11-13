@@ -8,7 +8,7 @@ public class LockedDoor : Switchable {
 		// Use this for initialization
 		void Start () {
 			animator = (Animator)GetComponent ("Animator");
-			animator.SetBool ("isLocked", isLocked);
+			updateStatus();
 		}
 		
 		// Update is called once per frame
