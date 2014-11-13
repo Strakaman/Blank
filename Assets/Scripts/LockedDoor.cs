@@ -37,11 +37,13 @@ public class LockedDoor : Switchable {
 	 * If the door is locked,  reenable it's collider and update the animation
 	 * If the door is unlocked, disable it's collider and update the animation
 	 */ 
-		void updateStatus()
-		{
+	void updateStatus ()
+	{
 			animator.SetBool ("isLocked", isLocked);
-			collider2D.enabled = isLocked;
-		}
+			if (collider2D) {
+					collider2D.enabled = isLocked;
+			}
+	}
 		
 	}
 

@@ -94,13 +94,13 @@ public class Turret : Switchable {
 			cloneOrientation = Quaternion.Euler(0, 0, 180);
 		}
 		else if (direction == Direction.right) {
-			clonePosition = refBullet.transform.position + new Vector3(1,0,0);
+			clonePosition = transform.position + new Vector3(1,0,0);
 			cloneVelocity = new Vector3 (projectileSpeed, 0, 0);
 			cloneOrientation = Quaternion.Euler(0, 0, 0);
 		}
 		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		GameObject clonedesu = Utilities.cloneObject(direction, refBullet, clonePosition, cloneVelocity, cloneOrientation);
-		//Debug.Log(cloneVelocity);
+		Debug.Log(clonedesu.transform.position);
 		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
 		Destroy (clonedesu,1);
 	}
