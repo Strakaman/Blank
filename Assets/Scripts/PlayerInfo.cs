@@ -7,7 +7,7 @@ using System.Collections;
  */
 public static class PlayerInfo
 {
-	private const int MAXMANA = 300; //max MP that player can have
+	private const int MAXMANA = 3000; //max MP that player can have
 	private const int MAXHEALTH = 1000; //max HP that player can have
 	private static int mana = MAXMANA; //initialize player mana
 	private static int health = MAXHEALTH; //initialize player health
