@@ -11,8 +11,8 @@ GameObject:
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
-  - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
+  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: Grabbable Block
   m_TagString: Regular Block
