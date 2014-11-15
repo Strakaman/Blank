@@ -164,7 +164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &5092646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,7 +880,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
       propertyPath: talkLines.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1405,7 +1405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!1 &259324730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,7 +2446,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!212 &556722458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2821,10 +2821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0a45cb5d220094781049532e82776f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkLines:
-  - what
-  - asas
-  - okok
+  talkLines: []
   talkTextGUI: {fileID: 1003758059}
   textBoxTexture: {fileID: 1440216836}
   textScrollSpeed: 50
@@ -5205,7 +5202,7 @@ Transform:
   - {fileID: 2096882025}
   - {fileID: 408568987}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!114 &1518581330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7212,7 +7209,7 @@ Transform:
   - {fileID: 2132918041}
   - {fileID: 1663049880}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!96 &2127306603
 TrailRenderer:
   m_ObjectHideFlags: 0

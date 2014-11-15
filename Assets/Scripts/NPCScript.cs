@@ -95,6 +95,7 @@ public class NPCScript : Interactable
 	public override void interact (GameObject player)
 	{
 			//ensures text and pic elements are in the right position
+			if (talkLines.Length == 0) {return;}
 			omariStuffPosition = GameObject.FindGameObjectWithTag ("MainCamera").transform.position;
 			talkTextGUI.transform.position = new Vector3 (0, -.12f, talkTextGUI.transform.position.z);
 			textBoxTexture.transform.position = new Vector3 (0.3198967f, 0.07225594f, textBoxTexture.transform.position.z);

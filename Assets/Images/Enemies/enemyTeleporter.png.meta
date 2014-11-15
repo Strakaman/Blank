@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 903a15e7d68523444ba0ea54fb6c1707
+guid: 46137230e865bd14b9ec53464ed63401
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: TELEPORT-OMARI-TO-THE-MOON_5
-    21300002: TELEPORT-OMARI-TO-THE-MOON_6
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,9 +25,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -44,26 +42,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: TELEPORT-OMARI-TO-THE-MOON_5
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 232
-        width: 192
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TELEPORT-OMARI-TO-THE-MOON_6
-      rect:
-        serializedVersion: 2
-        x: 397
-        y: 232
-        width: 192
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
