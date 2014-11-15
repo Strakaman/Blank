@@ -3055,6 +3055,7 @@ GameObject:
   - 114: {fileID: 549162198}
   - 95: {fileID: 549162197}
   - 114: {fileID: 549162196}
+  - 50: {fileID: 549162202}
   m_Layer: 0
   m_Name: Pressure Plate
   m_TagString: Untagged
@@ -3153,6 +3154,22 @@ Transform:
   - {fileID: 2039912470}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!50 &549162202
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: 43a20c95c0dce7848b8b21424cece059,
+    type: 2}
+  m_PrefabInternal: {fileID: 1204159844}
+  m_GameObject: {fileID: 549162195}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1001 &610168899
 Prefab:
   m_ObjectHideFlags: 0
@@ -6541,6 +6558,7 @@ GameObject:
   - 114: {fileID: 1657292457}
   - 95: {fileID: 1657292456}
   - 114: {fileID: 1657292461}
+  - 50: {fileID: 1657292462}
   m_Layer: 0
   m_Name: Pressure Plate
   m_TagString: Untagged
@@ -6639,6 +6657,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectTags: []
+--- !u!50 &1657292462
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5000000, guid: 43a20c95c0dce7848b8b21424cece059,
+    type: 2}
+  m_PrefabInternal: {fileID: 1187812821}
+  m_GameObject: {fileID: 1657292455}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1001 &1675529956
 Prefab:
   m_ObjectHideFlags: 0
@@ -6837,6 +6871,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1709837324}
   - 114: {fileID: 1709837325}
+  - 114: {fileID: 1709837326}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -6894,6 +6929,25 @@ MonoBehaviour:
   speedPickup: {fileID: 166913439}
   invulnPickup: {fileID: 875845884}
   debugMode: 1
+--- !u!114 &1709837326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400092, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1093258812}
+  m_GameObject: {fileID: 1709837323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a7e9dfb9c0c848a650c2d5c21fb5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forIntro: {fileID: 8300000, guid: 0775e29ce1c2a2f41be360b7020ef3f8, type: 3}
+  forCredits: {fileID: 8300000, guid: ae069aa5230a76546b6b9a71a8ad6772, type: 3}
+  forLevel1: {fileID: 8300000, guid: 0cc715a36a5c73a4985429cb05c2ad1f, type: 3}
+  forLevel2: {fileID: 8300000, guid: c7c5734b584e75846a6466203343142a, type: 3}
+  forLevel3: {fileID: 8300000, guid: e751b3165170d444ea15e420e199f243, type: 3}
+  forBosses: {fileID: 8300000, guid: 91c908cb2e09fe842924bc16421d12c2, type: 3}
+  forDefault: {fileID: 8300000, guid: df5911960840f4b4d96060c1ac023b1c, type: 3}
 --- !u!1 &1731629671
 GameObject:
   m_ObjectHideFlags: 0

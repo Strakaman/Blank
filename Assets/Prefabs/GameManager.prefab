@@ -403,6 +403,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400042}
   - 114: {fileID: 11400064}
+  - 114: {fileID: 11400092}
+  - 82: {fileID: 8200000}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -1434,6 +1436,64 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 3.20000005, y: 2.4000001}
   m_Center: {x: 0, y: 0}
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100042}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: c7c5734b584e75846a6466203343142a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -2228,6 +2288,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e233212d09215f45994a382d229c548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904a7e9dfb9c0c848a650c2d5c21fb5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forIntro: {fileID: 8300000, guid: 0775e29ce1c2a2f41be360b7020ef3f8, type: 3}
+  forCredits: {fileID: 8300000, guid: ae069aa5230a76546b6b9a71a8ad6772, type: 3}
+  forLevel1: {fileID: 8300000, guid: 0cc715a36a5c73a4985429cb05c2ad1f, type: 3}
+  forLevel2: {fileID: 8300000, guid: c7c5734b584e75846a6466203343142a, type: 3}
+  forLevel3: {fileID: 8300000, guid: e751b3165170d444ea15e420e199f243, type: 3}
+  forBosses: {fileID: 8300000, guid: 91c908cb2e09fe842924bc16421d12c2, type: 3}
+  forDefault: {fileID: 8300000, guid: df5911960840f4b4d96060c1ac023b1c, type: 3}
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1

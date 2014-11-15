@@ -13,7 +13,6 @@ public class NPCScript : Interactable
 	private bool textIsScrolling;
 	private PlayerControllerScript playerScript;
 	private int currentLine;
-	private Vector3 omariStuffPosition;
 	public Texture2D npcImage;
 
 	void Start ()
@@ -96,7 +95,6 @@ public class NPCScript : Interactable
 	{
 			//ensures text and pic elements are in the right position
 			if (talkLines.Length == 0) {return;}
-			omariStuffPosition = GameObject.FindGameObjectWithTag ("MainCamera").transform.position;
 			talkTextGUI.transform.position = new Vector3 (0, -.12f, talkTextGUI.transform.position.z);
 			textBoxTexture.transform.position = new Vector3 (0.3198967f, 0.07225594f, textBoxTexture.transform.position.z);
 			transform.parent.transform.position = new Vector3 (0, 0, -10);

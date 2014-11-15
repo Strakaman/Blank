@@ -9,13 +9,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400004}
-  - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400006}
   - 95: {fileID: 9500000}
   - 111: {fileID: 11100000}
   - 114: {fileID: 11400000}
+  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: CreatureSpawner
   m_TagString: Enemy
@@ -117,7 +116,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .899999976, y: .899999976}
+  m_Size: {x: 1.5, y: 1.20000005}
   m_Center: {x: 0, y: 0}
 --- !u!95 &9500000
 Animator:
@@ -160,8 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInSight: 0
-  health: 100
-  maxHealth: 100
+  health: 200
+  maxHealth: 200
   collisionDamDealt: 0
   knockbackDealt: 0
   hitDelay: .5
@@ -174,31 +173,6 @@ MonoBehaviour:
   Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
   Slow: {fileID: 2100000, guid: 1ebd55f8bc1ddb747abb4843bac18232, type: 2}
   enemyToSpawn: {fileID: 100002, guid: bb0e3a74e9b102f419dedd5ad13f0356, type: 2}
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6245000e25c9b11408df59ba3817b479, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInSight: 0
-  health: 100
-  maxHealth: 100
-  collisionDamDealt: 10
-  knockbackDealt: 1000
-  hitDelay: .5
-  enemyName: 
-  direction: 0
-  slowTime: 5
-  stunTime: 3
-  Default: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  Hit: {fileID: 2100000, guid: c5137056a2d313e478b1f88730882c28, type: 2}
-  Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
-  Slow: {fileID: 2100000, guid: 1ebd55f8bc1ddb747abb4843bac18232, type: 2}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

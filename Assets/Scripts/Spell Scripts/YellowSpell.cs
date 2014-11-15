@@ -27,7 +27,7 @@ public class YellowSpell : Spell
 		if (player == null){player = GameObject.FindGameObjectWithTag("Player");}
 		Vector3 clonePosition = new Vector3(0,0,0) ;
 		Vector3 cloneVelocity = new Vector3(0,0,0);
-		Quaternion cloneOrientation = cloneOrientation = Quaternion.Euler(0,0,0); 
+		Quaternion cloneOrientation = Quaternion.Euler(0,0,0); 
 		if (dir == Direction.down) {
 			clonePosition = player.transform.position + new Vector3(0,-5.35f,0);
 			cloneOrientation = Quaternion.Euler(0, 0, 270);
