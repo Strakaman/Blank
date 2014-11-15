@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Orbit : MonoBehaviour {
 	public Transform target;
-	public int degrees = 1;
+	public float degrees = 1;
 	public float radius = 1;
 	public bool orbitDir = true;
 	public int startPosition = 0;
