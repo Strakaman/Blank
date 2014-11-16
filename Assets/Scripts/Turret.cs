@@ -100,7 +100,7 @@ public class Turret : Switchable {
 		}
 		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		GameObject clonedesu = Utilities.cloneObject(direction, refBullet, clonePosition, cloneVelocity, cloneOrientation);
-		Debug.Log(clonedesu.transform.position);
+		//Debug.Log(clonedesu.transform.position);
 		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
 		Destroy (clonedesu,1);
 	}
