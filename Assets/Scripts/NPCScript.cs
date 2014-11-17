@@ -14,6 +14,7 @@ public class NPCScript : Interactable
 	private PlayerControllerScript playerScript;
 	private int currentLine;
 	public Texture2D npcImage;
+	public AudioClip[] GreetingSounds;
 
 	void Start ()
 	{
@@ -103,6 +104,7 @@ public class NPCScript : Interactable
 			PlayerInfo.SetState(PState.talking); //to prevent pausing and any other stuff to come
 			updateNPC (true);
 			currentLine = 0;
+			PlayRandomGreeting();
 			//talkTextGUI.text = talkLines[currentLine];
 			StartCoroutine (startScrolling ());
 	}
@@ -123,4 +125,13 @@ public class NPCScript : Interactable
 
 	}
 
+	void PlayRandomGreeting()
+	{
+		if ((!audio) || (GreetingSounds.Length < 1)) {
+			return;
+		}
+		int randomNum = Random.Range(0,GreetingSounds.Length-1);
+		audio.clip = GreetingSounds[randomNum];
+		audio.Play();
+	}
 }
