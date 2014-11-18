@@ -23,13 +23,17 @@ public class InteractableSwitch : Interactable
 	}
 
 	public override void interact (GameObject player)
-	{
-		isActive = !isActive;
-		//Debug.Log ("is active hmm: " + isActive);
-		animator.SetBool ("isActive", isActive);
-		//for every child object associated with this switch, change it's status too	
-		Utilities.flipStatusInChildren(transform);
-	}
+		{
+			isActive = !isActive;
+			//Debug.Log ("is active hmm: " + isActive);
+			animator.SetBool ("isActive", isActive);
+			//for every child object associated with this switch, change it's status too	
+			Utilities.flipStatusInChildren (transform);
+
+			if (audio) {
+					audio.Play ();
+			}
+		}
 
 }
 

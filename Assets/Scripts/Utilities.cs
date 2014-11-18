@@ -76,6 +76,10 @@ public static class Utilities
 				if (clonedesu.rigidbody2D) {
 						clonedesu.rigidbody2D.velocity = velocity;
 				}
+				if(clonedesu.audio)
+				{
+					clonedesu.audio.Play();
+				}
 				return clonedesu;
 		}
 

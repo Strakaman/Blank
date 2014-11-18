@@ -8,6 +8,7 @@ public class BulletDesu : MonoBehaviour {
 	public string whoToDamage; //Set to Player or Enemy in Inspector
 	public int projectileKnockback; //for knockback
 	public float hitDelay; //for a delay between when another hit would register  
+	//public AudioClip bulletSound;
 	// Use this for initialization
 	void Start () {
 		animator = (Animator)GetComponent ("Animator");
