@@ -8,10 +8,13 @@ public class ChainEffect : MonoBehaviour {
 	private float Xdif;
 	private float Ydif;
 	private int projectileSpeed = 10;
-
+	private float sourcePitch; //store the Audio source pitch so that we can vary it
 	// Use this for initialization
 	void Start () {
-
+		if (audio) {
+			sourcePitch = audio.pitch; //get the original pitch for some fun math
+		}
+		
 	}
 	
 	// Update is called once per frame
@@ -26,11 +29,16 @@ public class ChainEffect : MonoBehaviour {
 			//Debug.Log(gameObject.collider2D.isTrigger);
 			//gameObject.collider2D.enabled = false;
 			chainChecker.SendMessage("BeastMode",collInfo.gameObject); //trigger the child to check if any enemies are in range
+			if(audio)
+			{	//Theooooooretically, random number will vary sligthly so we can get a good +/- on the pitch variation
+				audio.pitch = sourcePitch + ((Random.Range(1,10)/40f) - .125f);
+				audio.Play();
+			}
 			Destroy (gameObject, 1f); //should last longer if it hit at least one enemy
 		} 
 		else
 		{
-			Destroy (gameObject, .5f); //destroy regardless
+			Destroy (gameObject, .25f); //destroy regardless
 		}
 	}
 

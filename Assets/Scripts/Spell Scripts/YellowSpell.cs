@@ -47,8 +47,12 @@ public class YellowSpell : Spell
 		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		//Debug.Log(cloneVelocity);
 		GameObject clonedesu = Utilities.cloneObject(dir, chargedYellowRefObject, clonePosition, cloneVelocity, cloneOrientation);
+		if(clonedesu.audio)
+		{
+			clonedesu.audio.Play();
+		}
 		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
-		Destroy (clonedesu,animationDuration/3);
+		Destroy (clonedesu,animationDuration/2.1f);
 	}
 }
 
