@@ -27,9 +27,10 @@ public class Enemy : MonoBehaviour{
 	protected bool isHit = false;
 	protected bool alreadyStunned = false;
 	protected bool alreadySlowed = false;
+	protected bool isDying = false;
 	protected GameObject enemy;
 	protected GameObject player;
-	
+	public AudioClip deathSound;
 	// Use this for initialization
 	void Start () {
 		enemyStart ();
@@ -116,13 +117,22 @@ public class Enemy : MonoBehaviour{
 
 	protected void checkIsDead() {
 		//Debug.Log("Health is: " + health);
-		if (health <= 0) {
-			rigidbody2D.velocity = new Vector2(0, 0);
-			if (animator) {
-				animator.SetBool("Death", true);
+		if (!isDying) { //check to see if they are already in dying state
+			if (health <= 0) {
+				rigidbody2D.velocity = new Vector2(0, 0);
+				isDying = true;
+				if (animator) {
+					animator.SetBool("Death", true);
+				}
+				if (audio)
+				{
+					Debug.Log("firingissue?");
+					audio.clip = deathSound;
+					audio.Play();
+				}
+				Destroy(gameObject, 1);
+				gameObject.collider2D.enabled = false;
 			}
-			Destroy(gameObject, 1);
-			gameObject.collider2D.enabled = false;
 		}
 	}
 	protected void playerMaterial() {
@@ -302,4 +312,6 @@ public class Enemy : MonoBehaviour{
 	public bool getPlayerInSight() {
 		return playerInSight;
 	}
+
+
 }
