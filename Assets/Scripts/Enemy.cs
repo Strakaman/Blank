@@ -126,7 +126,6 @@ public class Enemy : MonoBehaviour{
 				}
 				if (audio)
 				{
-					Debug.Log("firingissue?");
 					audio.clip = deathSound;
 					audio.Play();
 				}

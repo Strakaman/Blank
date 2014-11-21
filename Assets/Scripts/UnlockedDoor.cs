@@ -25,8 +25,8 @@ public class UnlockedDoor : Switchable {
 		
 		/** 
 	 * called by a pressure plate that can have multiple triggers
-	 * If you want the door to be locked,   pass in false
-	 * If you want the door to be unlocked, pass in true
+	 * If you want the door to be locked,   pass in true
+	 * If you want the door to be unlocked, pass in false
 	 */
 		public override void setStatus(bool activeStatus)
 		{

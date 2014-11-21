@@ -12,10 +12,13 @@ public class PauseGame : MonoBehaviour {
 			if (paused)
 			{
 				ResumeTheGame();
+				PlayPauseSound();
 			}
 			else if (PlayerInfo.GetState().Equals(PState.normal)) //players can only pause when not dead, etc.
 			{
 				PauseTheGame();
+				PlayPauseSound();
+
 			}
 		}
 		if (paused) 
@@ -42,6 +45,14 @@ public class PauseGame : MonoBehaviour {
 	{
 		paused = false;
 		PlayerInfo.SetState(PState.normal);
+	}
+
+	void PlayPauseSound()
+	{
+		if (audio)
+		{
+			audio.Play ();
+		}
 	}
 
 	void OnGUI() //draw pause menu with player options
