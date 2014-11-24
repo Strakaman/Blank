@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: d0d456409786a704e8ed4a52b31e3df3
+guid: d7096b919e515604584b5cf041b611a0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: floortilegroup1_0
-    21300002: floortilegroup1_1
-    21300004: floortilegroup1_2
+    21300000: Controls_0
+    21300002: Controls_1
+    21300004: Controls_2
+    21300006: Controls_3
+    21300008: Controls_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -24,10 +26,10 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: -1
     wrapMode: 1
@@ -46,33 +48,53 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: floortilegroup1_0
+    - name: Controls_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 471
-        width: 32
-        height: 33
+        x: 65
+        y: 434
+        width: 668
+        height: 70
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: floortilegroup1_1
+    - name: Controls_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 440
-        width: 64
-        height: 64
+        x: 380
+        y: 360
+        width: 41
+        height: 49
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: floortilegroup1_2
+    - name: Controls_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 378
-        width: 128
-        height: 126
+        x: 297
+        y: 271
+        width: 209
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controls_3
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 174
+        width: 121
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controls_4
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 101
+        width: 47
+        height: 50
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

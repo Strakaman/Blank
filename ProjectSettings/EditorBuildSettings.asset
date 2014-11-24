@@ -10,7 +10,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Intro.unity
   - enabled: 1
-    path: Assets/Tutorial Level.unity
+    path: Assets/Prototyping Levels/Tutorial Level.unity
   - enabled: 1
     path: Assets/Peter Test Scene 2.unity
   - enabled: 1

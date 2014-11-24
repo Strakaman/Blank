@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-guid: d0d456409786a704e8ed4a52b31e3df3
+guid: fb9855305f1cdab43bc63dee259e5a85
 TextureImporter:
   fileIDToRecycleName:
-    21300000: floortilegroup1_0
-    21300002: floortilegroup1_1
-    21300004: floortilegroup1_2
+    21300000: Friendly-NPC_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,35 +44,15 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: floortilegroup1_0
+    - name: Friendly-NPC_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 471
-        width: 32
-        height: 33
+        x: 30
+        y: 40
+        width: 95
+        height: 85
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: floortilegroup1_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 440
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: floortilegroup1_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 378
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

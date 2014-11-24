@@ -111,6 +111,9 @@ public class Enemy : MonoBehaviour{
 		if (health > maxHealth) {
 			health = maxHealth;
 		}
+		if (health <= 0) {
+			health = 0;
+		}
 		healthScale = health / maxHealth;
 		healthBar.transform.localScale = new Vector3 (healthVector.x * healthScale, 1, 1);
 	}

@@ -139,8 +139,8 @@ TextureImporter:
         y: 1145
         width: 95
         height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .573684931, y: .453811765}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_1
       rect:
@@ -149,8 +149,8 @@ TextureImporter:
         y: 1145
         width: 105
         height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .574587166, y: .448922604}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_2
       rect:
@@ -159,8 +159,8 @@ TextureImporter:
         y: 1150
         width: 95
         height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .532975376, y: .432363063}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_3
       rect:
@@ -169,8 +169,8 @@ TextureImporter:
         y: 1140
         width: 85
         height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .530241132, y: .483934522}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_4
       rect:
@@ -179,8 +179,8 @@ TextureImporter:
         y: 1135
         width: 85
         height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .540321231, y: .498286128}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_5
       rect:
@@ -190,7 +190,7 @@ TextureImporter:
         width: 95
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_6
       rect:
@@ -199,8 +199,8 @@ TextureImporter:
         y: 1145
         width: 105
         height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .570611298, y: .463159174}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_7
       rect:
@@ -209,8 +209,8 @@ TextureImporter:
         y: 1155
         width: 95
         height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .57853359, y: .387498826}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_8
       rect:
@@ -219,8 +219,8 @@ TextureImporter:
         y: 1140
         width: 90
         height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .572534204, y: .471504718}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_9
       rect:
@@ -229,8 +229,8 @@ TextureImporter:
         y: 1135
         width: 90
         height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .558718562, y: .492540032}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_10
       rect:
@@ -239,8 +239,8 @@ TextureImporter:
         y: 1135
         width: 90
         height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .562173128, y: .49005273}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_11
       rect:
@@ -249,8 +249,8 @@ TextureImporter:
         y: 995
         width: 95
         height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .41523543, y: .469856411}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_12
       rect:
@@ -259,8 +259,8 @@ TextureImporter:
         y: 990
         width: 105
         height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .444006503, y: .497733742}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_13
       rect:
@@ -270,7 +270,7 @@ TextureImporter:
         width: 85
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_14
       rect:
@@ -279,8 +279,8 @@ TextureImporter:
         y: 985
         width: 75
         height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .561188936, y: .535183728}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_15
       rect:
@@ -289,8 +289,8 @@ TextureImporter:
         y: 980
         width: 75
         height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .536713839, y: .563147485}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_16
       rect:
@@ -299,8 +299,8 @@ TextureImporter:
         y: 985
         width: 80
         height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .578015924, y: .550481141}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_17
       rect:
@@ -310,7 +310,7 @@ TextureImporter:
         width: 105
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_18
       rect:
@@ -319,8 +319,8 @@ TextureImporter:
         y: 990
         width: 85
         height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .424511731, y: .50984627}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_19
       rect:
@@ -329,8 +329,8 @@ TextureImporter:
         y: 985
         width: 90
         height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .386158586, y: .537256896}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_20
       rect:
@@ -339,8 +339,8 @@ TextureImporter:
         y: 980
         width: 90
         height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .400025785, y: .55007422}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_21
       rect:
@@ -349,8 +349,8 @@ TextureImporter:
         y: 985
         width: 90
         height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .399940312, y: .543446839}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_22
       rect:
@@ -360,7 +360,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_23
       rect:
@@ -370,7 +370,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_24
       rect:
@@ -380,7 +380,7 @@ TextureImporter:
         width: 85
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_25
       rect:
@@ -390,7 +390,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_26
       rect:
@@ -400,7 +400,7 @@ TextureImporter:
         width: 90
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_27
       rect:
@@ -410,7 +410,7 @@ TextureImporter:
         width: 85
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_28
       rect:
@@ -420,7 +420,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_29
       rect:
@@ -430,7 +430,7 @@ TextureImporter:
         width: 85
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_30
       rect:
@@ -440,7 +440,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_31
       rect:
@@ -450,7 +450,7 @@ TextureImporter:
         width: 90
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_32
       rect:
@@ -460,7 +460,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_33
       rect:
@@ -470,7 +470,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_34
       rect:
@@ -480,7 +480,7 @@ TextureImporter:
         width: 90
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_35
       rect:
@@ -490,7 +490,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_36
       rect:
@@ -500,7 +500,7 @@ TextureImporter:
         width: 85
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_37
       rect:
@@ -510,7 +510,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_38
       rect:
@@ -520,7 +520,7 @@ TextureImporter:
         width: 85
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_39
       rect:
@@ -530,7 +530,7 @@ TextureImporter:
         width: 90
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_40
       rect:
@@ -540,7 +540,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_41
       rect:
@@ -550,7 +550,7 @@ TextureImporter:
         width: 85
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_42
       rect:
@@ -560,7 +560,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_43
       rect:
@@ -570,7 +570,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_44
       rect:
@@ -580,7 +580,7 @@ TextureImporter:
         width: 75
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_45
       rect:
@@ -590,7 +590,7 @@ TextureImporter:
         width: 80
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_46
       rect:
@@ -600,7 +600,7 @@ TextureImporter:
         width: 80
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_47
       rect:
@@ -610,7 +610,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_48
       rect:
@@ -620,7 +620,7 @@ TextureImporter:
         width: 75
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_49
       rect:
@@ -630,7 +630,7 @@ TextureImporter:
         width: 80
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_50
       rect:
@@ -640,7 +640,7 @@ TextureImporter:
         width: 80
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_51
       rect:
@@ -650,7 +650,7 @@ TextureImporter:
         width: 75
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_52
       rect:
@@ -660,7 +660,7 @@ TextureImporter:
         width: 75
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_53
       rect:
@@ -670,7 +670,7 @@ TextureImporter:
         width: 80
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_54
       rect:
@@ -680,7 +680,7 @@ TextureImporter:
         width: 80
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_55
       rect:
@@ -690,7 +690,7 @@ TextureImporter:
         width: 85
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_56
       rect:
@@ -700,7 +700,7 @@ TextureImporter:
         width: 85
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_57
       rect:
@@ -710,7 +710,7 @@ TextureImporter:
         width: 85
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_58
       rect:
@@ -720,7 +720,7 @@ TextureImporter:
         width: 80
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_59
       rect:
@@ -730,7 +730,7 @@ TextureImporter:
         width: 80
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_60
       rect:
@@ -740,7 +740,7 @@ TextureImporter:
         width: 90
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_61
       rect:
@@ -750,7 +750,7 @@ TextureImporter:
         width: 90
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_62
       rect:
@@ -760,7 +760,7 @@ TextureImporter:
         width: 80
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_63
       rect:
@@ -770,7 +770,7 @@ TextureImporter:
         width: 80
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_64
       rect:
@@ -780,7 +780,7 @@ TextureImporter:
         width: 80
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_65
       rect:
@@ -790,7 +790,7 @@ TextureImporter:
         width: 80
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_66
       rect:
@@ -800,7 +800,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_67
       rect:
@@ -810,7 +810,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_68
       rect:
@@ -820,7 +820,7 @@ TextureImporter:
         width: 95
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_69
       rect:
@@ -830,7 +830,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_70
       rect:
@@ -840,7 +840,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_71
       rect:
@@ -850,7 +850,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_72
       rect:
@@ -860,7 +860,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_73
       rect:
@@ -870,7 +870,7 @@ TextureImporter:
         width: 95
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_74
       rect:
@@ -880,7 +880,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_75
       rect:
@@ -890,7 +890,7 @@ TextureImporter:
         width: 95
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_76
       rect:
@@ -900,7 +900,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_77
       rect:
@@ -910,7 +910,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_78
       rect:
@@ -920,7 +920,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_79
       rect:
@@ -930,7 +930,7 @@ TextureImporter:
         width: 95
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_80
       rect:
@@ -940,7 +940,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_81
       rect:
@@ -950,7 +950,7 @@ TextureImporter:
         width: 95
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_82
       rect:
@@ -960,7 +960,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_83
       rect:
@@ -970,7 +970,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_84
       rect:
@@ -980,7 +980,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_85
       rect:
@@ -990,7 +990,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_86
       rect:
@@ -1000,7 +1000,7 @@ TextureImporter:
         width: 95
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Chibi-Sprites_87
       rect:
@@ -1010,7 +1010,7 @@ TextureImporter:
         width: 95
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
