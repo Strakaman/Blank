@@ -185,7 +185,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1195,7 +1195,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &49135761
 SpriteRenderer:
@@ -3253,7 +3253,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &143195290
 SpriteRenderer:
@@ -6368,7 +6368,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!114 &298596140
 MonoBehaviour:
@@ -8122,7 +8122,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &399469168
 SpriteRenderer:
@@ -8200,7 +8200,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &400874958
 SpriteRenderer:
@@ -13154,7 +13154,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &645459600
 SpriteRenderer:
@@ -13232,7 +13232,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &647666296
 SpriteRenderer:
@@ -13666,7 +13666,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &676650346
 SpriteRenderer:
@@ -15359,7 +15359,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &783172184
 SpriteRenderer:
@@ -19240,7 +19240,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &940872530
 SpriteRenderer:
@@ -24759,7 +24759,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1238508243
 SpriteRenderer:
@@ -29456,7 +29456,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1464153619
 SpriteRenderer:
@@ -36986,7 +36986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 80fea08e8f384a341aaa635364335ebf, type: 2}
       propertyPath: orthographic size
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80fea08e8f384a341aaa635364335ebf, type: 2}
@@ -40803,7 +40803,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &2034958589
 SpriteRenderer:
@@ -41106,7 +41106,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .0700000003, y: .639999986}
+  m_Size: {x: .0700000003, y: .319999993}
   m_Center: {x: 0, y: 0}
 --- !u!212 &2049708800
 SpriteRenderer:
