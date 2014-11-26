@@ -12,6 +12,10 @@ public class DamageTrap : Switchable {
 	public float slowDur = 5;
 	public float stunDur = 1;
 
+	void Start() {
+		updateStatus();
+	}
+
 	void Update() {
 		PlayerInfo.setStunDur(stunDur);
 		PlayerInfo.setSlowDur(slowDur);
@@ -40,8 +44,10 @@ public class DamageTrap : Switchable {
 	 */ 
 	void updateStatus()
 	{
-		collider2D.enabled = isOn;
 		gameObject.GetComponent<SpriteRenderer> ().enabled = isOn;
+		if (collider2D) {
+			collider2D.enabled = isOn;
+		}
 	}
 
 	void OnCollisionStay2D(Collision2D coll) {
