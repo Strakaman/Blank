@@ -229,6 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a92f31ede2574329926e7fd6147eeba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundTexture: {fileID: 2800000, guid: 06f0d546ec70b40c997797db8b4b298b, type: 3}
+  backgroundTexture: {fileID: 2800000, guid: e3e248a6c5ad04776a9639e82db18f69, type: 3}
   showYesNoPrompt: 0
   guiPlacementY: 0

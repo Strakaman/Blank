@@ -26,23 +26,22 @@ public class MainMenu : MonoBehaviour
 
 			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), backgroundTexture);
 		
-			if (GUI.Button (new Rect (Screen.width * .5f, Screen.height * .4f, Screen.width * .5f, Screen.height * .1f), "New Game")) {
+		if (GUI.Button (new Rect (Screen.width * .2f, Screen.height * .4f, Screen.width * .1f, Screen.height * .1f), "New Game")) {
 					//print ("Clicked Play Game");
 					Application.LoadLevel (Application.loadedLevel + 1); //theoretically this should be the first level
 			}
 //(new Rect (Screen.width * .5f, Screen.height * .55f, Screen.width * .5f, Screen.height * .1f)
-			if (GUILayout.Button ("End Game")) {
+		if (GUI.Button (new Rect (Screen.width * .2f, Screen.height * .6f, Screen.width * .1f, Screen.height * .1f), "End Game")) {
 					//print ("Clicked End Game");
-					Debug.Log ("poop");
 					showYesNoPrompt = true;
 			}
 			if (showYesNoPrompt == true) {
-					GUI.Label (new Rect (Screen.width * .25f, Screen.height * .25f, Screen.width * .5f, Screen.height * .1f), "Are You sure you want to quit?");
-					if (GUILayout.Button ("Yes",options)) {
+					GUI.Label (new Rect (Screen.width * .1f, Screen.height * .5f, Screen.width * .4f, Screen.height * .1f), "Are You sure you want to quit?");
+			if (GUI.Button (new Rect (Screen.width * .4f, Screen.height * .35f, Screen.width * .1f, Screen.height * .1f), "I GUESS")) {
 							Application.Quit ();
 					}
-					if (GUI.Button (new Rect (Screen.width * .25f, Screen.height * .25f, Screen.width * .5f, Screen.height * .1f), "NO")) {
-							showYesNoPrompt = false;
+					if (GUI.Button (new Rect (Screen.width * .4f, Screen.height * .5f, Screen.width * .1f, Screen.height * .1f), "NO")) {
+						showYesNoPrompt = false;
 					}
 			}
 		}
