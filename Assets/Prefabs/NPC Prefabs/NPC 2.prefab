@@ -217,9 +217,15 @@ MonoBehaviour:
   - Aced all my midterms! YAYYYYY
   talkTextGUI: {fileID: 13200000}
   textBoxTexture: {fileID: 13100000}
+  dialogTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
-  npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
+  npcImage: {fileID: 2800000, guid: 6d9debaafc2d3bf4d9e278515b928bdf, type: 3}
+  linesdesu: []
+  npcImages:
+  - {fileID: 2800000, guid: dbc3cd00b49dd014e9cecbce497d99ff, type: 3}
+  - {fileID: 2800000, guid: 6d9debaafc2d3bf4d9e278515b928bdf, type: 3}
+  - {fileID: 2800000, guid: 98e3229fe98ca4c4f98f7e4bea446e84, type: 3}
   GreetingSounds:
   - {fileID: 8300000, guid: 926a279ae30c6aa44b8c757a93c29dc5, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -227,6 +233,66 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1fe8b736bdcacaf4185b240dcb9869e5, type: 3}
   - {fileID: 8300000, guid: 0735789b559a12344aa57196ee7b9505, type: 3}
   - {fileID: 8300000, guid: 36893dc9014dd1341ad6bc79594189e6, type: 3}
+  oppaFontStyle:
+    m_Name: NPCTextStyle
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  ritaImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
