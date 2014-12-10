@@ -5,10 +5,11 @@ public class PatrolScript : MonoBehaviour {
 	public Direction direction;
 	public int startTimer = 0;
 	public int maxTimer = 100;
-	public int speed = 1;
+	private float speed = (3*Screen.width)/628;
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.Log (Screen.width);
 		startTimer += 1;
 		if (startTimer >= maxTimer) {
 			startTimer = 0;
