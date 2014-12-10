@@ -46315,7 +46315,6 @@ MonoBehaviour:
   direction: 2
   startTimer: 0
   maxTimer: 200
-  speed: 6
 --- !u!114 &1359016718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57761,8 +57760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 2
   startTimer: 0
-  maxTimer: 300
-  speed: 3
+  maxTimer: 250
 --- !u!82 &1676186051
 AudioSource:
   m_ObjectHideFlags: 0
