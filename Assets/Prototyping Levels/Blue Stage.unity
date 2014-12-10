@@ -308,7 +308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 11
 --- !u!114 &5092646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1905,7 +1905,7 @@ Transform:
   m_LocalScale: {x: 5.93361044, y: 8.29224682, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 14
 --- !u!1 &90529328
 GameObject:
   m_ObjectHideFlags: 0
@@ -6492,7 +6492,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 222323c8bb38ca344b745e6e10da392b, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 222323c8bb38ca344b745e6e10da392b, type: 2}
       propertyPath: m_LocalScale.y
@@ -8080,7 +8080,7 @@ Transform:
   m_LocalScale: {x: 6.03596926, y: 26.9646187, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
 --- !u!1001 &478860098
 Prefab:
   m_ObjectHideFlags: 0
@@ -11245,7 +11245,7 @@ Transform:
   - {fileID: 1179968101}
   - {fileID: 1934736452}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 10
 --- !u!114 &633852953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12872,7 +12872,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 222323c8bb38ca344b745e6e10da392b, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 222323c8bb38ca344b745e6e10da392b, type: 2}
       propertyPath: m_LocalScale.x
@@ -20025,9 +20025,15 @@ MonoBehaviour:
   - Gratz, bitch.
   talkTextGUI: {fileID: 3942540}
   textBoxTexture: {fileID: 1786070806}
+  dialogTexture: {fileID: 0}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
+  linesdesu: []
+  npcImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   GreetingSounds:
   - {fileID: 8300000, guid: 926a279ae30c6aa44b8c757a93c29dc5, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -20035,6 +20041,66 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1fe8b736bdcacaf4185b240dcb9869e5, type: 3}
   - {fileID: 8300000, guid: 0735789b559a12344aa57196ee7b9505, type: 3}
   - {fileID: 8300000, guid: 36893dc9014dd1341ad6bc79594189e6, type: 3}
+  oppaFontStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  ritaImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
 --- !u!114 &1024161340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21592,7 +21658,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 222323c8bb38ca344b745e6e10da392b, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 222323c8bb38ca344b745e6e10da392b, type: 2}
       propertyPath: m_LocalScale.y
@@ -33775,7 +33841,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 222323c8bb38ca344b745e6e10da392b, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 222323c8bb38ca344b745e6e10da392b, type: 2}
       propertyPath: m_LocalScale.y
@@ -34571,7 +34637,7 @@ Transform:
   m_LocalScale: {x: 6, y: 43.7140694, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1001 &1731057244
 Prefab:
   m_ObjectHideFlags: 0
@@ -36014,7 +36080,7 @@ Transform:
   m_LocalScale: {x: 6, y: 24.3104515, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
 --- !u!1 &1798244720
 GameObject:
   m_ObjectHideFlags: 0
@@ -42304,7 +42370,7 @@ Transform:
   - {fileID: 1624603213}
   - {fileID: 539261407}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 8
 --- !u!96 &2127306603
 TrailRenderer:
   m_ObjectHideFlags: 0

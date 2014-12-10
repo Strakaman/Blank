@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 1f9ec7ee779fbc7449c5baabb7bcdd11
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - talkTextGUI: {instanceID: 0}
+  - textBoxTexture: {instanceID: 0}
+  - dialogTexture: {instanceID: 0}
+  - npcImage: {instanceID: 0}
+  - ritaImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

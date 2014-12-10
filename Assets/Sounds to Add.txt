@@ -6,27 +6,27 @@ Credits Music?
 Sound Clips
 No Mana
 NPC text scrolling
-NPC  initial talk sound (Kinda like "hey, listen!") //Done
-Spell being Cast? (Maybe not since every spell might have an "On create" sound) //Nope
+	NPC  initial talk sound (Kinda like "hey, listen!") //Done
+	Spell being Cast? (Maybe not since every spell might have an "On create" sound) //Nope
 charging
 walking?
 getting hit 
-White spell shooting//done
-white spell appearing
-Red spell shooting //done
-red spell exploding??
-Charged Blue Swirl //done
-Charged Yellow Lightning //done
-yellow shooting and then per chaining //doneish noise is a bit bad
+	White spell shooting//done
+	white spell appearing
+	Red spell shooting //done
+	red spell exploding??
+	Charged Blue Swirl //done
+	Charged Yellow Lightning //done
+	yellow shooting and then per chaining //doneish noise is a bit bad
 Block being pushed (maybe if velocity != 0, play sound)
-dying scream?
-enemies die //doneish, noise is a bit bad
+		dying scream? //SKIP
+	enemies die //doneish, noise is a bit bad
 enemy noticing player (for enemies that have sight)
-pressure plate being entered and maybe exited (might be hard with the way that it is triggered)
+		pressure plate being entered and maybe exited (might be hard with the way that it is triggered)
 ranged enemy firing
 turret firing
 switch being pressed
-game pause and unpause
+	game pause and unpause
 vector push activating
 ice block melting
 water pool freezing

@@ -6,6 +6,7 @@ public class NPCScript : Interactable
 	public string[] talkLines;
 	public GUIText talkTextGUI;
 	public GUITexture textBoxTexture;
+	public Texture2D dialogTexture;
 	public int textScrollSpeed;
 	public int edgeMarginPercentage;
 	private bool talking;
@@ -14,11 +15,17 @@ public class NPCScript : Interactable
 	private PlayerControllerScript playerScript;
 	private int currentLine;
 	public Texture2D npcImage;
+	public TalkLine[] linesdesu;
+	public Texture2D[] npcImages;
+	int randomImageIndex;
 	public AudioClip[] GreetingSounds;
-
+	string displayText;
+	public GUIStyle oppaFontStyle = new GUIStyle();
+	public Texture2D ritaImage;
 	void Start ()
 	{
 			textBoxTexture.enabled = false;
+		talkTextGUI.enabled = false;
 			int edgeMargin = (Screen.width / 100) * edgeMarginPercentage;
 			//Vector2 pixel = new Vector2 (edgeMargin, edgeMargin);
 			talkTextGUI.pixelOffset = new Vector2 (edgeMargin, edgeMargin);
@@ -71,7 +78,7 @@ public class NPCScript : Interactable
 	{
 			textIsScrolling = true;
 			int startLine = currentLine;
-			string displayText = "";
+			displayText = "";
 			for (int i = 0; i < talkLines[currentLine].Length; i++) {
 					if (textIsScrolling && currentLine == startLine) {
 							displayText += talkLines [currentLine] [i];
@@ -88,7 +95,7 @@ public class NPCScript : Interactable
 	{
 			talking = isNPCactive;
 			//toggleGUI = isNPCactive;
-			textBoxTexture.enabled = isNPCactive;
+			//textBoxTexture.enabled = isNPCactive;
 			playerScript.enabled = !isNPCactive;
 	}
 
@@ -104,6 +111,7 @@ public class NPCScript : Interactable
 			PlayerInfo.SetState(PState.talking); //to prevent pausing and any other stuff to come
 			updateNPC (true);
 			currentLine = 0;
+			randomImageIndex = Random.Range(0,npcImages.Length);
 			PlayRandomGreeting();
 			//talkTextGUI.text = talkLines[currentLine];
 			StartCoroutine (startScrolling ());
@@ -113,9 +121,13 @@ public class NPCScript : Interactable
 	{
 		if (talking) //scale image to screen size
 		{
-		talkTextGUI.pixelOffset = new Vector2((Screen.width*20)/818, (Screen.height*150)/825) ;
-		textBoxTexture.pixelInset = new Rect(-Screen.width/2,-40,Screen.width*1.5f,(Screen.height/12)+40);
-		GUI.DrawTexture(new Rect(-50 , Screen.height/3, Screen.width/3.5f, Screen.height/2),npcImage);
+			GUI.DrawTexture(new Rect(0 , Screen.height/2.5f, Screen.width/3.5f, Screen.height/2),npcImages[randomImageIndex]);
+			GUI.DrawTexture(new Rect(-Screen.width/2.5f,Screen.height/1.15f,Screen.width*1.5f,(Screen.height/12)+40),dialogTexture);
+			GUI.Label(new Rect(30,Screen.height/1.11f,Screen.width*.85f,(Screen.height/12)+40),talkTextGUI.text,oppaFontStyle);
+			//talkTextGUI.pixelOffset = new Vector2((Screen.width*20)/818, (Screen.height*150)/825) ;
+			//textBoxTexture.pixelInset = new Rect(-Screen.width/2,-40,Screen.width*1.5f,(Screen.height/12)+40);
+			//GUI.DrawTexture(new Rect(-50 , Screen.height/3, Screen.width/3.5f, Screen.height/2),npcImage);
+
 		}
 	}
 
@@ -130,7 +142,7 @@ public class NPCScript : Interactable
 		if ((!audio) || (GreetingSounds.Length < 1)) {
 			return;
 		}
-		int randomNum = Random.Range(0,GreetingSounds.Length-1);
+		int randomNum = Random.Range(0,GreetingSounds.Length);
 		audio.clip = GreetingSounds[randomNum];
 		audio.Play();
 	}
