@@ -198,21 +198,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfefb93026e24f147b214222982ae8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkLines:
-  - See this door behind me?
-  - I'm in charge of keeping it locked
-  - But for you, I'll make an exception
   talkTextGUI: {fileID: 13200000}
   textBoxTexture: {fileID: 13100000}
-  dialogTexture: {fileID: 0}
+  dialogTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  linesdesu: []
+  dialogueLines: []
   npcImages:
-  - {fileID: 2800000, guid: dbc3cd00b49dd014e9cecbce497d99ff, type: 3}
-  - {fileID: 2800000, guid: 98e3229fe98ca4c4f98f7e4bea446e84, type: 3}
-  - {fileID: 2800000, guid: 6d9debaafc2d3bf4d9e278515b928bdf, type: 3}
+  - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
+  - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
+  - {fileID: 2800000, guid: ca3b03da726e8b54aaa4eb834b9806b3, type: 3}
   GreetingSounds:
   - {fileID: 8300000, guid: 926a279ae30c6aa44b8c757a93c29dc5, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -224,7 +220,7 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
@@ -266,11 +262,11 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
-    m_FontSize: 0
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
     m_FontStyle: 0
     m_Alignment: 0
-    m_WordWrap: 0
+    m_WordWrap: 1
     m_RichText: 1
     m_TextClipping: 0
     m_ImagePosition: 0

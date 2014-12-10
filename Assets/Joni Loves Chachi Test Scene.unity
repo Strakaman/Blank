@@ -933,14 +933,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a51d9e6bd0544428f0f3a06ede30c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkLines:
-  - You look tired.
-  - Don't worry, everything will be okay!
   talkTextGUI: {fileID: 907040095}
   textBoxTexture: {fileID: 2017151047}
+  dialogTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: "Your Pok\xE9mon are now healed."
+  - thingTalking: 0
+    Sentence: We hope to see you again!
+  - thingTalking: 1
+    Sentence: '....'
+  npcImages:
+  - {fileID: 2800000, guid: f0d92c7cc9579e54b99c8fbced54fb4a, type: 3}
+  - {fileID: 2800000, guid: 2d07c0c905238e341926e83b2181ac44, type: 3}
+  - {fileID: 2800000, guid: 5dfbd31febc22714f990e5acdd1c0f95, type: 3}
   GreetingSounds:
   - {fileID: 8300000, guid: 926a279ae30c6aa44b8c757a93c29dc5, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -948,6 +957,66 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1fe8b736bdcacaf4185b240dcb9869e5, type: 3}
   - {fileID: 8300000, guid: 0735789b559a12344aa57196ee7b9505, type: 3}
   - {fileID: 8300000, guid: 36893dc9014dd1341ad6bc79594189e6, type: 3}
+  oppaFontStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 1
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  ritaImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
 --- !u!114 &87037259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,16 +1098,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b947ee28a35bc4c9ebaaa87b8c2bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkLines:
-  - You know what would be cool?
-  - If you could charge spells...
-  - and make them stronger than normal.
-  - Think about it and get back to me!
   talkTextGUI: {fileID: 470039392}
   textBoxTexture: {fileID: 1376912950}
+  dialogTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
-  npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
+  npcImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: Hey you know what would be really cool?
+  - thingTalking: 0
+    Sentence: If you could charge your spells to make them stronger.
+  - thingTalking: 0
+    Sentence: Think about it and get back to me!
+  npcImages:
+  - {fileID: 2800000, guid: 0c24225ebebfd374fbc966d228a8312e, type: 3}
+  - {fileID: 2800000, guid: 0a15fefe949633f4a9bf90527fd8d3f7, type: 3}
+  - {fileID: 2800000, guid: 424ca05d187b1ba4998993af71b56b09, type: 3}
   GreetingSounds:
   - {fileID: 8300000, guid: 926a279ae30c6aa44b8c757a93c29dc5, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -1046,6 +1122,66 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1fe8b736bdcacaf4185b240dcb9869e5, type: 3}
   - {fileID: 8300000, guid: 0735789b559a12344aa57196ee7b9505, type: 3}
   - {fileID: 8300000, guid: 36893dc9014dd1341ad6bc79594189e6, type: 3}
+  oppaFontStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 1
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  ritaImage: {fileID: 0}
 --- !u!114 &93202145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1177,6 +1313,10 @@ Prefab:
       propertyPath: talkLines.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1228,6 +1368,22 @@ Prefab:
     - target: {fileID: 400004, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
       propertyPath: m_LocalPosition.y
       value: -1.53460717
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: Don't you love that new spell smell?
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
+      propertyPath: dialogueLines.Array.data[1].thingTalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: It's what I live for...
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
+      propertyPath: dialogueLines.Array.data[2].Sentence
+      value: Well here's a new spell for ya, baby!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a43e64dc3e14ce049bc2de6b55d4dc05, type: 2}
@@ -1967,7 +2123,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 304182838}
   m_Layer: 0
-  m_Name: NPC 2
+  m_Name: NPC Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2878,15 +3034,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfefb93026e24f147b214222982ae8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkLines:
-  - See this door behind me?
-  - I'm in charge of keeping it locked
-  - But for you, I'll make an exception
   talkTextGUI: {fileID: 1368366652}
   textBoxTexture: {fileID: 582933159}
+  dialogTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: See this door behind me?
+  - thingTalking: 0
+    Sentence: My job is to keep it locked.
+  - thingTalking: 0
+    Sentence: But for you, I'll make an exception.
+  - thingTalking: 1
+    Sentence: Well, aren't you the sweetest?
+  npcImages:
+  - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
+  - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
+  - {fileID: 2800000, guid: ca3b03da726e8b54aaa4eb834b9806b3, type: 3}
   GreetingSounds:
   - {fileID: 8300000, guid: 926a279ae30c6aa44b8c757a93c29dc5, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -2894,6 +3060,66 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1fe8b736bdcacaf4185b240dcb9869e5, type: 3}
   - {fileID: 8300000, guid: 0735789b559a12344aa57196ee7b9505, type: 3}
   - {fileID: 8300000, guid: 36893dc9014dd1341ad6bc79594189e6, type: 3}
+  oppaFontStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 1
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  ritaImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
 --- !u!114 &534390780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3051,15 +3277,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9ec7ee779fbc7449c5baabb7bcdd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkLines:
-  - Peter-kun...
-  - I want to tell you that I...
-  - Aced all my midterms! YAYYYYY
   talkTextGUI: {fileID: 353444766}
   textBoxTexture: {fileID: 2081374181}
+  dialogTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
-  npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
+  npcImage: {fileID: 2800000, guid: 6d9debaafc2d3bf4d9e278515b928bdf, type: 3}
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: Peter-kun...
+  - thingTalking: 0
+    Sentence: I want to tell you that I...
+  - thingTalking: 0
+    Sentence: Aced all my midterms! YAYYYYY
+  npcImages:
+  - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
+  - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
+  - {fileID: 2800000, guid: ca3b03da726e8b54aaa4eb834b9806b3, type: 3}
   GreetingSounds:
   - {fileID: 8300000, guid: 926a279ae30c6aa44b8c757a93c29dc5, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -3067,6 +3301,66 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1fe8b736bdcacaf4185b240dcb9869e5, type: 3}
   - {fileID: 8300000, guid: 0735789b559a12344aa57196ee7b9505, type: 3}
   - {fileID: 8300000, guid: 36893dc9014dd1341ad6bc79594189e6, type: 3}
+  oppaFontStyle:
+    m_Name: NPCTextStyle
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 1
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  ritaImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
 --- !u!61 &556845977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3521,12 +3815,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0a45cb5d220094781049532e82776f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkLines: []
   talkTextGUI: {fileID: 1003758059}
   textBoxTexture: {fileID: 1440216836}
+  dialogTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: Don't you love that new spell smell?
+  - thingTalking: 1
+    Sentence: It's what I live for...
+  - thingTalking: 0
+    Sentence: Well here's a new spell for ya, baby!
+  npcImages:
+  - {fileID: 2800000, guid: 196b45803203eba44b9689e116d58809, type: 3}
+  - {fileID: 2800000, guid: dedcbfa1833016340b0541259ab85020, type: 3}
+  - {fileID: 2800000, guid: 3be9052cd80a2a847a71d9e98c817caf, type: 3}
   GreetingSounds:
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -3534,6 +3839,66 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1fe8b736bdcacaf4185b240dcb9869e5, type: 3}
   - {fileID: 8300000, guid: 0735789b559a12344aa57196ee7b9505, type: 3}
   - {fileID: 8300000, guid: 36893dc9014dd1341ad6bc79594189e6, type: 3}
+  oppaFontStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 1
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  ritaImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
   spellToUnlock: White
 --- !u!114 &591439584
 MonoBehaviour:
@@ -5507,6 +5872,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5539,6 +5908,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: "Your Pok\xE9mon are now healed."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: We hope to see you again!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
+      propertyPath: dialogueLines.Array.data[2].Sentence
+      value: '....'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
+      propertyPath: dialogueLines.Array.data[2].thingTalking
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
   m_RootGameObject: {fileID: 1964466584}
@@ -5551,6 +5936,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5582,6 +5971,26 @@ Prefab:
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: See this door behind me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: My job is to keep it locked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[2].Sentence
+      value: But for you, I'll make an exception.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].Sentence
+      value: Well, aren't you the sweetest?
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].thingTalking
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -8094,6 +8503,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400002, guid: fea0c109a2fc48340a23f1bfae3eaf7c, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fea0c109a2fc48340a23f1bfae3eaf7c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8133,6 +8546,18 @@ Prefab:
     - target: {fileID: 400004, guid: fea0c109a2fc48340a23f1bfae3eaf7c, type: 2}
       propertyPath: m_LocalPosition.y
       value: .21522212
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: fea0c109a2fc48340a23f1bfae3eaf7c, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: Hey you know what would be really cool?
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: fea0c109a2fc48340a23f1bfae3eaf7c, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: If you could charge your spells to make them stronger.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: fea0c109a2fc48340a23f1bfae3eaf7c, type: 2}
+      propertyPath: dialogueLines.Array.data[2].Sentence
+      value: Think about it and get back to me!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fea0c109a2fc48340a23f1bfae3eaf7c, type: 2}

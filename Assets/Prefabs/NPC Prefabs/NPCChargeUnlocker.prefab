@@ -211,22 +211,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b947ee28a35bc4c9ebaaa87b8c2bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkLines:
-  - You know what would be cool?
-  - If you could charge spells...
-  - and make them stronger than normal.
-  - Think about it and get back to me!
   talkTextGUI: {fileID: 13200000}
   textBoxTexture: {fileID: 13100000}
-  dialogTexture: {fileID: 0}
+  dialogTexture: {fileID: 2800000, guid: 5591eb4097c9c10438b177c5c4c46c1b, type: 3}
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: 47b047f179fd520469812230632fa60b, type: 3}
-  linesdesu: []
+  dialogueLines: []
   npcImages:
-  - {fileID: 2800000, guid: dbc3cd00b49dd014e9cecbce497d99ff, type: 3}
-  - {fileID: 2800000, guid: 6d9debaafc2d3bf4d9e278515b928bdf, type: 3}
-  - {fileID: 2800000, guid: 98e3229fe98ca4c4f98f7e4bea446e84, type: 3}
+  - {fileID: 2800000, guid: 0c24225ebebfd374fbc966d228a8312e, type: 3}
+  - {fileID: 2800000, guid: 0a15fefe949633f4a9bf90527fd8d3f7, type: 3}
+  - {fileID: 2800000, guid: 424ca05d187b1ba4998993af71b56b09, type: 3}
   GreetingSounds:
   - {fileID: 8300000, guid: 926a279ae30c6aa44b8c757a93c29dc5, type: 3}
   - {fileID: 8300000, guid: 069fcd629a840e446bc764b19d3cfd2c, type: 3}
@@ -238,7 +233,7 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
@@ -280,11 +275,11 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
-    m_FontSize: 0
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
     m_FontStyle: 0
     m_Alignment: 0
-    m_WordWrap: 0
+    m_WordWrap: 1
     m_RichText: 1
     m_TextClipping: 0
     m_ImagePosition: 0
