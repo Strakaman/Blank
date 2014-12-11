@@ -132,7 +132,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 0c065955bdfc7e4469b8b5a4eaa1fa1d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .31099999
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -302,6 +302,8 @@ MonoBehaviour:
   Charge: {fileID: 2100000, guid: 8c23e4bc12dd37b45afe581e59e36037, type: 2}
   chargingObject: {fileID: 100000}
   chargedObject: {fileID: 100002}
+  kush: {fileID: 8300000, guid: 0c065955bdfc7e4469b8b5a4eaa1fa1d, type: 3}
+  errorNoise: {fileID: 8300000, guid: 03a8fccbec68bc14587d8fbf88cfec65, type: 3}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

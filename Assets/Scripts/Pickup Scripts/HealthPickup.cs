@@ -13,6 +13,7 @@ public class HealthPickup : Pickupable {
 			//Debug.Log ("Player health increased by: " + increaseHealth + " to: " + PlayerInfo.getHealth());
 			PlayerInfo.changeHealth(increaseHealth);
 			Utilities.TellPlayer("Health Restored!");
+			Utilities.playSound(mySound); //sound type inherited from interface
 			Destroy(this.gameObject);
 		}
 	}

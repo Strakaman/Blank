@@ -7,6 +7,7 @@ public static class Utilities
 {
 		public static bool inDebugMode;
 		public static GameObject GUIBroadCaster;
+		public static GameObject EffectPlayer;
 		public static void saveGame ()
 		{
 				//Debug.Log (Application.dataPath);
@@ -157,6 +158,13 @@ public static class Utilities
 			GUIBroadCaster = GameObject.FindGameObjectWithTag("GUIBroadCaster");
 		}
 		GUIBroadCaster.BroadcastMessage("BroadcastNewMessage",whatToTellThem);
+	}
+	public static void playSound(SoundType typeofSoundToPlay)
+	{
+		if (EffectPlayer == null) { 
+			EffectPlayer = GameObject.FindGameObjectWithTag("SoundEffectPlayer");
+		}
+		EffectPlayer.BroadcastMessage("playSoundEffect",typeofSoundToPlay);
 	}
 
 	public static void rotateObject(Direction direction, GameObject obj) {

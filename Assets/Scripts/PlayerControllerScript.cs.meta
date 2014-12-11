@@ -2,7 +2,18 @@ fileFormatVersion: 2
 guid: 40c0d996a7f7b0d42b2d604bf3d4608d
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - Default: {instanceID: 0}
+  - Hit: {instanceID: 0}
+  - Stun: {instanceID: 0}
+  - Slow: {instanceID: 0}
+  - Charging: {instanceID: 0}
+  - Charge: {instanceID: 0}
+  - chargingObject: {instanceID: 0}
+  - chargedObject: {instanceID: 0}
+  - kush: {fileID: 8300000, guid: 0c065955bdfc7e4469b8b5a4eaa1fa1d, type: 3}
+  - errorNoise: {fileID: 8300000, guid: 03a8fccbec68bc14587d8fbf88cfec65, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

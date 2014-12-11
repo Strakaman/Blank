@@ -28,6 +28,8 @@ public class PlayerControllerScript : MonoBehaviour
 	private bool fullCharged;
 	private float chargeTimeRequired = 1f;
 	private float amountChargedSoFar = 0;
+	public AudioClip kush;
+	public AudioClip errorNoise;
 
 // Use this for initialization
 	void Start ()
@@ -185,6 +187,8 @@ public class PlayerControllerScript : MonoBehaviour
 								Invoke ("stopAttackAnim", 0.5f);
 						} else {
 							Utilities.TellPlayer("Out of MP!")	;
+							audio.clip = errorNoise;
+							audio.Play();
 							//Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
 						}
 				}
@@ -223,7 +227,9 @@ public class PlayerControllerScript : MonoBehaviour
 					animator.SetBool ("Attack", true);
 					Invoke ("stopAttackAnim", 0.5f);
 				} else {
-					Utilities.TellPlayer("Not enough MP to execute charge!")	;
+					Utilities.TellPlayer("Not enough MP to execute charge!");
+					audio.clip = errorNoise;
+					audio.Play ();
 				}
 					/*
 					if (SpellBook.playerSpells [currSpell] == null) {
@@ -261,6 +267,7 @@ public class PlayerControllerScript : MonoBehaviour
 
 
 			if (Input.GetButton ("KUSH")) {
+				audio.clip = kush;
 				audio.Play();
 			}
 

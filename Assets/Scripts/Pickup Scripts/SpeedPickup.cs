@@ -11,6 +11,7 @@ public class SpeedPickup : Pickupable {
 		{
 			PlayerInfo.SpeedUp();
 			Utilities.TellPlayer("Temporary Speed Boost!");
+			Utilities.playSound(mySound); //sound type inherited from interface
 			Destroy(this.gameObject);
 		}
 	}
