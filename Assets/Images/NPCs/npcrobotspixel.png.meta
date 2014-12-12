@@ -3,6 +3,22 @@ guid: dd295eac5e6205f47987c5b19ca17e92
 TextureImporter:
   fileIDToRecycleName:
     21300000: npcrobotspixel
+    21300002: npcrobotspixel_0
+    21300004: npcrobotspixel_1
+    21300006: npcrobotspixel_2
+    21300008: npcrobotspixel_3
+    21300010: npcrobotspixel_4
+    21300012: npcrobotspixel_5
+    21300014: npcrobotspixel_6
+    21300016: npcrobotspixel_7
+    21300018: npcrobotspixel_8
+    21300020: npcrobotspixel_9
+    21300022: npcrobotspixel_10
+    21300024: npcrobotspixel_11
+    21300026: npcrobotspixel_12
+    21300028: npcrobotspixel_13
+    21300030: npcrobotspixel_14
+    21300032: npcrobotspixel_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,13 +42,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -43,6 +59,166 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: npcrobotspixel_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 188
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 188
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_2
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 188
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_3
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 188
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 133
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 133
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_6
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 133
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_7
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 133
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 69
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 69
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_10
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 69
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_11
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 69
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 14
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 14
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 14
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npcrobotspixel_15
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 14
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
