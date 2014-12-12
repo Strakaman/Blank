@@ -29420,7 +29420,11 @@ MonoBehaviour:
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  dialogueLines: []
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: Freeze Water Desu Desu
+  - thingTalking: 1
+    Sentence: As ancient Indian Spirits say....Hao
   npcImages:
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
@@ -38939,6 +38943,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1597458610}
     m_Modifications:
+    - target: {fileID: 11400000, guid: cd86b9e212166ec4785f8af4f0ee8d66, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd86b9e212166ec4785f8af4f0ee8d66, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -38978,6 +38986,18 @@ Prefab:
     - target: {fileID: 400008, guid: cd86b9e212166ec4785f8af4f0ee8d66, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1.32139087
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cd86b9e212166ec4785f8af4f0ee8d66, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: Freeze Water Desu Desu
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cd86b9e212166ec4785f8af4f0ee8d66, type: 2}
+      propertyPath: dialogueLines.Array.data[1].thingTalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cd86b9e212166ec4785f8af4f0ee8d66, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: As ancient Indian Spirits say....Hao
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd86b9e212166ec4785f8af4f0ee8d66, type: 2}
