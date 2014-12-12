@@ -329,7 +329,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f81fcfceecd0ae4f960d04ca6d4797d, type: 2}
       propertyPath: m_RootOrder
-      value: 110
+      value: 109
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f81fcfceecd0ae4f960d04ca6d4797d, type: 2}
@@ -710,7 +710,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50f55217c8535044eab96d48be00d3ff, type: 2}
       propertyPath: m_RootOrder
-      value: 170
+      value: 169
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50f55217c8535044eab96d48be00d3ff, type: 2}
@@ -1898,6 +1898,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!82 &77454644
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1909,7 +1910,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 33d3ecf536a7b2c439656aa78e041eb7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .330000013
+  m_Volume: .100000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3352,7 +3353,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 53.5423546
+      value: 53.1423531
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3380,11 +3381,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_LocalScale.x
-      value: 6.00006485
+      value: 7.34601068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.505355
+      value: 1.84303904
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: isLocked
@@ -3640,6 +3641,10 @@ Prefab:
       propertyPath: talkLines.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
       value: .732870042
@@ -3670,7 +3675,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_RootOrder
-      value: 233
+      value: 232
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3680,22 +3685,13 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 8.74247742
       objectReference: {fileID: 0}
-    - target: {fileID: 21200000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85,
-        type: 3}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.x
-      value: .949999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.y
-      value: .850000024
-      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[0]
       value: Gratz, bitch.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: These stairs will take you to the next area. Best of luck!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -4052,7 +4048,7 @@ Transform:
   m_GameObject: {fileID: 180829317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.4422169, y: 31.5332489, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1666282701}
   m_Father: {fileID: 571545228}
@@ -4134,7 +4130,24 @@ MonoBehaviour:
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  dialogueLines: []
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: Push a block onto the pressure plate.
+  - thingTalking: 0
+    Sentence: It will activate an electric relay,
+  - thingTalking: 0
+    Sentence: which sends a voltage over the underground capacitors...
+  - thingTalking: 0
+    Sentence: triggering a boolean logic-controlled program
+  - thingTalking: 0
+    Sentence: that changes the state of other switchable appartus wired to the initial
+      control.
+  - thingTalking: 0
+    Sentence: In other words, the pressure plate can power things on and off.
+  - thingTalking: 1
+    Sentence: Why didn't you say that in the first place?
+  - thingTalking: 0
+    Sentence: When I first saw you, I thought you were smarter. My mistake!
   npcImages:
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
@@ -4230,7 +4243,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .949999988, y: .850000024}
+  m_Size: {x: .449999988, y: .449999988}
   m_Center: {x: 0, y: 0}
 --- !u!212 &180829323
 SpriteRenderer:
@@ -4253,7 +4266,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85, type: 3}
+  m_Sprite: {fileID: 21300002, guid: dd295eac5e6205f47987c5b19ca17e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &185997470
 Prefab:
@@ -4761,7 +4774,7 @@ Transform:
   m_GameObject: {fileID: 199527113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.8944855, y: 54.8090248, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1840188260}
   m_Father: {fileID: 1186834260}
@@ -4843,7 +4856,11 @@ MonoBehaviour:
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  dialogueLines: []
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: You can turn off the turret by interacting with that switch over there.
+  - thingTalking: 0
+    Sentence: You can either die or be smart. Your choice.
   npcImages:
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
@@ -4939,7 +4956,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .949999988, y: .850000024}
+  m_Size: {x: .449999988, y: .449999988}
   m_Center: {x: 0, y: 0}
 --- !u!212 &199527119
 SpriteRenderer:
@@ -4962,7 +4979,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85, type: 3}
+  m_Sprite: {fileID: 21300002, guid: dd295eac5e6205f47987c5b19ca17e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &203200110
 Prefab:
@@ -5309,6 +5326,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &210933844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6747,7 +6765,7 @@ Transform:
   m_GameObject: {fileID: 303119886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.4165287, y: 56.0431442, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1780052936}
   m_Father: {fileID: 1706843798}
@@ -6829,7 +6847,9 @@ MonoBehaviour:
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  dialogueLines: []
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: Walk over items such as these red ones to get restorative boosts.
   npcImages:
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
@@ -6925,7 +6945,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .949999988, y: .850000024}
+  m_Size: {x: .449999988, y: .449999988}
   m_Center: {x: 0, y: 0}
 --- !u!212 &303119892
 SpriteRenderer:
@@ -6948,7 +6968,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85, type: 3}
+  m_Sprite: {fileID: 21300002, guid: dd295eac5e6205f47987c5b19ca17e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &304614749
 GameObject:
@@ -8201,8 +8221,8 @@ Transform:
   m_PrefabInternal: {fileID: 146777861}
   m_GameObject: {fileID: 390623762}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: -.707106829}
-  m_LocalPosition: {x: .132870018, y: 53.5423546, z: 0}
-  m_LocalScale: {x: 6.00006485, y: 1.505355, z: 1}
+  m_LocalPosition: {x: .132870018, y: 53.1423531, z: 0}
+  m_LocalScale: {x: 7.34601068, y: 1.84303904, z: 1}
   m_Children: []
   m_Father: {fileID: 1385199825}
   m_RootOrder: 172
@@ -8260,6 +8280,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &390623768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8326,7 +8347,7 @@ Transform:
   m_GameObject: {fileID: 395947806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.67632627, y: 1.69059944, z: 10}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 5.59398365, y: 5.59398651, z: 1}
   m_Children: []
   m_Father: {fileID: 411582600}
   m_RootOrder: 0
@@ -8384,6 +8405,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &395947812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8950,6 +8972,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &411582604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9298,7 +9321,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 43a20c95c0dce7848b8b21424cece059, type: 2}
       propertyPath: m_RootOrder
-      value: 244
+      value: 243
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43a20c95c0dce7848b8b21424cece059, type: 2}
@@ -9763,6 +9786,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &469731150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11354,6 +11378,10 @@ Prefab:
       propertyPath: talkLines.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
       value: .732870042
@@ -11394,22 +11422,29 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: -2.33494353
       objectReference: {fileID: 0}
-    - target: {fileID: 21200000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85,
-        type: 3}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.x
-      value: .949999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.y
-      value: .850000024
-      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[0]
       value: Press F on that switch!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: Using the Interact button (F),
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: You can interact with all kinds of objects.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[2].Sentence
+      value: Like this switch over here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].thingTalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].Sentence
+      value: I'll keep that in mind.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -13234,7 +13269,7 @@ Transform:
   m_GameObject: {fileID: 645022144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.22139168, y: 2.54612732, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1588250113}
   m_RootOrder: 0
@@ -13292,6 +13327,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &645022150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13826,7 +13862,7 @@ Transform:
   m_GameObject: {fileID: 672122778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -26.4942245, y: 52.002636, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 939874084}
   m_Father: {fileID: 6441178}
@@ -13908,7 +13944,15 @@ MonoBehaviour:
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  dialogueLines: []
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: In case it wasn't obvious...
+  - thingTalking: 0
+    Sentence: You need to kill those enemies in order to pass into the next room.
+  - thingTalking: 1
+    Sentence: It was obvious, but thanks anyway.
+  - thingTalking: 0
+    Sentence: I can't wait for this place to rip you to shreds.
   npcImages:
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
@@ -14004,7 +14048,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .949999988, y: .850000024}
+  m_Size: {x: .449999988, y: .449999988}
   m_Center: {x: 0, y: 0}
 --- !u!212 &672122784
 SpriteRenderer:
@@ -14027,7 +14071,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85, type: 3}
+  m_Sprite: {fileID: 21300002, guid: dd295eac5e6205f47987c5b19ca17e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &676552903
 GameObject:
@@ -17146,10 +17190,14 @@ MonoBehaviour:
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
   dialogueLines:
-  - thingTalking: 1
-    Sentence: Suck it
   - thingTalking: 0
-    Sentence: No you blow it
+    Sentence: See this door behind me.
+  - thingTalking: 0
+    Sentence: I'm supposed to keep it locked.
+  - thingTalking: 0
+    Sentence: But for you, I'll make an exception.
+  - thingTalking: 1
+    Sentence: Well, aren't you the sweetest thing?
   npcImages:
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
@@ -17245,7 +17293,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .949999988, y: .850000024}
+  m_Size: {x: .449999988, y: .449999988}
   m_Center: {x: 0, y: 0}
 --- !u!212 &841219736
 SpriteRenderer:
@@ -17268,7 +17316,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85, type: 3}
+  m_Sprite: {fileID: 21300002, guid: dd295eac5e6205f47987c5b19ca17e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &841219737
 Transform:
@@ -17278,7 +17326,7 @@ Transform:
   m_GameObject: {fileID: 841219731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.00199056, y: 20.1958447, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1790657571}
   - {fileID: 1359162842}
@@ -17656,7 +17704,7 @@ Transform:
   m_GameObject: {fileID: 857639185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.9328699, y: 30.7423573, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1385199825}
   m_RootOrder: 49
@@ -17714,6 +17762,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &857639191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17974,6 +18023,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &862397625
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20325,7 +20375,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455f3bddc377dfd4ab74bf91b530394b, type: 2}
       propertyPath: m_RootOrder
-      value: 212
+      value: 211
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 455f3bddc377dfd4ab74bf91b530394b, type: 2}
@@ -21541,7 +21591,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: dialogueLines.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
@@ -21583,19 +21633,6 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 1.00199056
       objectReference: {fileID: 0}
-    - target: {fileID: 21200000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85,
-        type: 3}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.x
-      value: .949999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.y
-      value: .850000024
-      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_RootOrder
       value: 2
@@ -21610,15 +21647,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: dialogueLines.Array.data[0].thingTalking
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: dialogueLines.Array.data[0].Sentence
-      value: Suck it
+      value: See this door behind me.
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: dialogueLines.Array.data[1].Sentence
-      value: No you blow it
+      value: I'm supposed to keep it locked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[2].Sentence
+      value: But for you, I'll make an exception.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].Sentence
+      value: Well, aren't you the sweetest thing?
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].thingTalking
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -22712,6 +22761,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1141889959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23517,6 +23567,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1179968105
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -25162,7 +25213,9 @@ MonoBehaviour:
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  dialogueLines: []
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: These stairs will take you to the next area. Best of luck!
   npcImages:
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
@@ -25258,7 +25311,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .949999988, y: .850000024}
+  m_Size: {x: .449999988, y: .449999988}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1232905468
 SpriteRenderer:
@@ -25281,7 +25334,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85, type: 3}
+  m_Sprite: {fileID: 21300002, guid: dd295eac5e6205f47987c5b19ca17e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1232905469
 Transform:
@@ -25291,7 +25344,7 @@ Transform:
   m_GameObject: {fileID: 1232905463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.74247742, y: 36.6244049, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 918959407}
   m_Father: {fileID: 837328002}
@@ -25775,7 +25828,7 @@ Transform:
   m_GameObject: {fileID: 1259421495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 27.9977474, y: 36.0060616, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1092257420}
   m_Father: {fileID: 859702496}
@@ -25857,7 +25910,9 @@ MonoBehaviour:
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  dialogueLines: []
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: Consider the order in which you place blocks on the pressure plates.
   npcImages:
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
@@ -25953,7 +26008,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .949999988, y: .850000024}
+  m_Size: {x: .449999988, y: .449999988}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1259421501
 SpriteRenderer:
@@ -25976,7 +26031,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85, type: 3}
+  m_Sprite: {fileID: 21300002, guid: dd295eac5e6205f47987c5b19ca17e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1269717476
 GameObject:
@@ -26291,6 +26346,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1283978515
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -26379,7 +26435,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 031d7b08da61343478b6e6a36970005f, type: 2}
       propertyPath: m_RootOrder
-      value: 171
+      value: 170
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 031d7b08da61343478b6e6a36970005f, type: 2}
@@ -27348,6 +27404,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1334870923
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -27896,11 +27953,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.00199056
+      value: -.667993724
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.60415649
+      value: 1.73610437
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_LocalPosition.z
@@ -27959,7 +28016,7 @@ Transform:
   m_GameObject: {fileID: 1370059992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.33494353, y: 30.9442806, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1385364909}
   m_Father: {fileID: 278874943}
@@ -28041,7 +28098,15 @@ MonoBehaviour:
   textScrollSpeed: 50
   edgeMarginPercentage: 10
   npcImage: {fileID: 2800000, guid: f7b624ab7ddc7e942b3d56540f6449e2, type: 3}
-  dialogueLines: []
+  dialogueLines:
+  - thingTalking: 0
+    Sentence: Using the Interact button (F),
+  - thingTalking: 0
+    Sentence: You can interact with all kinds of objects.
+  - thingTalking: 0
+    Sentence: Like this switch over here.
+  - thingTalking: 1
+    Sentence: I'll keep that in mind.
   npcImages:
   - {fileID: 2800000, guid: e7f1c1dc91a4b5f4fb0c85a5296de113, type: 3}
   - {fileID: 2800000, guid: 2031b050730629b48b4220df588e2a1e, type: 3}
@@ -28137,7 +28202,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .949999988, y: .850000024}
+  m_Size: {x: .449999988, y: .449999988}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1370059998
 SpriteRenderer:
@@ -28160,7 +28225,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85, type: 3}
+  m_Sprite: {fileID: 21300002, guid: dd295eac5e6205f47987c5b19ca17e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1372666746
 GameObject:
@@ -29081,7 +29146,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5f81fcfceecd0ae4f960d04ca6d4797d, type: 2}
       propertyPath: m_RootOrder
-      value: 244
+      value: 242
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f81fcfceecd0ae4f960d04ca6d4797d, type: 2}
@@ -29421,6 +29486,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1413018386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29710,6 +29776,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1420252910
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30564,6 +30631,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1480835245
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31034,6 +31102,14 @@ Prefab:
     - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 5.59398365
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d17661e9300305e47b285c13cc981149, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5.59398651
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d17661e9300305e47b285c13cc981149, type: 2}
@@ -31663,6 +31739,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1523805991
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31997,6 +32074,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1550789000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32554,6 +32632,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1588250117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33022,6 +33101,10 @@ Prefab:
       propertyPath: talkLines.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
       value: .732870042
@@ -33052,7 +33135,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_RootOrder
-      value: 109
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -33062,22 +33145,13 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 27.9977474
       objectReference: {fileID: 0}
-    - target: {fileID: 21200000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85,
-        type: 3}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.x
-      value: .949999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.y
-      value: .850000024
-      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[0]
       value: That beam hurts you! Careful!
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: Consider the order in which you place blocks on the pressure plates.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -33690,6 +33764,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1624603212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34057,6 +34132,10 @@ Prefab:
       propertyPath: talkLines.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -34075,7 +34154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_RootOrder
-      value: 189
+      value: 188
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -34084,19 +34163,6 @@ Prefab:
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -14.8944855
-      objectReference: {fileID: 0}
-    - target: {fileID: 21200000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85,
-        type: 3}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.x
-      value: .949999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.y
-      value: .850000024
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[0]
@@ -34117,6 +34183,14 @@ Prefab:
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[2]
       value: If you die, you start this tutorial all over.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: You can turn off the turret by interacting with that switch over there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: You can either die or be smart. Your choice.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -34439,6 +34513,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1645364123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35723,6 +35798,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1730562247
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36152,7 +36228,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 43a20c95c0dce7848b8b21424cece059, type: 2}
       propertyPath: m_RootOrder
-      value: 111
+      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43a20c95c0dce7848b8b21424cece059, type: 2}
@@ -36797,8 +36873,8 @@ Transform:
   m_PrefabInternal: {fileID: 1369221598}
   m_GameObject: {fileID: 1790657570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.00199056, y: 2.60415649, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalPosition: {x: -.667993724, y: 1.73610437, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 841219737}
   m_RootOrder: 0
@@ -36856,6 +36932,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1790657576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37115,6 +37192,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1816808924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37172,7 +37250,7 @@ Transform:
   m_GameObject: {fileID: 1816808921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .732870042, y: -4.65764427, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1385199825}
   m_RootOrder: 2
@@ -38774,6 +38852,10 @@ Prefab:
       propertyPath: talkLines.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -38792,7 +38874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_RootOrder
-      value: 172
+      value: 171
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -38801,19 +38883,6 @@ Prefab:
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -26.4942245
-      objectReference: {fileID: 0}
-    - target: {fileID: 21200000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85,
-        type: 3}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.x
-      value: .949999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.y
-      value: .850000024
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[0]
@@ -38834,6 +38903,30 @@ Prefab:
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[2]
       value: Shooting requires mana! You regen over time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: In case it wasn't obvious...
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: You need to kill those enemies in order to pass into the next room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[2].thingTalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[2].Sentence
+      value: It was obvious, but thanks anyway.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].thingTalking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].Sentence
+      value: I can't wait for this place to rip you to shreds.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -38921,7 +39014,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455f3bddc377dfd4ab74bf91b530394b, type: 2}
       propertyPath: m_RootOrder
-      value: 213
+      value: 212
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 455f3bddc377dfd4ab74bf91b530394b, type: 2}
@@ -39606,6 +39699,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1934736456
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -40142,6 +40236,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1947678653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40529,6 +40624,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1963033901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41099,6 +41195,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2002280204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41730,6 +41827,10 @@ Prefab:
       propertyPath: talkLines.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -41748,7 +41849,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_RootOrder
-      value: 145
+      value: 144
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -41757,19 +41858,6 @@ Prefab:
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.4165287
-      objectReference: {fileID: 0}
-    - target: {fileID: 21200000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85,
-        type: 3}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.x
-      value: .949999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.y
-      value: .850000024
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[0]
@@ -41790,6 +41878,14 @@ Prefab:
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[2]
       value: If you die, you start this tutorial all over.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: Walk over items such as these red ones to get restorative boosts.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: Walk over items such as these red ones to get boosts.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -42798,6 +42894,10 @@ Prefab:
       propertyPath: talkLines.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -42816,7 +42916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_RootOrder
-      value: 74
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -42825,19 +42925,6 @@ Prefab:
     - target: {fileID: 400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -20.4422169
-      objectReference: {fileID: 0}
-    - target: {fileID: 21200000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb9855305f1cdab43bc63dee259e5a85,
-        type: 3}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.x
-      value: .949999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 6100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
-      propertyPath: m_Size.y
-      value: .850000024
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: talkLines.Array.data[0]
@@ -42850,6 +42937,47 @@ Prefab:
     - target: {fileID: 400002, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
       propertyPath: m_LocalPosition.y
       value: -2.65764499
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[0].Sentence
+      value: Push a block onto the pressure plate.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[1].Sentence
+      value: It will activate an electric relay,
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[2].Sentence
+      value: which sends a voltage over the underground capacitors...
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[3].Sentence
+      value: triggering a boolean logic-controlled program
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[4].Sentence
+      value: that changes the state of other switchable appartus wired to the initial
+        control.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[5].Sentence
+      value: In other words, the pressure plate can power things on and off.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[6].Sentence
+      value: Why didn't you say that in the first place?
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[6].thingTalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[7].thingTalking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
+      propertyPath: dialogueLines.Array.data[7].Sentence
+      value: When I first saw you, I thought you were smarter. My mistake!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f927ca09c2d263644a8a829bbae2401d, type: 2}
@@ -43099,6 +43227,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2117250566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43417,6 +43546,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2127306600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43445,6 +43575,7 @@ MonoBehaviour:
   kush: {fileID: 8300000, guid: 0c065955bdfc7e4469b8b5a4eaa1fa1d, type: 3}
   errorNoise: {fileID: 8300000, guid: 03a8fccbec68bc14587d8fbf88cfec65, type: 3}
   chargingNoise: {fileID: 8300000, guid: a2a800024ee9a1344bf651eecb537224, type: 3}
+  hitInAmericaNoise: {fileID: 8300000, guid: cdfb0051a9760964fbe2d38f7087eed4, type: 3}
 --- !u!212 &2127306601
 SpriteRenderer:
   m_ObjectHideFlags: 0
