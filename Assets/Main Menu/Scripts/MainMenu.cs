@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
 	{
 
 		GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), backgroundTexture);
-		if (showYesNoPrompt==false)
+		if (!showYesNoPrompt)
 		{if (GUI.Button (new Rect (Screen.width * .575f, Screen.height * .4f, Screen.width * .2f, Screen.height * .1f), "New Game",oppaFontStyle)) {
 					//print ("Clicked Play Game");
 					Application.LoadLevel (Application.loadedLevel + 1); //theoretically this should be the first level
