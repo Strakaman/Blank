@@ -8,8 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main Menu.unity
   - enabled: 1
-    path: Assets/Intro.unity
-  - enabled: 1
     path: Assets/Prototyping Levels/REAL TUTORIAL ROOM.unity
   - enabled: 1
     path: Assets/Prototyping Levels/Red Stage.unity
