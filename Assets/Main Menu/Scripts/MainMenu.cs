@@ -26,21 +26,22 @@ public class MainMenu : MonoBehaviour
 
 			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), backgroundTexture);
 		
-		if (GUI.Button (new Rect (Screen.width * .2f, Screen.height * .4f, Screen.width * .2f, Screen.height * .1f), "New Game")) {
+		if (GUI.Button (new Rect (Screen.width * .575f, Screen.height * .4f, Screen.width * .2f, Screen.height * .1f), "New Game")) {
 					//print ("Clicked Play Game");
 					Application.LoadLevel (Application.loadedLevel + 1); //theoretically this should be the first level
 			}
 //(new Rect (Screen.width * .5f, Screen.height * .55f, Screen.width * .5f, Screen.height * .1f)
-		if (GUI.Button (new Rect (Screen.width * .2f, Screen.height * .6f, Screen.width * .2f, Screen.height * .1f), "End Game")) {
+		if (GUI.Button (new Rect (Screen.width * .575f, Screen.height * .6f, Screen.width * .2f, Screen.height * .1f), "End Game")) {
 					//print ("Clicked End Game");
 					showYesNoPrompt = true;
 			}
 			if (showYesNoPrompt == true) {
-					GUI.Label (new Rect (Screen.width * .1f, Screen.height * .5f, Screen.width * .4f, Screen.height * .1f), "Are You sure you want to quit?");
-			if (GUI.Button (new Rect (Screen.width * .4f, Screen.height * .35f, Screen.width * .2f, Screen.height * .1f), "I GUESS")) {
+			GUI.contentColor = Color.black;
+					GUI.Label (new Rect (Screen.width * .4f, Screen.height * .275f, Screen.width * .4f, Screen.height * .1f), "Are You sure you want to quit?");
+			if (GUI.Button (new Rect (Screen.width * .4f, Screen.height * .35f, Screen.width * .16f, Screen.height * .1f), "I GUESS")) {
 							Application.Quit ();
 					}
-					if (GUI.Button (new Rect (Screen.width * .4f, Screen.height * .5f, Screen.width * .2f, Screen.height * .1f), "NO")) {
+					if (GUI.Button (new Rect (Screen.width * .4f, Screen.height * .5f, Screen.width * .16f, Screen.height * .1f), "NO")) {
 						showYesNoPrompt = false;
 					}
 			}
