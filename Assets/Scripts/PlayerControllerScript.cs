@@ -30,6 +30,8 @@ public class PlayerControllerScript : MonoBehaviour
 	private float amountChargedSoFar = 0;
 	public AudioClip kush;
 	public AudioClip errorNoise;
+	public AudioClip chargingNoise;
+	bool justPlayedChargeNoise;
 
 // Use this for initialization
 	void Start ()
@@ -199,8 +201,15 @@ public class PlayerControllerScript : MonoBehaviour
 				if (amountChargedSoFar > 0.25f && !fullCharged) {
 					//GetComponent<SpriteRenderer>().material = Charging;
 					chargingObject.GetComponent<SpriteRenderer>().enabled = true;
-					charging = true;
+				if (!justPlayedChargeNoise)	
+				{
+					audio.clip = chargingNoise;
+					audio.Play();
+					justPlayedChargeNoise = true;
 				}
+				charging = true;
+
+			}
 				if (amountChargedSoFar > chargeTimeRequired) {
 					fullCharged = true;
 					//GetComponent<SpriteRenderer>().material = Charge;
@@ -218,6 +227,7 @@ public class PlayerControllerScript : MonoBehaviour
 
 		if (Input.GetButtonUp("Use Spell") && PlayerInfo.GetState().Equals(PState.normal) && PlayerInfo.CanCharge()){
 			charging = false;
+			justPlayedChargeNoise = false;
 			chargingObject.GetComponent<SpriteRenderer>().enabled = false;
 			if (amountChargedSoFar > chargeTimeRequired){
 				Spell datSpell = SpellBook.playerSpells [currSpell];

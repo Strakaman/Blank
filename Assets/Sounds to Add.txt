@@ -4,12 +4,12 @@ Boss Music
 Credits Music?
 
 Sound Clips
-No Mana
+	No Mana//done
 NPC text scrolling
 	NPC  initial talk sound (Kinda like "hey, listen!") //Done
 	Spell being Cast? (Maybe not since every spell might have an "On create" sound) //Nope
-charging
-walking?
+	charging //done
+		walking?//no
 getting hit 
 	White spell shooting//done
 	white spell appearing
@@ -23,8 +23,8 @@ Block being pushed (maybe if velocity != 0, play sound)
 	enemies die //doneish, noise is a bit bad
 enemy noticing player (for enemies that have sight)
 		pressure plate being entered and maybe exited (might be hard with the way that it is triggered)
-ranged enemy firing
-turret firing
+	ranged enemy firing //done
+	turret firing //done
 switch being pressed
 	game pause and unpause
 vector push activating

@@ -304,6 +304,7 @@ MonoBehaviour:
   chargedObject: {fileID: 100002}
   kush: {fileID: 8300000, guid: 0c065955bdfc7e4469b8b5a4eaa1fa1d, type: 3}
   errorNoise: {fileID: 8300000, guid: 03a8fccbec68bc14587d8fbf88cfec65, type: 3}
+  chargingNoise: {fileID: 8300000, guid: a2a800024ee9a1344bf651eecb537224, type: 3}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

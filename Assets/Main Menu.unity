@@ -168,7 +168,7 @@ AudioSource:
   m_GameObject: {fileID: 200124320}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: eb623a62c46a7422fa22c1910a3c1b79, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0775e29ce1c2a2f41be360b7020ef3f8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -229,6 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a92f31ede2574329926e7fd6147eeba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundTexture: {fileID: 2800000, guid: e3e248a6c5ad04776a9639e82db18f69, type: 3}
+  backgroundTexture: {fileID: 2800000, guid: ce88249a68ee143a0bf17c69bf88898c, type: 3}
   showYesNoPrompt: 0
   guiPlacementY: 0
