@@ -31,6 +31,7 @@ public class PlayerControllerScript : MonoBehaviour
 	public AudioClip kush;
 	public AudioClip errorNoise;
 	public AudioClip chargingNoise;
+	public AudioClip hitInAmericaNoise;
 	bool justPlayedChargeNoise;
 
 // Use this for initialization
@@ -392,6 +393,8 @@ public class PlayerControllerScript : MonoBehaviour
 			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
 			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
 			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
+			audio.clip = hitInAmericaNoise;
+			audio.Play ();
 		}
 	}
 /*void createProjectile (GameObject bulletToClone)
