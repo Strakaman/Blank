@@ -161,7 +161,9 @@ public class NPCScript : Interactable
 			return;
 		}
 		int randomNum = Random.Range(0,GreetingSounds.Length);
-		audio.clip = GreetingSounds[randomNum];
-		audio.Play();
+		if (audio)
+		{	audio.clip = GreetingSounds[randomNum];
+			audio.Play();
+		}
 	}
 }

@@ -4948,7 +4948,7 @@ MonoBehaviour:
   - thingTalking: 0
     Sentence: You saved me from that evil robot!
   - thingTalking: 1
-    Sentence: Of course. I would never let anything happen to you.
+    Sentence: Of course. I would never let anything bad happen to you.
   - thingTalking: 0
     Sentence: Aww...You say that to all the healer robots.
   npcImages:
@@ -47690,7 +47690,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
       propertyPath: dialogueLines.Array.data[1].Sentence
-      value: Of course. I would never let anything happen to you.
+      value: Of course. I would never let anything bad happen to you.
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: dac2112642b55924a9cec8886a4c5bb4, type: 2}
       propertyPath: dialogueLines.Array.data[2].Sentence

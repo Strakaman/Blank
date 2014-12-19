@@ -9,5 +9,6 @@ public class NPCHealer : NPCScript {
 	{
 		//should be able to heal player as many times as they want
 		PlayerInfo.resetPlayer();
+		Utilities.TellPlayer("Health and Mana Restored!");
 	}
 }
