@@ -9,9 +9,6 @@ Credit (Kenney or www.kenney.nl)
 Door_close 2or 3
 metal_click
 
-http://freesound.org/people/xxxTruthxxx/sounds/176067/
-Hey
-
 http://www.text2speech.org/
 For words
 
@@ -42,6 +39,8 @@ http://freesound.org/people/Turrus/sounds/242048/
 lightning
 http://freesound.org/people/parnellij/sounds/74892/
 lightning
+https://www.freesound.org/people/crashoverride61088/sounds/193610/
+item pickup
 
 http://freesound.org/people/qubodup/sounds/211641/
 Enemy Range Shot

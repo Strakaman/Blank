@@ -25,8 +25,8 @@ enemy noticing player (for enemies that have sight)
 		pressure plate being entered and maybe exited (might be hard with the way that it is triggered)
 	ranged enemy firing //done
 	turret firing //done
-switch being pressed
-	game pause and unpause
+	switch being pressed //done
+	game pause and unpause //done
 vector push activating
 ice block melting
 water pool freezing
