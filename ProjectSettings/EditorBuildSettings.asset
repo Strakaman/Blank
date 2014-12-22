@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Prototyping Levels/Yellow Stage.unity
   - enabled: 1
     path: Assets/Boss Room.unity
+  - enabled: 1
+    path: Assets/End Screen.unity

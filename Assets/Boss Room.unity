@@ -794,6 +794,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!82 &77454644
 AudioSource:
   m_ObjectHideFlags: 0
@@ -805,7 +806,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 33d3ecf536a7b2c439656aa78e041eb7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .330000013
+  m_Volume: .100000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1942,6 +1943,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &210667568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8087,6 +8089,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1179968105
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8640,7 +8643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 10
+  damage: 20
   animationTime: .200000003
   whoToDamage: Enemy
   projectileKnockback: 0
@@ -9089,7 +9092,6 @@ GameObject:
   - 4: {fileID: 1283978510}
   - 212: {fileID: 2105440818}
   - 61: {fileID: 912699261}
-  - 50: {fileID: 1480835245}
   - 114: {fileID: 1934736453}
   - 114: {fileID: 1283978511}
   - 114: {fileID: 1283978517}
@@ -9163,6 +9165,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1283978515
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9797,7 +9800,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4abec6973e852c14da032b2c0a462654, type: 2}
       propertyPath: Level
-      value: Credits
+      value: End Screen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4abec6973e852c14da032b2c0a462654, type: 2}
@@ -9965,7 +9968,7 @@ Transform:
   m_GameObject: {fileID: 1416799003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 26.6000004, z: 4.02929688}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1032029217}
   m_RootOrder: 1
@@ -10023,6 +10026,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1416799009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10091,6 +10095,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1420252910
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10818,22 +10823,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
---- !u!50 &1480835245
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000012, guid: b6dfe671e2406c24d92d8a67a23d65e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1140306589}
-  m_GameObject: {fileID: 1283978509}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1480835246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11294,6 +11284,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1547861618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11385,6 +11376,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1550789000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11772,6 +11764,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1569264745
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12356,6 +12349,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &1624603212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12550,6 +12544,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1645364123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14062,7 +14057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f138f78d2f685b43928b6c1f4690a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: Credits
+  Level: End Screen
 --- !u!212 &1932636633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14142,6 +14137,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!58 &1934736454
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14169,6 +14165,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!50 &1934736456
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -14520,6 +14517,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1963033901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15115,6 +15113,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2127306600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15143,6 +15142,7 @@ MonoBehaviour:
   kush: {fileID: 8300000, guid: 0c065955bdfc7e4469b8b5a4eaa1fa1d, type: 3}
   errorNoise: {fileID: 8300000, guid: 03a8fccbec68bc14587d8fbf88cfec65, type: 3}
   chargingNoise: {fileID: 8300000, guid: a2a800024ee9a1344bf651eecb537224, type: 3}
+  hitInAmericaNoise: {fileID: 8300000, guid: cdfb0051a9760964fbe2d38f7087eed4, type: 3}
 --- !u!212 &2127306601
 SpriteRenderer:
   m_ObjectHideFlags: 0
