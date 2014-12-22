@@ -611,7 +611,6 @@ GameObject:
   - 4: {fileID: 40856411}
   - 212: {fileID: 40856410}
   - 61: {fileID: 40856409}
-  - 50: {fileID: 40856408}
   - 114: {fileID: 40856407}
   - 114: {fileID: 40856406}
   - 114: {fileID: 40856412}
@@ -637,6 +636,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!114 &40856407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,22 +649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &40856408
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: bdaa91b3a9e8b1848a81ef79d57e50b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1231372269}
-  m_GameObject: {fileID: 40856405}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &40856409
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1188,6 +1172,70 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!1 &92012773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100068, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
+  m_PrefabInternal: {fileID: 1152716871}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 92012774}
+  - 108: {fileID: 92012775}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &92012774
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400068, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
+  m_PrefabInternal: {fileID: 1152716871}
+  m_GameObject: {fileID: 92012773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434285089}
+  m_RootOrder: 0
+--- !u!108 &92012775
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10800006, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1152716871}
+  m_GameObject: {fileID: 92012773}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: .5
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &93376065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,6 +2476,7 @@ Transform:
   m_LocalPosition: {x: 2.47479606, y: 125, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1688679483}
   - {fileID: 2079065662}
   m_Father: {fileID: 30051251}
   m_RootOrder: 13
@@ -2540,7 +2589,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 33d3ecf536a7b2c439656aa78e041eb7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .330000013
+  m_Volume: .100000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2975,7 +3024,7 @@ Transform:
   m_GameObject: {fileID: 382256743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.17281675, y: 100, z: -100}
-  m_LocalScale: {x: .350065947, y: .350066066, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 30051251}
   m_RootOrder: 6
@@ -3015,7 +3064,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 4, y: 4}
+  m_Size: {x: .419999987, y: .379999995}
   m_Center: {x: 0, y: 0}
 --- !u!212 &382256748
 SpriteRenderer:
@@ -3038,7 +3087,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f7d59248eabfa134b814955c8c121d4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f118799e6f67d914681fe96f5c66a32d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &388787068
 GameObject:
@@ -3181,7 +3230,6 @@ GameObject:
   - 4: {fileID: 396959444}
   - 212: {fileID: 396959443}
   - 61: {fileID: 396959442}
-  - 50: {fileID: 396959441}
   - 114: {fileID: 396959440}
   - 114: {fileID: 396959439}
   - 114: {fileID: 396959445}
@@ -3207,6 +3255,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!114 &396959440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3219,22 +3268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &396959441
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: bdaa91b3a9e8b1848a81ef79d57e50b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1107530736}
-  m_GameObject: {fileID: 396959438}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &396959442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3532,6 +3565,7 @@ MonoBehaviour:
   kush: {fileID: 8300000, guid: 0c065955bdfc7e4469b8b5a4eaa1fa1d, type: 3}
   errorNoise: {fileID: 8300000, guid: 03a8fccbec68bc14587d8fbf88cfec65, type: 3}
   chargingNoise: {fileID: 8300000, guid: a2a800024ee9a1344bf651eecb537224, type: 3}
+  hitInAmericaNoise: {fileID: 8300000, guid: cdfb0051a9760964fbe2d38f7087eed4, type: 3}
 --- !u!212 &416027714
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3587,6 +3621,7 @@ Transform:
   m_LocalPosition: {x: 100000, y: 25, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 92012774}
   - {fileID: 447316828}
   m_Father: {fileID: 30051251}
   m_RootOrder: 8
@@ -3775,7 +3810,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 434285089}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!108 &447316829
 Light:
   m_ObjectHideFlags: 0
@@ -7118,7 +7153,6 @@ GameObject:
   - 4: {fileID: 869645809}
   - 212: {fileID: 869645808}
   - 61: {fileID: 869645807}
-  - 50: {fileID: 869645806}
   - 114: {fileID: 869645805}
   - 114: {fileID: 869645804}
   - 114: {fileID: 869645810}
@@ -7144,6 +7178,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!114 &869645805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7156,22 +7191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &869645806
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: bdaa91b3a9e8b1848a81ef79d57e50b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1814076524}
-  m_GameObject: {fileID: 869645803}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &869645807
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7292,7 +7311,6 @@ GameObject:
   - 4: {fileID: 878270291}
   - 212: {fileID: 878270290}
   - 61: {fileID: 878270289}
-  - 50: {fileID: 878270288}
   - 114: {fileID: 878270287}
   - 114: {fileID: 878270286}
   - 114: {fileID: 878270292}
@@ -7318,6 +7336,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!114 &878270287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7330,22 +7349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &878270288
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: bdaa91b3a9e8b1848a81ef79d57e50b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1612330683}
-  m_GameObject: {fileID: 878270285}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &878270289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9909,7 +9912,6 @@ GameObject:
   - 4: {fileID: 1296590902}
   - 212: {fileID: 1296590901}
   - 61: {fileID: 1296590900}
-  - 50: {fileID: 1296590899}
   - 114: {fileID: 1296590898}
   - 114: {fileID: 1296590897}
   - 114: {fileID: 1296590903}
@@ -9935,6 +9937,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!114 &1296590898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9947,22 +9950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1296590899
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: bdaa91b3a9e8b1848a81ef79d57e50b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1572787854}
-  m_GameObject: {fileID: 1296590896}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &1296590900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11064,7 +11051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  damage: 10
+  damage: 20
   animationTime: .200000003
   whoToDamage: Enemy
   projectileKnockback: 0
@@ -11272,7 +11259,6 @@ GameObject:
   - 4: {fileID: 1559393097}
   - 212: {fileID: 1559393096}
   - 61: {fileID: 1559393095}
-  - 50: {fileID: 1559393094}
   - 114: {fileID: 1559393093}
   - 114: {fileID: 1559393092}
   - 114: {fileID: 1559393098}
@@ -11298,6 +11284,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!114 &1559393093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11310,22 +11297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1559393094
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: bdaa91b3a9e8b1848a81ef79d57e50b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 901001056}
-  m_GameObject: {fileID: 1559393091}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &1559393095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12298,6 +12269,70 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1152716871}
   m_GameObject: {fileID: 1651754164}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1688679482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100066, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
+  m_PrefabInternal: {fileID: 1152716871}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1688679483}
+  - 108: {fileID: 1688679484}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1688679483
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400066, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
+  m_PrefabInternal: {fileID: 1152716871}
+  m_GameObject: {fileID: 1688679482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 274684607}
+  m_RootOrder: 0
+--- !u!108 &1688679484
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10800004, guid: b6dfe671e2406c24d92d8a67a23d65e4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1152716871}
+  m_GameObject: {fileID: 1688679482}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: 0, g: 1, b: .917241573, a: 1}
+  m_Intensity: .5
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1711565550
 GameObject:
   m_ObjectHideFlags: 0
@@ -13229,7 +13264,6 @@ GameObject:
   - 4: {fileID: 1801023596}
   - 212: {fileID: 1801023595}
   - 61: {fileID: 1801023594}
-  - 50: {fileID: 1801023593}
   - 114: {fileID: 1801023592}
   - 114: {fileID: 1801023591}
   - 114: {fileID: 1801023597}
@@ -13255,6 +13289,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!114 &1801023592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13267,22 +13302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &1801023593
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: bdaa91b3a9e8b1848a81ef79d57e50b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1054385499}
-  m_GameObject: {fileID: 1801023590}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &1801023594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14277,7 +14296,6 @@ GameObject:
   - 4: {fileID: 1906218920}
   - 212: {fileID: 1906218925}
   - 61: {fileID: 1906218924}
-  - 50: {fileID: 1906218923}
   - 114: {fileID: 1906218922}
   - 114: {fileID: 1906218921}
   - 114: {fileID: 1906218926}
@@ -14327,22 +14345,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
---- !u!50 &1906218923
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000012, guid: b6dfe671e2406c24d92d8a67a23d65e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1152716871}
-  m_GameObject: {fileID: 1906218919}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  - Interactable Object
 --- !u!61 &1906218924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14999,7 +15002,6 @@ GameObject:
   - 4: {fileID: 2001981831}
   - 212: {fileID: 2001981830}
   - 61: {fileID: 2001981829}
-  - 50: {fileID: 2001981828}
   - 114: {fileID: 2001981827}
   - 114: {fileID: 2001981826}
   - 114: {fileID: 2001981832}
@@ -15025,6 +15027,7 @@ MonoBehaviour:
   objectTags:
   - Ice Block
   - Weighted
+  - Interactable Object
 --- !u!114 &2001981827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15037,22 +15040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d65240f612fdd844a3b0ab3a2163c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &2001981828
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: bdaa91b3a9e8b1848a81ef79d57e50b5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1274517418}
-  m_GameObject: {fileID: 2001981825}
-  m_Mass: 3
-  m_LinearDrag: 1000
-  m_AngularDrag: 1000
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!61 &2001981829
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15736,7 +15723,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 274684607}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!108 &2079065663
 Light:
   m_ObjectHideFlags: 0

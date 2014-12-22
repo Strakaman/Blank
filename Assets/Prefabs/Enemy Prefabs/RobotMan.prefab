@@ -262,7 +262,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500002
 Animator:
   serializedVersion: 3
@@ -277,7 +276,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -344,7 +342,7 @@ MonoBehaviour:
   Stun: {fileID: 2100000, guid: 602c3dbcc80c1ce4aaf248cd2d6b8e0e, type: 2}
   Slow: {fileID: 2100000, guid: 1ebd55f8bc1ddb747abb4843bac18232, type: 2}
   deathSound: {fileID: 8300000, guid: da709fddb4580ac4ba3894b3a18f5fb3, type: 3}
-  refBullet: {fileID: 0}
+  refBullet: {fileID: 100052, guid: b6dfe671e2406c24d92d8a67a23d65e4, type: 2}
   projectileSpeed: 4
   COOLDOWNTIME: 1
 --- !u!212 &21200000

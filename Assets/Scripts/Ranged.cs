@@ -11,6 +11,11 @@ public class Ranged : Enemy {
 	public float COOLDOWNTIME = 1f;
 	private float timeSinceLastFired = 0f;
 		
+	void Start() {
+		//refBullet = GameObject.Find ("Robot Projectile");
+		enemyStart ();
+	}
+
 	// Update is called once per frame
 	void Update () {
 		enemyUpdate ();
