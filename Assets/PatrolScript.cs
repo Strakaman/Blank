@@ -3,14 +3,14 @@ using System.Collections;
 
 public class PatrolScript : MonoBehaviour {
 	public Direction direction;
-	public int startTimer = 0;
-	public int maxTimer = 100;
+	public float startTimer = 0;
+	public float maxTimer = 100;
 	public float speed = 3;
 	
 	// Update is called once per frame
 	void Update () {
 
-		startTimer += 1;
+		startTimer += Time.deltaTime;
 		if (startTimer >= maxTimer) {
 			startTimer = 0;
 			if (direction == Direction.up) {
