@@ -56,15 +56,25 @@ public class PlayerControllerScript : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
-            PlayerInfo.changeMana(1);
-            CheckInputs();
-            SpriteAnimation();
+            //PlayerInfo.changeMana(1);
+            //CheckInputs();
+            //SpriteAnimation();
         }
         if (hittime + 0.1f < Time.time && PlayerInfo.getStun() == false && PlayerInfo.getSlow() == false)
         {
             m_SpriteRenderer.material = Default;
         }
 
+    }
+
+    private void FixedUpdate()
+    {
+        if (Time.timeScale != 0)
+        {
+            PlayerInfo.changeMana(1);
+            CheckInputs();
+            SpriteAnimation();
+        }
     }
 
     //Checks and sets the animation state for the player
