@@ -23,14 +23,14 @@ public class BulletDesu : MonoBehaviour {
 		//Debug.Log(collInfo.gameObject.name);		
 		if (animator) {
 			animator.SetBool ("Does Collide", true);} //not all objects that this script is attached to have animations
-		gameObject.collider2D.enabled = false; //once it hits one object it should no longer be able to hit another object
+		gameObject.GetComponent<Collider2D>().enabled = false; //once it hits one object it should no longer be able to hit another object
 		if (Utilities.hasMatchingTag(whoToDamage,collInfo.gameObject))
 		{
-			DamageStruct thisisntastructanymore = new DamageStruct(damage,collider2D.gameObject,100,.1f);
+			DamageStruct thisisntastructanymore = new DamageStruct(damage,GetComponent<Collider2D>().gameObject,100,.1f);
 			//struct used to pass more than one parameter through send message, which only lets you pass one object as a parameter
 			collInfo.gameObject.SendMessage("callDamage",thisisntastructanymore);
 		}
-		rigidbody2D.velocity = new Vector2(0,0);
+		GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
 		Destroy(gameObject,animationTime); //allows for enough time to play explosion animation before destroying itself
 	}
 }

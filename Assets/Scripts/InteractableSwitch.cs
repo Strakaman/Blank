@@ -30,8 +30,8 @@ public class InteractableSwitch : Interactable
 			//for every child object associated with this switch, change it's status too	
 			Utilities.flipStatusInChildren (transform);
 
-			if (audio) {
-					audio.Play ();
+			if (GetComponent<AudioSource>()) {
+					GetComponent<AudioSource>().Play ();
 			}
 		}
 

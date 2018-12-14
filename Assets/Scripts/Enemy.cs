@@ -73,7 +73,7 @@ public class Enemy : MonoBehaviour{
 	void OnCollisionStay2D(Collision2D collInfo)
 	{	
 		if (Utilities.hasMatchingTag ("Player", collInfo.gameObject)) {
-				DamageStruct damagePlayerStruct = new DamageStruct (collisionDamDealt, collider2D.gameObject, knockbackDealt, hitDelay);
+				DamageStruct damagePlayerStruct = new DamageStruct (collisionDamDealt, GetComponent<Collider2D>().gameObject, knockbackDealt, hitDelay);
 				//struct used to pass more than one parameter through send message, which only lets you pass one object as a parameter
 				collInfo.gameObject.SendMessage ("callDamage", damagePlayerStruct);
 		}
@@ -122,18 +122,18 @@ public class Enemy : MonoBehaviour{
 		//Debug.Log("Health is: " + health);
 		if (!isDying) { //check to see if they are already in dying state
 			if (health <= 0) {
-				rigidbody2D.velocity = new Vector2(0, 0);
+				GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 				isDying = true;
 				if (animator) {
 					animator.SetBool("Death", true);
 				}
-				if (audio)
+				if (GetComponent<AudioSource>())
 				{
-					audio.clip = deathSound;
-					audio.Play();
+					GetComponent<AudioSource>().clip = deathSound;
+					GetComponent<AudioSource>().Play();
 				}
 				Destroy(gameObject, 1);
-				gameObject.collider2D.enabled = false;
+				gameObject.GetComponent<Collider2D>().enabled = false;
 			}
 		}
 	}
@@ -150,7 +150,7 @@ public class Enemy : MonoBehaviour{
 			GetComponent<SpriteRenderer>().material = Slow;
 			if (!alreadySlowed) {
 				alreadySlowed = true;
-				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x/2, rigidbody2D.velocity.y/2);	
+				GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x/2, GetComponent<Rigidbody2D>().velocity.y/2);	
 				Invoke ("setSlowFalse", slowTime);
 			}
 		}
@@ -160,7 +160,7 @@ public class Enemy : MonoBehaviour{
 			if(!alreadyStunned){
 				alreadyStunned = true;
 				//GetComponent<SpriteRenderer>().material = Default;
-				rigidbody2D.velocity = new Vector2(0,0);
+				GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
 				Invoke("setStunFalse", stunTime);
 			}
 		}
@@ -188,13 +188,13 @@ public class Enemy : MonoBehaviour{
 	//Sets the direction for the player
 	protected void SetDirection ()
 	{
-		if (rigidbody2D.velocity.x < -1) {
+		if (GetComponent<Rigidbody2D>().velocity.x < -1) {
 			direction = Direction.left;
-		} else if (rigidbody2D.velocity.x > 1) {
+		} else if (GetComponent<Rigidbody2D>().velocity.x > 1) {
 			direction = Direction.right;
-		} else if (rigidbody2D.velocity.y < 0) {
+		} else if (GetComponent<Rigidbody2D>().velocity.y < 0) {
 			direction = Direction.down;
-		} else if (rigidbody2D.velocity.y > 0) {
+		} else if (GetComponent<Rigidbody2D>().velocity.y > 0) {
 			direction = Direction.up;
 		}
 	}
@@ -207,7 +207,7 @@ public class Enemy : MonoBehaviour{
 	//Sets the walking animation for the player if they are moving
 	protected void setWalk ()
 	{
-		if (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) {
+		if (GetComponent<Rigidbody2D>().velocity.x != 0 || GetComponent<Rigidbody2D>().velocity.y != 0) {
 			if (direction == Direction.down) {
 				SetBools (true, false, false, false);
 			} else if (direction == Direction.up) {
@@ -223,7 +223,7 @@ public class Enemy : MonoBehaviour{
 	//Sets the idle animation for the player if velocities are 0
 	protected void setIdle ()
 	{
-		if (rigidbody2D.velocity.x == 0 && rigidbody2D.velocity.y == 0) {
+		if (GetComponent<Rigidbody2D>().velocity.x == 0 && GetComponent<Rigidbody2D>().velocity.y == 0) {
 			if (direction == Direction.down) {
 				animator.SetBool ("Down", false);
 			} else if (direction == Direction.up) {
@@ -260,7 +260,7 @@ public class Enemy : MonoBehaviour{
 			isHit = true;
 			float verticalPush = collInfoObj.transform.position.y - transform.position.y;
 			float horizontalPush = collInfoObj.transform.position.x - transform.position.x;
-			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
 		}
 	}
 

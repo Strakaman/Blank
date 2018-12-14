@@ -15,7 +15,7 @@ public class BGMPlayer :MonoBehaviour
 	 * Play music depending on what level was loaded
 	 */ 
 	void OnLevelWasLoaded(int level) {
-		if (audio == null)
+		if (GetComponent<AudioSource>() == null)
 		{
 			return; //if there is no audo component, don't do anything
 		}
@@ -47,10 +47,10 @@ public class BGMPlayer :MonoBehaviour
 		to keep that smooth transition,	but on new level load, play the new song,
 		since it should be different
 		*/
-		if (audio.clip != newClip) 
+		if (GetComponent<AudioSource>().clip != newClip) 
 			{
-				audio.clip = newClip;
-				audio.Play();
+				GetComponent<AudioSource>().clip = newClip;
+				GetComponent<AudioSource>().Play();
 			}
 		}
 	}

@@ -55,7 +55,7 @@ public class Ranged : Enemy {
 		GameObject clonedesu = Utilities.cloneObject(direction, refBullet, clonePosition, cloneVelocity, cloneOrientation);
 		projectileTrajectory (clonedesu);
 		//Debug.Log(cloneVelocity);
-		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
+		Physics2D.IgnoreCollision (clonedesu.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 		Destroy (clonedesu,2);
 	}
 
@@ -64,7 +64,7 @@ public class Ranged : Enemy {
 		Xdif = playerTransform.x - clone.transform.position.x;
 		Ydif = playerTransform.y - clone.transform.position.y;
 		Playerdirection = new Vector2 (Xdif, Ydif);
-		clone.rigidbody2D.velocity = (Playerdirection.normalized * projectileSpeed);
-		return refBullet.rigidbody2D.velocity;
+		clone.GetComponent<Rigidbody2D>().velocity = (Playerdirection.normalized * projectileSpeed);
+		return refBullet.GetComponent<Rigidbody2D>().velocity;
 	}
 }

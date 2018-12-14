@@ -18,7 +18,7 @@ public class Turret : Switchable {
 		refBullet = GameObject.FindGameObjectWithTag("EnemyProjectile");
 			BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
 			s = zollider.size;
-			c = zollider.center;
+			c = zollider.offset;
 			p = transform.position;
 	}
 	
@@ -101,7 +101,7 @@ public class Turret : Switchable {
 		//GameObject clonedesu = createSpellObject(direction, bulletToClone, clonePosition, cloneVelocity, cloneOrientation);
 		GameObject clonedesu = Utilities.cloneObject(direction, refBullet, clonePosition, cloneVelocity, cloneOrientation);
 		//Debug.Log(clonedesu.transform.position);
-		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
+		Physics2D.IgnoreCollision (clonedesu.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 		Destroy (clonedesu,1);
 	}
 

@@ -20,7 +20,7 @@ public class ChargeYellow : MonoBehaviour {
 	void OnTriggerStay2D (Collider2D collInfo)
 	{//if meant to hit player, will hit player, if meant to hit enemy, will hit enemy
 		if (Utilities.hasMatchingTag (whoToStrike, collInfo.gameObject)) { 
-				DamageStruct thisisntastructanymore = new DamageStruct (damage, collider2D.gameObject, 0, 0.2f); 
+				DamageStruct thisisntastructanymore = new DamageStruct (damage, GetComponent<Collider2D>().gameObject, 0, 0.2f); 
 				//struct used to pass more than one parameter through send message, which only lets you pass one object as a parameter
 				collInfo.gameObject.SendMessage("callDamage",thisisntastructanymore);
 				collInfo.gameObject.SendMessage("StunYourself"); 

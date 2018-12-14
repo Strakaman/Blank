@@ -110,7 +110,7 @@ public class NPCScript : Interactable
 			talkTextGUI.transform.position = new Vector3 (0, -.12f, talkTextGUI.transform.position.z);
 			textBoxTexture.transform.position = new Vector3 (0.3198967f, 0.07225594f, textBoxTexture.transform.position.z);
 			transform.parent.transform.position = new Vector3 (0, 0, -10);
-			player.rigidbody2D.velocity = new Vector2 (0, 0);
+			player.GetComponent<Rigidbody2D>().velocity = new Vector2 (0, 0);
 			playerScript = player.GetComponent<PlayerControllerScript> ();
 			PlayerInfo.SetState(PState.talking); //to prevent pausing and any other stuff to come
 			updateNPC (true);
@@ -157,13 +157,13 @@ public class NPCScript : Interactable
 	}
 	void PlayRandomGreeting()
 	{
-		if ((!audio) || (GreetingSounds.Length < 1)) {
+		if ((!GetComponent<AudioSource>()) || (GreetingSounds.Length < 1)) {
 			return;
 		}
 		int randomNum = Random.Range(0,GreetingSounds.Length);
-		if (audio)
-		{	audio.clip = GreetingSounds[randomNum];
-			audio.Play();
+		if (GetComponent<AudioSource>())
+		{	GetComponent<AudioSource>().clip = GreetingSounds[randomNum];
+			GetComponent<AudioSource>().Play();
 		}
 	}
 }

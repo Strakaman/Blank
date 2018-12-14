@@ -14,7 +14,7 @@ public class Dash : MonoBehaviour {
 
 	void Update()
 	{
-		if ((canBoost == true) && Input.GetButtonDown ("Slide") && (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) && PlayerInfo.GetState().Equals(PState.normal))
+		if ((canBoost == true) && Input.GetButtonDown ("Slide") && (GetComponent<Rigidbody2D>().velocity.x != 0 || GetComponent<Rigidbody2D>().velocity.y != 0) && PlayerInfo.GetState().Equals(PState.normal))
 		{
 			StartCoroutine( Boost(.5f) ); //Start the Coroutine called "Boost", and feed it the time we want it to boost us
 		}
@@ -32,7 +32,7 @@ public class Dash : MonoBehaviour {
 			time += Time.deltaTime; //Increase our "time" variable by the amount of time that it has been since the last update
 			SetDirection ();
 			calcBoostSpeed();
-			rigidbody2D.velocity = boostSpeed; //set our rigidbody velocity to a custom velocity every frame, so that we get a steady boost direction like in Megaman
+			GetComponent<Rigidbody2D>().velocity = boostSpeed; //set our rigidbody velocity to a custom velocity every frame, so that we get a steady boost direction like in Megaman
 			yield return 0; //go to next frame
 		}
 		yield return new WaitForSeconds(boostCooldown/5*2);
@@ -43,13 +43,13 @@ public class Dash : MonoBehaviour {
 
 	void SetDirection ()
 	{
-		if (rigidbody2D.velocity.x < 0) {
+		if (GetComponent<Rigidbody2D>().velocity.x < 0) {
 			direction = Direction.left;
-		} else if (rigidbody2D.velocity.x > 0) {
+		} else if (GetComponent<Rigidbody2D>().velocity.x > 0) {
 			direction = Direction.right;
-		} else if (rigidbody2D.velocity.y < 0) {
+		} else if (GetComponent<Rigidbody2D>().velocity.y < 0) {
 			direction = Direction.down;
-		} else if (rigidbody2D.velocity.y > 0) {
+		} else if (GetComponent<Rigidbody2D>().velocity.y > 0) {
 			direction = Direction.up;
 		}
 	}

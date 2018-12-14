@@ -19,7 +19,7 @@ public class EnemySight : MonoBehaviour {
 		if (GetComponentInParent<BoxCollider2D>()) {
 			BoxCollider2D zollider = GetComponentInParent<BoxCollider2D> (); //get attached collider, store size and center
 			s = zollider.size;
-			c = zollider.center;
+			c = zollider.offset;
 		}
 		col = GetComponent<CircleCollider2D>();
 		//outOfRange = false;

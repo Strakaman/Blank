@@ -25,7 +25,7 @@ public class BlueSlower : MonoBehaviour
 	{//if meant to hit player, will hit player, if meant to hit enemy, will hit enemy
 		if (Utilities.hasMatchingTag (whoToSlow, collInfo.gameObject)) { 
 				if (chargedVersion) { //charged version does damage but normal version does not
-						DamageStruct thisisntastructanymore = new DamageStruct (damage, collider2D.gameObject, 0, 0); 
+						DamageStruct thisisntastructanymore = new DamageStruct (damage, GetComponent<Collider2D>().gameObject, 0, 0); 
 						//struct used to pass more than one parameter through send message, which only lets you pass one object as a parameter
 						collInfo.gameObject.SendMessage("callDamage",thisisntastructanymore);
 				}

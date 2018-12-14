@@ -42,7 +42,7 @@ public class PlayerControllerScript : MonoBehaviour
 			animator = (Animator)GetComponent ("Animator");
 			BoxCollider2D zollider = GetComponent<BoxCollider2D> (); //get attached collider, store size and center
 			s = zollider.size;
-			c = zollider.center;
+			c = zollider.offset;
 	}
 
 // Update is called once per frame
@@ -78,13 +78,13 @@ public class PlayerControllerScript : MonoBehaviour
 //Sets the direction for the player
 	void SetDirection ()
 	{
-			if (rigidbody2D.velocity.x < 0) {
+			if (GetComponent<Rigidbody2D>().velocity.x < 0) {
 					direction = Direction.left;
-			} else if (rigidbody2D.velocity.x > 0) {
+			} else if (GetComponent<Rigidbody2D>().velocity.x > 0) {
 					direction = Direction.right;
-			} else if (rigidbody2D.velocity.y < 0) {
+			} else if (GetComponent<Rigidbody2D>().velocity.y < 0) {
 					direction = Direction.down;
-			} else if (rigidbody2D.velocity.y > 0) {
+			} else if (GetComponent<Rigidbody2D>().velocity.y > 0) {
 					direction = Direction.up;
 			}
 	}
@@ -92,7 +92,7 @@ public class PlayerControllerScript : MonoBehaviour
 //Sets the walking animation for the player if they are moving
 	void setWalk ()
 	{
-			if (rigidbody2D.velocity.x != 0 || rigidbody2D.velocity.y != 0) {
+			if (GetComponent<Rigidbody2D>().velocity.x != 0 || GetComponent<Rigidbody2D>().velocity.y != 0) {
 					if (direction == Direction.down) {
 							SetBools (true, false, false, false);
 					} else if (direction == Direction.up) {
@@ -108,7 +108,7 @@ public class PlayerControllerScript : MonoBehaviour
 //Sets the idle animation for the player if velocities are 0
 	void setIdle ()
 	{
-			if (rigidbody2D.velocity.x == 0 && rigidbody2D.velocity.y == 0) {
+			if (GetComponent<Rigidbody2D>().velocity.x == 0 && GetComponent<Rigidbody2D>().velocity.y == 0) {
 					if (direction == Direction.down) {
 							animator.SetBool ("Down", false);
 					} else if (direction == Direction.up) {
@@ -137,11 +137,11 @@ public class PlayerControllerScript : MonoBehaviour
 		if(PlayerInfo.GetState().Equals(PState.dead)) {return ;} //dead ppl can't move
 		//Consider modifying the same vector everytime instead of creating a new one, performance win?
 		if (PlayerInfo.GetState().Equals(PState.normal) || PlayerInfo.GetState().Equals(PState.grabbing)) {
-		rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(), 
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(), 
 		                       Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier());
 		}
 		if (PlayerInfo.getSlow()) {
-			rigidbody2D.velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier() / 2, 
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (Input.GetAxis ("Horizontal") * speed* PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier() / 2, 
 			                                    Input.GetAxis ("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier()) / 2;
 			GetComponent<SpriteRenderer>().material = Slow;
 			if (slowTime + PlayerInfo.getSlowDur() < Time.time) {
@@ -151,7 +151,7 @@ public class PlayerControllerScript : MonoBehaviour
 			}
 		}
 		if (PlayerInfo.getStun()) {
-			rigidbody2D.velocity = new Vector2(0,0);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
 			GetComponent<SpriteRenderer>().material = Stun;
 			if (stunTime + PlayerInfo.getStunDur() < Time.time) {
 				stunTime = Time.time;
@@ -190,8 +190,8 @@ public class PlayerControllerScript : MonoBehaviour
 								Invoke ("stopAttackAnim", 0.5f);
 						} else {
 							Utilities.TellPlayer("Out of MP!")	;
-							audio.clip = errorNoise;
-							audio.Play();
+							GetComponent<AudioSource>().clip = errorNoise;
+							GetComponent<AudioSource>().Play();
 							//Debug.Log ("You're out of mana kupo"); //used as placeholder until some method to communicate to player is implemented.
 						}
 				}
@@ -204,8 +204,8 @@ public class PlayerControllerScript : MonoBehaviour
 					chargingObject.GetComponent<SpriteRenderer>().enabled = true;
 				if (!justPlayedChargeNoise)	
 				{
-					audio.clip = chargingNoise;
-					audio.Play();
+					GetComponent<AudioSource>().clip = chargingNoise;
+					GetComponent<AudioSource>().Play();
 					justPlayedChargeNoise = true;
 				}
 				charging = true;
@@ -239,8 +239,8 @@ public class PlayerControllerScript : MonoBehaviour
 					Invoke ("stopAttackAnim", 0.5f);
 				} else {
 					Utilities.TellPlayer("Not enough MP to execute charge!");
-					audio.clip = errorNoise;
-					audio.Play ();
+					GetComponent<AudioSource>().clip = errorNoise;
+					GetComponent<AudioSource>().Play ();
 				}
 					/*
 					if (SpellBook.playerSpells [currSpell] == null) {
@@ -278,8 +278,8 @@ public class PlayerControllerScript : MonoBehaviour
 
 
 			if (Input.GetButton ("KUSH")) {
-				audio.clip = kush;
-				audio.Play();
+				GetComponent<AudioSource>().clip = kush;
+				GetComponent<AudioSource>().Play();
 			}
 
 			/*	if (Input.GetButtonDown ("Bounce Spell")) {
@@ -392,9 +392,9 @@ public class PlayerControllerScript : MonoBehaviour
 			PlayerInfo.changeHealth(damage);
 			float verticalPush = collInfo.gameObject.transform.position.y - transform.position.y;
 			float horizontalPush = collInfo.gameObject.transform.position.x - transform.position.x;
-			rigidbody2D.AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
-			audio.clip = hitInAmericaNoise;
-			audio.Play ();
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(-horizontalPush, -verticalPush) * knockback);
+			GetComponent<AudioSource>().clip = hitInAmericaNoise;
+			GetComponent<AudioSource>().Play ();
 		}
 	}
 /*void createProjectile (GameObject bulletToClone)

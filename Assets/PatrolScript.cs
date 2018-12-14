@@ -31,18 +31,18 @@ public class PatrolScript : MonoBehaviour {
 
 		//Up and Down
 		if (direction == Direction.up) {
-			rigidbody2D.velocity = new Vector2(0, speed);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
 		}
 		if (direction == Direction.down) {
-			rigidbody2D.velocity = new Vector2(0, -speed);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(0, -speed);
 		}
 
 		//Left and Right
 		if (direction == Direction.right) {
-			rigidbody2D.velocity = new Vector2(speed, 0);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
 		}
 		if (direction == Direction.left) {
-			rigidbody2D.velocity = new Vector2(-speed, 0);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0);
 		}
 	}
 }

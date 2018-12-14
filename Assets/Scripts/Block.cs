@@ -20,7 +20,7 @@ public class Block : MonoBehaviour {
 	void Update () {
 		if (destroyThis == true)
 		{
-			collider2D.enabled = false;
+			GetComponent<Collider2D>().enabled = false;
 			Destroy(gameObject);
 		}
 	}

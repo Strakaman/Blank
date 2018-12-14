@@ -41,7 +41,7 @@ public class UnlockedDoor : Switchable {
 		void updateStatus()
 		{
 			animator.SetBool ("isLocked", isLocked);
-			collider2D.enabled = isLocked;
+			GetComponent<Collider2D>().enabled = isLocked;
 		}
 		
 	}

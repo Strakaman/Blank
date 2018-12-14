@@ -29,7 +29,7 @@ public class ChainChecker : MonoBehaviour {
 		GameObject ptnlTarget = collInfo.gameObject; //since we reference it so much, might be better to store in temp variable
 		if ((checkInRadius == true) && (Utilities.hasMatchingTag("Enemy", ptnlTarget)) && (!alreadyCollided.Contains(ptnlTarget))) {
 			//Debug.Log ("CHAIN!");		
-			gameObject.collider2D.enabled = true;
+			gameObject.GetComponent<Collider2D>().enabled = true;
 			//collider2D.enabled = false; 
 			//initially used to turn collider off so that when it comes back on,
 			//it will revaluate everything in radius, but now it seems like it's not needed, for now

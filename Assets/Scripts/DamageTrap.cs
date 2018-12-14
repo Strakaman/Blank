@@ -45,14 +45,14 @@ public class DamageTrap : Switchable {
 	void updateStatus()
 	{
 		gameObject.GetComponent<SpriteRenderer> ().enabled = isOn;
-		if (collider2D) {
-			collider2D.enabled = isOn;
+		if (GetComponent<Collider2D>()) {
+			GetComponent<Collider2D>().enabled = isOn;
 		}
 	}
 
 	void OnCollisionStay2D(Collision2D coll) {
 		if (Utilities.hasMatchingTag("Player",coll.gameObject)) {
-			DamageStruct laserStruct = new DamageStruct (damage, collider2D.gameObject, knockback, hitDelay); 
+			DamageStruct laserStruct = new DamageStruct (damage, GetComponent<Collider2D>().gameObject, knockback, hitDelay); 
 			//struct used to pass more than one parameter through send message, which only lets you pass one object as a parameter
 			coll.gameObject.SendMessage("callDamage", laserStruct);
 			if (canStun) {
@@ -68,7 +68,7 @@ public class DamageTrap : Switchable {
 
 	void OnTriggerStay2D(Collider2D coll) {
 		if (Utilities.hasMatchingTag("Player",coll.gameObject)) {
-			DamageStruct laserStruct = new DamageStruct (damage, collider2D.gameObject, knockback, hitDelay); 
+			DamageStruct laserStruct = new DamageStruct (damage, GetComponent<Collider2D>().gameObject, knockback, hitDelay); 
 			//struct used to pass more than one parameter through send message, which only lets you pass one object as a parameter
 			coll.gameObject.SendMessage("callDamage", laserStruct);
 			if (canStun) {

@@ -49,9 +49,9 @@ public class PauseGame : MonoBehaviour {
 
 	void PlayPauseSound()
 	{
-		if (audio)
+		if (GetComponent<AudioSource>())
 		{
-			audio.Play ();
+			GetComponent<AudioSource>().Play ();
 		}
 	}
 

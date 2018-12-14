@@ -60,8 +60,8 @@ public class AggroNavi : MonoBehaviour {
 		shotDirection = new Vector2 (Xdif, Ydif);
 		Vector2 cloneVelocity = (shotDirection.normalized * projectileSpeed);
 		GameObject clonedesu = Utilities.cloneObject(Direction.down, refBullet, transform.position, cloneVelocity, cloneOrientation);
-		Physics2D.IgnoreCollision (clonedesu.collider2D, collider2D);
-		Physics2D.IgnoreCollision (clonedesu.collider2D, player.collider2D);
+		Physics2D.IgnoreCollision (clonedesu.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+		Physics2D.IgnoreCollision (clonedesu.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
 		Destroy (clonedesu,2);
 	}
 

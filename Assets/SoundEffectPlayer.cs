@@ -22,8 +22,8 @@ public class SoundEffectPlayer : MonoBehaviour {
 	{
 		if (typeofSound.Equals(SoundType.pickup))
 		{
-			audio.clip = pickupSound;
-			audio.Play();
+			GetComponent<AudioSource>().clip = pickupSound;
+			GetComponent<AudioSource>().Play();
 		}
 	}
 
