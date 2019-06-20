@@ -9,20 +9,23 @@ public class ChainEffect : MonoBehaviour {
 	private float Ydif;
 	private int projectileSpeed = 10;
 	private float sourcePitch; //store the Audio source pitch so that we can vary it
-	// Use this for initialization
-	void Start () {
+    private Rigidbody2D m_rigidbody2D;
+    private Vector3 startVel;
+
+    void Start () {
 		if (GetComponent<AudioSource>()) {
 			sourcePitch = GetComponent<AudioSource>().pitch; //get the original pitch for some fun math
 		}
-		
-	}
+        m_rigidbody2D = GetComponent<Rigidbody2D>();
+        startVel = m_rigidbody2D.velocity;
+    }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
+        m_rigidbody2D.velocity = startVel; //TODO: never do this again
+    }
 
-	}
-
-	void OnCollisionEnter2D(Collision2D collInfo) {
+    void OnCollisionEnter2D(Collision2D collInfo) {
 		//Debug.Log(collInfo.gameObject.name);	
 		if (Utilities.hasMatchingTag("Enemy",collInfo.gameObject)) {
 			Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(),collInfo.gameObject.GetComponent<Collider2D>()); //so that it can pass through any enemy that it already hit

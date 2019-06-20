@@ -4,8 +4,10 @@ using System.Collections;
 public class Dash : MonoBehaviour {
 	private Vector2 boostSpeed = new Vector2(0,0);
 	private bool canBoost = true;
+    public bool boostActive = false;
 	public float boostCooldown = 2f;
 	private Direction direction = 0;
+    private Rigidbody2D m_RigidBody2d;
 	//public GameObject DashTrail;
 
 	void Start() {
@@ -18,12 +20,21 @@ public class Dash : MonoBehaviour {
 		{
 			StartCoroutine( Boost(.5f) ); //Start the Coroutine called "Boost", and feed it the time we want it to boost us
 		}
-		
+        m_RigidBody2d = GetComponent<Rigidbody2D>();
 	}
 
-	IEnumerator Boost(float boostDur) //Coroutine with a single input of a float called boostDur, which we can feed a number when calling
+    private void FixedUpdate()
+    {
+        if (boostActive)
+        {
+            m_RigidBody2d.velocity = boostSpeed;
+        }
+    }
+
+    IEnumerator Boost(float boostDur) //Coroutine with a single input of a float called boostDur, which we can feed a number when calling
 	{
-		gameObject.GetComponent<TrailRenderer>().enabled=true; 
+        boostActive = true;
+        gameObject.GetComponent<TrailRenderer>().enabled=true; 
 		float time = 0; //create float to store the time this coroutine is operating
 		canBoost = false; //set canBoost to false so that we can't keep boosting while boosting
 		//Instantiate(DashTrail, transform.position, Quaternion.identity );
@@ -35,7 +46,8 @@ public class Dash : MonoBehaviour {
 			GetComponent<Rigidbody2D>().velocity = boostSpeed; //set our rigidbody velocity to a custom velocity every frame, so that we get a steady boost direction like in Megaman
 			yield return 0; //go to next frame
 		}
-		yield return new WaitForSeconds(boostCooldown/5*2);
+        boostActive = false;
+        yield return new WaitForSeconds(boostCooldown/5*2);
 		gameObject.GetComponent<TrailRenderer>().enabled=false; 
 		yield return new WaitForSeconds(boostCooldown/5*3); //Cooldown time for being able to boost again, if you'd like.
 		canBoost = true; //set back to true so that we can boost again.

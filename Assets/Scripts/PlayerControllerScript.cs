@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerControllerScript : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class PlayerControllerScript : MonoBehaviour
     public GameObject chargedObject;
     private bool charging;
     private bool fullCharged;
+    
     private float chargeTimeRequired = 1f;
     private float amountChargedSoFar = 0;
     public AudioClip kush;
@@ -37,6 +39,7 @@ public class PlayerControllerScript : MonoBehaviour
     private BoxCollider2D m_BoxCollider2D;
     private SpriteRenderer m_SpriteRenderer;
     private Rigidbody2D m_Rigidbody2D;
+    public Dash m_DashScript;
 
     // Use this for initialization
     void Start()
@@ -57,7 +60,7 @@ public class PlayerControllerScript : MonoBehaviour
         if (Time.timeScale != 0)
         {
             //PlayerInfo.changeMana(1);
-            //CheckInputs();
+            CheckInputs();
             //SpriteAnimation();
         }
         if (hittime + 0.1f < Time.time && PlayerInfo.getStun() == false && PlayerInfo.getSlow() == false)
@@ -72,7 +75,9 @@ public class PlayerControllerScript : MonoBehaviour
         if (Time.timeScale != 0)
         {
             PlayerInfo.changeMana(1);
-            CheckInputs();
+            if (!m_DashScript.boostActive) {
+                ProcessMovement();
+            }
             SpriteAnimation();
         }
     }
@@ -176,39 +181,10 @@ public class PlayerControllerScript : MonoBehaviour
     /**
     * Used for all player button inputs...I guess...
 */
+
     void CheckInputs()
     {
-        //Debug.LogWarning("player state " + PlayerInfo.GetState());
         if (PlayerInfo.GetState().Equals(PState.dead)) { return; } //dead ppl can't move
-                                                                   //Consider modifying the same vector everytime instead of creating a new one, performance win?
-        if (PlayerInfo.GetState().Equals(PState.normal) || PlayerInfo.GetState().Equals(PState.grabbing))
-        {
-            m_Rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(),
-                               Input.GetAxis("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier());
-        }
-        if (PlayerInfo.getSlow())
-        {
-            m_Rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier() / 2,
-                                                Input.GetAxis("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier()) / 2;
-            GetComponent<SpriteRenderer>().material = Slow;
-            if (slowTime + PlayerInfo.getSlowDur() < Time.time)
-            {
-                slowTime = Time.time;
-                PlayerInfo.setSlow(false);
-                //Debug.Log("Reset state: " + PlayerInfo.GetState());
-            }
-        }
-        if (PlayerInfo.getStun())
-        {
-            m_Rigidbody2D.velocity = new Vector2(0, 0);
-            m_SpriteRenderer.material = Stun;
-            if (stunTime + PlayerInfo.getStunDur() < Time.time)
-            {
-                stunTime = Time.time;
-                PlayerInfo.setStun(false);
-                //Debug.Log("Reset state: " + PlayerInfo.GetState());
-            }
-        }
         if (Input.GetButtonDown("Interact"))
         {
             GameObject whatCanThouInteractWith;
@@ -350,6 +326,41 @@ public class PlayerControllerScript : MonoBehaviour
         {
             GetComponent<AudioSource>().clip = kush;
             GetComponent<AudioSource>().Play();
+        }
+
+    }
+    void ProcessMovement()
+    {
+        //Debug.LogWarning("player state " + PlayerInfo.GetState());
+        if (PlayerInfo.GetState().Equals(PState.dead)) { return; } //dead ppl can't move
+                                                                   //Consider modifying the same vector everytime instead of creating a new one, performance win?
+        if (PlayerInfo.GetState().Equals(PState.normal) || PlayerInfo.GetState().Equals(PState.grabbing))
+        {
+            m_Rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier(),
+                               Input.GetAxis("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier());
+        }
+        if (PlayerInfo.getSlow())
+        {
+            m_Rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier() / 2,
+                                                Input.GetAxis("Vertical") * speed * PlayerInfo.GetSpeedModifier() * PlayerInfo.GetGrabModifier()) / 2;
+            GetComponent<SpriteRenderer>().material = Slow;
+            if (slowTime + PlayerInfo.getSlowDur() < Time.time)
+            {
+                slowTime = Time.time;
+                PlayerInfo.setSlow(false);
+                //Debug.Log("Reset state: " + PlayerInfo.GetState());
+            }
+        }
+        if (PlayerInfo.getStun())
+        {
+            m_Rigidbody2D.velocity = new Vector2(0, 0);
+            m_SpriteRenderer.material = Stun;
+            if (stunTime + PlayerInfo.getStunDur() < Time.time)
+            {
+                stunTime = Time.time;
+                PlayerInfo.setStun(false);
+                //Debug.Log("Reset state: " + PlayerInfo.GetState());
+            }
         }
 
         /*	if (Input.GetButtonDown ("Bounce Spell")) {

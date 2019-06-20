@@ -6,9 +6,15 @@ public class PatrolScript : MonoBehaviour {
 	public float startTimer = 0;
 	public float maxTimer = 100;
 	public float speed = 3;
-	
-	// Update is called once per frame
-	void Update () {
+
+    private Rigidbody2D m_rigidbody2D;
+
+    private void Start()
+    {
+        m_rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+    // Update is called once per frame
+    void Update () {
 
 		startTimer += Time.deltaTime;
 		if (startTimer >= maxTimer) {
@@ -29,20 +35,29 @@ public class PatrolScript : MonoBehaviour {
 			}
 		}
 
-		//Up and Down
-		if (direction == Direction.up) {
-			GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
-		}
-		if (direction == Direction.down) {
-			GetComponent<Rigidbody2D>().velocity = new Vector2(0, -speed);
-		}
 
-		//Left and Right
-		if (direction == Direction.right) {
-			GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
-		}
-		if (direction == Direction.left) {
-			GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0);
-		}
 	}
+
+    private void FixedUpdate()
+    {
+        //Up and Down
+        if (direction == Direction.up)
+        {
+            m_rigidbody2D.velocity = new Vector2(0, speed);
+        }
+        else if (direction == Direction.down)
+        {
+            m_rigidbody2D.velocity = new Vector2(0, -speed);
+        }
+
+        //Left and Right
+        if (direction == Direction.right)
+        {
+            m_rigidbody2D.velocity = new Vector2(speed, 0);
+        }
+        else if (direction == Direction.left)
+        {
+            m_rigidbody2D.velocity = new Vector2(-speed, 0);
+        }
+    }
 }
