@@ -63,12 +63,17 @@ public class PauseGame : MonoBehaviour {
 			if(GUI.Button(new Rect(Screen.width /2 - 100,Screen.height /2 - 75,250,50), "Resume")){
 				ResumeTheGame();
 			}
-			if (GUI.Button (new Rect (Screen.width /2 - 100,Screen.height /2-25,250,50), "Quit to Main Menu")){
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 25, 250, 50), "Retry Level"))
+            {
+                Application.LoadLevel(Application.loadedLevel);
+                ResumeTheGame();
+            }
+			if (GUI.Button (new Rect (Screen.width /2 - 100,Screen.height /2+25,250,50), "Quit to Main Menu")){
 				Application.LoadLevel("Main Menu");
 				ResumeTheGame();
 				PlayerInfo.SetState(PState.inmenus); //still set player as inmenus since main menu is also a menu
 			}
-			if (GUI.Button (new Rect (Screen.width /2 - 100,Screen.height /2 + 25,250,50), "Quit Game")){
+			if (GUI.Button (new Rect (Screen.width /2 - 100,Screen.height /2 + 75,250,50), "Quit Game")){
 				ResumeTheGame();
 				Application.Quit();
 			}

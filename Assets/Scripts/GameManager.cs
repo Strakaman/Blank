@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 			PlayerInfo.setMana(CheckPointState.CPmana);
 			SpellBook.setSpellBools(CheckPointState.CPspellBools);
 			PlayerInfo.SetCanCharge(CheckPointState.CPchargeEnabled);
+            PlayerInfo.resetPlayer();
 		}
 		else
 		{
