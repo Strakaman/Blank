@@ -9,22 +9,32 @@ public class EnemyAIOld : MonoBehaviour {
 	private float Ydif;
 	private GameObject player;                      // Reference to the player.
 	private Vector3 playerTransform;                      // Reference to the player's transform.
-	
+    private Enemy m_Enemy;
+    private Rigidbody2D m_Rigidbody;
+
 	void Start() {
 		player = GameObject.FindGameObjectWithTag ("Player");
+        m_Enemy = GetComponent<Enemy>();
+        m_Rigidbody = GetComponent<Rigidbody2D>();
 	}
 	
 	void Update () {
 		//Player = GameObject.FindGameObjectWithTag ("Player").transform.position;
 		//rigidbody2D.velocity = (Playerdirection.normalized * speed);
 		playerTransform = player.transform.position;
-		if (GetComponent<Enemy>().playerInSight == true) {
-		//Debug.Log ("Chasing");
-			if (gameObject.GetComponent<Enemy> ().isStunned () == false) {
-				Chasing ();
-			}
-		}
 	}
+
+    void FixedUpdate()
+    {
+        if (m_Enemy.playerInSight == true)
+        {
+            //Debug.Log ("Chasing");
+            if (m_Enemy.isStunned() == false)
+            {
+                Chasing();
+            }
+        }
+    }
 	
 	void Chasing ()
 	{

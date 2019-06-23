@@ -101,22 +101,22 @@ public class PlayerControllerScript : MonoBehaviour
         }
     }
 
-    //Sets the direction for the player
-    void SetDirection()
+    //Sets the direction for the player, based on user input not velocity
+    void SetDirection(float hori, float vert)
     {
-        if (m_Rigidbody2D.velocity.x < 0)
+        if (hori < -0.001f)
         {
             direction = Direction.left;
         }
-        else if (m_Rigidbody2D.velocity.x > 0)
+        else if (hori > 0.001f)
         {
             direction = Direction.right;
         }
-        else if (m_Rigidbody2D.velocity.y < 0)
+        else if (vert < -0.001f)
         {
             direction = Direction.down;
         }
-        else if (m_Rigidbody2D.velocity.y > 0)
+        else if (vert > 0.001f)
         {
             direction = Direction.up;
         }
@@ -205,7 +205,7 @@ public class PlayerControllerScript : MonoBehaviour
 
         if (isStrafing() == false)
         {
-            SetDirection();
+            SetDirection(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         }
 
 

@@ -10,12 +10,14 @@ public class EnemySight : MonoBehaviour {
 	private Vector3 c; //box collider center to help with raycasting
 	private LayerMask pMask = 1 << 9;
 	public float chaseTime = 2;
+    private Enemy m_Enemy;
 	//private bool outOfRange;
 	
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
-		transform.position = gameObject.GetComponentInParent <Enemy>().transform.position;
+        m_Enemy = GetComponentInParent<Enemy>();
+		transform.position = m_Enemy.transform.position;
 		if (GetComponentInParent<BoxCollider2D>()) {
 			BoxCollider2D zollider = GetComponentInParent<BoxCollider2D> (); //get attached collider, store size and center
 			s = zollider.size;
@@ -27,7 +29,7 @@ public class EnemySight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		direction = (Direction)gameObject.GetComponentInParent<Enemy>().getDirection();
+        direction = (Direction)m_Enemy.getDirection();
 		/*if (outOfRange = true) {
 			Invoke("invokeSetFalse", chaseTime);
 			outOfRange = false;
@@ -40,8 +42,7 @@ public class EnemySight : MonoBehaviour {
 		if(other.gameObject == player)
 		{
 			//Debug.Log ("Player");
-			
-			Vector2 p = gameObject.GetComponentInParent <Enemy>().transform.position; //get current enemy position to cast ray from
+			Vector2 p = m_Enemy.transform.position; //get current enemy position to cast ray from
 			Vector3 castDirection; //set the raycast direction to vertical or horizontal based on direction player is facing
 			int xAxisDir = 0;
 			int yAxisDir = 0;
@@ -65,7 +66,7 @@ public class EnemySight : MonoBehaviour {
 				if (hit && hit.collider.gameObject == player) {
 					//Debug.Log("PLAYER IS IN SIGHT");
 					//playerInSight = true;
-					gameObject.GetComponentInParent<Enemy>().setPlayerInSightTrue();
+					m_Enemy.setPlayerInSightTrue();
 					//Debug.Log(gameObject.GetComponentInParent<EnemyAI>().getPlayerInSight());
 					if (Utilities.hasMatchingTag("Ranged", gameObject.transform.parent.gameObject)) {
 						//Debug.Log("poop");
@@ -76,7 +77,7 @@ public class EnemySight : MonoBehaviour {
 		}
 		if (other.gameObject.CompareTag ("Enemy")) {
 			if (other.gameObject.GetComponentInParent<Enemy>().isHitTrue() == true) {
-				gameObject.GetComponentInParent<Enemy>().setPlayerInSightTrue();
+                m_Enemy.setPlayerInSightTrue();
 				other.gameObject.GetComponentInParent<Enemy>().isHitFalse();
 			}
 		}
@@ -95,6 +96,6 @@ public class EnemySight : MonoBehaviour {
 	}
 	
 	void invokeSetFalse() {
-		gameObject.GetComponentInParent<Enemy>().setPlayerInSightFalse();
+		m_Enemy.setPlayerInSightFalse();
 	}
 }

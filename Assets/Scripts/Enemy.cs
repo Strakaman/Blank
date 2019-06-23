@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour{
 	protected bool isDying = false;
 	protected GameObject enemy;
 	protected GameObject player;
+    protected SpriteRenderer m_SpriteRenderer;
 	public AudioClip deathSound;
 	// Use this for initialization
 	void Start () {
@@ -104,6 +105,7 @@ public class Enemy : MonoBehaviour{
 	void setObjects() {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		enemy = gameObject;
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
 
@@ -143,11 +145,11 @@ public class Enemy : MonoBehaviour{
 		 * but if the enemy is stunned or slowed, we shouldn't go back to the old sprite
 		 */ 
 		if ((hitTime + 0.1f < Time.time)&&(!alreadyStunned)&&(!alreadySlowed)) {
-			GetComponent<SpriteRenderer>().material = Default;
+			m_SpriteRenderer.material = Default;
 		}
 		
 		if (slowed == true) {
-			GetComponent<SpriteRenderer>().material = Slow;
+            m_SpriteRenderer.material = Slow;
 			if (!alreadySlowed) {
 				alreadySlowed = true;
 				GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x/2, GetComponent<Rigidbody2D>().velocity.y/2);	
@@ -156,7 +158,7 @@ public class Enemy : MonoBehaviour{
 		}
 		
 		if (stunned == true)  {
-			GetComponent<SpriteRenderer>().material = Stun;   
+            m_SpriteRenderer.material = Stun;   
 			if(!alreadyStunned){
 				alreadyStunned = true;
 				//GetComponent<SpriteRenderer>().material = Default;
@@ -167,7 +169,7 @@ public class Enemy : MonoBehaviour{
 		
 		if (hitTime +0.1f >= Time.time)
 		{
-			GetComponent<SpriteRenderer>().material = Hit;
+            m_SpriteRenderer.material = Hit;
 		}
 	}
 
@@ -248,7 +250,7 @@ public class Enemy : MonoBehaviour{
 	protected void callDamage(DamageStruct dstruct)
 	{
 		damageProperties(dstruct.coll.gameObject, dstruct.damage, dstruct.knockback, dstruct.hitDelay);
-		GetComponent<SpriteRenderer>().material = Hit;
+        m_SpriteRenderer.material = Hit;
 	}
 
 	//Method to set the four parameters when damaging something: object to collide with, amount of damage
